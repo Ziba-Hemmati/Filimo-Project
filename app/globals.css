@@ -19,7 +19,6 @@ html {
 :root {
   --font-iran-sans: "IranSans";
   --font-iran-sans-medium: "IranSansMedium";
- 
 }
 h2 {
   font-family: var(--font-iran-sans);
