@@ -16,7 +16,7 @@ module.exports = {
       white: "#fff",
       black: "#000",
       "black-950": "#040404",
-      "black-900": " #0d0d0d",
+      "black-900": "#0d0d0d",
       "black-850": "#151515",
       "black-800": "#1a1a1a",
       "black-750": "#171717",

@@ -10,16 +10,14 @@
   font-family: IranSansMedium;
   src: url(../assets/fonts/IRANSans-Medium-web.woff2);
 }
-
-html {
-  direction: rtl;
-  scroll-behavior: smooth;
-}
-
 :root {
   --font-iran-sans: "IranSans";
   --font-iran-sans-medium: "IranSansMedium";
 }
-h2 {
+* {
   font-family: var(--font-iran-sans);
+}
+html {
+  direction: rtl;
+  scroll-behavior: smooth;
 }

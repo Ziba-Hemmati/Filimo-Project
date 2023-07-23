@@ -3,8 +3,8 @@
     {
       "id": 1,
       "category": "animation",
-      "fa-name": "فیلم تام و جری ",
-      "en-name": "Tom and Jerry",
+      "faName": "فیلم تام و جری ",
+      "enName": "Tom and Jerry",
       "imdb": "5.2/10",
       "age": "مناسب برای بالای 12 سال ",
       "director": "تیم استوری",
@@ -46,8 +46,8 @@
     {
       "id": 2,
       "category": "animation",
-      "fa-name": " فیلم باب اسفنجی: اسفنج در حال فرار ",
-      "en-name": "The SpongeBob Movie: Sponge on the Run",
+      "faName": " فیلم باب اسفنجی: اسفنج در حال فرار ",
+      "enName": "The SpongeBob Movie: Sponge on the Run",
       "imdb": "5.9/10",
       "age": "مناسب برای بالای 6 سال ",
       "director": "تیم هیل",
@@ -62,7 +62,7 @@
       "about": "فیلم باب اسفنجی: اسفنج در حال فرار به کارگردانی تیم هیل در سال 2020 ساخته شده است. این فیلم محصول کشور آمریکا و در ژانر انیمیشن و ماجراجویی می‌باشد.",
       "link": "https://www.aparat.com/video/video/embed/videohash/c8eGA/vt/frame",
       "poster": "https://m.media-amazon.com/images/M/MV5BOTMyOTAyY2YtNTEyZS00NGEwLTg5YWMtOTBkNmJlYTM0YTc0XkEyXkFqcGdeQXVyMTA3MDk2NDg2._V1_.jpg",
-      "banner": "https://parentpreviews.com/images/made/legacy-pics/sponge-on-the-run_668_330_80_int_s_c1.jpg",
+      "banner": "https://api.time.com/wp-content/uploads/2021/03/uNamed-2.jpg",
       "comments": [
         {
           "data": "۱۳ مهر ۱۳۹۹",
@@ -89,8 +89,8 @@
     {
       "id": 3,
       "category": "animation",
-      "fa-name": "موآنا",
-      "en-name": "Moana",
+      "faName": "موآنا",
+      "enName": "Moana",
       "imdb": "7.6/10",
       "age": "مناسب برای بالای 12 سال ",
       "director": " ران کلمنتس - جان ماسکر",
@@ -132,8 +132,8 @@
     {
       "id": 4,
       "category": "animation",
-      "fa-name": "فیلم فروزن",
-      "en-name": "Frozen",
+      "faName": "فیلم فروزن",
+      "enName": "Frozen",
       "imdb": "7.4/10",
       "age": "مناسب برای بالای 6 سال ",
       "director": "کریس باک - جنیفرلی",
@@ -175,8 +175,8 @@
     {
       "id": 5,
       "category": "animation",
-      "fa-name": "فیلم شرک",
-      "en-name": "Shrek",
+      "faName": "فیلم شرک",
+      "enName": "Shrek",
       "imdb": "7.9/10",
       "age": "مناسب برای بالای 6 سال ",
       "director": "ویکی جنسون - اندرو آدامسون",
@@ -191,7 +191,7 @@
       "about": "فیلم شرک به کارگردانی ویکی جنسون و اندرو آدامسون در سال 2001 ساخته شده است. این فیلم محصول کشور آمریکا و در ژانر انیمیشن و ماجراجویی می‌باشد. .",
       "link": "https://www.aparat.com/video/video/embed/videohash/ZMktm/vt/frame",
       "poster": "https://m.media-amazon.com/images/M/MV5BOGZhM2FhNTItODAzNi00YjA0LWEyN2UtNjJlYWQzYzU1MDg5L2ltYWdlL2ltYWdlXkEyXkFqcGdeQXVyMTQxNzMzNDI@._V1_.jpg",
-      "banner": "https://static01.nyt.com/images/2010/05/21/movies/21shrekspan-1/21shrekspan-1-articleLarge.jpg",
+      "banner": "https://wilm.ir/wp-content/uploads/2021/06/Shrek-1.jpg",
       "comments": [
         {
           "data": "۱۳ مهر ۱۳۹۹",
@@ -218,8 +218,8 @@
     {
       "id": 6,
       "category": "adventure",
-      "fa-name": "فیلم بچه رئیس 2 : کسب و کار خانوادگی",
-      "en-name": "The Boss Baby: Family Business",
+      "faName": "فیلم بچه رئیس 2 : کسب و کار خانوادگی",
+      "enName": "The Boss Baby: Family Business",
       "imdb": "5.9/10",
       "age": "مناسب برای بالای 12 سال ",
       "director": " تام مک گراث",
@@ -261,8 +261,8 @@
     {
       "id": 7,
       "category": "adventure",
-      "fa-name": "فیلم زوتوپیا",
-      "en-name": "Zootopia",
+      "faName": "فیلم زوتوپیا",
+      "enName": "Zootopia",
       "imdb": "8/10",
       "age": "مناسب برای بالای 6 سال ",
       "director": "بایرون هوارد - ریچ مور",
@@ -304,8 +304,8 @@
     {
       "id": 8,
       "category": "adventure",
-      "fa-name": "فیلم لوکا",
-      "en-name": "Luca",
+      "faName": "فیلم لوکا",
+      "enName": "Luca",
       "imdb": "7.4/10",
       "age": "مناسب برای بالای 12 سال ",
       "director": "انریکو کاساروسا",
@@ -347,8 +347,8 @@
     {
       "id": 9,
       "category": "adventure",
-      "fa-name": "فیلم برادران سوپر ماریو",
-      "en-name": "The Super Mario Bros. Movie",
+      "faName": "فیلم برادران سوپر ماریو",
+      "enName": "The Super Mario Bros. Movie",
       "imdb": "7.1/10",
       "age": "مناسب برای بالای 6 سال ",
       "director": "آرون هورواث",
@@ -363,7 +363,7 @@
       "about": "فیلم برادران سوپر ماریو به کارگردانی آرون هورواث در سال 2023 ساخته شده است. این فیلم محصول کشور آمریکا و در ژانر انیمیشن و ماجراجویی می‌باشد. .",
       "link": "https://www.aparat.com/video/video/embed/videohash/czIPD/vt/frame",
       "poster": "https://posterspy.com/wp-content/uploads/2023/03/Mario-movie-poster.jpg",
-      "banner": "https://media.wired.com/photos/64371550e0070e81ad725800/master/w_2560%2Cc_limit/Super-Mario-Bros-Movie-Success-Is-Impossible-To-Replicate-Culture-2530_T2_00041.jpg",
+      "banner": "https://cdn.mos.cms.futurecdn.net/RhtHtULKVdQTqdUrVFFDhg-1200-80.jpghttps://cdn.mos.cms.futurecdn.net/RhtHtULKVdQTqdUrVFFDhg-1200-80.jpg",
       "comments": [
         {
           "data": "۱۳ مهر ۱۳۹۹",
@@ -390,8 +390,8 @@
     {
       "id": 10,
       "category": "adventure",
-      "fa-name": "فیلم هتل ترانسیلوانیا 3 : تعطیلات تابستانی",
-      "en-name": "Hotel Transylvania 3 : Summer Vacation",
+      "faName": "فیلم هتل ترانسیلوانیا 3 : تعطیلات تابستانی",
+      "enName": "Hotel Transylvania 3 : Summer Vacation",
       "imdb": "6.3/10",
       "age": "مناسب برای بالای 6 سال ",
       "director": "گندی تارتاکوفسکی",
@@ -433,8 +433,8 @@
     {
       "id": 11,
       "category": "comedy",
-      "fa-name": " فیلم تیم مارکو",
-      "en-name": "Team Marco",
+      "faName": " فیلم تیم مارکو",
+      "enName": "Team Marco",
       "imdb": "6.3/10",
       "age": "مناسب برای بالای 12 سال ",
       "director": "خولیو وینسنت گیمباتو",
@@ -476,8 +476,8 @@
     {
       "id": 12,
       "category": "comedy",
-      "fa-name": "فیلم بابت این شیطان متاسفم",
-      "en-name": "Sorry About the Demon",
+      "faName": "فیلم بابت این شیطان متاسفم",
+      "enName": "Sorry About the Demon",
       "imdb": "5.9/10",
       "age": "مناسب برای بالای 18 سال ",
       "director": "امیلی هاگینز",
@@ -492,7 +492,7 @@
       "about": "فیلم بابت این شیطان متاسفم به کارگردانی امیلی هاگینز در سال 2022 ساخته شده است. این فیلم محصول کشور آمریکا و در ژانر کمدی و وحشت می‌باشد. در این فیلم جان مایکل سیمپسون، جف مک کویتی، اولیویا دوکاین، دیو پنیوک و سارا کلیولند به هنرمندی پرداخته‌اند.",
       "link": "https://www.aparat.com/video/video/embed/videohash/Azxdf/vt/frame",
       "poster": "https://www.heavenofhorror.com/wp-content/uploads/2023/01/sorry-about-the-demon-shudder-1200x720.jpg",
-      "banner": "https://www.nightmarishconjurings.com/wp-content/uploads/2023/01/sorry-about-the-demon.jpg",
+      "banner": "https://d32qys9a6wm9no.cloudfront.net/images/movies/backdrop/9c/f58227b39ea0f7ebe5a13fb0ee95b05e_706x397.jpg?t=1673339339",
       "comments": [
         {
           "data": "۱۳ مهر ۱۳۹۹",
@@ -519,8 +519,8 @@
     {
       "id": 13,
       "category": "comedy",
-      "fa-name": "فیلم غریبه من",
-      "en-name": "Mon inconnue",
+      "faName": "فیلم غریبه من",
+      "enName": "Mon inconnue",
       "imdb": "6.9/10",
       "age": "مناسب برای بالای 18 سال ",
       "director": "هوگو گلین",
@@ -562,8 +562,8 @@
     {
       "id": 14,
       "category": "comedy",
-      "fa-name": "فیلم پنگوئن های آقای پاپر ",
-      "en-name": "Mr. Popper's Penguins",
+      "faName": "فیلم پنگوئن های آقای پاپر ",
+      "enName": "Mr. Popper's Penguins",
       "imdb": "6/10",
       "age": "مناسب برای بالای 18 سال ",
       "director": "مارک واترز",
@@ -605,8 +605,8 @@
     {
       "id": 15,
       "category": "comedy",
-      "fa-name": " فیلم اختانوردها در غار",
-      "en-name": "Octonauts and the Caves of Sac Actun",
+      "faName": " فیلم اختانوردها در غار",
+      "enName": "Octonauts and the Caves of Sac Actun",
       "imdb": "6.2/10",
       "age": "مناسب برای بالای 6 سال ",
       "director": "بِلیر سیمونز - مایکل مورفی",
@@ -648,8 +648,8 @@
     {
       "id": 16,
       "category": "action",
-      "fa-name": "فیلم آکوامن",
-      "en-name": "َAquaman",
+      "faName": "فیلم آکوامن",
+      "enName": "َAquaman",
       "imdb": "6.8/10",
       "age": "مناسب برای بالای 12 سال ",
       "director": "جیمز وان ",
@@ -691,8 +691,8 @@
     {
       "id": 17,
       "category": "action",
-      "fa-name": "فیلم لوسی",
-      "en-name": "Lucy",
+      "faName": "فیلم لوسی",
+      "enName": "Lucy",
       "imdb": "6.4/10",
       "age": "مناسب برای بالای 18 سال ",
       "director": "بایرون هوارد - ریچ مور",
@@ -734,8 +734,8 @@
     {
       "id": 18,
       "category": "action",
-      "fa-name": "فیلم جان ویک 1",
-      "en-name": "John Wick",
+      "faName": "فیلم جان ویک 1",
+      "enName": "John Wick",
       "imdb": "7.4/10",
       "age": "مناسب برای بالای 18 سال ",
       "director": "چاد استاهلسکی - دیوید لیچ",
@@ -777,8 +777,8 @@
     {
       "id": 19,
       "category": "action",
-      "fa-name": "فیلم ترنسفورمرز: ظهور هیولاها",
-      "en-name": "Transformers: Rise of the Beasts",
+      "faName": "فیلم ترنسفورمرز: ظهور هیولاها",
+      "enName": "Transformers: Rise of the Beasts",
       "imdb": "6.2/10",
       "age": "مناسب برای بالای 6 سال ",
       "director": "استیون کیپل جونیور",
@@ -820,8 +820,8 @@
     {
       "id": 20,
       "category": "action",
-      "fa-name": " فیلم استخراج 2",
-      "en-name": "Extraction 2",
+      "faName": " فیلم استخراج 2",
+      "enName": "Extraction 2",
       "imdb": "7.1/10",
       "age": "مناسب برای بالای 18 سال ",
       "director": " سام هارگریو",
@@ -863,8 +863,8 @@
     {
       "id": 21,
       "category": "drum",
-      "fa-name": "فیلم زنان کوچک",
-      "en-name": "Little Women",
+      "faName": "فیلم زنان کوچک",
+      "enName": "Little Women",
       "imdb": "7.8/10",
       "age": "مناسب برای بالای 12 سال ",
       "director": "گرتا گرویگ",
@@ -906,8 +906,8 @@
     {
       "id": 22,
       "category": "drum",
-      "fa-name": "فیلم تسلا",
-      "en-name": "Tesla",
+      "faName": "فیلم تسلا",
+      "enName": "Tesla",
       "imdb": "5.1/10",
       "age": "مناسب برای بالای 15 سال ",
       "director": "مایکل المریدا",
@@ -949,8 +949,8 @@
     {
       "id": 23,
       "category": "drum",
-      "fa-name": "فیلم دایره",
-      "en-name": "The Circle",
+      "faName": "فیلم دایره",
+      "enName": "The Circle",
       "imdb": "5.3/10",
       "age": "مناسب برای بالای 18 سال ",
       "director": "جیمز پانسولت",
@@ -992,8 +992,8 @@
     {
       "id": 24,
       "category": "drum",
-      "fa-name": "فیلم بخش ریتم",
-      "en-name": "The Rhythm Section",
+      "faName": "فیلم بخش ریتم",
+      "enName": "The Rhythm Section",
       "imdb": "5.4/10",
       "age": "مناسب برای بالای 18 سال ",
       "director": "رید مورانو",
@@ -1035,8 +1035,8 @@
     {
       "id": 25,
       "category": "drum",
-      "fa-name": "فیلم به هوای دزدیدن اسب ها",
-      "en-name": "Out Stealing Horses",
+      "faName": "فیلم به هوای دزدیدن اسب ها",
+      "enName": "Out Stealing Horses",
       "imdb": "6.5/10",
       "age": "مناسب برای بالای 15 سال ",
       "director": "هانس پیتر مولند",
