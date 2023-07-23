@@ -20,4 +20,5 @@
 html {
   direction: rtl;
   scroll-behavior: smooth;
+  @apply bg-black-850;
 }
