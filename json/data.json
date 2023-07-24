@@ -7,12 +7,11 @@
       "enName": "Tom and Jerry",
       "rate": 5.2,
       "age": "12",
-      "director": "تیم استوری",
       "time": "یک ساعت و 39 دقیقه",
       "country": "انگلیس",
       "year": 2021,
-      "dub": true,
-      "sub": true,
+      "isDub": true,
+      "isSub": true,
       "quality": "HD",
       "genre": "انیمیشن",
       "story": "«تام و جری»، لایو اکشنی در ژانر ماجراجویی-کمدی و محصول سال 2021 کشورهای انگلیس، فرانسه، آلمان و آمریکاست. این فیلم که براساس انیمیشن کلاسیک و خاطره ساز «تام و جری» ساخته شده؛ نحوه آشنایی و شکل گیری رابطه رقابت-رفاقت موش و گربه ای بازیگوش و باهوش به نام های «تام» و «جری» را به تصویر می کشد.",
@@ -20,14 +19,30 @@
       "link": "https://www.aparat.com/video/video/embed/videohash/O0wYk/vt/frame",
       "poster": "https://m.media-amazon.com/images/M/MV5BYzE3ODhiNzAtOWY4MS00NTdiLThmNDctNDM4NjRiNGFmYjI1XkEyXkFqcGdeQXVyMTI2ODM1ODUw._V1_.jpg",
       "banner": "https://s3.amazonaws.com/static.rogerebert.com/uploads/review/primary_image/reviews/tom-and-jerry-movie-review-2021/tom-and-jerry-movie-review-2021.jpeg",
-      "actors": ["کلویی مورتز", "مایکل پنیا", " راب دلینی"],
+      "actors": [
+        {
+          "id": 1,
+          "name": "کلویی مورتز",
+          "image": "https://static.cdn.asset.filimo.com/flmt/rvw_cast_3559_1-s.jpg"
+        },
+        {
+          "id": 2,
+          "name": "مایکل پنیا",
+          "image": "https://static.cdn.asset.filimo.com/flmt/rvw_cast_201_1-s.jpg"
+        },
+        {
+          "id": 3,
+          "name": "راب دلینی",
+          "image": "https://static.cdn.asset.filimo.com/flmt/rvw_cast_43358_189-s.jpg"
+        }
+      ],
       "factors": [
         {
           "director": "تیم استوریو ",
           "writer": " ویلیام هانا",
           "producer": " استیو هاردینگ",
           "cameraMan": " آلن استوارت",
-          " musician": " کریستوفر لنرتز"
+          "musician": " کریستوفر لنرتز"
         }
       ],
       "album": [
@@ -65,12 +80,11 @@
       "enName": "The SpongeBob Movie: Sponge on the Run",
       "rate": 5.9,
       "age": "6",
-      "director": "تیم هیل",
       "time": "یک ساعت و 32 دقیقه",
       "country": "آمریکا",
       "year": 2020,
-      "dub": true,
-      "sub": true,
+      "isDub": true,
+      "isSub": true,
       "quality": "HD",
       "genre": "انیمیشن",
       "story": "«انیمیشن «باب اسفنجی: اسفنج در حال فرار» انیمیشنی کمدی بر اساس سریال انیمیشنی «باب اسفنجی شلوار مکعبی» و سومین فیلم از مجموعه فیلم های باب اسفنجی محسوب می شود که توسط نویسنده سابق سریال باب اسفنجی، «تیم هیل» کارگردانی شده است. در این انیمیشن، راز آشنایی باب اسفنجی با گری، پاتریک و اختاپوس فاش می شود. داستان از جایی شروع می شود که گری توسط پوزایدون دزدیده می شود و باب اسفنجی و پاتریک برای نجات او به شهر گمشده آتلانتیس سفر می کنند و ...",
@@ -118,12 +132,11 @@
       "enName": "Moana",
       "rate": 7.6,
       "age": "12",
-      "director": " ران کلمنتس - جان ماسکر",
       "time": "یک ساعت و 47 دقیقه",
       "country": "آمریکا",
       "year": 2016,
-      "dub": true,
-      "sub": false,
+      "isDub": true,
+      "isSub": false,
       "quality": "HD",
       "genre": "انیمیشن",
       "story": "موانا از استعدادهای دریانوردی خود استفاده میکند تا به یک جزیره ی افسانه ای برود و قهرمان او، مائویی نیز در این ماجراجویی او را همراهی میکند. ",
@@ -132,11 +145,31 @@
       "poster": "https://m.media-amazon.com/images/I/61LvklojTFL._AC_UF894,1000_QL80_.jpg",
       "banner": "https://www.cnet.com/a/img/resize/53d20634fa25a0dc9de0bc2ea22c41992f1f1173/hub/2016/09/06/9d4d2ee9-22f3-4e84-9585-4da624aedb79/toddlerwatermoana2.jpg?auto=webp&width=1200",
       "actors": [
-        "دوئین جانسون راک",
-        " جامین کلمنت",
-        " آلن تودیک",
-        " نیکول شرزینگر",
-        " تمورا موریسون"
+        {
+          "id": 1,
+          "name": "دوئین جانسون راک",
+          "image": "https://static.cdn.asset.filimo.com/flmt/rvw_cast_2218_406-s.jpg"
+        },
+        {
+          "id": 2,
+          "name": " جامین کلمنت",
+          "image": "https://static.cdn.asset.filimo.com/flmt/rvw_cast_7323_1-s.jpg"
+        },
+        {
+          "id": 3,
+          "name": " آلن تودیک",
+          "image": "https://static.cdn.asset.filimo.com/flmt/rvw_cast_6095_1-s.jpg"
+        },
+        {
+          "id": 4,
+          "name": " نیکول شرزینگر",
+          "image": "https://static.cdn.asset.filimo.com/flmt/rvw_cast_14793_1-s.jpg"
+        },
+        {
+          "id": 5,
+          "name": " تمورا موریسون",
+          "image": "https://static.cdn.asset.filimo.com/flmt/rvw_cast_14794_1-s.jpg"
+        }
       ],
       "factors": [
         {
@@ -181,12 +214,11 @@
       "enName": "Frozen",
       "rate": 7.4,
       "age": "6",
-      "director": "کریس باک - جنیفرلی",
       "time": "یک ساعت و 11 دقیقه",
       "country": "آمریکا",
       "year": 2013,
-      "dub": true,
-      "sub": false,
+      "isDub": true,
+      "isSub": false,
       "quality": "HD",
       "genre": "انیمیشن",
       "story": "فیلم با تعدادی یخ شکن (ice harvester) که درحال جمع آوری یخ از روی یک دریاچه منجمد در نقاط سردسیر نروژ در آرندال هستند آغاز می شود. در میان آنان یک پسر بچّه ۸ ساله که «کریستوف» (Kristoff) نام دارد به همراه گوزن شمالی کم سّن خود «اسون» (Sven)، سعی در جمع آوری یخ دارد و تا آنجایی که می تواند برای این کار تلاش می کند. یخ شکنان پس از جمع آوری یخ کافی بسوی شهر حکومتی «ارندل» (Arendelle) رهسپار می شوند ,...",
@@ -194,7 +226,28 @@
       "link": "https://www.aparat.com/video/video/embed/videohash/T79Ao/vt/frame",
       "poster": "https://lumiere-a.akamaihd.net/v1/images/p_frozen_18373_3131259c.jpeg",
       "banner": "https://m.media-amazon.com/images/M/MV5BMTc5ODQzOTk0NV5BMl5BanBnXkFtZTgwODcwMDk4NTE@._V1_.jpg",
-      "actors": ["کریستن بل", "ایدینا منزل", " جانات گروف", " جش گد"],
+      "actors": [
+        {
+          "id": 1,
+          "name": "کریستن بل",
+          "image": "https://static.cdn.asset.filimo.com/flmt/rvw_cast_5644_1-s.jpg"
+        },
+        {
+          "id": 2,
+          "name": "ایدینا منزل",
+          "image": "https://static.cdn.asset.filimo.com/flmt/rvw_cast_8654_1-s.jpg"
+        },
+        {
+          "id": 3,
+          "name": "جانات گروف",
+          "image": "https://static.cdn.asset.filimo.com/flmt/rvw_cast_8215_1-s.jpg"
+        },
+        {
+          "id": 4,
+          "name": "جش گد",
+          "image": "https://static.cdn.asset.filimo.com/flmt/rvw_cast_8655_1-s.jpg"
+        }
+      ],
       "factors": [
         {
           "director": " کریس باک ",
@@ -237,12 +290,11 @@
       "enName": "Shrek",
       "rate": 7.9,
       "age": "6",
-      "director": "ویکی جنسون - اندرو آدامسون",
       "time": "یک ساعت و 3 دقیقه",
       "country": "آمریکا",
       "year": 2001,
-      "dub": true,
-      "sub": false,
+      "isDub": true,
+      "isSub": false,
       "quality": "HD",
       "genre": "انیمیشن",
       "story": "شرک غولی است که در یک جنگل سرسبز در آرامش و سکوت زندگی می کند، تا اینکه مأموران پادشاه به منطقه ای نزدیک او می آیند و از مردم چیزهای عجیبشان را می خواهند، پیرزنی الاغش را می دهد و ادعا می کند که الاغش قادر به حرف زدن است.تا اینکه...",
@@ -293,12 +345,11 @@
       "enName": "The Boss Baby: Family Business",
       "rate": 5.9,
       "age": "12",
-      "director": " تام مک گراث",
       "time": "یک ساعت و 46 دقیقه",
       "country": "انگلیس",
       "year": 2021,
-      "dub": true,
-      "sub": true,
+      "isDub": true,
+      "isSub": true,
       "quality": "HD",
       "genre": "ماجرامویی",
       "story": "کارتون بچه رئیس : کسب و کار خانوادگی (The Boss Baby : Family Business) که با نام های بچه رئیس 2 و بچه رییس 2 نیز شناخته می شود در ژانر کمدی - ماجراجویی - خانوادگی محصول کشور آمریکاست که در سال 2021 میلادی منتشر شد.",
@@ -350,12 +401,11 @@
       "enName": "Zootopia",
       "rate": 8,
       "age": "6",
-      "director": "بایرون هوارد - ریچ مور",
       "time": "یک ساعت و 47 دقیقه",
       "country": "آمریکا",
       "year": 2016,
-      "dub": true,
-      "sub": false,
+      "isDub": true,
+      "isSub": false,
       "quality": "HD",
       "genre": "انیمیشن",
       "story": "در شهری که کاملاً تحت کنترل حیوانات است، یک افسر پلیس خرگوش و یک روباه کلاهبردار باید با همکاری یکدیگر پرده از یک پرونده فساد بردارند.",
@@ -377,7 +427,6 @@
         "https://static.cdn.asset.aparat.com/lp/16706448-4109-m.jpg",
         "https://static.cdn.asset.aparat.com/lp/16706450-4875-m.jpg"
       ],
-
       "comments": [
         {
           "date": "۱۳ مهر ۱۳۹۹",
@@ -408,12 +457,11 @@
       "enName": "Luca",
       "rate": 7.4,
       "age": "12",
-      "director": "انریکو کاساروسا",
       "time": "یک ساعت و 34 دقیقه",
       "country": "آمریکا",
       "year": 2021,
-      "dub": true,
-      "sub": true,
+      "isDub": true,
+      "isSub": true,
       "quality": "HD",
       "genre": "ماجرامویی",
       "story": "کارتون لوکا (Luca) در ژانر فانتزی - کمدی - ماجراجویی محصول کشور آمریکاست که در سال 2021 میلادی منتشر شد. انریکه کاساروسا (Enrico Casarosa) کارگردانی این انیمیشن را بر عهده داشته و برای ساخت این انیمیشن سینمایی از دوران کودکی خودش در شهر جنوا (ششمین شهر بزرگ کشور ایتالیا) الهام گرفته است.",
@@ -422,10 +470,26 @@
       "poster": "https://m.media-amazon.com/images/M/MV5BZTQyNTU0MDktYTFkYi00ZjNhLWE2ODctMzBkM2U1ZTk3YTMzXkEyXkFqcGdeQXVyNTI4MzE4MDU@._V1_.jpg",
       "banner": "https://www.animationmagazine.net/wordpress/wp-content/uploads/Luca-1000x600-2.jpg",
       "actors": [
-        " جیکوب ترمبلی",
-        " مایا رودولف",
-        " جیم گافیگان ",
-        " اما برمن "
+        {
+          "id": 1,
+          "name": " جیکوب ترمبلی",
+          "image": "https://static.cdn.asset.filimo.com/flmt/rvw_cast_1268_1-s.jpg"
+        },
+        {
+          "id": 2,
+          "name": " مایا رودولف",
+          "image": "https://static.cdn.asset.filimo.com/flmt/rvw_cast_1542_1-s.jpg"
+        },
+        {
+          "id": 3,
+          "name": " جیم گافیگان ",
+          "image": "https://static.cdn.asset.filimo.com/flmt/rvw_cast_13658_1-s.jpg"
+        },
+        {
+          "id": 4,
+          "name": " اما برمن ",
+          "image": "https://static.cdn.asset.filimo.com/flmt/rvw_cast_46271_688-s.jpg"
+        }
       ],
       "factors": [
         {
@@ -470,12 +534,11 @@
       "enName": "The Super Mario Bros. Movie",
       "rate": 7.1,
       "age": "6",
-      "director": "آرون هورواث",
       "time": "یک ساعت و 28 دقیقه",
       "country": "آمریکا",
       "year": 2023,
-      "dub": true,
-      "sub": true,
+      "isDub": true,
+      "isSub": true,
       "quality": "HD",
       "genre": "ماجرامویی",
       "story": "«برادران سوپرماریو»، محصول یونیورسال پیکچرز است. لوله کشی به نام ماریو در هزارتویی زیرزمینی به همراه برادرش لوییجی پیش می رود و سعی دارد شاهزاده خانمی زندانی را نجات دهد. این فیلم، اقتباسی از بازی معروف سوپرماریو است.",
@@ -526,12 +589,11 @@
       "enName": "Hotel Transylvania 3 : Summer Vacation",
       "rate": 6.3,
       "age": "6",
-      "director": "گندی تارتاکوفسکی",
       "time": "یک ساعت و 34 دقیقه",
       "country": "آمریکا",
       "year": 2018,
-      "dub": true,
-      "sub": false,
+      "isDub": true,
+      "isSub": false,
       "quality": "HD",
       "genre": "ماجرامویی",
       "story": "دراکولا،میویس،جانی و دوستان در حال سفر با قطار به مراسم عروسی یکی از دوستانشان هستند که ون هلسینگ آنها را پیدا می کند.بعد از مراسم عروسی جانی پیشنهاد می دهد به یک سفر بروند و...",
@@ -539,7 +601,23 @@
       "link": "https://www.aparat.com/video/video/embed/videohash/bGraw/vt/frame",
       "poster": "https://m.media-amazon.com/images/M/MV5BNjA1MzU5MTY3OF5BMl5BanBnXkFtZTgwNTU5MDA3NTM@._V1_.jpg",
       "banner": "https://vfxvoice.com/wp-content/uploads/2018/08/HotelTransylvania3_Kraken1.jpg",
-      "actprs": ["آدام سندلر", " سلنا گومز", "گوین جیمز ", " کوین جیمز"],
+      "actors": [
+        {
+          "id": 1,
+          "name": "آدام سندلر",
+          "image": "https://static.cdn.asset.filimo.com/flmt/rvw_cast_5870_365-s.jpg"
+        },
+        {
+          "id": 2,
+          "name": " سلنا گومز",
+          "image": "https://static.cdn.asset.filimo.com/flmt/rvw_cast_3241_1-s.jpg"
+        },
+        {
+          "id": 3,
+          "name": "کوین جیمز ",
+          "image": "https://static.cdn.asset.filimo.com/flmt/rvw_cast_7266_1-s.jpg"
+        }
+      ],
       "factors": [
         {
           "director": "گندی تارتاکوفسکی",
@@ -583,12 +661,11 @@
       "enName": "Team Marco",
       "rate": 6.3,
       "age": "12",
-      "director": "خولیو وینسنت گیمباتو",
       "time": "یک ساعت و 29 دقیقه",
       "country": "آمریکا",
       "year": 2019,
-      "dub": false,
-      "sub": true,
+      "isDub": false,
+      "isSub": true,
       "quality": "HD",
       "genre": "کمدی",
       "story": "«تیم مارکو»، فیلمی در ژانر کمدی-خانوادگی و محصول سال 2019 سینمای کشور آمریکاست. این فیلم برنده 2 جایزه «بهترین فیلم خانوادگی» در 2 جشنواره بین الملی شده است. داستان این فیلم درمورد یک پسر 12 ساله به اسم «مارکو» است که وابستگی زیادی به آیپدش دارد و به سختی خانه و اتاقش را ترک می کند. تا اینکه پس از مرگ مادربزرگش، پدربزرگش برای زندگی به خانه آن ها می آید و همین مسأله زندگی مارکو را دستخوش تغییرات بزرگی می کند.",
@@ -596,7 +673,23 @@
       "link": "https://www.aparat.com/video/video/embed/videohash/iU6eq/vt/frame",
       "poster": "https://m.media-amazon.com/images/M/MV5BZDZkZDExMjMtNDNjMC00NDQzLTlkZTctN2FkNmI5MjY5ZDc2XkEyXkFqcGdeQXVyMTQ0NjcyNzE@._V1_.jpg",
       "banner": "https://static01.nyt.com/images/2020/11/19/arts/19teammarco-art/merlin_180027222_a1c61b2d-11c8-4515-a214-bd8d481328f2-articleLarge.jpg?quality=75&auto=webp&disable=upscale",
-      "actors": ["اوون واکارو", " گرگ ریکارد ", "جیکوب لاوال"],
+      "actors": [
+        {
+          "id": 1,
+          "name": "اوون واکارو",
+          "image": "https://static.cdn.asset.filimo.com/flmt/rvw_cast_41756_161-s.jpg"
+        },
+        {
+          "id": 2,
+          "name": " گرگ ریکارد ",
+          "image": ""
+        },
+        {
+          "id": 3,
+          "name": "جیکوب لاوال",
+          "image": "https://static.cdn.asset.filimo.com/flmt/rvw_cast_41760_920-s.jpg"
+        }
+      ],
       "factors": [
         {
           "director": "خولیو وینسنت گیمباتو",
@@ -636,12 +729,11 @@
       "enName": "Sorry About the Demon",
       "rate": 5.9,
       "age": "18",
-      "director": "امیلی هاگینز",
       "time": "یک ساعت و 40 دقیقه",
       "country": "آمریکا",
       "year": 2022,
-      "dub": false,
-      "sub": true,
+      "isDub": false,
+      "isSub": true,
       "quality": "HD",
       "genre": "کمدی",
       "story": "مرد جوانی که با شکست عشقی خود دست و پنجه نرم می کند، متوجه می شود که خانه جدیدش پر از ارواح ناآرام است.",
@@ -649,7 +741,23 @@
       "link": "https://www.aparat.com/video/video/embed/videohash/Azxdf/vt/frame",
       "poster": "https://www.heavenofhorror.com/wp-content/uploads/2023/01/sorry-about-the-demon-shudder-1200x720.jpg",
       "banner": "https://d32qys9a6wm9no.cloudfront.net/images/movies/backdrop/9c/f58227b39ea0f7ebe5a13fb0ee95b05e_706x397.jpg?t=1673339339",
-      "actors": ["جان مایکل ", " جف مک کویتی", " دیو پنیوک"],
+      "actors": [
+        {
+          "id": 1,
+          "name": "جان مایکل ",
+          "image": ""
+        },
+        {
+          "id": 2,
+          "name": " جف مک کویتی",
+          "image": ""
+        },
+        {
+          "id": 3,
+          "name": " دیو پنیوک",
+          "image": ""
+        }
+      ],
       "factors": [
         {
           "director": "امیلی هاگینز",
@@ -658,7 +766,6 @@
         }
       ],
       "album": [],
-
       "comments": [
         {
           "date": "۱۳ مهر ۱۳۹۹",
@@ -689,12 +796,11 @@
       "enName": "Mon inconnue",
       "rate": 6.9,
       "age": "18",
-      "director": "هوگو گلین",
       "time": "یک ساعت و 45 دقیقه",
       "country": "فرانسه",
       "year": 2019,
-      "dub": false,
-      "sub": true,
+      "isDub": false,
+      "isSub": true,
       "quality": "HD",
       "genre": "کمدی",
       "story": "«غریبه من»، فیلمی در ژانر کمدی-خانوادگی و فانتزی و محصول سال 2019 سینمای کشورهای فرانسه و بلژیک است. داستان این فیلم حول زندگی مرد جوانی می گردد که یک روز به شکلی تصادفی در یک جهان موازی از خواب بیدار می شود. ",
@@ -702,7 +808,23 @@
       "link": "https://www.aparat.com/video/video/embed/videohash/iy3LV/vt/frame",
       "poster": "https://www.moviegoers.me/images/movie_images/mon-inconnue-70x1002019-07-23-02-11-38.jpg",
       "banner": "https://thumb.canalplus.pro/http/unsafe/1440x810/filters:quality(80)/img-hapi.canalplus.pro:80/ServiceImage/ImageID/98782716",
-      "actors": ["بنجامین لاورنه", "کامیل للوش", "ادیت اسکوب"],
+      "actors": [
+        {
+          "id": 1,
+          "name": "بنجامین لاورنه",
+          "image": "https://static.cdn.asset.filimo.com/flmt/rvw_cast_44595_413-s.jpg"
+        },
+        {
+          "id": 2,
+          "name": "کامیل للوش",
+          "image": "https://static.cdn.asset.filimo.com/flmt/rvw_cast_44596_267-s.jpg"
+        },
+        {
+          "id": 3,
+          "name": "ادیت اسکوب",
+          "image": "https://static.cdn.asset.filimo.com/flmt/rvw_cast_44597_935-s.jpg"
+        }
+      ],
       "factors": [
         {
           "director": "هوگو گلین",
@@ -712,7 +834,6 @@
         }
       ],
       "album": [],
-
       "comments": [
         {
           "date": "۱۳ مهر ۱۳۹۹",
@@ -743,12 +864,11 @@
       "enName": "Mr. Popper's Penguins",
       "rate": 6,
       "age": "18",
-      "director": "مارک واترز",
       "time": "یک ساعت و 32 دقیقه",
       "country": "آمریکا",
       "year": 2011,
-      "dub": false,
-      "sub": false,
+      "isDub": false,
+      "isSub": false,
       "quality": "HD",
       "genre": "کمدی",
       "story": "مردی که بیشتر وقتش را در محل کارش می گذراند، شش پنگوئن از پدرش به ارث می برد و با تبدیل کردن آپارتمانش به محلی مناسب برای زندگی آن ها ارتباطش با فرزندانش بهتر می شود.",
@@ -756,7 +876,23 @@
       "link": "https://www.aparat.com/video/video/embed/videohash/YfhXa/vt/frame",
       "poster": "https://m.media-amazon.com/images/M/MV5BMTQ1ZjJjMDgtMDZmOC00Y2M4LWIzNmQtMWI1ZDNiYmMzNDUyXkEyXkFqcGdeQXVyODIyOTEyMzY@._V1_.jpg",
       "banner": "https://lumiere-a.akamaihd.net/v1/images/image_895042a0.jpeg?region=0,0,1800,776&width=960",
-      "actors": ["جیم کری ", "مادلین کارول", " کارلا گوجینو"],
+      "actors": [
+        {
+          "id": 1,
+          "name": "جیم کری ",
+          "image": "https://static.cdn.asset.filimo.com/flmt/rvw_cast_1483_747-s.jpg"
+        },
+        {
+          "id": 2,
+          "name": "مادلین کارول",
+          "image": "https://static.cdn.asset.filimo.com/flmt/rvw_cast_23514_1-s.jpg"
+        },
+        {
+          "id": 3,
+          "name": " کارلا گوجینو",
+          "image": "https://static.cdn.asset.filimo.com/flmt/rvw_cast_5278_1-s.jpg"
+        }
+      ],
       "factors": [
         {
           "director": "مارک واترز",
@@ -770,7 +906,6 @@
         "https://www.filimo.com/public/public/user_data/photo/17173/17172086-e3f45a9e6e3bb776c03523c867f0fe28-a.jpg",
         "https://www.filimo.com/public/public/user_data/photo/17173/17172087-b271ac68e25e0915688046dc0fc2ec03-a.jpg"
       ],
-
       "comments": [
         {
           "date": "۱۳ مهر ۱۳۹۹",
@@ -801,12 +936,11 @@
       "enName": "Octonauts and the Caves of Sac Actun",
       "rate": 6.2,
       "age": "6",
-      "director": "بِلیر سیمونز - مایکل مورفی",
       "time": "یک ساعت و 12 دقیقه",
       "country": "انگلیس",
       "year": 2020,
-      "dub": false,
-      "sub": true,
+      "isDub": false,
+      "isSub": true,
       "quality": "HD",
       "genre": "کمدی",
       "story": "اختانوردها به یک ماجراجویی زیر دریا می روند و از غارهای صعب العبور گذر می کنند تا به دوست اختاپوس خود کمک کنند به خانه اش در دریای کارائیب برگردد.",
@@ -852,12 +986,11 @@
       "enName": "َAquaman",
       "rate": 6.8,
       "age": "12",
-      "director": "جیمز وان ",
       "time": "2ساعت و 19 دقیقه ",
       "country": "استرالیا",
       "year": 2018,
-      "dub": true,
-      "sub": true,
+      "isDub": true,
+      "isSub": true,
       "quality": "HD",
       "genre": "اکشن",
       "story": " در فیلم آکوامن هنگامی که ارتور میفهمد که اون وارث امپراطوری زیر اب است او باید حرکت بزرگی را انجام دهد.",
@@ -865,7 +998,23 @@
       "link": "https://www.aparat.com/video/video/embed/videohash/T6Oyo/vt/frame",
       "poster": "https://media.comicbook.com/2018/07/aqamn-vert-tsr-dom-2764x4096-r01-master-1122913.jpeg",
       "banner": "https://m.media-amazon.com/images/M/MV5BNDE0ZmEzZWYtNzlkYi00ZWJiLWI5YzktYTQ2MjMxMGQxM2Q3XkEyXkFqcGdeQW1yb3NzZXI@._V1_.jpg",
-      "actors": ["ویلم دفو", "امبر هرد", "جیسون موموآ"],
+      "actors": [
+        {
+          "id": 1,
+          "name": "ویلم دفو",
+          "image": "https://static.cdn.asset.filimo.com/flmt/rvw_cast_655_1-s.jpg"
+        },
+        {
+          "id": 2,
+          "name": "امبر هرد",
+          "image": "https://static.cdn.asset.filimo.com/flmt/rvw_cast_10602_1-s.jpg"
+        },
+        {
+          "id": 3,
+          "name": "جیسون موموآ",
+          "image": "https://static.cdn.asset.filimo.com/flmt/rvw_cast_7393_892-s.jpg"
+        }
+      ],
       "factors": [
         {
           "director": "جیمز وان",
@@ -909,12 +1058,11 @@
       "enName": "Lucy",
       "rate": 6.4,
       "age": "18",
-      "director": "بایرون هوارد - ریچ مور",
       "time": "یک ساعت و 26 دقیقه",
       "country": "فرانسه",
       "year": 2014,
-      "dub": false,
-      "sub": true,
+      "isDub": false,
+      "isSub": true,
       "quality": "HD",
       "genre": "اکشن",
       "story": "لوسی داستان زنی با قابلیت های بسیار بالاست که بر اثر مصرف ماده ای مخدر و جدید که به دست عموم نرسیده است ویژگی های خاص پیدا می کند که در هیچ انسانی نیست …",
@@ -922,7 +1070,23 @@
       "link": "https://www.aparat.com/video/video/embed/videohash/KVkz2/vt/frame",
       "poster": "https://www.originalfilmart.com/cdn/shop/products/Lucy_2014_original_film_art.jpg?v=1636660403",
       "banner": "https://media.cnn.com/api/v1/images/stellar/prod/230613163034-02-lucy-fossil-bipedalism-sculpture-australopithecus-afarensis.jpg?c=16x9&q=h_720,w_1280,c_fill",
-      "actors": ["عمرو واکد", "مورگان فریمن", "اسکارلت جوهانسون"],
+      "actors": [
+        {
+          "id": 1,
+          "name": "عمرو واکد",
+          "image": "https://static.cdn.asset.filimo.com/flmt/rvw_cast_11117_1-s.jpg"
+        },
+        {
+          "id": 2,
+          "name": "مورگان فریمن",
+          "image": "https://static.cdn.asset.filimo.com/flmt/rvw_cast_2268_1-s.jpg"
+        },
+        {
+          "id": 3,
+          "name": "اسکارلت جوهانسون",
+          "image": "https://static.cdn.asset.filimo.com/flmt/rvw_cast_357_498-s.jpg"
+        }
+      ],
       "factors": [
         {
           "director": "لوک بسون",
@@ -966,12 +1130,11 @@
       "enName": "John Wick",
       "rate": 7.4,
       "age": "18",
-      "director": "چاد استاهلسکی - دیوید لیچ",
       "time": "یک ساعت و 33 دقیقه",
       "country": "آمریکا",
       "year": 2014,
-      "dub": false,
-      "sub": true,
+      "isDub": false,
+      "isSub": true,
       "quality": "HD",
       "genre": "اکشن",
       "story": "یک آدم کش حرفه ای به نام جان ویک که پس از مرگ همسرش از شغل آدم کشی بیرون آمده است ، پس از حمله به منزلش و سرقت ماشین و کشتن سگ خانگیش ، او دوباره دست به اسلحه می برد تا برای انتقامی خونین بپاخیزد. ",
@@ -979,7 +1142,23 @@
       "link": "https://www.aparat.com/video/video/embed/videohash/qvWQ1/vt/frame",
       "poster": "https://m.media-amazon.com/images/I/81F5PF9oHhL.jpg",
       "banner": "https://media.cnn.com/api/v1/images/stellar/prod/230217112748-john-wick-4-new-trailer-0217.jpg?c=original",
-      "actors": ["مایکل نیکویست", "ویلم دفو", "کیانو ریوز"],
+      "actors": [
+        {
+          "id": 1,
+          "name": "مایکل نیکویست",
+          "image": "https://static.cdn.asset.filimo.com/flmt/rvw_cast_24787_1-s.jpg"
+        },
+        {
+          "id": 2,
+          "name": "ویلم دفو",
+          "image": "https://static.cdn.asset.filimo.com/flmt/rvw_cast_655_1-s.jpg"
+        },
+        {
+          "id": 3,
+          "name": "کیانو ریوز",
+          "image": "https://static.cdn.asset.filimo.com/flmt/rvw_cast_628_1-s.jpg"
+        }
+      ],
       "factors": [
         {
           "director": "دیوید لیچ",
@@ -1023,12 +1202,11 @@
       "enName": "Transformers: Rise of the Beasts",
       "rate": 6.2,
       "age": "6",
-      "director": "استیون کیپل جونیور",
       "time": "2ساعت و 6 دقیقه",
       "country": "آمریکا",
       "year": 2023,
-      "dub": true,
-      "sub": true,
+      "isDub": true,
+      "isSub": true,
       "quality": "HD",
       "genre": "اکشن",
       "story": "وقتی تهدید جدیدی برای نابودی سیاره پدیدار می شود، گروه جدیدی از ترنسفورمرها به نام ماکزیمال ها برای نجات زمین به اوتوبات ها می پیوندند.",
@@ -1036,7 +1214,23 @@
       "link": "https://www.aparat.com/video/video/embed/videohash/t7T4X/vt/frame",
       "poster": "https://m.media-amazon.com/images/M/MV5BZTNiNDA4NmMtNTExNi00YmViLWJkMDAtMDAxNmRjY2I2NDVjXkEyXkFqcGdeQXVyMDM2NDM2MQ@@._V1_FMjpg_UX1000_.jpg",
       "banner": "https://s3.amazonaws.com/static.rogerebert.com/uploads/review/primary_image/reviews/transformers-rise-of-the-beasts-movie-review-2023/transformers-rise-of-the-beasts-movie-review-2023.jpeg",
-      "actors": ["لیزا کوشی", "پیتر کالن", "پیتر دینکلیج"],
+      "actors": [
+        {
+          "id": 1,
+          "name": "لیزا کوشی",
+          "image": "https://static.cdn.asset.filimo.com/flmt/rvw_cast_50058_128-s.jpg"
+        },
+        {
+          "id": 2,
+          "name": "پیتر کالن",
+          "image": "https://static.cdn.asset.filimo.com/flmt/rvw_cast_4028_1-s.jpg"
+        },
+        {
+          "id": 3,
+          "name": "پیتر دینکلیج",
+          "image": "https://static.cdn.asset.filimo.com/flmt/rvw_cast_5642_1-s.jpg"
+        }
+      ],
       "factors": [
         {
           "director": "استیون کیپل جونیور",
@@ -1080,12 +1274,11 @@
       "enName": "Extraction 2",
       "rate": 7.1,
       "age": "18",
-      "director": " سام هارگریو",
       "time": "2ساعت و 3 دقیقه",
       "country": "آمریکا",
       "year": 2023,
-      "dub": false,
-      "sub": false,
+      "isDub": false,
+      "isSub": false,
       "quality": "HD",
       "genre": "اکشن",
       "story": "تایلر ریک پس از آنکه از ماموریتش در بنگلادش به سختی جان سالم به در برد، با تیمش برگشته تا ماموریت بعدی خود را آغاز کند. «استخراج 2»، محصول نتفلیکس است.",
@@ -1094,11 +1287,31 @@
       "poster": "https://m.media-amazon.com/images/M/MV5BZjg5MTM4N2QtN2RlMS00NzBlLTg3NDktM2ExZDNmMmExMGU3XkEyXkFqcGdeQXVyMTkxNjUyNQ@@._V1_FMjpg_UX1000_.jpg",
       "banner": "https://static1.srcdn.com/wordpress/wp-content/uploads/2023/05/an-image-of-chris-hemsworth-looking-worried-and-golshifteh-farahani-holding-a-gun-in-extraction-2.jpg",
       "actors": [
-        "کریس همزورث ",
-        "ادریس آلبا ",
-        "اولگا کوریلنکو ",
-        "گلشیفته فراهانی",
-        "دنیل برنارد"
+        {
+          "id": 1,
+          "name": "کریس همزورث ",
+          "image": ""
+        },
+        {
+          "id": 2,
+          "name": "ادریس آلبا ",
+          "image": ""
+        },
+        {
+          "id": 3,
+          "name": "اولگا کوریلنکو ",
+          "image": ""
+        },
+        {
+          "id": 4,
+          "name": "گلشیفته فراهانی",
+          "image": ""
+        },
+        {
+          "id": 5,
+          "name": "دنیل برنارد",
+          "image": ""
+        }
       ],
       "factors": [
         {
@@ -1143,12 +1356,11 @@
       "enName": "Little Women",
       "rate": 7.8,
       "age": "12",
-      "director": "گرتا گرویگ",
       "time": "یک ساعت و 58 دقیقه",
       "country": "آمریکا",
       "year": 2019,
-      "dub": true,
-      "sub": false,
+      "isDub": true,
+      "isSub": false,
       "quality": "HD",
       "genre": "اکشن",
       "story": "زنان کوچک یک فیلم آمریکایی در سبک بلوغ و درام تاریخی به نویسندگی و کارگردانی گرتا گرویگ است که در سال ۲۰۱۹ منتشر شد. فیلم نامه این فیلم بر اساس رمانی به همین نام نوشته لوییزا می الکات نوشته شده است.",
@@ -1156,7 +1368,23 @@
       "link": "https://www.aparat.com/video/video/embed/videohash/oyxel/vt/frame",
       "poster": "https://m.media-amazon.com/images/M/MV5BYWJlNTkwYzEtZGY5My00NTU3LThjNzItOWNhYmRhYjQ3Y2Y1XkEyXkFqcGdeQXVyMjExMzI0OTg@._V1_.jpg",
       "banner": "https://ic.c4assets.com/brands/little-women/59696c12-4995-44fb-8d1a-3dda78254866.jpg?interpolation=progressive-bicubic&output-format=jpeg&output-quality=90{&resize}",
-      "actors": ["لورا درن", "مریل استریپ", "سیرشا رونان"],
+      "actors": [
+        {
+          "id": 1,
+          "name": "لورا درن",
+          "image": "https://static.cdn.asset.filimo.com/flmt/rvw_cast_7187_1-s.jpg"
+        },
+        {
+          "id": 2,
+          "name": "مریل استریپ",
+          "image": "https://static.cdn.asset.filimo.com/flmt/rvw_cast_2037_1-s.jpg"
+        },
+        {
+          "id": 3,
+          "name": "سیرشا رونان",
+          "image": "https://static.cdn.asset.filimo.com/flmt/rvw_cast_3416_1-s.jpg"
+        }
+      ],
       "factors": [
         {
           "director": "گرتا گرویک",
@@ -1200,12 +1428,11 @@
       "enName": "Tesla",
       "rate": 5.1,
       "age": "15",
-      "director": "مایکل المریدا",
       "time": "یک ساعت و 36 دقیقه",
       "country": "آمریکا",
       "year": 2020,
-      "dub": true,
-      "sub": true,
+      "isDub": true,
+      "isSub": true,
       "quality": "HD",
       "genre": "درام",
       "story": "«تسلا» یک فیلم درام و بیوگرافی آمریکایی در سال 2020 است که توسط مایکل آلمریدا ساخته و کارگردانی شده است. ",
@@ -1213,7 +1440,23 @@
       "link": "https://www.aparat.com/video/video/embed/videohash/c3Apm/vt/frame",
       "poster": "https://m.media-amazon.com/images/M/MV5BYzg0MjQ0ODUtYTgyNC00Y2Y5LWE5NDctODY3ZTFkYmZkNGFiXkEyXkFqcGdeQXVyMTE1MzI2NzIz._V1_.jpg",
       "banner": "https://s3.amazonaws.com/static.rogerebert.com/uploads/review/primary_image/reviews/tesla-movie-review-2020/tesla-movie-review-2020.jpg",
-      "actors": ["جاش همیلتون", "ایو هیوسان", "ایثن هاوک"],
+      "actors": [
+        {
+          "id": 1,
+          "name": "جاش همیلتون",
+          "image": "https://static.cdn.asset.filimo.com/flmt/rvw_cast_32747_504-s.jpg"
+        },
+        {
+          "id": 2,
+          "name": "ایو هیوسان",
+          "image": "https://static.cdn.asset.filimo.com/flmt/rvw_cast_15456_1-s.jpg"
+        },
+        {
+          "id": 3,
+          "name": "ایثن هاوک",
+          "image": "https://static.cdn.asset.filimo.com/flmt/rvw_cast_6020_1-s.jpg"
+        }
+      ],
       "factors": [
         {
           "director": "مایکل المریدا",
@@ -1257,12 +1500,11 @@
       "enName": "The Circle",
       "rate": 5.3,
       "age": "18",
-      "director": "جیمز پانسولت",
       "time": "یک ساعت و 48 دقیقه",
       "country": "آمریکا",
       "year": 2018,
-      "dub": true,
-      "sub": false,
+      "isDub": true,
+      "isSub": false,
       "quality": "HD",
       "genre": "درام",
       "story": "«دایره»، فیلمی در ژانر علمی-تخیلی و درام، به کارگردانی «جیمز پانسولت» و محصول سال 2017 سینمای آمریکاست. ",
@@ -1270,7 +1512,23 @@
       "link": "https://www.aparat.com/video/video/embed/videohash/lnXKh/vt/frame",
       "poster": "https://m.media-amazon.com/images/M/MV5BMjY2OTM2Njc3Ml5BMl5BanBnXkFtZTgwNDgzODU3MTI@._V1_.jpg",
       "banner": "https://s3.amazonaws.com/static.rogerebert.com/uploads/review/primary_image/reviews/the-circle-2017/Circle-2017.jpg",
-      "actors": ["تام هنکس", "جان بویگا", "اما واتسون"],
+      "actors": [
+        {
+          "id": 1,
+          "name": "تام هنکس",
+          "image": "https://static.cdn.asset.filimo.com/flmt/rvw_cast_635_609-s.jpg"
+        },
+        {
+          "id": 2,
+          "name": "جان بویگا",
+          "image": "https://static.cdn.asset.filimo.com/flmt/rvw_cast_1187_1-s.jpg"
+        },
+        {
+          "id": 3,
+          "name": "اما واتسون",
+          "image": "https://static.cdn.asset.filimo.com/flmt/rvw_cast_6047_1-s.jpg"
+        }
+      ],
       "factors": [
         {
           "director": "جیمز پانسولت",
@@ -1314,12 +1572,11 @@
       "enName": "The Rhythm Section",
       "rate": 5.4,
       "age": "18",
-      "director": "رید مورانو",
       "time": "یک ساعت و 43 دقیقه ",
       "country": "انگلیس",
       "year": 2020,
-      "dub": true,
-      "sub": true,
+      "isDub": true,
+      "isSub": true,
       "quality": "HD",
       "genre": "درام",
       "story": "یک فیلم درام اکشن آمریکایی با کارگردانی رید مورانو و براساس رمان بورنل با همین نام ساخته شده است. در این فیلم بلیک لایو ، جود لاو و استرلینگ کی. براون بازی می کنند.",
@@ -1328,12 +1585,36 @@
       "poster": "https://m.media-amazon.com/images/M/MV5BNGI3MjQ0NjgtZDM0Zi00OWMwLTg0N2EtNmFlMzk1MGZjYzRmXkEyXkFqcGdeQXVyMTY1MTcxMzc@._V1_.jpg",
       "banner": "https://media2.sevendaysvt.com/sevendaysvt/imager/u/original/29582085/movies1-1-d0572a7f93d30910.jpg",
       "actors": [
-        "رضا جفری ",
-        "مکس کاسلا ",
-        "دنیل میز",
-        "استرلینگ کی براون ",
-        " جود لا",
-        " بلیک لایولی "
+        {
+          "id": 1,
+          "name": "رضا جفری ",
+          "image": "https://static.cdn.asset.filimo.com/flmt/rvw_cast_26690_159-s.jpg"
+        },
+        {
+          "id": 2,
+          "name": "مکس کاسلا ",
+          "image": "https://static.cdn.asset.filimo.com/flmt/rvw_cast_20240_101-s.jpg"
+        },
+        {
+          "id": 3,
+          "name": "دنیل میز",
+          "image": "https://static.cdn.asset.filimo.com/flmt/rvw_cast_14146_1-s.jpg"
+        },
+        {
+          "id": 4,
+          "name": "استرلینگ کی براون ",
+          "image": "https://static.cdn.asset.filimo.com/flmt/rvw_cast_15312_1-s.jpg"
+        },
+        {
+          "id": 5,
+          "name": " جود لا",
+          "image": "https://static.cdn.asset.filimo.com/flmt/rvw_cast_2573_1-s.jpg"
+        },
+        {
+          "id": 6,
+          "name": " بلیک لایولی ",
+          "image": "https://static.cdn.asset.filimo.com/flmt/rvw_cast_17254_1-s.jpg"
+        }
       ],
       "factors": [
         {
@@ -1374,12 +1655,11 @@
       "enName": "Out Stealing Horses",
       "rate": 6.5,
       "age": "15",
-      "director": "هانس پیتر مولند",
       "time": "یک ساعت و 59 دقیقه",
       "country": "نروژ",
       "year": 2019,
-      "dub": false,
-      "sub": true,
+      "isDub": false,
+      "isSub": true,
       "quality": "HD",
       "genre": "درام",
       "story": "به هوای دزدیدن اسب ها یک فیلم درام نروژی است که در سال 2019 به کارگردانی هانس پتر مولان می باشد. ",
@@ -1388,11 +1668,31 @@
       "poster": "https://m.media-amazon.com/images/I/81b9PYvnjoL._RI_.jpg",
       "banner": "https://nordiskfilmogtvfond.com/assets/news/_headerImageLandscape/Out_Stealing_Horses_Ut_og_stj%C3%A6le_hester_Tobias_Santelmann%C2%A94_12_Nordisk_Film_Distribusjon.jpg",
       "actors": [
-        "استلان اسکارشگورد",
-        "بیورن فلوبرگ ",
-        "توبیاس زانتلمان ",
-        "دنکا کرسیک",
-        "پل اسوره والهایم هاگن"
+        {
+          "id": 1,
+          "name": "استلان اسکارشگورد",
+          "image": "https://static.cdn.asset.filimo.com/flmt/rvw_cast_1883_1-s.jpg"
+        },
+        {
+          "id": 2,
+          "name": "بیورن فلوبرگ ",
+          "image": "https://static.cdn.asset.filimo.com/flmt/rvw_cast_28972_711-s.jpg"
+        },
+        {
+          "id": 3,
+          "name": "توبیاس زانتلمان ",
+          "image": "https://static.cdn.asset.filimo.com/flmt/rvw_cast_17968_1-s.jpg"
+        },
+        {
+          "id": 4,
+          "name": "دنکا کرسیک",
+          "image": "https://static.cdn.asset.filimo.com/flmt/rvw_cast_28973_527-s.jpg"
+        },
+        {
+          "id": 5,
+          "name": "پل اسوره والهایم هاگن",
+          "image": "https://static.cdn.asset.filimo.com/flmt/rvw_cast_28974_621-s.jpg"
+        }
       ],
       "factors": [
         {
@@ -1407,7 +1707,6 @@
         "https://www.filimo.com/public/public/user_data/photo/17158/17157091-d011b605b6684ac42e9d90db2bc0aa12-a.jpg",
         "https://www.filimo.com/public/public/user_data/photo/17158/17157093-af40aaa2e03d187711510fc592bc9ddb-a.jpg"
       ],
-
       "comments": [
         {
           "date": "۱۳ مهر ۱۳۹۹",
@@ -1432,32 +1731,5 @@
       ]
     }
   ],
-
-  "categories": [
-    {
-      "category ": "انیمیشن",
-      "faName": "فیلم تام و جری ",
-      "poster": "https://m.media-amazon.com/images/M/MV5BYzE3ODhiNzAtOWY4MS00NTdiLThmNDctNDM4NjRiNGFmYjI1XkEyXkFqcGdeQXVyMTI2ODM1ODUw._V1_.jpg"
-    },
-    {
-      "category ": "ماجراجویی",
-      "faName": "فیلم بچه رئیس 2 : کسب و کار خانوادگی",
-      "poster": "https://images.app.goo.gl/fmHcmawfnK3kxGkCA"
-    },
-    {
-      "category ": "کمدی",
-      "faName": " فیلم تیم مارکو",
-      "poster": "https://m.media-amazon.com/images/M/MV5BZDZkZDExMjMtNDNjMC00NDQzLTlkZTctN2FkNmI5MjY5ZDc2XkEyXkFqcGdeQXVyMTQ0NjcyNzE@._V1_.jpg"
-    },
-    {
-      "category ": "اکشن",
-      "faName": "فیلم آکوامن",
-      "poster": "https://media.comicbook.com/2018/07/aqamn-vert-tsr-dom-2764x4096-r01-master-1122913.jpeg"
-    },
-    {
-      "category ": "درام",
-      "faName": "فیلم زنان کوچک",
-      "poster": "https://m.media-amazon.com/images/M/MV5BYWJlNTkwYzEtZGY5My00NTU3LThjNzItOWNhYmRhYjQ3Y2Y1XkEyXkFqcGdeQXVyMjExMzI0OTg@._V1_.jpg"
-    }
-  ]
+  "categories": ["انیمیشن", "ماجراجویی", "کمدی", "اکشن", "درام"]
 }
