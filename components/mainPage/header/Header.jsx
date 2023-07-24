@@ -1,3 +1,4 @@
+"use client";
 import "@fortawesome/fontawesome-svg-core/styles.css";
 import { config } from "@fortawesome/fontawesome-svg-core";
 config.autoAddCss = false;
@@ -9,8 +10,11 @@ import {
   faPlay,
   faAngleDown,
 } from "@fortawesome/free-solid-svg-icons";
+import { useState } from "react";
 
 const Header = () => {
+  const [isOpen, setIsOpen] = useState(false);
+
   return (
     <div className="xl:flex xl:justify-center bg-black-950 bg-opacity-[.7] sticky top-0">
       <div className="items-center lg:p-2 md:pr-6 md:pl-6   lg:flex  lg:pr-14 lg:pl-14 ">
@@ -54,7 +58,24 @@ const Header = () => {
                 />
                 <li className="pb-2.5 pl-8">فیلیموتور</li>
               </div>
-              <li className="pb-2.5 pl-8">فیلم</li>
+
+              <button
+                className="pb-2.5 pl-8"
+                onMouseOver={() => setIsOpen((prev) => !prev)}
+                onMouseOut={() => setIsOpen((prev) => !prev)}
+              >
+                فیلم
+              </button>
+              {isOpen && (
+                <div className="absolute top-20 right-32">
+                  <p>درام</p>
+                  <p>اکشن</p>
+                  <p>انیمیشن</p>
+                  <p>کمدی</p>
+                  <p>ماجراجویی</p>
+                </div>
+              )}
+
               <li className="pb-2.5 pl-8">سریال</li>
               <li className="pb-2.5 pl-8">ایرانی</li>
               <div className="flex items-center">
