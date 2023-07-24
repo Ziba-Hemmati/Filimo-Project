@@ -13,7 +13,7 @@ import {
 const Header = () => {
   return (
     <div className="xl:flex xl:justify-center bg-black-950 bg-opacity-[.7] sticky top-0">
-      <div className="items-center lg:p-2 md:pr-6 md:pl-6   lg:flex  lg:pr-14 lg:pl-14 ">
+      <div className="items-center lg:p-2 md:pr-6 md:pl-6 lg:flex lg:pr-14 lg:pl-14 ">
         <div>
           <img
             className="h-5 hidden lg:inline xl:h-7"
@@ -75,7 +75,7 @@ const Header = () => {
                 <li className="pb-2.5 pl-1">مجموعه‌ها</li>
                 <FontAwesomeIcon
                   icon={faAngleDown}
-                  className="text-xs  pb-2.5 pl-8 lg:pl-0 md:pl-0"
+                  className="text-xs pb-2.5 pl-8 lg:pl-0 md:pl-0"
                 />
               </div>
             </ul>
