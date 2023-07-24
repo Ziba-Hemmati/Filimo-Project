@@ -14,7 +14,7 @@ const FixedFooter = () => {
   return (
     <div>
       <div className="text-gray-300 w-full text-[.7rem] fixed bottom-0 p-1 md:px-4 bg-black-700 overflow-x-auto lg:flex lg:justify-between lg:w-full ">
-        <ul className="flex justify-between items-center lg:w-3/4">
+        <ul className="flex justify-between items-center lg:w-3/4 ">
           <Link href="" className="hover:text-white transition lg:hidden">
             <FontAwesomeIcon icon={faArrowUp} />
           </Link>
@@ -36,7 +36,7 @@ const FixedFooter = () => {
           <Link href="" className="lg:hidden">
             <FontAwesomeIcon
               icon={faEllipsisVertical}
-              className="hover:text-white transition md:pr-[20rem] lg:pr-[30rem] xl:pr-[70rem] "
+              className="hover:text-white transition absolute left-1 bottom-[7px] md:left-4 md:pr-[20rem] lg:pr-[30rem] "
             />
           </Link>
           <Link href="">
