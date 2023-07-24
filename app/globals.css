@@ -22,3 +22,9 @@ html {
   scroll-behavior: smooth;
   @apply bg-black-850;
 }
+::-webkit-scrollbar {
+  height: 1px;
+}
+::-webkit-scrollbar-thumb {
+  background: #a1a1a1;
+}
