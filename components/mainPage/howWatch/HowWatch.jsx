@@ -1,3 +1,4 @@
+import Button from "./Button";
 
 const HowWatch = () =>{
     return(
@@ -30,7 +31,7 @@ const HowWatch = () =>{
                             <div className=" text-gray-200 font-iran-sans-medium font-medium mb-4 text-sm">
                                 <p>تلویزیون</p>
                             </div>
-                            <div className="text-gray-300 mb-8 text-[.7rem] text-sm">
+                            <div className="text-gray-300 mb-8 text-[.7rem] ">
                                 <p>Amazon Fire TV - LG TVs - Chrome Cast - Apple TV - Android TV devices - Samsung</p>
                             </div>
                         </div>
@@ -43,12 +44,14 @@ const HowWatch = () =>{
                             <div className="text-gray-200 font-iran-sans-medium font-medium mb-4 text-sm">
                                 <p>اندروید تی‌وی</p>
                             </div>
-                            <div className="text-gray-300 mb-8 text-[.7rem]">
+                            <div className="text-gray-300 mb-16 text-[.7rem]">
                                 <p>NVIDIA - amazon - xiaomi - minix - skystream - turewell - ematic - humax - matricom</p>
                             </div>
                         </div>
                     </div>
+                    <Button/>
                 </div>
+                
             </div>
         </div>
     )
