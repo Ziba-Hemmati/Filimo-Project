@@ -4,7 +4,7 @@ const WatchMovie = () =>{
             <div className="mt-8 mb-6 hidden  md:inline">
                 <img src="https://www.filimo.com/assets/web/ui/img-ynsexKiWcOkSOPureyAnA/campaigns/nosub-v_new/deviceYaghi.png" alt="device2" className="w-full h-100"/>
             </div>
-            <div className="md:pr-8 xl:mt-12">
+            <div className="md:pr-4 xl:mt-12">
             <div className="md:flex flex-col">
                 <h3 className="text-white pb-4 font-iran-sans-medium">
                     تماشای فیلیمو با همه دستگاه‌ها
@@ -33,8 +33,8 @@ const WatchMovie = () =>{
                 </div>
             </div>
             <div className="flex mb-8 ">
-                <div className="w-10 mr-0.5">
-                    <img src="https://www.filimo.com/assets/web/ui/img-ynsexKiWcOkSOPureyAnA/campaigns/nosub-v_new/mobile.png"  />
+                <div className="w-10 mr-0.5 ">
+                    <img src="https://www.filimo.com/assets/web/ui/img-ynsexKiWcOkSOPureyAnA/campaigns/nosub-v_new/mobile.png"  width={22}/>
                 </div>
                 <div className="mr-3 ">
                     <div>
@@ -47,7 +47,7 @@ const WatchMovie = () =>{
             </div>
             <div className="flex mb-8">
                 <div>
-                    <img src="https://www.filimo.com/assets/web/ui/img-ynsexKiWcOkSOPureyAnA/campaigns/nosub-v_new/game.png" />
+                    <img src="https://www.filimo.com/assets/web/ui/img-ynsexKiWcOkSOPureyAnA/campaigns/nosub-v_new/game.png" width={30} />
                 </div>
                 <div className="mr-4 leading-3">
                     <div>
