@@ -4,6 +4,10 @@ import { Inter } from "next/font/google";
 import Footer from "@/components/mainPage/footer/Footer";
 import FixedFooter from "@/components/mainPage/fixedFooter/FixedFooter";
 const inter = Inter({ subsets: ["latin"] });
+import "./globals.css";
+import Header from "@/components/mainPage/header/Header";
+import Footer from "@/components/mainPage/footer/Footer";
+import FixedFooter from "@/components/mainPage/fixedFooter/FixedFooter";
 
 export const metadata = {
   title: "Create Next App",
@@ -15,9 +19,7 @@ export default function RootLayout({ children }) {
     <html lang="en">
       <body className={inter.className}>
         <Header />
-
         {children}
-
         <Footer />
         <FixedFooter />
       </body>

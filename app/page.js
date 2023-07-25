@@ -4,7 +4,7 @@ const data = await getLocalData();
 const movie = data.movies;
 
 const Home = () => {
-  return <di></di>;
+  return <div></div>;
 };
 
 export default Home;
