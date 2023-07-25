@@ -8,14 +8,14 @@ import Link from "next/link";
 const MyLists = () => {
   return (
     <>
-      <Link href="" className="flex items-center text-white hover:text-orange-600">
-        <FontAwesomeIcon
-          icon={faCirclePlus}
-          className="text-2xl md:text-base md:pl-2 lg:pl-2 lg:pr-2"
-        />
-        <p className=" hidden md:inline text-gray-200 text-xs lg:text-[.6rem] xl:text-xs">
-          لیست های من
-        </p>
+      <Link href="" className="flex items-center">
+          <FontAwesomeIcon
+            icon={faCirclePlus}
+            className="text-2xl md:text-base md:pl-2 lg:pl-2 lg:pr-2 text-white"
+          />
+          <div className="hidden md:inline text-xs lg:text-[.6rem] xl:text-xs text-gray-200">
+            لیست های من
+          </div>
       </Link>
     </>
   );

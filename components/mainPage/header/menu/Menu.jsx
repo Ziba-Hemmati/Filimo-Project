@@ -32,19 +32,15 @@ const Menu = () => {
   };
   return (
     <>
-      <ul className="flex  justify-between items-center p-2 pt-4 overflow-x-auto text-gray-200 text-xs md:px-6 ">
-        <div
-          className="flex items-center hover:text-orange-600"
-          onMouseOver={handleOver}
-          onMouseLeave={handleLeave}
-        >
+      <ul className="flex transition-all transition-100  justify-between items-center p-2 pt-4 overflow-x-auto text-gray-200 text-xs md:px-6 ">
+        <div className="flex items-center hover:text-orange-600">
           <FontAwesomeIcon
             icon={faFireFlameCurved}
             className="text-base pl-2 pb-2.5"
           />
           <li className="pb-2.5 pl-8">فیلیموتور</li>
         </div>
-        <div className="float-right">
+        <div>
           <div
             className="flex items-center hover:text-orange-600"
             onMouseOver={handleOver}
@@ -58,30 +54,30 @@ const Menu = () => {
               />
             </li>
           </div>
-          <Transition in={isOver} timeout={200} mountOnEnter unmountOnExit>
+          <Transition in={isOver} timeout={300} mountOnEnter unmountOnExit>
             {(state) => (
               <div
                 onMouseOver={handleOver}
                 onMouseLeave={handleLeave}
-                className={`hidden lg:flex lg:flex-col p-4 lg:absolute lg:top-[70px] bg-black-850 w-36 rounded-lg transition-transform transform ${
+                className={`hidden lg:flex lg:flex-col p-4 lg:absolute lg:top-[66px] bg-black-850 w-32 rounded-lg transition-transform transform ${
                   state === "entered"
                     ? "opacity-100 translate-y-0"
                     : "opacity-0 translate-y-[-8px]"
                 }`}
               >
-                <Link href="" className="mt-4 hover:text-orange-600">
+                <Link href="" className="mt-1 hover:text-orange-600">
                   درام
                 </Link>
-                <Link href="" className="mt-4 hover:text-orange-600">
+                <Link href="" className="mt-8 hover:text-orange-600">
                   اکشن
                 </Link>
-                <Link href="" className="mt-4 hover:text-orange-600">
+                <Link href="" className="mt-8 hover:text-orange-600">
                   انیمیشن
                 </Link>
-                <Link href="" className="mt-4 hover:text-orange-600">
+                <Link href="" className="mt-8 hover:text-orange-600">
                   کمدی
                 </Link>
-                <Link href="" className="mt-4 hover:text-orange-600">
+                <Link href="" className="mt-8 hover:text-orange-600 mb-2">
                   ماجراجویی
                 </Link>
               </div>
@@ -96,12 +92,18 @@ const Menu = () => {
           />
         </div>
         <li className="pb-2.5 pl-8 hover:text-orange-600">ایرانی</li>
-        <div className="flex items-center  text-white hover:text-orange-600">
-          <FontAwesomeIcon icon={faHorse} className="text-base pl-2 pb-2.5" />
+        <div className="flex items-center hover:text-orange-600">
+          <FontAwesomeIcon
+            icon={faHorse}
+            className="text-base pl-2 pb-2.5  text-white hover:text-orange-600 "
+          />
           <li className="pb-2.5 pl-8">کودک</li>
         </div>
-        <div className="flex items-center text-white hover:text-orange-600">
-          <FontAwesomeIcon icon={faPlay} className="text-base pl-2 pb-2.5" />
+        <div className="flex items-center hover:text-orange-600">
+          <FontAwesomeIcon
+            icon={faPlay}
+            className="text-base pl-2 pb-2.5 text-white hover:text-orange-600"
+          />
           <li className="pb-2.5 pl-8">فیلیمومدرسه</li>
         </div>
         <div className="flex items-center hover:text-orange-600">
