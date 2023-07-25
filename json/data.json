@@ -36,15 +36,13 @@
           "image": "https://static.cdn.asset.filimo.com/flmt/rvw_cast_43358_189-s.jpg"
         }
       ],
-      "factors": [
-        {
-          "director": "تیم استوریو ",
-          "writer": " ویلیام هانا",
-          "producer": " استیو هاردینگ",
-          "cameraMan": " آلن استوارت",
-          "musician": " کریستوفر لنرتز"
-        }
-      ],
+      "factors": {
+        "director": "تیم استوریو ",
+        "writer": " ویلیام هانا",
+        "producer": " استیو هاردینگ",
+        "cameraMan": " آلن استوارت",
+        "musician": " کریستوفر لنرتز"
+      },
       "album": [
         "https://static.cdn.asset.aparat.com/lp/17143078-2967-a.jpg",
         "https://static.cdn.asset.aparat.com/lp/17143079-1780-a.jpg",
@@ -92,15 +90,13 @@
       "link": "https://www.aparat.com/video/video/embed/videohash/c8eGA/vt/frame",
       "poster": "https://m.media-amazon.com/images/M/MV5BOTMyOTAyY2YtNTEyZS00NGEwLTg5YWMtOTBkNmJlYTM0YTc0XkEyXkFqcGdeQXVyMTA3MDk2NDg2._V1_.jpg",
       "banner": "https://api.time.com/wp-content/uploads/2021/03/uNamed-2.jpg",
-      "factors": [
-        {
-          "director": "تیم هیل ",
-          "writer": "جاناتان ایبل",
-          "dublor": "نورا لوم",
-          "producer": "ریان هریس",
-          " musician": "  استیو مازارلو"
-        }
-      ],
+      "factors": {
+        "director": "تیم هیل ",
+        "writer": "جاناتان ایبل",
+        "dublor": "نورا لوم",
+        "producer": "ریان هریس",
+        " musician": "  استیو مازارلو"
+      },
       "album": [],
       "comments": [
         {
@@ -171,14 +167,12 @@
           "image": "https://static.cdn.asset.filimo.com/flmt/rvw_cast_14794_1-s.jpg"
         }
       ],
-      "factors": [
-        {
-          "director": "جان ماسکر",
-          "producer": " اوسنات شورر",
-          "writer": " جرد بوش",
-          " musician": "  مارک مانسینا "
-        }
-      ],
+      "factors": {
+        "director": "جان ماسکر",
+        "producer": " اوسنات شورر",
+        "writer": " جرد بوش",
+        " musician": "  مارک مانسینا "
+      },
       "album": [
         "https://static.cdn.asset.aparat.com/lp/16001727-9637-a.jpg",
         "https://static.cdn.asset.aparat.com/lp/16001729-4448-a.jpg",
@@ -248,13 +242,11 @@
           "image": "https://static.cdn.asset.filimo.com/flmt/rvw_cast_8655_1-s.jpg"
         }
       ],
-      "factors": [
-        {
-          "director": " کریس باک ",
-          "writer": "جنیفر لی",
-          " musician": " رابرت لوپز"
-        }
-      ],
+      "factors": {
+        "director": " کریس باک ",
+        "writer": "جنیفر لی",
+        " musician": " رابرت لوپز"
+      },
       "album": [
         "https://static.cdn.asset.aparat.com/lp/16443562-5152-a.jpg",
         "https://static.cdn.asset.aparat.com/lp/16443565-4208-a.jpg",
@@ -302,14 +294,12 @@
       "link": "https://www.aparat.com/video/video/embed/videohash/ZMktm/vt/frame",
       "poster": "https://m.media-amazon.com/images/M/MV5BOGZhM2FhNTItODAzNi00YjA0LWEyN2UtNjJlYWQzYzU1MDg5L2ltYWdlL2ltYWdlXkEyXkFqcGdeQXVyMTQxNzMzNDI@._V1_.jpg",
       "banner": "https://wilm.ir/wp-content/uploads/2021/06/Shrek-1.jpg",
-      "factors": [
-        {
-          "director": "ویکی جنسون ",
-          "producer": "جفری کاتزنبرگ",
-          "writer": "ویلیام استیج",
-          " musician": "  جان پاول"
-        }
-      ],
+      "factors": {
+        "director": "ویکی جنسون ",
+        "producer": "جفری کاتزنبرگ",
+        "writer": "ویلیام استیج",
+        " musician": "  جان پاول"
+      },
       "album": [
         "https://static.cdn.asset.aparat.com/lp/16419573-4786-a.jpg",
         "https://static.cdn.asset.aparat.com/lp/16419576-2122-a.jpg",
@@ -357,15 +347,13 @@
       "link": "https://www.aparat.com/video/video/embed/videohash/efvC5/vt/frame",
       "poster": "https://images.app.goo.gl/fmHcmawfnK3kxGkCA",
       "banner": "https://www.dreamworks.com/storage/cms-uploads/boss-baby-2-seo-share2.jpg",
-      "factors": [
-        {
-          "director": "  تام مک گراث ",
-          "writer": " مایکل مک کالر",
-          "dublor": " جیمز مارسدن",
-          "producer": " جف هرمان",
-          "musician": "  استیو مازارلو"
-        }
-      ],
+      "factors": {
+        "director": "  تام مک گراث ",
+        "writer": " مایکل مک کالر",
+        "dublor": " جیمز مارسدن",
+        "producer": " جف هرمان",
+        "musician": "  استیو مازارلو"
+      },
       "album": [
         "https://static.cdn.asset.filimo.com/flmt/mov_5104_1-m.jpg",
         "https://static.cdn.asset.aparat.com/lp/17148422-8263-m.jpg",
@@ -413,15 +401,13 @@
       "link": "https://www.aparat.com/video/video/embed/videohash/sL028/vt/frame",
       "poster": "https://lumiere-a.akamaihd.net/v1/images/movie_poster_zootopia_866a1bf2.jpeg",
       "banner": "https://www.dexerto.com/cdn-cgi/image/width=3840,quality=75,format=auto/https://editors.dexerto.com/wp-content/uploads/2023/02/09/zootopia-all-characters-wallpaper-1600x900_47.jpg",
-      "factors": [
-        {
-          "director": " ریچ مور",
-          "writer": " جرد بوش ",
-          "dublor": "ادریس  آلبا",
-          "producer": " کلارک اسپنیر",
-          "musician": "  مایکل جاکینو"
-        }
-      ],
+      "factors": {
+        "director": " ریچ مور",
+        "writer": " جرد بوش ",
+        "dublor": "ادریس  آلبا",
+        "producer": " کلارک اسپنیر",
+        "musician": "  مایکل جاکینو"
+      },
       "album": [
         "https://static.cdn.asset.aparat.com/lp/16706450-4875-m.jpg",
         "https://static.cdn.asset.aparat.com/lp/16706448-4109-m.jpg",
@@ -491,14 +477,12 @@
           "image": "https://static.cdn.asset.filimo.com/flmt/rvw_cast_46271_688-s.jpg"
         }
       ],
-      "factors": [
-        {
-          "director": " انریکو کاساروسا",
-          "writer": " جسی آندروز ",
-          "producer": " مایک جونز",
-          "musician": "دن  رومر"
-        }
-      ],
+      "factors": {
+        "director": " انریکو کاساروسا",
+        "writer": " جسی آندروز ",
+        "producer": " مایک جونز",
+        "musician": "دن  رومر"
+      },
       "album": [
         "https://static.cdn.asset.aparat.com/lp/17149291-1423-m.jpg",
         "https://static.cdn.asset.aparat.com/lp/17149288-6139-m.jpg",
@@ -546,14 +530,12 @@
       "link": "https://www.aparat.com/video/video/embed/videohash/czIPD/vt/frame",
       "poster": "https://posterspy.com/wp-content/uploads/2023/03/Mario-movie-poster.jpg",
       "banner": "https://cdn.mos.cms.futurecdn.net/RhtHtULKVdQTqdUrVFFDhg-1200-80.jpghttps://cdn.mos.cms.futurecdn.net/RhtHtULKVdQTqdUrVFFDhg-1200-80.jpg",
-      "factors": [
-        {
-          "director": "آرون هورواث",
-          "writer": "متیو فوگل",
-          "producer": "شیگرو میاموتو",
-          "musician": "برایان تایلز"
-        }
-      ],
+      "factors": {
+        "director": "آرون هورواث",
+        "writer": "متیو فوگل",
+        "producer": "شیگرو میاموتو",
+        "musician": "برایان تایلز"
+      },
       "album": [
         "https://www.filimo.com/public/public/user_data/photo/17170/17169621-690769364c573419416a2907b0700901-m.jpg",
         "https://www.filimo.com/public/public/user_data/photo/17170/17169624-c1511e50dab52fdf30302932dfe052db-m.jpg",
@@ -618,14 +600,12 @@
           "image": "https://static.cdn.asset.filimo.com/flmt/rvw_cast_7266_1-s.jpg"
         }
       ],
-      "factors": [
-        {
-          "director": "گندی تارتاکوفسکی",
-          "writer": "متیو فوگل",
-          "producer": " میشل موردوکا",
-          "musician": "مارک مادرزبا"
-        }
-      ],
+      "factors": {
+        "director": "گندی تارتاکوفسکی",
+        "writer": "متیو فوگل",
+        "producer": " میشل موردوکا",
+        "musician": "مارک مادرزبا"
+      },
       "album": [
         "https://www.filimo.com/public/public/user_data/photo/16834/16833846-f08311a81df2731b67464919c0a1fef1-m.jpg",
         "https://www.filimo.com/public/public/user_data/photo/16834/16833852-4e143c9da8fe4f40cee5cd82091c1805-m.jpg",
@@ -690,14 +670,12 @@
           "image": "https://static.cdn.asset.filimo.com/flmt/rvw_cast_41760_920-s.jpg"
         }
       ],
-      "factors": [
-        {
-          "director": "خولیو وینسنت گیمباتو",
-          "writer": "خولیو وینسنت گیمباتو",
-          "producer": "  ساموئل سندویس",
-          "musician": "ژاک  براتبار"
-        }
-      ],
+      "factors": {
+        "director": "خولیو وینسنت گیمباتو",
+        "writer": "خولیو وینسنت گیمباتو",
+        "producer": "  ساموئل سندویس",
+        "musician": "ژاک  براتبار"
+      },
       "album": [],
       "comments": [
         {
@@ -758,13 +736,11 @@
           "image": ""
         }
       ],
-      "factors": [
-        {
-          "director": "امیلی هاگینز",
-          "writer": "امیلی هاگینز",
-          "producer": "والریه گارسیا"
-        }
-      ],
+      "factors": {
+        "director": "امیلی هاگینز",
+        "writer": "امیلی هاگینز",
+        "producer": "والریه گارسیا"
+      },
       "album": [],
       "comments": [
         {
@@ -825,14 +801,12 @@
           "image": "https://static.cdn.asset.filimo.com/flmt/rvw_cast_44597_935-s.jpg"
         }
       ],
-      "factors": [
-        {
-          "director": "هوگو گلین",
-          "writer": "هوگو گلین",
-          "producer": "والریه گارسیا",
-          "musician": "امبرویز ویلارم "
-        }
-      ],
+      "factors": {
+        "director": "هوگو گلین",
+        "writer": "هوگو گلین",
+        "producer": "والریه گارسیا",
+        "musician": "امبرویز ویلارم "
+      },
       "album": [],
       "comments": [
         {
@@ -893,14 +867,12 @@
           "image": "https://static.cdn.asset.filimo.com/flmt/rvw_cast_5278_1-s.jpg"
         }
       ],
-      "factors": [
-        {
-          "director": "مارک واترز",
-          "writer": "شان آندرس",
-          "producer": "جان دیویس",
-          "musician": "رولف کنت "
-        }
-      ],
+      "factors": {
+        "director": "مارک واترز",
+        "writer": "شان آندرس",
+        "producer": "جان دیویس",
+        "musician": "رولف کنت "
+      },
       "album": [
         "https://www.filimo.com/public/public/user_data/photo/17173/17172084-1db8b60cd62fc41bcf910b52aa5bd403-a.jpg",
         "https://www.filimo.com/public/public/user_data/photo/17173/17172086-e3f45a9e6e3bb776c03523c867f0fe28-a.jpg",
@@ -948,13 +920,11 @@
       "link": "https://www.aparat.com/video/video/embed/videohash/Ayw0v/vt/frame",
       "poster": "https://m.media-amazon.com/images/M/MV5BMTZmZTRlYTItZGYyYi00ODNkLTg1ZTMtMDc1ZDk5ZGU1MTI3XkEyXkFqcGdeQXVyMzAzMzkzNTU@._V1_FMjpg_UX1000_.jpg",
       "banner": "https://www.mainframe.ca/wp-content/uploads/2020/08/Octo-group-shot_1-1.jpg",
-      "factors": [
-        {
-          "director": " پلیر سیمونز",
-          "producer": "مایکل هفرون",
-          "dublor": "تریسا گنگر "
-        }
-      ],
+      "factors": {
+        "director": " پلیر سیمونز",
+        "producer": "مایکل هفرون",
+        "dublor": "تریسا گنگر "
+      },
       "album": [],
       "comments": [
         {
@@ -1015,14 +985,12 @@
           "image": "https://static.cdn.asset.filimo.com/flmt/rvw_cast_7393_892-s.jpg"
         }
       ],
-      "factors": [
-        {
-          "director": "جیمز وان",
-          "cameraMan": "دان برجس",
-          "producer": "جف جانز",
-          "musician": "روپرت گرگسون ویلیامز"
-        }
-      ],
+      "factors": {
+        "director": "جیمز وان",
+        "cameraMan": "دان برجس",
+        "producer": "جف جانز",
+        "musician": "روپرت گرگسون ویلیامز"
+      },
       "album": [
         "https://static.cdn.asset.aparat.com/lp/16935896-8513-m.jpg",
         "https://static.cdn.asset.aparat.com/lp/16935900-3052-m.jpg",
@@ -1087,14 +1055,12 @@
           "image": "https://static.cdn.asset.filimo.com/flmt/rvw_cast_357_498-s.jpg"
         }
       ],
-      "factors": [
-        {
-          "director": "لوک بسون",
-          "cameraMan": "تیری آربوگاس",
-          "producer": "ویرجینیا بسون سیلا",
-          "musician": "اریک سلا"
-        }
-      ],
+      "factors": {
+        "director": "لوک بسون",
+        "cameraMan": "تیری آربوگاس",
+        "producer": "ویرجینیا بسون سیلا",
+        "musician": "اریک سلا"
+      },
       "album": [
         "https://static.cdn.asset.aparat.com/lp/16888279-4753-m.jpg",
         "https://static.cdn.asset.aparat.com/lp/16888274-3712-m.jpg",
@@ -1159,14 +1125,12 @@
           "image": "https://static.cdn.asset.filimo.com/flmt/rvw_cast_628_1-s.jpg"
         }
       ],
-      "factors": [
-        {
-          "director": "دیوید لیچ",
-          "cameraMan": "جاناتان سلا",
-          "producer": "دیوید لیچ",
-          "musician": "تایلر بیتس"
-        }
-      ],
+      "factors": {
+        "director": "دیوید لیچ",
+        "cameraMan": "جاناتان سلا",
+        "producer": "دیوید لیچ",
+        "musician": "تایلر بیتس"
+      },
       "album": [
         "https://static.cdn.asset.aparat.com/lp/17047287-5726-m.jpg",
         "https://static.cdn.asset.aparat.com/lp/17047282-3855-m.jpg",
@@ -1231,14 +1195,12 @@
           "image": "https://static.cdn.asset.filimo.com/flmt/rvw_cast_5642_1-s.jpg"
         }
       ],
-      "factors": [
-        {
-          "director": "استیون کیپل جونیور",
-          "cameraMan": "انریکه چدیاک",
-          "producer": "مایکل بی",
-          "musician": "جانیک بونتام"
-        }
-      ],
+      "factors": {
+        "director": "استیون کیپل جونیور",
+        "cameraMan": "انریکه چدیاک",
+        "producer": "مایکل بی",
+        "musician": "جانیک بونتام"
+      },
       "album": [
         "https://www.filimo.com/public/public/user_data/photo/17171/17170947-b7bff941860bd9db4b7d3f637c70d079-m.jpg",
         "https://www.filimo.com/public/public/user_data/photo/17171/17170951-5e8a9e849310574e8a681dd43604f800-m.jpg",
@@ -1313,14 +1275,12 @@
           "image": ""
         }
       ],
-      "factors": [
-        {
-          "director": "سام هارگریو",
-          "writer": "جوزف روسو",
-          "producer": "اریک گیتر",
-          "musician": "الکس بلچر"
-        }
-      ],
+      "factors": {
+        "director": "سام هارگریو",
+        "writer": "جوزف روسو",
+        "producer": "اریک گیتر",
+        "musician": "الکس بلچر"
+      },
       "album": [
         "https://www.filimo.com/public/public/user_data/photo/17172/17171001-4c2ee9af2ea12e4f39861afd4d755041-m.jpg",
         "https://www.filimo.com/public/public/user_data/photo/17172/17171005-b6a880295b8fb4fec71f8e5b9457c7cd-m.jpg",
@@ -1385,14 +1345,12 @@
           "image": "https://static.cdn.asset.filimo.com/flmt/rvw_cast_3416_1-s.jpg"
         }
       ],
-      "factors": [
-        {
-          "director": "گرتا گرویک",
-          "cameraMan": "یوریک لو سو",
-          "producer": "آدام مریمز",
-          "musician": "الکساندر دسپلا"
-        }
-      ],
+      "factors": {
+        "director": "گرتا گرویک",
+        "cameraMan": "یوریک لو سو",
+        "producer": "آدام مریمز",
+        "musician": "الکساندر دسپلا"
+      },
       "album": [
         "https://www.filimo.com/public/public/user_data/photo/17163/17162841-56e8cfeafd4b25080ba157d24cf34003-a.jpg",
         "https://www.filimo.com/public/public/user_data/photo/17163/17162843-dde3e0842fb110960a98e661d6354a71-a.jpg",
@@ -1457,14 +1415,12 @@
           "image": "https://static.cdn.asset.filimo.com/flmt/rvw_cast_6020_1-s.jpg"
         }
       ],
-      "factors": [
-        {
-          "director": "مایکل المریدا",
-          "cameraMan": "شان پرایس ویلیامز",
-          "producer": "مایکل المریدا",
-          "musician": "جان پیسانو"
-        }
-      ],
+      "factors": {
+        "director": "مایکل المریدا",
+        "cameraMan": "شان پرایس ویلیامز",
+        "producer": "مایکل المریدا",
+        "musician": "جان پیسانو"
+      },
       "album": [
         "https://www.filimo.com/public/public/user_data/photo/17140/17139768-64435930ac3aec1653f7bbc7e5019374-a.jpg",
         "https://static.cdn.asset.aparat.com/lp/17139771-6974-a.jpg",
@@ -1529,14 +1485,12 @@
           "image": "https://static.cdn.asset.filimo.com/flmt/rvw_cast_6047_1-s.jpg"
         }
       ],
-      "factors": [
-        {
-          "director": "جیمز پانسولت",
-          "cameraMan": "متیو لیباتیک",
-          "producer": "تام هنکس",
-          "musician": "دنی الفمن"
-        }
-      ],
+      "factors": {
+        "director": "جیمز پانسولت",
+        "cameraMan": "متیو لیباتیک",
+        "producer": "تام هنکس",
+        "musician": "دنی الفمن"
+      },
       "album": [
         "https://static.cdn.asset.aparat.com/lp/16336004-2348-a.jpg",
         "https://static.cdn.asset.aparat.com/lp/16336008-2912-a.jpg",
@@ -1616,14 +1570,12 @@
           "image": "https://static.cdn.asset.filimo.com/flmt/rvw_cast_17254_1-s.jpg"
         }
       ],
-      "factors": [
-        {
-          "director": "رید مورانو ",
-          "writer": "مارک برنل ",
-          "producer": "باربارا براکلی",
-          "musician": "استیو مازارو"
-        }
-      ],
+      "factors": {
+        "director": "رید مورانو ",
+        "writer": "مارک برنل ",
+        "producer": "باربارا براکلی",
+        "musician": "استیو مازارو"
+      },
       "album": [],
       "comments": [
         {
@@ -1694,14 +1646,12 @@
           "image": "https://static.cdn.asset.filimo.com/flmt/rvw_cast_28974_621-s.jpg"
         }
       ],
-      "factors": [
-        {
-          "director": "هانس پیتر مولند",
-          "writer": "هانس پیتر مولند ",
-          "producer": "کاتو باخ,ماری گید",
-          "musician": "کسپار کائا"
-        }
-      ],
+      "factors": {
+        "director": "هانس پیتر مولند",
+        "writer": "هانس پیتر مولند ",
+        "producer": "کاتو باخ,ماری گید",
+        "musician": "کسپار کائا"
+      },
       "album": [
         "https://www.filimo.com/public/public/user_data/photo/17158/17157089-ba8d2eea6e354f32518401bfa8fe99ce-a.jpg",
         "https://www.filimo.com/public/public/user_data/photo/17158/17157091-d011b605b6684ac42e9d90db2bc0aa12-a.jpg",
