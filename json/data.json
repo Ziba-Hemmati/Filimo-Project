@@ -171,14 +171,12 @@
           "image": "https://static.cdn.asset.filimo.com/flmt/rvw_cast_14794_1-s.jpg"
         }
       ],
-      "factors": [
-        {
-          "director": "جان ماسکر",
-          "producer": " اوسنات شورر",
-          "writer": " جرد بوش",
-          " musician": "  مارک مانسینا "
-        }
-      ],
+      "factors": {
+        "director": "جان ماسکر",
+        "producer": " اوسنات شورر",
+        "writer": " جرد بوش",
+        " musician": "  مارک مانسینا "
+      },
       "album": [
         "https://static.cdn.asset.aparat.com/lp/16001727-9637-a.jpg",
         "https://static.cdn.asset.aparat.com/lp/16001729-4448-a.jpg",
@@ -248,13 +246,11 @@
           "image": "https://static.cdn.asset.filimo.com/flmt/rvw_cast_8655_1-s.jpg"
         }
       ],
-      "factors": [
-        {
-          "director": " کریس باک ",
-          "writer": "جنیفر لی",
-          " musician": " رابرت لوپز"
-        }
-      ],
+      "factors": {
+        "director": " کریس باک ",
+        "writer": "جنیفر لی",
+        " musician": " رابرت لوپز"
+      },
       "album": [
         "https://static.cdn.asset.aparat.com/lp/16443562-5152-a.jpg",
         "https://static.cdn.asset.aparat.com/lp/16443565-4208-a.jpg",
@@ -302,14 +298,12 @@
       "link": "https://www.aparat.com/video/video/embed/videohash/ZMktm/vt/frame",
       "poster": "https://m.media-amazon.com/images/M/MV5BOGZhM2FhNTItODAzNi00YjA0LWEyN2UtNjJlYWQzYzU1MDg5L2ltYWdlL2ltYWdlXkEyXkFqcGdeQXVyMTQxNzMzNDI@._V1_.jpg",
       "banner": "https://wilm.ir/wp-content/uploads/2021/06/Shrek-1.jpg",
-      "factors": [
-        {
-          "director": "ویکی جنسون ",
-          "producer": "جفری کاتزنبرگ",
-          "writer": "ویلیام استیج",
-          " musician": "  جان پاول"
-        }
-      ],
+      "factors": {
+        "director": "ویکی جنسون ",
+        "producer": "جفری کاتزنبرگ",
+        "writer": "ویلیام استیج",
+        " musician": "  جان پاول"
+      },
       "album": [
         "https://static.cdn.asset.aparat.com/lp/16419573-4786-a.jpg",
         "https://static.cdn.asset.aparat.com/lp/16419576-2122-a.jpg",
@@ -411,17 +405,15 @@
       "story": "در شهری که کاملاً تحت کنترل حیوانات است، یک افسر پلیس خرگوش و یک روباه کلاهبردار باید با همکاری یکدیگر پرده از یک پرونده فساد بردارند.",
       "about": "فیلم زوتوپیا به کارگردانی بایرون هوارد و ریچ مور در سال 2016 ساخته شده است. این فیلم محصول کشور آمریکا و در ژانر انیمیشن و ماجراجویی می‌باشد. .",
       "link": "https://www.aparat.com/video/video/embed/videohash/sL028/vt/frame",
-      "poster": "https://ritzcinema.net/wp-content/uploads/2020/06/Zootopia-Poster-1.jpg",
+      "poster": "https://lumiere-a.akamaihd.net/v1/images/movie_poster_zootopia_866a1bf2.jpeg",
       "banner": "https://www.dexerto.com/cdn-cgi/image/width=3840,quality=75,format=auto/https://editors.dexerto.com/wp-content/uploads/2023/02/09/zootopia-all-characters-wallpaper-1600x900_47.jpg",
-      "factors": [
-        {
-          "director": " ریچ مور",
-          "writer": " جرد بوش ",
-          "dublor": "ادریس  آلبا",
-          "producer": " کلارک اسپنیر",
-          "musician": "  مایکل جاکینو"
-        }
-      ],
+      "factors": {
+        "director": " ریچ مور",
+        "writer": " جرد بوش ",
+        "dublor": "ادریس  آلبا",
+        "producer": " کلارک اسپنیر",
+        "musician": "  مایکل جاکینو"
+      },
       "album": [
         "https://static.cdn.asset.aparat.com/lp/16706450-4875-m.jpg",
         "https://static.cdn.asset.aparat.com/lp/16706448-4109-m.jpg",
@@ -491,14 +483,12 @@
           "image": "https://static.cdn.asset.filimo.com/flmt/rvw_cast_46271_688-s.jpg"
         }
       ],
-      "factors": [
-        {
-          "director": " انریکو کاساروسا",
-          "writer": " جسی آندروز ",
-          "producer": " مایک جونز",
-          "musician": "دن  رومر"
-        }
-      ],
+      "factors": {
+        "director": " انریکو کاساروسا",
+        "writer": " جسی آندروز ",
+        "producer": " مایک جونز",
+        "musician": "دن  رومر"
+      },
       "album": [
         "https://static.cdn.asset.aparat.com/lp/17149291-1423-m.jpg",
         "https://static.cdn.asset.aparat.com/lp/17149288-6139-m.jpg",
@@ -1385,14 +1375,12 @@
           "image": "https://static.cdn.asset.filimo.com/flmt/rvw_cast_3416_1-s.jpg"
         }
       ],
-      "factors": [
-        {
-          "director": "گرتا گرویک",
-          "cameraMan": "یوریک لو سو",
-          "producer": "آدام مریمز",
-          "musician": "الکساندر دسپلا"
-        }
-      ],
+      "factors": {
+        "director": "گرتا گرویک",
+        "cameraMan": "یوریک لو سو",
+        "producer": "آدام مریمز",
+        "musician": "الکساندر دسپلا"
+      },
       "album": [
         "https://www.filimo.com/public/public/user_data/photo/17163/17162841-56e8cfeafd4b25080ba157d24cf34003-a.jpg",
         "https://www.filimo.com/public/public/user_data/photo/17163/17162843-dde3e0842fb110960a98e661d6354a71-a.jpg",
@@ -1731,5 +1719,11 @@
       ]
     }
   ],
-  "categories": ["انیمیشن", "ماجراجویی", "کمدی", "اکشن", "درام"]
+  "categories": [
+    "انیمیشن",
+    "ماجراجویی",
+    "کمدی",
+    "اکشن",
+    "درام"
+  ]
 }

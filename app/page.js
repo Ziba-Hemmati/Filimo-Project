@@ -1,10 +1,11 @@
-import { getLocalData } from "../lib/localdata";
-
-const data = await getLocalData();
-const movie = data.movies;
+import BestOfImdb from "@/components/mainPage/bestOfImdb/BestOfImdb";
 
 const Home = () => {
-  return <></>;
+  return (
+    <>
+      <BestOfImdb />
+    </>
+  );
 };
 
 export default Home;
