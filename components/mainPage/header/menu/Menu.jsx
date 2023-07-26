@@ -72,6 +72,7 @@ const Menu = ({ category }) => {
                 {category.map((item) => {
                   return (
                     <Link
+                      key={item}
                       href=""
                       className="my-4 hover:text-orange-600 transition-colors duration-300 "
                     >
