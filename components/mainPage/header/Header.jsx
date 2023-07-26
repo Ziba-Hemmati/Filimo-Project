@@ -5,23 +5,21 @@ import Search from "./search/Search";
 import MyLists from "./myLists/MyLists";
 import Menu from "./menu/Menu";
 
-const Header = () => {
+const Header = ({ category }) => {
   return (
-    <nav className="z-10 xl:flex xl:justify-center bg-black-950 bg-opacity-[.7] sticky top-0">
-      <div className="items-center justify-center lg:p-2 md:pr-6 md:pl-6 lg:flex lg:px-0 xl:px-4">
+    <nav className="z-10 lg:py-2 xl:py-1 xl:flex xl:justify-center bg-black-950 bg-opacity-[.7] sticky top-0">
+      <div className="items-center justify-center md:px-5 lg:flex lg:px-0">
         <DesktopLogo />
         <div className="flex flex-col lg:flex-row-reverse xl:justify-around xl:flex">
-          <div className="flex justify-between items-center p-2 md:pr-6 md:pl-6 lg:pl-0  lg:pr-0">
+          <div className="flex justify-between items-center p-2 md:px-0 lg:pl-0 lg:pr-0">
             <MobileLogo />
             <Search />
             <MyLists />
           </div>
-          <Menu />
+          <Menu category={category} />
         </div>
       </div>
     </nav>
-
- 
   );
 };
 
