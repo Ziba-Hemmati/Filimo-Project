@@ -7,7 +7,7 @@ import Menu from "./menu/Menu";
 
 const Header = () => {
   return (
-    <nav className="xl:flex xl:justify-center bg-black-950 bg-opacity-[.7] sticky top-0">
+    <nav className="z-10 xl:flex xl:justify-center bg-black-950 bg-opacity-[.7] sticky top-0">
       <div className="items-center justify-center lg:p-2 md:pr-6 md:pl-6 lg:flex lg:px-0 xl:px-4">
         <DesktopLogo />
         <div className="flex flex-col lg:flex-row-reverse xl:justify-around xl:flex">
