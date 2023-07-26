@@ -25,14 +25,14 @@ html {
 
 ::-webkit-scrollbar {
   height: 3px;
-  
+
 }
+
 ::-webkit-scrollbar-thumb {
   background: #a1a1a1;
   border-radius: 8px;
 }
-::-webkit-scrollbar-corner{
-}
+
 ::-webkit-scrollbar-corner{
   visibility: hidden;
 }
