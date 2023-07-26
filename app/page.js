@@ -3,6 +3,7 @@ import { MainBanner } from "@/components/mainPage/main-banner";
 import BestOfImdb from "@/components/mainPage/bestOfImdb/BestOfImdb";
 import WatchMovie from "@/components/mainPage/watchmovie/Watch_movie";
 import HowWatch from "@/components/mainPage/howWatch/HowWatch";
+import FreeMovies from "@/components/mainPage/freeMovies/FreeMovies";
 
 const data = await getLocalData();
 const movie = data.movies;
@@ -14,6 +15,7 @@ const Home = () => {
       <BestOfImdb />
       <WatchMovie />
       <HowWatch />
+      <FreeMovies />
     </div>
   );
 };
