@@ -1,15 +1,21 @@
-import Question from "@/components/mainPage/question/Question";
+import { getLocalData } from "../lib/localdata";
 import { MainBanner } from "@/components/mainPage/main-banner";
-import {getLocalData} from "@/lib/localdata";
+import BestOfImdb from "@/components/mainPage/bestOfImdb/BestOfImdb";
+import WatchMovie from "@/components/mainPage/watchmovie/Watch_movie";
+import HowWatch from "@/components/mainPage/howWatch/HowWatch";
 
 const data = await getLocalData();
 const movie = data.movies;
 
 const Home = () => {
-  return <div>
-    <MainBanner movies={movie} />
-    <Question/>
-      </div>;
+  return (
+    <div>
+      <MainBanner movies={movie} />
+      <BestOfImdb />
+      <WatchMovie />
+      <HowWatch />
+    </div>
+  );
 };
 
 export default Home;
