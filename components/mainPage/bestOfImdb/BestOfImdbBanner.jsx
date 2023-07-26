@@ -17,7 +17,7 @@ const BestOfImdbBanner = () => {
       <div className={"w-full h-full bg-gradient-banner absolute"}></div>
       <div className={"w-full h-full bg-gradient-banner2 absolute"}></div>
       <div className={"w-full h-full bg-gradient-banner3 absolute"}></div>
-      <img className={"w-11/12 h-full md:h-fit "} src={banner} alt={faName} />
+      <img className={"w-11/12 h-full md:h-fit"} src={banner} alt={faName} />
     </div>
   );
 };
