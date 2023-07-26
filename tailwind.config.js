@@ -10,6 +10,7 @@ module.exports = {
       sm: "480px",
       md: "768px",
       lg: "976px",
+      lg2: "1100px",
       xl: "1200px",
     },
     colors: {
@@ -21,6 +22,7 @@ module.exports = {
       "black-800": "#1a1a1a",
       "black-750": "#171717",
       "black-700": "#191919",
+      "black-600": "#282828",
 
       "gray-200": "#d8d8d8",
       "gray-300": "#a1a1a1",
@@ -49,6 +51,12 @@ module.exports = {
         "gradient-radial": "radial-gradient(var(--tw-gradient-stops))",
         "gradient-conic":
           "conic-gradient(from 180deg at 50% 50%, var(--tw-gradient-stops))",
+        "gradient-banner":
+          "linear-gradient(90deg,#151515 0%,rgba(21,21,21,0) 10%)",
+        "gradient-banner2":
+          "linear-gradient(270deg,#151515 15%,rgba(21,21,21,0) 100%)",
+        "gradient-banner3":
+          "linear-gradient(180deg,#151515 4%,rgba(21,21,21,0) 45%)",
       },
     },
   },
