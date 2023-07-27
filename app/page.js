@@ -5,6 +5,7 @@ import WatchMovie from "@/components/mainPage/watchmovie/Watch_movie";
 import HowWatch from "@/components/mainPage/howWatch/HowWatch";
 import FreeMovies from "@/components/mainPage/freeMovies/FreeMovies";
 import Question from "@/components/mainPage/question/Question";
+import Comments from "@/components/mainPage/commentMovies/CommentMovies";
 
 const data = await getLocalData();
 const movie = data.movies;
@@ -17,6 +18,7 @@ const Home = () => {
       <WatchMovie />
       <HowWatch />
       <FreeMovies movies={movie} />
+        <Comments/>
       <Question />
     </div>
   );
