@@ -15,7 +15,7 @@ const TextItem = ({ textObj }) => {
                 <span className={`cursor-pointer text-xs font-bold ${isOpen ? 'text-orange-500' : 'text-gray-200'}`}>
                     {text}
                 </span>
-                <span className={`text-orange-500 ${isOpen ? 'text-orange-500' : 'text-gray-200'}`}>
+                <span className={`text-orange-500 cursor-pointer ${isOpen ? 'text-orange-500' : 'text-gray-200'}`}>
                     {isOpen ? 'x' : '+'}
                 </span>
             </div>

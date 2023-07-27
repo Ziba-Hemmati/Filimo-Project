@@ -12,7 +12,7 @@ const TextDetails = ({ details }) => {
     );
     updatedDetails = updatedDetails.replace(
         /دانلود مستقیم نرم‌افزار iOS/g,
-        '<a class="link" href="#">(دانلود مستقیم نرم‌افزار iOS)</a>',
+        '<a class="" href="#">(دانلود مستقیم نرم‌افزار iOS)</a>',
     );
     updatedDetails = updatedDetails.replace(
         /دانلود مستقیم نرم‌افزار اندروید/g,
