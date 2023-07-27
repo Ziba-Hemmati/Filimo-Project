@@ -1,4 +1,3 @@
-"use client";
 import FreeMoviesPosterItem from "@/components/mainPage/freeMovies/FreeMoviesItem"
 
 const FreeMoviesPoster = ({ data }) => {
