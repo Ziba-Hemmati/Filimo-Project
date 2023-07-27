@@ -1,12 +1,7 @@
-// "use client";
-import { getLocalData } from "../../lib/localdata";
-import Movies from "@/components/movies/Movies";
+import Movie from "@/components/movies/Movie";
 
-const data = await getLocalData();
-const movie = data.movies;
-
-const page = () => {
-  return <Movies movie={movie} />;
+const Movies = () => {
+  return <Movie />;
 };
 
-export default page;
+export default Movies;
