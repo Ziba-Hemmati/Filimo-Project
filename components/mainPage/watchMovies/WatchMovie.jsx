@@ -1,3 +1,4 @@
+import Title from "@/components/Title"
 const WatchMovie = () =>{
     return(
         <div className="py-16 px-1.5 sm:px-[5rem] md:flex ">
@@ -6,9 +7,9 @@ const WatchMovie = () =>{
             </div>
             <div className="md:pr-4 xl:mt-12">
             <div className="md:flex flex-col">
-                <h3 className="text-white pb-4 font-iran-sans-medium xl:font-iran-sans-medium">
+                <Title className="text-white pb-4 font-iran-sans-medium xl:font-iran-sans-medium">
                     تماشای فیلیمو با همه دستگاه‌ها
-                </h3>
+                </Title>
             </div>
             <div>
                 <p className="text-gray-200 leading-6 font-iran-sans text-[.8rem] xl:text-sm lg:text-[.8rem] ">
