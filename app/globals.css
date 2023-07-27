@@ -22,9 +22,16 @@ html {
   scroll-behavior: smooth;
   @apply bg-black-850;
 }
-/* ::-webkit-scrollbar {
-  height: 1px;
+
+::-webkit-scrollbar {
+  height: 3px;
 }
+
 ::-webkit-scrollbar-thumb {
   background: #a1a1a1;
-} */
+  border-radius: 8px;
+}
+
+::-webkit-scrollbar-corner {
+  visibility: hidden;
+}

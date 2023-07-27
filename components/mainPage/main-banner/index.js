@@ -6,26 +6,27 @@ import { PosterText } from "./PosterText";
 
 const initialState = {
   text: [
-    { title: "۸۵ هزار اپیزود فیلم و سریال برای تماشا داری" },
+    { title: "۸۵هزار اپیزود فیلم و سریال برای تماشا داری" },
+    // { title: "۸۵" },
     { title: "می‌تونی دانلود کنی بعد بدون اینترنت تماشا کنی" },
     { title: "می‌تونی یک عضو، مخصوص تماشای کودک بسازی" },
   ],
   posters: [
     {
       banner:
-        "https://s3.amazonaws.com/static.rogerebert.com/uploads/review/primary_image/reviews/tom-and-jerry-movie-review-2021/tom-and-jerry-movie-review-2021.jpeg",
+          "https://s3.amazonaws.com/static.rogerebert.com/uploads/review/primary_image/reviews/tom-and-jerry-movie-review-2021/tom-and-jerry-movie-review-2021.jpeg",
     },
     {
       banner:
-        "https://www.dreamworks.com/storage/cms-uploads/boss-baby-2-seo-share2.jpg",
+          "https://www.dreamworks.com/storage/cms-uploads/boss-baby-2-seo-share2.jpg",
     },
     {
       banner:
-        "https://www.cnet.com/a/img/resize/53d20634fa25a0dc9de0bc2ea22c41992f1f1173/hub/2016/09/06/9d4d2ee9-22f3-4e84-9585-4da624aedb79/toddlerwatermoana2.jpg?auto=webp&width=1200",
+          "https://www.cnet.com/a/img/resize/53d20634fa25a0dc9de0bc2ea22c41992f1f1173/hub/2016/09/06/9d4d2ee9-22f3-4e84-9585-4da624aedb79/toddlerwatermoana2.jpg?auto=webp&width=1200",
     },
     {
       banner:
-        "https://m.media-amazon.com/images/M/MV5BMTc5ODQzOTk0NV5BMl5BanBnXkFtZTgwODcwMDk4NTE@._V1_.jpg",
+          "https://m.media-amazon.com/images/M/MV5BMTc5ODQzOTk0NV5BMl5BanBnXkFtZTgwODcwMDk4NTE@._V1_.jpg",
     },
   ],
 };
@@ -33,7 +34,7 @@ const initialState = {
 export const MainBanner = (movie) => {
   const [state, setState] = useState(initialState);
   const movies = movie.movies;
-  const selectedIds = [4, 6, 7, 0, 10, 11, 12];
+  const selectedIds = [5, 6, 7, 0, 10, 11, 12];
   const settings = {
     arrows: false,
     autoplay: true,
@@ -42,30 +43,39 @@ export const MainBanner = (movie) => {
     slidesToShow: 1,
   };
   return (
-    <>
-
-      <Fade {...settings} className="h-full">
-
-
-        {movies
-          .filter((item) => selectedIds.includes(item.id))
-          .map((item, index) => {
-            return (
-              <div
-                className="min-h-[70vh] w-full"
-                key={index}
-                style={{
-                  backgroundRepeat: "no-repeat",
-                  backgroundSize: "cover",
-                  backgroundPosition: "center",
-                  backgroundImage: `linear-gradient(to bottom, rgba(255,255,255,0), #151515), url(${item.banner})`,
-                }}
-              >
-                <PosterText data={state.text} />
-              </div>
-            );
-          })}
-      </Fade>
-    </>
+      <>
+        {console.log(movies)}
+        <Fade {...settings} className="h-full">
+          {movies
+              .filter((item) => selectedIds.includes(item.id))
+              .map((item, index) => {
+                return (
+                    <div
+                        className="min-h-[70vh] w-full"
+                        key={index}
+                        style={{
+                          backgroundRepeat: "no-repeat",
+                          backgroundSize: "cover",
+                          backgroundPosition: "center",
+                          backgroundImage: `radial-gradient(130% 44% at 41% 40%,rgba(0,0,0,0) 0,#151515 100%), url(${item.banner})`,
+                        }}
+                    >
+                      <div
+                          className=""
+                          style={{
+                            backgroundRepeat: "no-repeat",
+                            backgroundSize: "cover",
+                            backgroundPosition: "center",
+                            backgroundImage: `linear-gradient(186.97deg,rgba(21,21,21,0) 5.45%,#151515 94.55%)`,
+                          }}
+                      ></div>
+                      <div className="flex items-center justify-center">
+                        <PosterText data={state.text} />
+                      </div>
+                    </div>
+                );
+              })}
+        </Fade>
+      </>
   );
 };
