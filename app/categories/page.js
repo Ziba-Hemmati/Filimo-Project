@@ -1,10 +1,5 @@
-import { getLocalData } from "../../lib/localdata";
-
-const data = await getLocalData();
-const movie = data.movies;
-
-const page = () => {
-  return;
+const Categories = () => {
+  return <div></div>;
 };
 
-export default page;
+export default Categories;
