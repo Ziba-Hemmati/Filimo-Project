@@ -3,11 +3,11 @@ import Button from "./Button";
 const HowWatch = () =>{
     return(
         <div className="py-16 bg-black-900 ">
-            <div className=" relative left-0  w-100 ">
-                <img className="absolute left-0 md:w-[500px] lg:w-[600px] xl:w[750px] hidden md:block" src="https://www.filimo.com/assets/web/ui/img-ynsexKiWcOkSOPureyAnA/campaigns/nosub-v_new/TVBG.png" alt="" />
+            <div className=" relative left-0  w-100 ml-10">
+                <img className="absolute left-0  md:w-[600px] lg:w-[700px] xl:w[850px] hidden md:block" src="https://www.filimo.com/assets/web/ui/img-ynsexKiWcOkSOPureyAnA/campaigns/nosub-v_new/TVBG.png" alt="" />
             </div>
-            <div className="relative px-3 sm:px-24">
-                <div className="text-white text-base font-iran-sans mb-6">
+            <div className="relative px-3 sm:px-20">
+                <div className="text-white text-lg font-iran-sans-medium fond-bold mb-6">
                     <h2>
                         چطور با تلویزیون، فیلیمو تماشا کنم؟
                     </h2>
@@ -28,7 +28,7 @@ const HowWatch = () =>{
                             <img src="https://www.filimo.com/assets/web/ui/img-ynsexKiWcOkSOPureyAnA/campaigns/nosub-v_new/TV.png"  width={36}/>
                         </div>
                         <div className="">
-                            <div className=" text-gray-200 font-iran-sans-medium font-medium mb-4 text-sm">
+                            <div className=" text-gray-200 font-iran-sans-medium font-bold mb-4 text-sm">
                                 <p>تلویزیون</p>
                             </div>
                             <div className="text-gray-300 mb-8 text-[.7rem] ">
@@ -41,7 +41,7 @@ const HowWatch = () =>{
                             <img src="https://www.filimo.com/assets/web/ui/img-ynsexKiWcOkSOPureyAnA/campaigns/nosub-v_new/androidTV.png"  width={36}/>
                         </div>
                         <div>
-                            <div className="text-gray-200 font-iran-sans-medium font-medium mb-4 text-sm">
+                            <div className="text-gray-200 font-iran-sans-medium font-bold mb-4 text-base">
                                 <p>اندروید تی‌وی</p>
                             </div>
                             <div className="text-gray-300 mb-16 text-[.7rem]">
