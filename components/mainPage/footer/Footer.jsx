@@ -10,10 +10,10 @@ const Footer = () => {
           className="mb-14 md:mt-16"
         />
         <div className="flex flex-col items-center lg:flex-row lg:items-center">
-          <Items className={"lg:pb-16 my-2 ml-8"}>
+          <Items className={"lg:pb-16 my-2 lg:ml-8"}>
             هزاران فیلم و سریال خارجی (دوبله و زیرنویس)
           </Items>
-          <Items className={"lg:pb-16 my-2 ml-8"}>
+          <Items className={"lg:pb-16 my-2 lg:ml-8"}>
             هزاران انیمیشن و کارتون برای کودکان
           </Items>
           <Items className={"lg:pb-16 my-2 mb-10 lg:mb-0"}>
