@@ -1,9 +1,12 @@
-const Title = ({ children }) => {
+import clsx from "clsx";
+
+const Title = ({ children, className }) => {
   return (
     <h3
-      className={
-        "font-iran-sans-medium text-center text-lg font-extrabold mb-6 sm:text-right lg2:px-[100px]"
-      }
+      className={clsx(
+        "font-iran-sans-medium  text-lg font-extrabold ",
+        className,
+      )}
     >
       {children}
     </h3>
