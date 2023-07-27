@@ -18,6 +18,7 @@ const Home = () => {
       <WatchMovie />
       <HowWatch />
       <FreeMovies movies={movie} />
+      <ChildrenWorld />
       <Question />
     </div>
   );
