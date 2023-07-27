@@ -1,9 +1,8 @@
-import getFreeMovies from "@/components/mainPage/freeMovies/getFreeMovies";
 import Title from "@/components/Title";
 import FreeMoviesPoster from "@/components/mainPage/freeMovies/FreeMoviesPoster";
 
-const FreeMovies = async () => {
-  const data = await getFreeMovies;
+const FreeMovies = ({movies}) => {
+  const data = movies.filter(movie => movie.category === "animation");
 
   return (
     <div className={"flex flex-col overflow-hidden text-white my-12 px-2 sm:px-8 "}>
