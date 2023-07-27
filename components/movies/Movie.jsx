@@ -1,4 +1,9 @@
-const Movies = ({ movie }) => {
+import { getLocalData } from "../../lib/localdata";
+
+const data = await getLocalData();
+const movie = data.movies;
+
+const Movie = () => {
   return (
     <div>
       <h3 className="text-white my-6 px-[10px] lg:px-[30px]">فیلم</h3>
@@ -8,7 +13,7 @@ const Movies = ({ movie }) => {
             return (
               <div key={id} className="relative">
                 <img className="w-full h-full rounded-[4px]" src={poster} />
-                <div className=" bg-black-600 opacity-0 absolute bottom-0 right-0 w-full h-full hover:opacity-80">
+                <div className=" bg-black-fade-600 opacity-0 absolute bottom-0 right-0 w-full h-full hover:opacity-90 transition-all duration-300 ">
                   <div className="absolute bottom-0">
                     <div className=" flex w-fit justify-between items-end mb-3 mr-1">
                       <span className="font-black rounded-tr-xl rounded-br-xl bg-gray-400 bg-opacity-[.8] w-fit p-[3px] pr-2  items-center">
@@ -34,4 +39,4 @@ const Movies = ({ movie }) => {
   );
 };
 
-export default Movies;
+export default Movie;

@@ -23,6 +23,7 @@ module.exports = {
       "black-750": "#171717",
       "black-700": "#191919",
       "black-600": "#282828",
+      "black-fade-600": "#282828da",
 
       "gray-200": "#d8d8d8",
       "gray-300": "#a1a1a1",

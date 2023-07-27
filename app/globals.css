@@ -25,7 +25,6 @@ html {
 
 ::-webkit-scrollbar {
   height: 3px;
-
 }
 
 ::-webkit-scrollbar-thumb {
@@ -33,6 +32,6 @@ html {
   border-radius: 8px;
 }
 
-::-webkit-scrollbar-corner{
+::-webkit-scrollbar-corner {
   visibility: hidden;
 }
