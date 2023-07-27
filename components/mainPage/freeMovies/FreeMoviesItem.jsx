@@ -1,4 +1,3 @@
-"use client";
 import Link from 'next/link'
 
 const FreeMoviesPosterItem = ({ id, poster, faName }) => {
