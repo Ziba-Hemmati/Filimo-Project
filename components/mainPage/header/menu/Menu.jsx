@@ -49,7 +49,7 @@ const Menu = ({ category }) => {
             onMouseLeave={handleLeave}
           >
             <li className="flex items-center">
-              <span className="pl-8 md:pl-0 transition-colors duration-300 cursor-pointer">
+              <span className=" md:pl-0 transition-colors duration-300 cursor-pointer">
                 فیلم
               </span>
               <FontAwesomeIcon
@@ -99,7 +99,7 @@ const Menu = ({ category }) => {
             )}
           </Transition>
         </div>
-        <div className="flex items-center pl-8 hover:text-orange-600">
+        <div className="flex items-center hover:text-orange-600">
           <li className="pl-1 transition-colors duration-300 cursor-pointer">
             سریال
           </li>
