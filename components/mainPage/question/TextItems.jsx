@@ -19,7 +19,9 @@ const TextItem = ({ textObj }) => {
                     {isOpen ? 'x' : '+'}
                 </span>
             </div>
+            <div className="ease-in duration-500">
             {isOpen && <TextDetails details={details} />}
+        </div>
         </li>
     );
 };
