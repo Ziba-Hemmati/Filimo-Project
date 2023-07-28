@@ -23,8 +23,9 @@ const EachMovieBanner = async ({ mark }) => {
     genre,
     banner,
     link,
+    factors : {director}
   } = target;
-  const { director } = factors;
+  // const { director } = factors;
 
   return (
     <div className="text-white">
