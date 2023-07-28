@@ -18,7 +18,7 @@ const Home = () => {
       <BestOfImdb />
       <WatchMovie />
       <HowWatch />
-      <FreeMovies movies={movie} />
+      <FreeMovies />
       <Comments/>
       <ChildrenWorld />
       <Question />

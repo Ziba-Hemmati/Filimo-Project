@@ -1,17 +1,16 @@
 import Title from "@/components/Title";
 import FreeMoviesPoster from "@/components/mainPage/freeMovies/FreeMoviesPoster";
 
-const FreeMovies = ({movies}) => {
-  const data = movies.filter(movie => movie.category === "animation");
+const FreeMovies = () => {
 
   return (
-    <div className={"flex flex-col overflow-hidden text-white my-12 px-2 sm:px-8 "}>
+    <div className={"flex flex-col overflow-hidden text-white my-12 px-4 lg2:px-20"}>
       <Title>انیمیشن</Title>
       <div className={"flex justify-center lg2:px-[40px]"}>
         <div
           className={"w-full overflow-x-scroll lg:flex lg:justify-center lg2:overflow-hidden "}
         >
-          <FreeMoviesPoster data={data} />
+          <FreeMoviesPoster />
         </div>
       </div>
    </div>
