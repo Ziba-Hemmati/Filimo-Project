@@ -43,7 +43,7 @@ const Menu = ({ category }) => {
           </li>
         </div>
         <div>
-          <div
+          <Link href={"/movies"}
             className=" hover:text-orange-600"
             onMouseOver={handleOver}
             onMouseLeave={handleLeave}
@@ -57,7 +57,7 @@ const Menu = ({ category }) => {
                 className="pr-1 hidden md:inline pl-8 pb-0"
               />
             </li>
-          </div>
+          </Link>
           <Transition in={isOver} timeout={300} mountOnEnter unmountOnExit>
             {(state) => (
               <div

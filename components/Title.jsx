@@ -5,7 +5,7 @@ const Title = ({ children, className }) => {
     <h3
       className={clsx(
         "font-iran-sans-medium  text-lg font-extrabold ",
-        className,
+        className
       )}
     >
       {children}
