@@ -1,19 +1,16 @@
 import FreeMoviesPosterItem from "@/components/mainPage/freeMovies/FreeMoviesItem"
+import { getLocalData } from "@/lib/localdata";
 
-const FreeMoviesPoster = ({ data }) => {
+const FreeMoviesPoster = async () => {
+  const data = await getLocalData();
+  const movies = data.movies;
+  const movie = movies.filter(movie => movie.category === "animation" || movie.category === "adventure");
   
     return (
       <ul
-        className={"flex w-max justify-around relative pb-8 pt-4 lg2:w-full lg2:px-2"}
+        className={"flex justify-around w-full relative py-8 lg2:px-2"}
       >
-        {data.map(({ id, poster, faName }) => (
-          <FreeMoviesPosterItem
-            key={id}
-            id={id}
-            poster={poster}
-            faName={faName}
-          />
-        ))}
+          <FreeMoviesPosterItem data={movie}/>
       </ul>
     );
   };
