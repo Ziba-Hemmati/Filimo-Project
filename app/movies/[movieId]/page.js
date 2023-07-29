@@ -1,15 +1,14 @@
 import { getLocalData } from "@/lib/localdata";
-const data = await getLocalData();
-const movie = data.movies;
 import EachMovieBanner from "@/components/eachMovie/EachMovieBanner";
 import EachMovieStoryAndTrailer from "@/components/eachMovie/EachMovieStoryAndTrailer";
-import EachMovieModal from "@/components/eachMovie/EachMovieModal";
-const EachMovie = ({ params }) => {
+
+const EachMovie = async ({ params }) => {
+  const data = await getLocalData();
+  const movies = data.movies;
   return (
     <div className="text-white">
-      <EachMovieBanner mark={params.movieId} />
+      <EachMovieBanner mark={params.movieId} movies={movies} />
       <EachMovieStoryAndTrailer mark={params.movieId} />
-      <EachMovieModal />
     </div>
   );
 };

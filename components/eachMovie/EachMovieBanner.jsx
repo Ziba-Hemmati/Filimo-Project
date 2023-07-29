@@ -1,6 +1,7 @@
-import { getLocalData } from "@/lib/localdata";
+"use client";
 import "@fortawesome/fontawesome-svg-core/styles.css";
 import { config } from "@fortawesome/fontawesome-svg-core";
+
 config.autoAddCss = false;
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import {
@@ -10,14 +11,14 @@ import {
   faHeart,
 } from "@fortawesome/free-solid-svg-icons";
 import Info from "./Info";
+import EachMovieModal from "@/components/eachMovie/EachMovieModal";
+import { useState } from "react";
 
 // *************************************************************************
 
-const EachMovieBanner = async ({ mark }) => {
-  const data = await getLocalData();
-  const movie = data.movies;
-
-  const target = movie.find((item) => {
+const EachMovieBanner = ({ mark, movies }) => {
+  const [isOpen, setIsOpen] = useState(false);
+  const target = movies.find((item) => {
     return item.id === Number(mark);
   });
   const {
@@ -39,6 +40,13 @@ const EachMovieBanner = async ({ mark }) => {
     factors: { director },
   } = target;
 
+  const handleOpen = () => {
+    setIsOpen(true);
+  };
+  const handleClose = () => {
+    setIsOpen(false);
+  };
+
   return (
     <div className="text-white w-full">
       <div
@@ -46,16 +54,19 @@ const EachMovieBanner = async ({ mark }) => {
         style={{ backgroundImage: `url("${banner}")` }}
       >
         <div className="md:flex md:px-8">
-          <iframe
-            src={link}
-            frameborder="0"
-            className="w-[148px] h-[198px] rounded-[4px] mx-auto md:w-[240px] md:h-[320px] md:ml-8"
-          ></iframe>
-
+          {/*<iframe*/}
+          {/*  src={link}*/}
+          {/*  frameborder="0"*/}
+          {/*  className="w-[148px] h-[198px] rounded-[4px] mx-auto md:w-[240px] md:h-[320px] md:ml-8"*/}
+          {/*></iframe>*/}
+          <div
+            onClick={handleOpen}
+            className={"w-[148px] h-[198px] rounded-[4px] bg-black-600"}
+          ></div>
           <div className="hidden md:inline-block">
             <p className="text-base mb-8">فیلم {faName} </p>
             <p className="pb-3 text-[.8rem]">{enName} </p>
-            <p className="pb-6 text-[.8rem]">10/{rate} </p>
+            <p className="pb-6 text-[.8rem] ">10/{rate} </p>
             <p className="text-orange-400 mb-8 text-[.8rem]">
               {" "}
               مناسب برای بالای {age} سال{" "}
@@ -103,6 +114,8 @@ const EachMovieBanner = async ({ mark }) => {
           </div>
         </div>
       </div>
+
+      {isOpen && <EachMovieModal link={link} onClose={handleClose} />}
     </div>
   );
 };
