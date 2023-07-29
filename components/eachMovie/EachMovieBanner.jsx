@@ -25,10 +25,15 @@ const EachMovieBanner = async ({ mark }) => {
     link,
   } = target;
   const { director } = factors;
-
+  console.log(banner);
   return (
-    <div className="text-white">
-      <img src={banner} alt="banner" />
+    <div className="text-white relative overflow-hidden border-b-2 border-b-orange-600">
+      <div
+        // className={`bg-[url('` + banner + `')] h-80`}
+        style={{ backgroundImage: `url('${banner}')`, height: "200px" }}
+      >
+        {/*<img src={banner} alt="banner" className={"min-w-[1440px]"} />*/}
+      </div>
 
       <div>
         <p>فیلم {faName} </p>
