@@ -1,4 +1,17 @@
 import { getLocalData } from "@/lib/localdata";
+import "@fortawesome/fontawesome-svg-core/styles.css";
+import { config } from "@fortawesome/fontawesome-svg-core";
+config.autoAddCss = false;
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import {
+  faAngleUp,
+  faAngleDown,
+  faBookmark,
+  faHeart,
+} from "@fortawesome/free-solid-svg-icons";
+import Info from "./Info";
+
+// *************************************************************************
 
 const EachMovieBanner = async ({ mark }) => {
   const data = await getLocalData();
@@ -23,34 +36,73 @@ const EachMovieBanner = async ({ mark }) => {
     genre,
     banner,
     link,
+    factors: { director },
   } = target;
-  const { director } = factors;
-  console.log(banner);
+
   return (
-    <div className="text-white relative overflow-hidden border-b-2 border-b-orange-600">
+    <div className="text-white w-full">
       <div
-        // className={`bg-[url('` + banner + `')] h-80`}
-        style={{ backgroundImage: `url('${banner}')`, height: "200px" }}
+        className="flex flex-col items-center md:items-start xl:px-[5%] xl:pt-[3%] py-5 bg-no-repeat bg-cover"
+        style={{ backgroundImage: `url("${banner}")` }}
       >
-        {/*<img src={banner} alt="banner" className={"min-w-[1440px]"} />*/}
-      </div>
+        <div className="md:flex md:px-8">
+          <iframe
+            src={link}
+            frameborder="0"
+            className="w-[148px] h-[198px] rounded-[4px] mx-auto md:w-[240px] md:h-[320px] md:ml-8"
+          ></iframe>
 
-      <div>
-        <p>فیلم {faName} </p>
-        <p>{enName} </p>
-        <p>{rate} </p>
-        <p> مناسب برای بالای {age} سال </p>
-        <p>کارگردان:{director}</p>
-        <p>
-          {time} - محصول {country} - {year} -{" "}
-          {isDub ? "دوبله شده" : "دوبله نشده"} -{" "}
-          {isSub ? "با زیرنویس" : "بدون زیرنویس"} - کیفیت {quality}{" "}
-        </p>
-      </div>
-      <div>{genre} </div>
-      <div>بعدا میبینم</div>
+          <div className="hidden md:inline-block">
+            <p className="text-base mb-8">فیلم {faName} </p>
+            <p className="pb-3 text-[.8rem]">{enName} </p>
+            <p className="pb-6 text-[.8rem]">10/{rate} </p>
+            <p className="text-orange-400 mb-8 text-[.8rem]">
+              {" "}
+              مناسب برای بالای {age} سال{" "}
+            </p>
+            <p className="text-[.8rem]">
+              {time} - محصول {country} - {year} -
+              {isDub ? " دوبله شده " : "دوبله نشده"}-
+              {isSub ? " با زیرنویس " : "بدون زیرنویس"} - کیفیت {quality}
+            </p>
+            <div className="text-[.8rem] bg-gray-500 w-fit p-1 rounded-2xl mt-6">
+              {genre}
+            </div>
+          </div>
 
-      <iframe src={link} frameborder="0"></iframe>
+          <div className="text-[.9rem] text-center px-2 md:text-right md:hidden">
+            <Info
+              faName={faName}
+              faAngleDown={faAngleDown}
+              faAngleUp={faAngleUp}
+              enName={enName}
+              rate={rate}
+              age={age}
+              director={director}
+              time={time}
+              country={country}
+              year={year}
+              isDub={isDub}
+              isSub={isSub}
+              quality={quality}
+              genre={genre}
+            />
+          </div>
+        </div>
+        <div className="md:px-8 w-full">
+          <div className="hidden md:inline-block border border-t-gray-300 w-full xl:mt-8"></div>
+          <div className="flex-col flex text-center md:flex-row md:flex items-center mt-4 mb-2 xl:mb-4">
+            <button className="md:flex items-center">
+              <FontAwesomeIcon icon={faBookmark} />
+              <div className="mb-4 md:mb-0 md:mr-1">بعدا میبینم</div>
+            </button>
+            <button className="md:flex items-center">
+              <FontAwesomeIcon icon={faHeart} className="md:mr-8 ml-1" />
+              <div>دوست داشتم</div>
+            </button>
+          </div>
+        </div>
+      </div>
     </div>
   );
 };
