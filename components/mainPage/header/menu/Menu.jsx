@@ -105,7 +105,7 @@ const Menu = ({ category }) => {
           </li>
           <FontAwesomeIcon
             icon={faAngleDown}
-            className="text-xs hidden md:inline pl-8 lg:pl-0 md:pl-0"
+            className="text-xs hidden md:inline pl-8 lg:pl-8 md:pl-0"
           />
         </div>
         <div className="flex items-center">
