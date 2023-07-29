@@ -10,6 +10,7 @@ import {
   faHeart,
 } from "@fortawesome/free-solid-svg-icons";
 import Info from "./Info";
+import WatchLater from "./WatchLater";
 
 // *************************************************************************
 
@@ -47,7 +48,7 @@ const EachMovieBanner = async ({ mark }) => {
         <div className="md:flex md:px-8">
           <iframe
             src={link}
-            frameborder="0"
+            frameBorder="0"
             className="w-[148px] h-[198px] rounded-[4px] mx-auto md:w-[240px] md:h-[320px] md:ml-8"
           ></iframe>
 
@@ -91,10 +92,7 @@ const EachMovieBanner = async ({ mark }) => {
         <div className="md:px-8 w-full">
           <div className="hidden md:inline-block border border-t-gray-300 w-full xl:mt-8"></div>
           <div className="flex-col flex text-center md:flex-row md:flex items-center mt-4 mb-2 xl:mb-4">
-            <button className="md:flex items-center">
-              <FontAwesomeIcon icon={faBookmark} />
-              <div className="mb-4 md:mb-0 md:mr-1">بعدا میبینم</div>
-            </button>
+            <WatchLater target={target} />
             <button className="md:flex items-center">
               <FontAwesomeIcon icon={faHeart} className="md:mr-8 ml-1" />
               <div>دوست داشتم</div>
