@@ -1,3 +1,4 @@
+import Link from "next/link";
 import { getLocalData } from "../../lib/localdata";
 
 const Movie = async () => {
@@ -11,23 +12,26 @@ const Movie = async () => {
           ({ poster, id, faName, genre, year, country, isDub, rate }) => {
             return (
               <div key={id} className="relative">
-                <img className="w-full h-full rounded-[4px]" src={poster} />
-                <div className=" bg-black-fade-600 opacity-0 absolute bottom-0 right-0 w-full h-full hover:opacity-90 transition-all duration-300 ">
-                  <div className="absolute bottom-0">
-                    <div className=" flex w-fit justify-between items-end mb-3 mr-1">
-                      <span className="font-black rounded-tr-xl rounded-br-xl bg-gray-400 bg-opacity-[.8] w-fit p-[3px] pr-2  items-center">
-                        IMDb
-                      </span>
-                      <span className="rounded-tl-xl rounded-bl-xl pl-2 bg-gray-400 bg-opacity-[.7] p-[3px]">
-                        {rate}/10
-                      </span>
+                <Link href={`/movies/${id}`}>
+                  <img className="w-full h-full rounded-[4px]" src={poster} />
+
+                  <div className=" bg-black-fade-600 opacity-0 absolute bottom-0 right-0 w-full h-full hover:opacity-90 transition-all duration-300 ">
+                    <div className="absolute bottom-0">
+                      <div className=" flex w-fit justify-between items-end mb-3 mr-1">
+                        <span className="font-black rounded-tr-xl rounded-br-xl bg-gray-400 bg-opacity-[.8] w-fit p-[3px] pr-2  items-center">
+                          IMDb
+                        </span>
+                        <span className="rounded-tl-xl rounded-bl-xl pl-2 bg-gray-400 bg-opacity-[.7] p-[3px]">
+                          {rate}/10
+                        </span>
+                      </div>
+                      <p className="mb-3 mr-1">{genre}</p>
+                      <p className="mb-3 mr-1">
+                        {year} - {country} {isDub && " - دوبله شده"}
+                      </p>
                     </div>
-                    <p className="mb-3 mr-1">{genre}</p>
-                    <p className="mb-3 mr-1">
-                      {year} - {country} {isDub && " - دوبله شده"}
-                    </p>
                   </div>
-                </div>
+                </Link>
                 <p className="truncate mt-4">{faName}</p>
               </div>
             );
