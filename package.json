@@ -13,6 +13,7 @@
     "@fortawesome/free-solid-svg-icons": "^6.4.0",
     "@fortawesome/react-fontawesome": "^0.2.0",
     "@headlessui/react": "^1.7.15",
+    "@react-native-async-storage/async-storage": "^1.19.1",
     "@reduxjs/toolkit": "^1.9.5",
     "clsx": "^2.0.0",
     "eslint": "8.45.0",
@@ -23,6 +24,7 @@
     "react-redux": "^8.1.1",
     "react-slideshow-image": "^4.2.1",
     "react-transition-group": "^4.4.5",
+    "redux-persist": "^6.0.0",
     "swiper": "^10.0.4"
   },
   "devDependencies": {

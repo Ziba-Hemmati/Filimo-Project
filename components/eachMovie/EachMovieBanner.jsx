@@ -6,7 +6,6 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import {
   faAngleUp,
   faAngleDown,
-  faBookmark,
   faHeart,
 } from "@fortawesome/free-solid-svg-icons";
 import Info from "./Info";
