@@ -1,14 +1,14 @@
-import React from 'react';
+import React from "react";
 import Button from "@/components/myLists/Button";
-import EmptyList from "@/components/myLists/emptyList";
+import BookMark from "@/components/myLists/BookMark";
 
 const Bookmark = () => {
-    return (
-        <div>
-            <Button/>
-            <EmptyList/>
-        </div>
-    );
+  return (
+    <div>
+      <Button />
+      <BookMark />
+    </div>
+  );
 };
 
 export default Bookmark;
