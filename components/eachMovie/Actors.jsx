@@ -12,9 +12,9 @@ const Actors = async ({ mark }) => {
 
   const { actors } = target;
   return (
-    <div>
+    <div className="md:px-7">
       <Title className="mt-16 p-3 text-sm">بازیگران فیلم {target.faName}</Title>
-      <div className="flex flex-wrap m-4">
+      <div className="flex flex-wrap m-3">
         {actors.map((actor) => (
           <div key={actor.id} className=" mb-2 mr-2 items-center bg-black-fade-600 flex flex-row py-1 pr-2 pl-1 text-center rounded-3xl text-xs hover: hover:bg-gray-700 transition delay-100">
             <p >{actor.name}</p>
