@@ -4,15 +4,15 @@ import Image from "next/image";
 import { useSelector } from "react-redux";
 import store from "@/redux/store";
 import Link from "next/link";
-const EmptyList = () => {
-  const bookmark = useSelector((store) => store.bookmark);
+const Like = () => {
+  const like = useSelector((store) => store.like);
   //   console.log(bookmark);
   return (
     <div className="flex w-[400px] text-white p-[10px] text-[.7rem] lg:px-[30px]">
      
       <div className="text-white flex items-center justify-center">
-        {bookmark.length ? (
-          bookmark.map(
+        {like.length ? (
+          like.map(
             ({ poster, id, genre, year, country, isDub, rate }) => {
               return (
                 <div key={id} className="relative">
@@ -60,4 +60,4 @@ const EmptyList = () => {
   );
 };
 
-export default EmptyList;
+export default Like;
