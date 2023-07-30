@@ -2,8 +2,9 @@ import Title from "../Title";
 import { getLocalData } from "@/lib/localdata";
 
 const Actors = async ({ mark }) => {
-  const { movies } = await getLocalData();
-  const target = movies.find((item) => item.id === Number(mark));
+  const data = await getLocalData();
+  const movie = data.movies;
+  const target = movie.find((item) => item.id === Number(mark));
   
   if (!target || !Array.isArray(target.actors) || target.actors.length === 0) {
     return null;

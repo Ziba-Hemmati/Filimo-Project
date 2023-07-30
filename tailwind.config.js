@@ -31,6 +31,7 @@ module.exports = {
       "gray-500": "#606060",
       "gray-600": "#383838",
       "gray-700": "#3b3b3b",
+      "gray-800": "#828282",
 
 
       "orange-300": "#fdc13b",
