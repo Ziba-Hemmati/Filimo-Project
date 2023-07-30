@@ -25,7 +25,6 @@ const FreeMoviesPosterItem = ({ data }) => {
          },
       }}
       navigation
-      loop
       autoplay={{
           delay: 2500,
           disableOnInteraction: false,
@@ -42,7 +41,7 @@ const FreeMoviesPosterItem = ({ data }) => {
                    src={poster}
                    alt={faName}
                  />
-                 <p className={"truncate text-white w-[160px] text-[0.8rem] mt-2"}>
+                 <p className={"truncate text-white w-[130px] text-[0.8rem] mt-2 md:w-[165px]"}>
                  انیمیشن - {faName}
                  </p>
               </Link>
