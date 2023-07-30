@@ -8,7 +8,7 @@ import Link from "next/link";
 const MyLists = () => {
   return (
     <>
-      <Link href="" className="flex items-center">
+      <Link href="/bookmark" className="flex items-center">
           <FontAwesomeIcon
             icon={faCirclePlus}
             className="text-2xl md:text-base md:pl-2 lg:pl-2 lg:pr-2 text-white"
