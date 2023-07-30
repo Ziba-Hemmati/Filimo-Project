@@ -16,7 +16,7 @@ import { Transition } from "react-transition-group";
 
 // *******************************************************************************
 
-const Menu = ({ category }) => {
+const Menu = ({ categories }) => {
   const [isOver, setIsOver] = useState(false);
   const menuTimeout = useRef(null);
 
@@ -43,13 +43,14 @@ const Menu = ({ category }) => {
           </li>
         </div>
         <div>
-          <Link href={"/movies"}
+          <Link
+            href={"/movies"}
             className=" hover:text-orange-600"
             onMouseOver={handleOver}
             onMouseLeave={handleLeave}
           >
             <li className="flex items-center">
-              <span className="pl-8 md:pl-0 transition-colors duration-300 cursor-pointer">
+              <span className=" md:pl-0 transition-colors duration-300 cursor-pointer">
                 فیلم
               </span>
               <FontAwesomeIcon
@@ -69,43 +70,28 @@ const Menu = ({ category }) => {
                     : "opacity-0 translate-y-[-8px]"
                 }`}
               >
-                {category.map((item) => {
+                {categories.map(({ id, faName, enName }) => {
                   return (
                     <Link
-                      key={item}
-                      href=""
+                      key={id}
+                      href={`/tag/${enName}`}
                       className="my-4 hover:text-orange-600 transition-colors duration-300 "
                     >
-                      {item}
+                      {faName}
                     </Link>
                   );
                 })}
-                {/* <Link href="" className="mt-1 hover:text-orange-600">
-                  درام
-                </Link>
-                <Link href="" className="mt-8 hover:text-orange-600">
-                  اکشن
-                </Link>
-                <Link href="" className="mt-8 hover:text-orange-600">
-                  انیمیشن
-                </Link>
-                <Link href="" className="mt-8 hover:text-orange-600">
-                  کمدی
-                </Link>
-                <Link href="" className="mt-8 hover:text-orange-600 mb-2">
-                  ماجراجویی
-                </Link> */}
               </div>
             )}
           </Transition>
         </div>
-        <div className="flex items-center pl-8 hover:text-orange-600">
+        <div className="flex items-center hover:text-orange-600">
           <li className="pl-1 transition-colors duration-300 cursor-pointer">
             سریال
           </li>
           <FontAwesomeIcon
             icon={faAngleDown}
-            className="text-xs hidden md:inline pl-8 lg:pl-0 md:pl-0"
+            className="text-xs hidden md:inline pl-8 lg:pl-8 md:pl-0"
           />
         </div>
         <div className="flex items-center">
