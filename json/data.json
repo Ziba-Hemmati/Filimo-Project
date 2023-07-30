@@ -1771,5 +1771,35 @@
       ]
     }
   ],
-  "categories": ["انیمیشن", "ماجراجویی", "کمدی", "اکشن", "درام"]
+  "categories": [
+    {
+      "id": 1,
+      "faName": "اکشن",
+      "enName": "action"
+    },
+    {
+      "id": 5,
+
+      "faName": "انیمیشن",
+      "enName": "animation"
+    },
+    {
+      "id": 2,
+
+      "faName": "درام",
+      "enName": "drama"
+    },
+    {
+      "id": 3,
+
+      "faName": "کمدی",
+      "enName": "comedy"
+    },
+    {
+      "id": 4,
+
+      "faName": "ماجراجویی",
+      "enName": "adventure"
+    }
+  ]
 }
