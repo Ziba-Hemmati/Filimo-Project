@@ -25,7 +25,9 @@ const CategoryItem = ({ id, poster, faName, rate, genre, year, country }) => {
                  </p>
               </div>
             </div>
-          <p className="truncate text-white w-[160px] text-[0.8rem] mt-4">{faName}</p>
+            <p className={"truncate text-white w-[130px] text-[0.8rem] mt-2 md:w-[165px]"}>
+            {faName}
+            </p>
         </div>
       </Link>
     </li>
