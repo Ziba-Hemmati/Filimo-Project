@@ -24,6 +24,7 @@
     "react-redux": "^8.1.1",
     "react-slideshow-image": "^4.2.1",
     "react-transition-group": "^4.4.5",
+    "redux": "^4.2.1",
     "redux-persist": "^6.0.0",
     "swiper": "^10.0.4"
   },
