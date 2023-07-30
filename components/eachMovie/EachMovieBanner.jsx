@@ -11,6 +11,7 @@ import {
 import Info from "./Info";
 import WatchLater from "./WatchLater";
 import Like from "./Like";
+import ImdbRate from "../ImdbRate";
 
 // *************************************************************************
 
@@ -55,7 +56,10 @@ const EachMovieBanner = async ({ mark }) => {
           <div className="hidden md:inline-block">
             <p className="text-base mb-8">فیلم {faName} </p>
             <p className="pb-3 text-[.8rem]">{enName} </p>
-            <p className="pb-6 text-[.8rem]">10/{rate} </p>
+            <ImdbRate
+              rate={rate}
+              className={"bg-orange-300 text-[.8rem] w-[82px] mb-2 "}
+            />
             <p className="text-orange-400 mb-8 text-[.8rem]">
               {" "}
               مناسب برای بالای {age} سال{" "}
