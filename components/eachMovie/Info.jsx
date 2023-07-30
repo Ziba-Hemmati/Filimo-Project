@@ -5,6 +5,7 @@ config.autoAddCss = false;
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { useState } from "react";
 import clsx from "clsx";
+import ImdbRate from "../ImdbRate";
 
 const Info = ({
   faName,
@@ -27,11 +28,7 @@ const Info = ({
 
   return (
     <div>
-      <div
-        className={clsx(
-          `flex items-center justify-center pb-5 pt-3`
-        )}
-      >
+      <div className={clsx(`flex items-center justify-center pb-5 pt-3`)}>
         {!isShow && (
           <div className={clsx(`flex items-center`)}>
             <p className="text-base">فیلم {faName} </p>
@@ -43,11 +40,7 @@ const Info = ({
           </div>
         )}
         {isShow && (
-          <div
-            className={clsx(
-              `flex flex-col items-center justify-center`
-            )}
-          >
+          <div className={clsx(`flex flex-col items-center justify-center`)}>
             <div className="flex items-center">
               <p className="text-base">فیلم {faName} </p>
               <FontAwesomeIcon
@@ -71,7 +64,12 @@ const Info = ({
         )}
       </div>
       <p className="pb-3">{enName} </p>
-      <p className="pb-6">10/{rate} </p>
+      <div className="flex justify-center">
+        <ImdbRate
+          rate={rate}
+          className={"bg-orange-300 text-[.8rem] w-[82px] mb-2 "}
+        />
+      </div>
       <p className="text-orange-400 mb-8"> مناسب برای بالای {age} سال </p>
     </div>
   );
