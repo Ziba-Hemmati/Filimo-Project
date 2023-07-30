@@ -5,6 +5,7 @@ import { useSelector } from "react-redux";
 import store from "@/redux/store";
 import Link from "next/link";
 import EmptyList from "./emptyList";
+import PosterMovie from "../movies/PosterMovie";
 const Like = () => {
   const like = useSelector((store) => store.like);
   //   console.log(bookmark);
