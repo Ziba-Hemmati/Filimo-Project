@@ -1,5 +1,5 @@
-import Link from "next/link";
 import { getLocalData } from "../../lib/localdata";
+import PosterMovie from "./PosterMovie";
 
 const Movie = async () => {
   const data = await getLocalData();
@@ -7,33 +7,33 @@ const Movie = async () => {
   return (
     <div>
       <h3 className="text-white my-6 px-[10px] lg:px-[30px]">فیلم</h3>
-      <div className="grid grid-cols-2 gap-2 gap-y-12 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-6 xl:grid-cols-8 text-white p-[10px] text-[.7rem] lg:px-[30px]">
+      <div className="grid grid-cols-2 gap-3 md:gap-2 lg:gap-3 gap-y- sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-6 xl:grid-cols-8 text-white p-[14px] text-[.7rem] lg:px-[30px]">
         {movie.map(
-          ({ poster, id, faName, genre, year, country, isDub, rate }) => {
+          ({
+            poster,
+            id,
+            faName,
+            genre,
+            year,
+            country,
+            isDub,
+            rate,
+            isSub,
+          }) => {
             return (
-              <div key={id} className="relative">
-                <Link href={`/movies/${id}`}>
-                  <img className="w-full h-full rounded-[4px]" src={poster} />
-
-                  <div className=" bg-black-fade-600 opacity-0 absolute bottom-0 right-0 w-full h-full hover:opacity-90 transition-all duration-300 ">
-                    <div className="absolute bottom-0">
-                      <div className=" flex w-fit justify-between items-end mb-3 mr-1">
-                        <span className="font-black rounded-tr-xl rounded-br-xl bg-gray-400 bg-opacity-[.8] w-fit p-[3px] pr-2  items-center">
-                          IMDb
-                        </span>
-                        <span className="rounded-tl-xl rounded-bl-xl pl-2 bg-gray-400 bg-opacity-[.7] p-[3px]">
-                          {rate}/10
-                        </span>
-                      </div>
-                      <p className="mb-3 mr-1">{genre}</p>
-                      <p className="mb-3 mr-1">
-                        {year} - {country} {isDub && " - دوبله شده"}
-                      </p>
-                    </div>
-                  </div>
-                </Link>
-                <p className="truncate mt-4">{faName}</p>
-              </div>
+              <>
+                <PosterMovie
+                  id={id}
+                  poster={poster}
+                  faName={faName}
+                  genre={genre}
+                  year={year}
+                  country={country}
+                  isDub={isDub}
+                  rate={rate}
+                  isSub={isSub}
+                />
+              </>
             );
           }
         )}
