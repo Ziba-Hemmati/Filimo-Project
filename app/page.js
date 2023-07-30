@@ -7,8 +7,7 @@ import Question from "@/components/mainPage/question/Question";
 import WatchMovie from "@/components/mainPage/watchMovies/WatchMovie";
 import { getLocalData } from "../lib/localdata";
 import CommentMovies from "@/components/mainPage/commentMovies/CommentMovies";
-
-// import Footer from "@/components/mainPage/footer/Footer";
+import Footer from "@/components/mainPage/footer/Footer";
 
 const data = await getLocalData();
 const movie = data.movies;
@@ -23,7 +22,7 @@ const Home = () => {
       <FreeMovies />
       <Comments />
       <ChildrenWorld />
-      <CommentMovies/>
+      <CommentMovies />
       <Question />
       <Footer />
     </div>
