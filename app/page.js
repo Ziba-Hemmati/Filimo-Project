@@ -20,7 +20,6 @@ const Home = () => {
       <WatchMovie />
       <HowWatch />
       <FreeMovies />
-      <Comments />
       <ChildrenWorld />
       <CommentMovies />
       <Question />
