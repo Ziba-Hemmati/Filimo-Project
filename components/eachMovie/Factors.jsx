@@ -27,7 +27,7 @@ const factors = [
 
 return (
   <div className="md:px-7">
-    <Title className="mt-16 p-3 text-sm">بازیگران فیلم {target.faName}</Title>
+    <Title className="mt-16 p-3 text-sm">سایر عوامل فیلم {target.faName}</Title>
     <div className="flex flex-wrap m-3">
       {factors.map((factor) => (
         (factor.value !== null) && (
