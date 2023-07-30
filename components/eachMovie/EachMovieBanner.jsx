@@ -10,6 +10,7 @@ import {
 } from "@fortawesome/free-solid-svg-icons";
 import Info from "./Info";
 import WatchLater from "./WatchLater";
+import Like from "./Like";
 
 // *************************************************************************
 
@@ -92,10 +93,7 @@ const EachMovieBanner = async ({ mark }) => {
           <div className="hidden md:inline-block border border-t-gray-300 w-full xl:mt-8"></div>
           <div className="flex-col flex text-center md:flex-row md:flex items-center mt-4 mb-2 xl:mb-4">
             <WatchLater target={target} />
-            <button className="md:flex items-center">
-              <FontAwesomeIcon icon={faHeart} className="md:mr-8 ml-1" />
-              <div>دوست داشتم</div>
-            </button>
+            <Like target={target} />
           </div>
         </div>
       </div>
