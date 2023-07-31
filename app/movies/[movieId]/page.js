@@ -5,6 +5,7 @@ import Factors from "@/components/eachMovie/Factors";
 import { getLocalData } from "@/lib/localdata";
 import EachMovieStoryAndTrailer from "@/components/eachMovie/EachMovieStoryAndTrailer";
 
+
 const EachMovie = async ({ params }) => {
   const data = await getLocalData();
   const movies = data.movies;
@@ -14,8 +15,6 @@ const EachMovie = async ({ params }) => {
       <EachMovieStoryAndTrailer mark={params.movieId} movies={movies} />
       <Actors mark={params.movieId} />
       <Factors mark={params.movieId} />
-      <Actors mark={params.movieId}/>
-      <Factors mark={params.movieId}/>
       <EachMovieComment mark={params.movieId}/>
     </div>
   );
