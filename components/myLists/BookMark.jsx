@@ -10,11 +10,17 @@ const BookMark = () => {
   return (
     // <div className="flex w-[400px] text-white p-[10px] text-[.7rem] lg:px-[30px]">
     // <div className="flex">
-    <div className="grid grid-cols-2 gap-3 md:gap-2 lg:gap-3 gap-y- sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-6 xl:grid-cols-8 text-white p-[14px] text-[.7rem] lg:px-[30px]">
+    // <div className="grid grid-cols-2 gap-3 md:gap-2 lg:gap-3 gap-y- sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-6 xl:grid-cols-8 text-white p-[14px] text-[.7rem] lg:px-[30px]">
+    <div
+      className={`${
+        bookmark.length
+          ? "grid grid-cols-2 gap-3 md:gap-2 lg:gap-3 gap-y- sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-6 xl:grid-cols-8 text-white p-[14px] text-[.7rem] lg:px-[30px]"
+          : ""
+      }`}
+    >
       {bookmark.length ? (
         bookmark.map(({ poster, id, genre, year, country, isDub, rate }) => {
           return (
-            <div className="mt-10">
               <PosterMovie
                 key={id}
                 poster={poster}
@@ -25,7 +31,6 @@ const BookMark = () => {
                 rate={rate}
                 id={id}
               />
-            </div>
           );
         })
       ) : (
