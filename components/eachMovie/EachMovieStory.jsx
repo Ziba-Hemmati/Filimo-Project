@@ -1,36 +1,28 @@
-import { getLocalData } from "@/lib/localdata";
 import Title from "@/components/Title";
 
-const EachMovieStory = ({ faName, story }) => {
-  // const data = await getLocalData();
-  // const movie = data.movies;
-
-  // const target = movie.find((item) => {
-  //   return item.id === Number(mark);
-  // });
-  // const {
-  //   id,
-  //   faName,
-  //   enName,
-  //   rate,
-  //   age,
-  //   factors,
-  //   time,
-  //   country,
-  //   year,
-  //   isDub,
-  //   isSub,
-  //   quality,
-  //   genre,
-  //   banner,
-  //   link,
-  // } = target;
-  // const { director } = factors;
-  // console.log(banner);
+const EachMovieStory = ({ faName, story, about }) => {
   return (
-    <div className="text-white relative overflow-hidden w-1/2">
-      <Title className={"text-sm"}>داستان فیلم {faName}</Title>
-      <p>{story}</p>
+    <div className="text-white relative overflow-hidden w-1/2 max-w-screen-xl pr-5">
+      <div className={"mb-5"}>
+        <Title className={"text-sm mb-2"}>داستان فیلم {faName}</Title>
+        <p
+          className={
+            "text-gray-250 font-iran-sans-medium text-[10px] leading-5"
+          }
+        >
+          {story}
+        </p>
+      </div>
+      <div className={"mb-5"}>
+        <Title className={"text-sm mb-2"}>داستان فیلم {faName}</Title>
+        <p
+          className={
+            "text-gray-250 font-iran-sans-medium text-[10px] leading-5"
+          }
+        >
+          {story}
+        </p>
+      </div>
     </div>
   );
 };

@@ -1,38 +1,46 @@
-import { getLocalData } from "@/lib/localdata";
+"use client";
 import EachMovieStory from "@/components/eachMovie/EachMovieStory";
-import EachMovieTrailer from "@/components/eachMovie/EachMovieTrailer";
+import EachMovieModal from "@/components/eachMovie/EachMovieModal";
+import { useCallback, useState } from "react";
 
-const EachMovieStoryAndTrailer = async ({ mark }) => {
-  const data = await getLocalData();
-  const movie = data.movies;
+const EachMovieStoryAndTrailer = ({ mark, movies }) => {
+  const [isOpen, setIsOpen] = useState(false);
 
-  const target = movie.find((item) => {
+  const target = movies.find((item) => {
     return item.id === Number(mark);
   });
-  const {
-    id,
-    faName,
-    enName,
-    rate,
-    age,
-    factors,
-    time,
-    country,
-    year,
-    isDub,
-    isSub,
-    quality,
-    genre,
-    banner,
-    link,
-    story,
-  } = target;
-  const { director } = factors;
-  console.log(banner);
+  useCallback(() => {
+    setIsOpen(true);
+  }, []);
+
+  const handleOpen = useCallback(() => {
+    setIsOpen(true);
+  }, []);
+  const handleClose = useCallback(() => {
+    setIsOpen(false);
+  }, []);
+
+  const { faName, enName, album, about, story } = target;
+  const randomIndex = Math.floor(Math.random() * album.length);
+
   return (
-    <div className="flex text-white relative overflow-hidden px-[100px]">
-      <EachMovieTrailer link={link} />
-      <EachMovieStory faName={faName} story={story} />
+    <div className={"flex justify-center"}>
+      <div className="flex text-white relative overflow-hidden max-w-screen-xl px-[30px] pt-10 mb-16">
+        <div
+          className="text-white relative overflow-hidden w-1/2 cursor-pointer h-[324px]"
+          onClick={handleOpen}
+        >
+          <img
+            src={album[randomIndex]}
+            alt={`${faName} : ${enName}`}
+            className={"h-full w-full object-cover"}
+          />
+        </div>
+        <EachMovieStory faName={faName} story={story} about={about} />
+      </div>
+      {isOpen && (
+        <EachMovieModal album={album} faName={faName} onClose={handleClose} />
+      )}
     </div>
   );
 };

@@ -12,18 +12,16 @@ import Info from "./Info";
 import WatchLater from "./WatchLater";
 import Like from "./Like";
 import ImdbRate from "../ImdbRate";
-import EachMovieModal from "@/components/eachMovie/EachMovieModal";
-import { useState } from "react";
 
 // *************************************************************************
 
-const EachMovieBanner = ({ mark, movies }) => {
-  const [isOpen, setIsOpen] = useState(false);
+const EachMovieBanner = async ({ mark }) => {
+  const data = await getLocalData();
+  const movies = data.movies;
+
   const target = movies.find((item) => {
     return item.id === Number(mark);
   });
-
-  console.log(target);
   const {
     faName,
     enName,
@@ -40,13 +38,6 @@ const EachMovieBanner = ({ mark, movies }) => {
     link,
     factors: { director },
   } = target;
-
-  const handleOpen = () => {
-    setIsOpen(true);
-  };
-  const handleClose = () => {
-    setIsOpen(false);
-  };
 
   return (
     <div className="text-white w-full">
@@ -109,8 +100,6 @@ const EachMovieBanner = ({ mark, movies }) => {
           </div>
         </div>
       </div>
-
-      {isOpen && <EachMovieModal link={link} onClose={handleClose} />}
     </div>
   );
 };
