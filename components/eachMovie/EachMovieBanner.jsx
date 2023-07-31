@@ -53,11 +53,11 @@ const EachMovieBanner = async ({ mark }) => {
           ></iframe>
 
           <div className="hidden md:inline-block">
-            <p className="text-base mb-8">فیلم {faName} </p>
+            <p className="text-base">فیلم {faName} </p>
             <p className="pb-3 text-[.8rem]">{enName} </p>
             <ImdbRate
               rate={rate}
-              className={"bg-orange-300 text-[.8rem] w-[82px] mb-2 "}
+              className={"bg-orange-300 text-[.8rem] w-[82px] mb-2"}
             />
             <p className="text-orange-400 mb-8 text-[.8rem]">
               {" "}
@@ -92,9 +92,9 @@ const EachMovieBanner = async ({ mark }) => {
             />
           </div>
         </div>
-        <div className="md:px-8 w-full">
+        <div className="md:px-8 w-full flex justify-center md:inline-block">
           <div className="hidden md:inline-block border border-t-gray-300 w-full xl:mt-8"></div>
-          <div className="flex-col flex text-center md:flex-row md:flex items-center mt-4 mb-2 xl:mb-4">
+          <div className="flex text-[.8rem] w-44 md:w-60 justify-between items-center text-center mt-4 mb-2 xl:mb-4">
             <WatchLater target={target} />
             <Like target={target} />
           </div>
