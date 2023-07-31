@@ -4,8 +4,10 @@ import store from "@/redux/store";
 import Link from "next/link";
 import PosterMovie from "../movies/PosterMovie";
 import EmptyList from "./emptyList";
+import SelectedMovie from "./SelectedMovie";
 const BookMark = () => {
   const bookmark = useSelector((store) => store.bookmark);
+  //   console.log(bookmark);
   return (
     <div
       className={`${
@@ -15,12 +17,9 @@ const BookMark = () => {
       }`}
     >
       {bookmark.length ? (
-        bookmark.map(({ poster, id, genre, year, country, isDub, rate }) => {
-          {
-            console.log(id);
-          }
+        bookmark.map(({ poster, id, genre, year, country, isDub, rate , faName}) => {
           return (
-            <PosterMovie
+            <SelectedMovie
               key={id}
               poster={poster}
               genre={genre}
@@ -29,6 +28,8 @@ const BookMark = () => {
               isDub={isDub}
               rate={rate}
               id={id}
+              faName={faName}
+              bookmark={bookmark}
             />
           );
         })
