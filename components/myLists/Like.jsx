@@ -23,6 +23,7 @@ const Like = () => {
                 country={country}
                 isDub={isDub}
                 rate={rate}
+                id={id}
               />
             );
           })
