@@ -21,6 +21,7 @@ const BookMark = () => {
               country={country}
               isDub={isDub}
               rate={rate}
+              id={id}
             />
           );
         })
