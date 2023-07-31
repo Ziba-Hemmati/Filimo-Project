@@ -4,11 +4,11 @@ import Image from "next/image";
 import { useSelector } from "react-redux";
 import store from "@/redux/store";
 import Link from "next/link";
-import EmptyList from "./EmptyList";
 import PosterMovie from "../movies/PosterMovie";
+import EmptyList from "./emptyList";
+
 const Like = () => {
   const like = useSelector((store) => store.like);
-  //   console.log(bookmark);
   return (
     <div
       className={`${
