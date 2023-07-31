@@ -32,6 +32,7 @@ const Movie = async () => {
                   isDub={isDub}
                   rate={rate}
                   isSub={isSub}
+                  key={id}
                 />
               </>
             );
