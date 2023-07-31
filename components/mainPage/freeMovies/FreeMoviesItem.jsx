@@ -32,24 +32,24 @@ const FreeMoviesPosterItem = ({ data }) => {
       modules={[Autoplay, Navigation]}
     >
       {data.map(({ id, poster, faName }) => (
-        <SwiperSlide key={id}>
-          <li className={"w-fit opacity-80 hover:opacity-100"}>
-            <Link href={`/${faName}`}>
-              <img
-                className={
-                  "w-[130px] h-[175px] rounded-md md:w-[165px] md:h-[220px]"
-                }
-                src={poster}
-                alt={faName}
-              />
-              <p className={"truncate text-white w-[160px] text-[0.8rem] mt-2"}>
-                انیمیشن - {faName}
-              </p>
-            </Link>
-          </li>
-        </SwiperSlide>
+          <SwiperSlide key={id}>
+             <li className={"w-fit opacity-80 hover:opacity-100"}>
+              <Link href={`/${faName}`}>
+                 <img
+                  className={"w-[130px] h-[175px] rounded-md md:w-[165px] md:h-[220px]"}
+                   src={poster}
+                   alt={faName}
+                 />
+                 <p className={"truncate text-white w-[130px] text-[0.8rem] mt-2 md:w-[165px]"}>
+                 انیمیشن - {faName}
+                 </p>
+              </Link>
+             </li>
+
+          </SwiperSlide>
       ))}
-    </Swiper>
+  </Swiper>
+   
   );
 };
 

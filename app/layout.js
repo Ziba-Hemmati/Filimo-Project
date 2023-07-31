@@ -1,12 +1,10 @@
-import { getLocalData } from "../lib/localdata";
-import "./globals.css";
 import { Inter } from "next/font/google";
+const inter = Inter({ subsets: ["latin"] });
+import "./globals.css";
 import Header from "@/components/mainPage/header/Header";
 import Footer from "@/components/mainPage/footer/Footer";
 import FixedFooter from "@/components/mainPage/fixedFooter/FixedFooter";
 import { Providers } from "@/redux/provider";
-
-const inter = Inter({ subsets: ["latin"] });
 
 export const metadata = {
   title: "تماشای آنلاین فیلم و سریال | فیلیمو",
@@ -21,7 +19,7 @@ export default async function RootLayout({ children }) {
     <html lang="en">
       <body className={inter.className}>
         <Providers>
-          <Header category={category} />
+          <Header />
           {children}
           <Footer />
           <FixedFooter />

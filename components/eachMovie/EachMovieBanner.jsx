@@ -1,16 +1,17 @@
-"use client";
+import { getLocalData } from "@/lib/localdata";
 import "@fortawesome/fontawesome-svg-core/styles.css";
 import { config } from "@fortawesome/fontawesome-svg-core";
-
 config.autoAddCss = false;
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import {
   faAngleUp,
   faAngleDown,
-  faBookmark,
   faHeart,
 } from "@fortawesome/free-solid-svg-icons";
 import Info from "./Info";
+import WatchLater from "./WatchLater";
+import Like from "./Like";
+import ImdbRate from "../ImdbRate";
 import EachMovieModal from "@/components/eachMovie/EachMovieModal";
 import { useState } from "react";
 
@@ -27,7 +28,6 @@ const EachMovieBanner = ({ mark, movies }) => {
     enName,
     rate,
     age,
-    factors,
     time,
     country,
     year,
@@ -54,19 +54,19 @@ const EachMovieBanner = ({ mark, movies }) => {
         style={{ backgroundImage: `url("${banner}")` }}
       >
         <div className="md:flex md:px-8">
-          {/*<iframe*/}
-          {/*  src={link}*/}
-          {/*  frameborder="0"*/}
-          {/*  className="w-[148px] h-[198px] rounded-[4px] mx-auto md:w-[240px] md:h-[320px] md:ml-8"*/}
-          {/*></iframe>*/}
-          <div
-            onClick={handleOpen}
-            className={"w-[148px] h-[198px] rounded-[4px] bg-black-600"}
-          ></div>
+          <iframe
+            src={link}
+            frameBorder="0"
+            className="w-[148px] h-[198px] rounded-[4px] mx-auto md:w-[240px] md:h-[320px] md:ml-8"
+          ></iframe>
+
           <div className="hidden md:inline-block">
             <p className="text-base mb-8">فیلم {faName} </p>
             <p className="pb-3 text-[.8rem]">{enName} </p>
-            <p className="pb-6 text-[.8rem] ">10/{rate} </p>
+            <ImdbRate
+              rate={rate}
+              className={"bg-orange-300 text-[.8rem] w-[82px] mb-2 "}
+            />
             <p className="text-orange-400 mb-8 text-[.8rem]">
               {" "}
               مناسب برای بالای {age} سال{" "}
@@ -103,14 +103,8 @@ const EachMovieBanner = ({ mark, movies }) => {
         <div className="md:px-8 w-full">
           <div className="hidden md:inline-block border border-t-gray-300 w-full xl:mt-8"></div>
           <div className="flex-col flex text-center md:flex-row md:flex items-center mt-4 mb-2 xl:mb-4">
-            <button className="md:flex items-center">
-              <FontAwesomeIcon icon={faBookmark} />
-              <div className="mb-4 md:mb-0 md:mr-1">بعدا میبینم</div>
-            </button>
-            <button className="md:flex items-center">
-              <FontAwesomeIcon icon={faHeart} className="md:mr-8 ml-1" />
-              <div>دوست داشتم</div>
-            </button>
+            <WatchLater target={target} />
+            <Like target={target} />
           </div>
         </div>
       </div>
