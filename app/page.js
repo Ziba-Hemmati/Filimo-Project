@@ -8,10 +8,9 @@ import Question from "@/components/mainPage/question/Question";
 import WatchMovie from "@/components/mainPage/watchMovies/WatchMovie";
 import { getLocalData } from "../lib/localdata";
 
-const data = await getLocalData();
-const movie = data.movies;
-
-const Home = () => {
+const Home = async () => {
+  const data = await getLocalData();
+  const movie = data.movies;
   return (
     <div>
       <MainBanner movies={movie} />
@@ -19,7 +18,7 @@ const Home = () => {
       <WatchMovie />
       <HowWatch />
       <FreeMovies />
-      <Comments/>
+      <Comments />
       <ChildrenWorld />
       <Question />
     </div>
