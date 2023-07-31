@@ -12,6 +12,9 @@ const BookMark = () => {
     <div className="text-white flex items-center justify-center">
       {bookmark.length ? (
         bookmark.map(({ poster, id, genre, year, country, isDub, rate }) => {
+          {
+            console.log(id);
+          }
           return (
             <PosterMovie
               key={id}
@@ -21,6 +24,7 @@ const BookMark = () => {
               country={country}
               isDub={isDub}
               rate={rate}
+              id={id}
             />
           );
         })

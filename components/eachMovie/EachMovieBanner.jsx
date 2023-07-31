@@ -22,8 +22,9 @@ const EachMovieBanner = async ({ mark }) => {
   const target = movie.find((item) => {
     return item.id === Number(mark);
   });
+
+  console.log(target);
   const {
-    id,
     faName,
     enName,
     rate,
