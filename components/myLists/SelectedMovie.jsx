@@ -4,15 +4,12 @@ import "@fortawesome/fontawesome-svg-core/styles.css";
 import { config } from "@fortawesome/fontawesome-svg-core";
 config.autoAddCss = false;
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import {
-  faEllipsisVertical,
-  faThumbsUp,
-  faThumbsDown,
-  faCircleMinus,
-} from "@fortawesome/free-solid-svg-icons";
+import { faEllipsisVertical } from "@fortawesome/free-solid-svg-icons";
 import { useDispatch, useSelector } from "react-redux";
 import { setLike } from "@/redux/features/likeSlice";
 import { setBookmark } from "@/redux/features/bookMarkSlice";
+import ListOfBookMark from "./ListOfBookMark";
+import { useState } from "react";
 
 const SelectedMovie = ({
   id,
@@ -26,14 +23,11 @@ const SelectedMovie = ({
   isSub,
   bookmark,
 }) => {
-  const likedItem = bookmark.find((item) => item.id == id);
-
-  const likeState = useSelector((store) => store.like);
-  const thumbsUp = likeState.find((item) => item.id == id);
-  const dispatch = useDispatch();
+  const [list, setList] = useState(false);
+  const handleList = () => setList((prev) => !prev);
 
   return (
-    <div>
+    <div className="relative">
       <div key={id} className="relative">
         <Link href={`/movies/${id}`}>
           <img className="w-full h-full rounded-[4px]" src={poster} />
@@ -49,7 +43,10 @@ const SelectedMovie = ({
           </div>
         </Link>
       </div>
-      <div className="flex justify-between items-center cursor-pointer">
+      <div
+        onClick={handleList}
+        className="flex justify-between items-center cursor-pointer"
+      >
         <p className="truncate my-4">{faName}</p>
         <FontAwesomeIcon
           icon={faEllipsisVertical}
@@ -57,26 +54,11 @@ const SelectedMovie = ({
         />
       </div>
 
-      <div className="bg-orange-300 p-4 w-fit rounded-[4px]">
-        <div
-          className={`mb-4 ${thumbsUp && "border"}`}
-          onClick={() => dispatch(setLike(likedItem))}
-        >
-          <FontAwesomeIcon icon={faThumbsUp} />
-          <span> دوست داشتم </span>
+      {list && (
+        <div className="absolute bottom-12 left-0">
+          <ListOfBookMark bookmark={bookmark} id={id} />
         </div>
-        <div
-          className={`mb-4 ${!thumbsUp && "border"}`}
-          onClick={() => dispatch(setLike(likedItem))}
-        >
-          <FontAwesomeIcon icon={faThumbsDown} />
-          <span> دوست نداشتم </span>
-        </div>
-        <div onClick={() => dispatch(setBookmark(likedItem))}>
-          <FontAwesomeIcon icon={faCircleMinus} />
-          <span> حذف از لیست </span>
-        </div>
-      </div>
+      )}
     </div>
   );
 };
