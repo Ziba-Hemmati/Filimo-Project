@@ -22,7 +22,7 @@ const PosterMovie = ({
               <ImdbRate rate={rate} className={"bg-gray-500 mb-2"} />
               <p className="mb-3 mr-1">{genre}</p>
               <p className="mb-3 mr-1">
-                {year} - {country} {isDub && " - دوبله شده"}
+                {year} - {country} {isDub && " - دوبله شده "}
                 {isSub && " - زیر نویس دارد "}
               </p>
             </div>
