@@ -28,7 +28,7 @@ const SelectedMovie = ({
 
   return (
     <div className="relative">
-      <div key={id} className="relative">
+      <div key={id} className="relative" onClick={() => setList(false)}>
         <Link href={`/movies/${id}`}>
           <img className="w-full h-full rounded-[4px]" src={poster} />
           <div className="bg-black-fade-600 opacity-0 absolute bottom-0 right-0 w-full h-full hover:opacity-90 transition-all duration-300 ">

@@ -8,6 +8,8 @@ import {
   faCircleMinus,
 } from "@fortawesome/free-solid-svg-icons";
 import { useDispatch, useSelector } from "react-redux";
+import { setBookmark } from "@/redux/features/bookMarkSlice";
+import { setLike } from "@/redux/features/likeSlice";
 
 const ListOfBookMark = ({ bookmark, id }) => {
   const likedItem = bookmark.find((item) => item.id == id);
