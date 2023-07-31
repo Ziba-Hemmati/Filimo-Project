@@ -1,5 +1,5 @@
+import Link from "next/link";
 import { getLocalData } from "../../lib/localdata";
-import PosterMovie from "./PosterMovie";
 
 const Movie = async () => {
   const data = await getLocalData();

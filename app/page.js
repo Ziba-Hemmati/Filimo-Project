@@ -9,10 +9,9 @@ import WatchMovie from "@/components/mainPage/watchMovies/WatchMovie";
 import { getLocalData } from "../lib/localdata";
 import Footer from "@/components/mainPage/footer/Footer";
 
-const data = await getLocalData();
-const movie = data.movies;
-
-const Home = () => {
+const Home = async () => {
+  const data = await getLocalData();
+  const movie = data.movies;
   return (
     <div>
       <MainBanner movies={movie} />

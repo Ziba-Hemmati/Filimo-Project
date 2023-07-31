@@ -2,9 +2,11 @@ import Actors from "@/components/eachMovie/Actors";
 import EachMovieBanner from "@/components/eachMovie/EachMovieBanner";
 import Factors from "@/components/eachMovie/Factors";
 import { getLocalData } from "@/lib/localdata";
-const data = await getLocalData();
-const movie = data.movies;
-const EachMovie = ({ params }) => {
+import EachMovieStoryAndTrailer from "@/components/eachMovie/EachMovieStoryAndTrailer";
+
+const EachMovie = async ({ params }) => {
+  const data = await getLocalData();
+  const movies = data.movies;
   return (
     <div className="text-white">
       <EachMovieBanner mark={params.movieId} />
@@ -12,6 +14,6 @@ const EachMovie = ({ params }) => {
       <Factors mark={params.movieId}/>
     </div>
   );
-}
+};
 
 export default EachMovie;
