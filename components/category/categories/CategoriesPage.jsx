@@ -10,12 +10,13 @@ const CategoriesPage = async () => {
   const datac = movies.filter(movie => movie.category === "comedy");
   const datad = movies.filter(movie => movie.category === "action");
   const datae = movies.filter(movie => movie.category === "drum");
-
+  const categories = data.categories;
+  
   return (
     <div className={"flex flex-col overflow-hidden text-white my-12 px-5 sm:px-10"}>
-      <div className="flex justify-between w-full">
-        <Title className="text-[0.9rem] w-fit hover:text-orange-300 cursor-pointer">انیمیشن</Title>
-        <Title className="text-[0.65rem] w-fit text-orange-300 mb- hover: cursor-pointer">مشاهده همه {'>'}</Title>
+      <div className="flex justify-between w-full px-2">
+        <Title className="text-[14px] w-fit hover:text-orange-300 cursor-pointer">انیمیشن</Title>
+        <p className="text-[11px] w-fit font-bold text-orange-300 mb- hover: cursor-pointer">مشاهده همه {'>'}</p>
       </div>
       <div className={"flex justify-center lg2:px-[10px]"}>
         <div
@@ -25,9 +26,9 @@ const CategoriesPage = async () => {
         </div>
       </div>
 
-      <div className="flex justify-between w-full">
-        <Title className="text-[0.9rem] w-fit hover:text-orange-300 cursor-pointer">ماجراجویی</Title>
-        <Title className="text-[0.65rem] w-fit text-orange-300 mb- hover: cursor-pointer">مشاهده همه {'>'}</Title>
+      <div className="flex justify-between w-full px-2">
+       <Title className="text-[14px] w-fit hover:text-orange-300 cursor-pointer">ماجراجویی</Title>
+       <p className="text-[11px] w-fit font-bold text-orange-300 mb- hover: cursor-pointer">مشاهده همه {'>'}</p>
       </div>
       <div className={"flex justify-center lg2:px-[10px]"}>
         <div
@@ -37,9 +38,9 @@ const CategoriesPage = async () => {
         </div>
       </div>
 
-      <div className="flex justify-between w-full">
-        <Title className="text-[0.9rem] w-fit hover:text-orange-300 cursor-pointer">کمدی</Title>
-        <Title className="text-[0.65rem] w-fit text-orange-300 mb- hover: cursor-pointer">مشاهده همه {'>'}</Title>
+      <div className="flex justify-between w-full px-2">
+        <Title className="text-[14px] w-fit hover:text-orange-300 cursor-pointer">کمدی</Title>
+        <p className="text-[11px] w-fit font-bold text-orange-300 mb- hover: cursor-pointer">مشاهده همه {'>'}</p>
       </div>
       <div className={"flex justify-center lg2:px-[10px]"}>
         <div
@@ -49,9 +50,9 @@ const CategoriesPage = async () => {
         </div>
       </div>
 
-      <div className="flex justify-between w-full">
-        <Title className="text-[0.9rem] w-fit hover:text-orange-300 cursor-pointer">اکشن</Title>
-        <Title className="text-[0.65rem] w-fit text-orange-300 mb- hover: cursor-pointer">مشاهده همه {'>'}</Title>
+      <div className="flex justify-between w-full px-2">
+        <Title className="text-[14px] w-fit hover:text-orange-300 cursor-pointer">اکشن</Title>
+        <p className="text-[11px] w-fit font-bold text-orange-300 mb- hover: cursor-pointer">مشاهده همه {'>'}</p>
       </div>
       <div className={"flex justify-center lg2:px-[10px]"}>
         <div
@@ -61,9 +62,9 @@ const CategoriesPage = async () => {
         </div>
       </div>
 
-      <div className="flex justify-between w-full">
-        <Title className="text-[0.9rem] w-fit hover:text-orange-300 cursor-pointer">درام</Title>
-        <Title className="text-[0.65rem] w-fit text-orange-300 mb- hover: cursor-pointer">مشاهده همه {'>'}</Title>
+      <div className="flex justify-between w-full px-2">
+        <Title className="text-[14px] w-fit hover:text-orange-300 cursor-pointer">درام</Title>
+        <p className="text-[11px] w-fit font-bold text-orange-300 mb- hover: cursor-pointer">مشاهده همه {'>'}</p>
       </div>
       <div className={"flex justify-center lg2:px-[10px]"}>
         <div
