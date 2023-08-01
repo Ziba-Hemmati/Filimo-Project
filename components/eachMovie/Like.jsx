@@ -16,10 +16,10 @@ const Like = ({ target }) => {
   return (
     <div>
       <button
-        className={`md:flex items-center ${isLiked && "text-orange-300"}`}
+        className={`md:flex items-center  md:bg-gray-200 md:bg-opacity-[.2] px-3 py-2 rounded-3xl ${isLiked && "text-orange-300"}`}
         onClick={() => dispatch(setLike(target))}
       >
-        <FontAwesomeIcon icon={faHeart} className="md:mr-8 ml-1" />
+        <FontAwesomeIcon icon={faHeart} className="ml-1" />
         <div>دوست داشتم</div>
       </button>
     </div>

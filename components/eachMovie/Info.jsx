@@ -6,11 +6,12 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { useState } from "react";
 import clsx from "clsx";
 import ImdbRate from "../ImdbRate";
+import { faAngleUp, faAngleDown } from "@fortawesome/free-solid-svg-icons";
 
 const Info = ({
   faName,
   faAngleDown,
-  faAngleUp,
+  // faAngleUp,
   enName,
   rate,
   age,
@@ -28,49 +29,47 @@ const Info = ({
 
   return (
     <div>
-      <div className={clsx(`flex items-center justify-center pb-3 pt-3`)}>
+      <div className="flex justify-center items-center my-4">
+        <span className="font-[700] "> فیلم {faName} </span>
         {!isShow && (
-          <div className={clsx(`flex items-center`)}>
-            <p className="text-base">فیلم {faName} </p>
-            <FontAwesomeIcon
-              className="bg-white text-black rounded-full p-1 mr-2"
-              icon={faAngleDown}
-              onClick={handleClick}
-            />
-          </div>
+          <FontAwesomeIcon
+            icon={faAngleDown}
+            className="mr-1 text-black px-1 py-[3px] rounded-xl bg-white "
+            onClick={handleClick}
+          />
         )}
         {isShow && (
-          <div className={clsx(`flex flex-col items-center justify-center`)}>
-            <div className="flex items-center">
-              <p className="text-base">فیلم {faName} </p>
-              <FontAwesomeIcon
-                className="bg-white text-black rounded-full p-1 mr-2"
-                icon={faAngleUp}
-                onClick={handleClick}
-              />
-            </div>
-            <div>
-              <p className="leading-[60px]">کارگردان:{director}</p>
-              <p>
-                {time} - محصول {country} - {year} -
-                {isDub ? " دوبله شده " : "دوبله نشده"}-
-                {isSub ? " با زیرنویس " : "بدون زیرنویس"} - کیفیت {quality}
-              </p>
-              <div className=" bg-gray-500 w-fit p-1 rounded-2xl mx-auto mt-6">
-                {genre}
-              </div>
-            </div>
-          </div>
+          <FontAwesomeIcon
+            icon={faAngleUp}
+            className="mr-1 text-black px-1 py-[3px] rounded-xl bg-white "
+            onClick={handleClick}
+          />
         )}
       </div>
-      <p className="pb-3">{enName} </p>
-      <div className="flex justify-center">
-        <ImdbRate
-          rate={rate}
-          className={"bg-orange-400 text-[.8rem] w-[82px] mb-2 "}
-        />
+      <p className="text-[.8rem]">{enName} </p>
+      <div className="w-[70px] text-black flex flex-row-reverse mx-auto mt-4">
+        <span className="bg-orange-400 text-[.8rem] pr-1 pl-2 rounded-tl-xl rounded-bl-xl ">
+          10/{rate}
+        </span>
+        <span className="font-black text-[.6rem] bg-orange-800 py-[3.2px] pr-2 pl-1 rounded-tr-xl rounded-br-xl ">
+          IMDb
+        </span>
       </div>
-      <p className="text-orange-300 my-6"> مناسب برای بالای {age} سال </p>
+      <p className="text-orange-300 mt-8 mb-2"> مناسب برای بالای {age} سال </p>
+
+      {isShow && (
+        <div className="text-[.8rem]">
+          <p className="mb-4"> کارگردان:{director} </p>
+          <p>
+            {time} - محصول {country} - {year} -
+            {isDub ? " دوبله شده " : " دوبله نشده "} -
+            {isSub ? " با زیرنویس " : " بدون زیرنویس "} - کیفیت {quality}
+          </p>
+          <p className="bg-gray-350 w-fit mx-auto mt-8 mb-4 p-1 rounded-3xl">
+            {genre}
+          </p>
+        </div>
+      )}
     </div>
   );
 };
