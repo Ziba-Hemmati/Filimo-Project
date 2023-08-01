@@ -17,16 +17,7 @@ const Like = () => {
     >
       {like.length ? (
         like.map(
-          ({
-            poster,
-            id,
-            genre,
-            year,
-            country,
-            isDub,
-            rate,
-            faName,
-          }) => {
+          ({ poster, id, genre, year, country, isDub, rate, faName }) => {
             return (
               <SelectedMovie
                 key={id}
