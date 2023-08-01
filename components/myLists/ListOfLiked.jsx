@@ -18,7 +18,6 @@ const ListOfLiked = ({ like, id }) => {
         className={`${
           thumbsUp && "border border-green-500 text-green-500"
         } cursor-pointer`}
-        onClick={() => dispatch(setLike(likedItem))}
       >
         <div className="text-center mt-[9px] ">
           <FontAwesomeIcon icon={faThumbsUp} />
@@ -28,7 +27,7 @@ const ListOfLiked = ({ like, id }) => {
       <div>
         <div className="cursor-pointer text-center mt-[9px] ">
           <FontAwesomeIcon icon={faThumbsDown} />
-          <span> دوست نداشتم </span>
+          <span onClick={() => dispatch(setLike(thumbsUp))}> دوست نداشتم </span>
         </div>
       </div>
     </div>
