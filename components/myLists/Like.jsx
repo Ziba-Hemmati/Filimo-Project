@@ -2,6 +2,7 @@
 import { useSelector } from "react-redux";
 import EmptyList from "./emptyList";
 import SelectedMovie from "./SelectedMovie";
+import LikedMovie from "./LikedMovie";
 
 const Like = () => {
   const like = useSelector((store) => store.like);
@@ -19,7 +20,7 @@ const Like = () => {
         like.map(
           ({ poster, id, genre, year, country, isDub, rate, faName }) => {
             return (
-              <SelectedMovie
+              <LikedMovie
                 key={id}
                 poster={poster}
                 genre={genre}
@@ -29,7 +30,6 @@ const Like = () => {
                 rate={rate}
                 id={id}
                 faName={faName}
-                bookmark={bookmark}
               />
             );
           }

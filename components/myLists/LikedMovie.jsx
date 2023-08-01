@@ -20,7 +20,6 @@ const LikedMovie = ({
   isDub,
   faName,
   isSub,
-  bookmark,
 }) => {
   const [list, setList] = useState(false);
   const handleList = () => setList((prev) => !prev);
