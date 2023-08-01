@@ -1,10 +1,8 @@
 "use client";
 import { useSelector } from "react-redux";
-import store from "@/redux/store";
-import Link from "next/link";
-import PosterMovie from "../movies/PosterMovie";
 import EmptyList from "./emptyList";
 import SelectedMovie from "./SelectedMovie";
+
 const BookMark = () => {
   const bookmark = useSelector((store) => store.bookmark);
   //   console.log(bookmark);
@@ -17,22 +15,24 @@ const BookMark = () => {
       }`}
     >
       {bookmark.length ? (
-        bookmark.map(({ poster, id, genre, year, country, isDub, rate , faName}) => {
-          return (
-            <SelectedMovie
-              key={id}
-              poster={poster}
-              genre={genre}
-              year={year}
-              country={country}
-              isDub={isDub}
-              rate={rate}
-              id={id}
-              faName={faName}
-              bookmark={bookmark}
-            />
-          );
-        })
+        bookmark.map(
+          ({ poster, id, genre, year, country, isDub, rate, faName }) => {
+            return (
+              <SelectedMovie
+                key={id}
+                poster={poster}
+                genre={genre}
+                year={year}
+                country={country}
+                isDub={isDub}
+                rate={rate}
+                id={id}
+                faName={faName}
+                bookmark={bookmark}
+              />
+            );
+          }
+        )
       ) : (
         <EmptyList />
       )}
