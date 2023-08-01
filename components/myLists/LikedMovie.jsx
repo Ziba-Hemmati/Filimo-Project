@@ -7,11 +7,10 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faEllipsisVertical } from "@fortawesome/free-solid-svg-icons";
 import { useDispatch, useSelector } from "react-redux";
 import { setLike } from "@/redux/features/likeSlice";
-import { setBookmark } from "@/redux/features/bookMarkSlice";
-import ListOfBookMark from "./ListOfBookMark";
 import { useState } from "react";
+import ListOfLiked from "./ListOfLiked";
 
-const SelectedMovie = ({
+const LikedMovie = ({
   id,
   poster,
   rate,
@@ -56,11 +55,11 @@ const SelectedMovie = ({
 
       {list && (
         <div className="absolute bottom-12 left-0">
-          <ListOfBookMark bookmark={bookmark} id={id} />
+          <ListOfLiked id={id} />
         </div>
       )}
     </div>
   );
 };
 
-export default SelectedMovie;
+export default LikedMovie;
