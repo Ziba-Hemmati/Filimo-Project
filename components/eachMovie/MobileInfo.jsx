@@ -1,17 +1,10 @@
 "use client";
-import "@fortawesome/fontawesome-svg-core/styles.css";
-import { config } from "@fortawesome/fontawesome-svg-core";
-config.autoAddCss = false;
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { useState } from "react";
-import clsx from "clsx";
-import ImdbRate from "../ImdbRate";
 import { faAngleUp, faAngleDown } from "@fortawesome/free-solid-svg-icons";
 
-const Info = ({
+const MobileInfo = ({
   faName,
-  faAngleDown,
-  // faAngleUp,
   enName,
   rate,
   age,
@@ -74,4 +67,4 @@ const Info = ({
   );
 };
 
-export default Info;
+export default MobileInfo;
