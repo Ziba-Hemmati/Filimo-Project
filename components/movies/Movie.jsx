@@ -1,5 +1,5 @@
 import { getLocalData } from "../../lib/localdata";
-import PosterMovie from "./PosterMovie";
+import PosterMovie from "@/components/movies/PosterMovie";
 
 const Movie = async () => {
   const data = await getLocalData();
@@ -36,7 +36,7 @@ const Movie = async () => {
                 />
               </>
             );
-          }
+          },
         )}
       </div>
     </div>

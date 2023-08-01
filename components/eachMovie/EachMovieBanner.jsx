@@ -17,13 +17,12 @@ import ImdbRate from "../ImdbRate";
 
 const EachMovieBanner = async ({ mark }) => {
   const data = await getLocalData();
-  const movie = data.movies;
+  const movies = data.movies;
 
-  const target = movie.find((item) => {
+  const target = movies.find((item) => {
     return item.id === Number(mark);
   });
   const {
-    id,
     faName,
     enName,
     rate,

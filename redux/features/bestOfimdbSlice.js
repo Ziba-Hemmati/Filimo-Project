@@ -4,7 +4,7 @@ const bestOfImdbSlice = createSlice({
   name: "bestOfImdb",
   initialState: {
     initValue: [],
-    clickedId: 1,
+    clickedId: null,
   },
   reducers: {
     initValue: (state, action) => {
