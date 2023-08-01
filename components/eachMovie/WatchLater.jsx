@@ -15,7 +15,7 @@ const WatchLater = ({ target }) => {
     <div>
       <button
         className={`md:flex items-center md:bg-gray-200 md:bg-opacity-[.2] md:px-3 md:py-2 rounded-3xl ${
-          isExist && "text-orange-300  border-2 border-orange-300"
+          isExist && "text-orange-300 outline outline-2 outline-orange-300"
         }`}
         onClick={() => dispatch(setBookmark(target))}
       >
