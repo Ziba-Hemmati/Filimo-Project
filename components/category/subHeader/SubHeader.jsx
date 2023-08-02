@@ -1,9 +1,13 @@
 "use client";
-import React, { useState } from "react";
+import React, { useEffect, useState } from "react";
+import { useRef } from "react";
 
-const SubHeader = () => {
+const SubHeader = ({ children }) => {
   const [isOpen, setIsOpen] = useState(false);
   const [selectedOption, setSelectedOption] = useState("");
+  const [isSticky, setIsSticky] = useState(false);
+  const scrolltopRef = useRef(0);
+  const subHeaderRef = useRef(null);
 
   const options = [
     { label: "امتیاز IMDB", value: "امتیاز IMDB" },
@@ -20,13 +24,59 @@ const SubHeader = () => {
     setIsOpen(false);
   };
 
+  // useEffect(() => {
+  //   const handleScroll = () => {
+  //     const offset = window.scrollY;
+  //     const subHeaderOffset = subHeaderRef.current.offsetTop;
+
+  //     if (offset > 40 && offset < scrolltopRef.current) {
+  //       setIsSticky(true);
+  //     } else {
+  //       setIsSticky(false);
+  //     }
+
+  //     scrolltopRef.current = offset <= 40 ? 40 : offset;
+  //   };
+
+  //   window.addEventListener("scroll", handleScroll);
+  //   return () => {
+  //     window.removeEventListener("scroll", handleScroll);
+  //   };
+  // }, []);
+
+  useEffect(() => {
+    let prevScrollY = window.scrollY;
+    const handleScroll = () => {
+      const currentScrollY = window.scrollY;
+      if (currentScrollY > 40 && currentScrollY < prevScrollY) {
+        setIsSticky(true);
+      } else {
+        setIsSticky(false);
+      }
+      prevScrollY = currentScrollY;
+    };
+
+    window.addEventListener("scroll", handleScroll);
+    return () => {
+      window.removeEventListener("scroll", handleScroll);
+    };
+  }, []);
+
   return (
     <>
-      <div className="bg-black-950 bg-opacity-[.7] sticky top-[74px] sm:top-[71px] md:top-[72px] lg:top-[56px] xl:top-[55px] z-10 py-3">
+      <div
+        //  ref={subHeaderRef}
+        id="subHeader"
+        className={`sticky z-50 py-3 px-10 bg-black-850 top-[74px] sm:top-[71px] md:top-[72px] lg:top-[56px] xl:top-[55px] ${
+          isSticky ? "bg-black-950 opacity-[0.7] border-t border-white" : ""
+        }`}
+      >
         <div className="container mx-auto">
           <div className="flex justify-between">
             <div>
-              <p className="text-white text-sm md:text-lg">دسته بندی‌ها</p>
+              <p className="text-white text-sm md:text-lg">
+                {children ? children : "دسته بندی‌ها"}
+              </p>
             </div>
 
             <div className="relative">
@@ -36,7 +86,7 @@ const SubHeader = () => {
               >
                 {selectedOption ? selectedOption.label : "مرتب سازی"}
                 <img
-                  className="pr-3"
+                  className="mr-3 w-3"
                   src={`${
                     isOpen ? "/icons/arrow-up.png" : "/icons/arrow-down.png"
                   }`}
