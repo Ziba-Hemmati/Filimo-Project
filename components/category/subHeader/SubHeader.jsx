@@ -44,8 +44,8 @@ const SubHeader = ({ children }) => {
     <>
       <div
         id="subHeader"
-        className={`sticky z-50 py-3 px-10 bg-black-850 top-[74px] sm:top-[71px] md:top-[72px] lg:top-[56px] xl:top-[55px] ${
-          isSticky ? "bg-black-950 bg-opacity-[0.7] border-t border-white" : ""
+        className={`sticky z-[1] py-3 px-10 top-[74px] sm:top-[71px] md:top-[72px] lg:top-[56px] xl:top-[55px] ${
+          isSticky ? "bg-black-950 bg-opacity-[0.7] border-t border-gray-700" : ""
         }`}
       >
         <div className="container mx-auto">
