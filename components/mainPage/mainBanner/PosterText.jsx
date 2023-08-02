@@ -1,11 +1,13 @@
-"use client";
-import React, { useState } from "react";
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faCheck } from "@fortawesome/free-solid-svg-icons";
+import React from "react";
 import Items from "@/components/Items";
 
-export const PosterText = (data) => {
-  const texts = data.data;
+
+export const PosterText = () => {
+  const text= [
+    { title: "۸۵ هزار اپیزود فیلم و سریال برای تماشا داری" },
+    { title: "می‌تونی دانلود کنی بعد بدون اینترنت تماشا کنی" },
+    { title: "می‌تونی یک عضو، مخصوص تماشای کودک بسازی" },
+  ];
   return (
     <>
       <div className="pt-44 pb-16 text-center">
@@ -15,7 +17,7 @@ export const PosterText = (data) => {
           </p>
         </div>
 
-        <div className="pb-4">
+        <div className="pb-8">
           <p className="text-xl md:text-2xl lg:text-4xl font-extrabold text-white font-iran-sans-medium">
             !کنترل همیشه دست توست
           </p>
@@ -23,7 +25,7 @@ export const PosterText = (data) => {
 
         <div className="flex justify-center" style={{ direction: "rtl" }}>
           <div className="grid grid-cols-1 lg:grid-cols-3 gap-7">
-            {texts.map((item, index) => {
+            {text.map((item, index) => {
               return <Items key={index}>{item.title}</Items>;
             })}
           </div>

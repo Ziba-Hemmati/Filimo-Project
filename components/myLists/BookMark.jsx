@@ -31,7 +31,7 @@ const BookMark = () => {
                 bookmark={bookmark}
               />
             );
-          },
+          }
         )
       ) : (
         <EmptyList />

@@ -1,10 +1,11 @@
 import { CategoriesPage, SubHeader } from "@/components";
 
-const Category = () => {
+const Category = ({ params }) => {
+  // console.log(params);
   return (
     <div className="text-white">
       <SubHeader />
-      <CategoriesPage />
+      <CategoriesPage eachCategory={params.tagId} />
     </div>
   );
 };

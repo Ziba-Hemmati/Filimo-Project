@@ -15,12 +15,12 @@ const EachMovieComment = async ({ mark }) => {
 
   return (
     <>
-      <div className="container mx-auto my-10 px-3 px-sm -0">
+      <div className="container mx-auto my-10 px-3 sm:px-0 md:px-8">
         <div className="mb-3">
           <h2 className="text-sm font-bold">دیدگاه‌های فیلم {faName}</h2>
         </div>
 
-        <div className="flex mb-4">
+        <div className="flex mb-7">
           <input
             placeholder="این فیلم چطور بود؟"
             className="w-full bg-black-600 placeholder:text-gray-300 placeholder:text-xs px-3 py-2 rounded-s-md outline-none"

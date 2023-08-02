@@ -621,7 +621,7 @@
       "isDub": true,
       "isSub": false,
       "quality": "HD",
-      "genre": "انیمیشن",
+      "genre": "ماجراجویی",
       "story": "در شهری که کاملاً تحت کنترل حیوانات است، یک افسر پلیس خرگوش و یک روباه کلاهبردار باید با همکاری یکدیگر پرده از یک پرونده فساد بردارند.",
       "about": "فیلم زوتوپیا به کارگردانی بایرون هوارد و ریچ مور در سال 2016 ساخته شده است. این فیلم محصول کشور آمریکا و در ژانر انیمیشن و ماجراجویی می‌باشد. .",
       "link": "https://www.aparat.com/video/video/embed/videohash/sL028/vt/frame",
@@ -768,7 +768,7 @@
       "rate": 6.6,
       "age": "18",
       "time": "یک ساعت و 36 دقیقه",
-      "country": "hk'gds",
+      "country": " انگلیس",
       "year": 2019,
       "isDub": true,
       "isSub": true,
@@ -894,11 +894,11 @@
         "musician": "رامین جوادی"
       },
       "album": [
-        "https://static.cdn.asset.aparat.com/lp/17149291-1423-m.jpg",
-        "https://static.cdn.asset.aparat.com/lp/17149288-6139-m.jpg",
-        "https://static.cdn.asset.aparat.com/lp/17149287-9646-m.jpg",
+        "https://static.namava.ir/Content/Upload/Images/2d04f0d1-6d20-4e9c-b44f-fe00d867108b.jpg?anchor=middlecenter&crop=auto&scale=both&w=400&h=300",
+        "https://static.namava.ir/Content/Upload/Images/e9801faf-9d3b-4b33-a3c7-7758d0e55450.jpg?anchor=middlecenter&crop=auto&scale=both&w=400&h=300",
+        "https://static.namava.ir/Content/Upload/Images/3e890a1a-c394-4937-a371-c57fb6b2f186.jpg?anchor=middlecenter&crop=auto&scale=both&w=400&h=300",
         "https://static.namava.ir/Content/Upload/Images/2f7f3d3d-b599-4ead-88ea-be231feb29ce.jpg?anchor=middlecenter&crop=auto&scale=both&w=400&h=300",
-        "https://static.namava.ir/Content/Upload/Images/3e890a1a-c394-4937-a371-c57fb6b2f186.jpg?anchor=middlecenter&crop=auto&scale=both&w=400&h=300"
+        "https://static.namava.ir/Content/Upload/Images/e880c549-d66c-4b9f-8629-ee787c162def.jpg?anchor=middlecenter&crop=auto&scale=both&w=400&h=300"
       ],
       "comments": [
         {
@@ -2207,7 +2207,7 @@
     },
     {
       "id": 29,
-      "category": "drum",
+      "category": "drama",
       "faName": "زنان کوچک",
       "enName": "Little Women",
       "rate": 7.8,
@@ -2289,7 +2289,7 @@
     },
     {
       "id": 30,
-      "category": "drum",
+      "category": "drama",
       "faName": " زخم های مادرم",
       "enName": "My Mother's Wound",
       "rate": 7.3,
@@ -2331,10 +2331,10 @@
       },
       "album": [
         "https://filmr.ir/wp-content/uploads/2020/09/My-Mothers-Wound-pic-2-150x150.jpg",
-        "https://filmr.ir/wp-content/uploads/2020/09/My-Mothers-Wound-pic-1-150x150.jpg",
-        "https://filmr.ir/wp-content/uploads/2020/09/My-Mothers-Wound-pic-6-150x150.jpg",
         "https://filmr.ir/wp-content/uploads/2020/09/My-Mothers-Wound-pic-3-150x150.jpg",
-        "https://filmr.ir/wp-content/uploads/2020/09/My-Mothers-Wound-pic-2-150x150.jpg"
+        "https://filmr.ir/wp-content/uploads/2020/09/My-Mothers-Wound-pic-4-150x150.jpg",
+        "https://filmr.ir/wp-content/uploads/2020/09/My-Mothers-Wound-pic-5-150x150.jpg",
+        "https://filmr.ir/wp-content/uploads/2020/09/My-Mothers-Wound-pic-6-150x150.jpg"
       ],
       "comments": [
         {
@@ -2371,7 +2371,7 @@
     },
     {
       "id": 31,
-      "category": "drum",
+      "category": "drama",
       "faName": " رمی پسر هیچکس ",
       "enName": "Remi Nobody's Boy",
       "rate": 7,
@@ -2453,7 +2453,7 @@
     },
     {
       "id": 32,
-      "category": "drum",
+      "category": "drama",
       "faName": "تسلا",
       "enName": "Tesla",
       "rate": 5.1,
@@ -2535,7 +2535,7 @@
     },
     {
       "id": 33,
-      "category": "drum",
+      "category": "drama",
       "faName": "دایره",
       "enName": "The Circle",
       "rate": 5.3,
@@ -2617,7 +2617,7 @@
     },
     {
       "id": 34,
-      "category": "drum",
+      "category": "drama",
       "faName": "بخش ریتم",
       "enName": "The Rhythm Section",
       "rate": 5.4,
@@ -2714,7 +2714,7 @@
     },
     {
       "id": 35,
-      "category": "drum",
+      "category": "drama",
       "faName": "به هوای دزدیدن اسب ها",
       "enName": "Out Stealing Horses",
       "rate": 6.5,

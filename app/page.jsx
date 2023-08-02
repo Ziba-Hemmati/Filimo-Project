@@ -16,13 +16,14 @@ const Home = async () => {
   const movie = data.movies;
   return (
     <div>
-      <MainBanner movies={movie} />
+      <MainBanner />
       <BestOfImdb />
       <WatchMovie />
       <HowWatch />
       <FreeMovies />
       <CommentMovies />
       <ChildrenWorld />
+      <Comments />
       <Question />
       <Footer />
     </div>

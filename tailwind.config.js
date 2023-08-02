@@ -29,6 +29,7 @@ module.exports = {
       "gray-200": "#d8d8d8",
       "gray-250": "#b3b3b2",
       "gray-300": "#a1a1a1",
+      "gray-350": "#4d4d4d",
       "gray-400": "#959ba2",
       "gray-500": "#606060",
       "gray-600": "#383838",
@@ -40,6 +41,9 @@ module.exports = {
       "orange-500": "#f89f3e",
       "orange-600": "#ff9800",
       "orange-700": "#f4843f",
+      "orange-800": "#e1a928",
+
+      "red-500": "#ff0000",
 
       "green-500": "#1cb561",
       "green-700": "#1cb561",

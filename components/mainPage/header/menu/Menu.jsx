@@ -55,7 +55,7 @@ const Menu = ({ categories }) => {
               </span>
               <FontAwesomeIcon
                 icon={faAngleDown}
-                className="pr-1 hidden md:inline pl-8 pb-0"
+                className="pr-1 hidden md:inline pl-8 md:pl-0 pb-0"
               />
             </li>
           </Link>
@@ -64,7 +64,7 @@ const Menu = ({ categories }) => {
               <div
                 onMouseOver={handleOver}
                 onMouseLeave={handleLeave}
-                className={`hidden lg:flex lg:flex-col px-4 lg:absolute lg:top-[56px] bg-black-850 w-32 rounded-[4px] transition-transform transform ${
+                className={`z-[2] hidden lg:flex lg:flex-col px-4 lg:absolute lg:top-[56px] bg-black-850 w-32 rounded-[4px] transition-transform transform ${
                   state === "entered"
                     ? "opacity-100 translate-y-0"
                     : "opacity-0 translate-y-[-8px]"
@@ -86,7 +86,7 @@ const Menu = ({ categories }) => {
           </Transition>
         </div>
         <div className="flex items-center hover:text-orange-600">
-          <li className="pl-1 transition-colors duration-300 cursor-pointer">
+          <li className="pl-1 transition-colors duration-300 cursor-pointer lg:mr-8 ">
             سریال
           </li>
           <FontAwesomeIcon
