@@ -13,7 +13,7 @@ const EachMovieLike = ({ target }) => {
   return (
     <div>
       <button
-        className={`md:flex items-center  md:bg-gray-200 md:bg-opacity-[.2] md:px-3 md:py-2 rounded-3xl ${isLiked && "text-orange-300 outline outline-2 outline-orange-300"}`}
+        className={`md:flex items-center  md:bg-gray-200 md:bg-opacity-[.2] md:px-3 md:py-2 rounded-3xl ${isLiked && "text-orange-300 md:outline outline-2 outline-orange-300"}`}
         onClick={() => dispatch(setLike(target))}
       >
         <FontAwesomeIcon icon={faHeart} className="ml-1" />
