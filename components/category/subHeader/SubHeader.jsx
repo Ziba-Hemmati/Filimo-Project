@@ -1,6 +1,5 @@
 "use client";
 import React, { useEffect, useState } from "react";
-// import { useRef } from "react";
 
 const SubHeader = ({ children }) => {
   const [isOpen, setIsOpen] = useState(false);
@@ -45,7 +44,9 @@ const SubHeader = ({ children }) => {
       <div
         id="subHeader"
         className={`sticky z-[1] py-3 px-10 top-[74px] sm:top-[71px] md:top-[72px] lg:top-[56px] xl:top-[55px] ${
-          isSticky ? "bg-black-950 bg-opacity-[0.7] border-t border-gray-700" : ""
+          isSticky
+            ? "bg-black-950 bg-opacity-[0.7] border-t border-gray-700"
+            : ""
         }`}
       >
         <div className="container mx-auto">

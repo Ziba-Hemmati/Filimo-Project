@@ -1,6 +1,4 @@
-import React from "react";
-import Button from "@/components/myLists/Button";
-import BookMark from "@/components/myLists/BookMark";
+import { BookMark, Button } from "@/components";
 
 const Bookmark = () => {
   return (
