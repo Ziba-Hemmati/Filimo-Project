@@ -6,20 +6,25 @@ import ImdbRate from "@/components/ImdbRate";
 const CategoriesPage = async ({ eachCategory }) => {
   const data = await getLocalData();
   const movies = data.movies;
+  const categories = data.categories;
+
   const category = movies.map((movie) => movie);
   const targetMovies = category.filter((target) => {
     return target.category == eachCategory;
   });
 
-  const categoryName = targetMovies.find((movie) => {
-    return movie.category == eachCategory;
+  const categoriesName = categories.map((category) => category);
+
+  const categoryName = categoriesName.find((category) => {
+    return category.enName == eachCategory;
   });
   const { genre } = categoryName;
+  const { faName } = categoryName;
 
   return (
     <div>
       <div className="m-[14px] lg:mr-[30px] ">
-        <Title> {genre} </Title>
+        <Title> {faName} </Title>
       </div>
       <div className="grid grid-cols-2 gap-3 md:gap-2 lg:gap-3 gap-y- sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-6 xl:grid-cols-8 text-white p-[14px] text-[.7rem] lg:px-[30px]">
         {targetMovies.map(
