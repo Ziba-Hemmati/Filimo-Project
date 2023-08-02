@@ -1,7 +1,6 @@
 "use client";
 import { useSelector } from "react-redux";
 import EmptyList from "./emptyList";
-import SelectedMovie from "./SelectedMovie";
 import LikedMovie from "./LikedMovie";
 
 const Like = () => {
@@ -32,7 +31,7 @@ const Like = () => {
                 faName={faName}
               />
             );
-          }
+          },
         )
       ) : (
         <EmptyList />

@@ -5,6 +5,7 @@ import SelectedMovie from "./SelectedMovie";
 
 const BookMark = () => {
   const bookmark = useSelector((store) => store.bookmark);
+
   return (
     <div
       className={`${

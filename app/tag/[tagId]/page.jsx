@@ -1,8 +1,6 @@
-import CategoriesPage from "@/components/category/categories/CategoriesPage";
-import SubHeader from "@/components/category/subHeader/SubHeader";
+import { CategoriesPage, SubHeader } from "@/components";
 
 const Category = ({ params }) => {
-  // console.log(params);
   return (
     <div className="text-white">
       <SubHeader />

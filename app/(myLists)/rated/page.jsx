@@ -1,6 +1,4 @@
-import React from "react";
-import Button from "@/components/myLists/Button";
-import Like from "@/components/myLists/Like";
+import { Button, Like } from "@/components";
 
 const MyList = () => {
   return (

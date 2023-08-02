@@ -59,7 +59,7 @@ const CategoriesPage = async ({ eachCategory }) => {
                 <p className="truncate my-4">{faName}</p>
               </div>
             );
-          }
+          },
         )}
       </div>
     </div>
