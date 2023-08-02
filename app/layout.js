@@ -1,9 +1,6 @@
-import { Inter } from "next/font/google";
-const inter = Inter({ subsets: ["latin"] });
 import "./globals.css";
-import Header from "@/components/mainPage/header/Header";
-import FixedFooter from "@/components/mainPage/fixedFooter/FixedFooter";
 import { Providers } from "@/redux/provider";
+import { FixedFooter, Header } from "@/components";
 
 export const metadata = {
   title: "تماشای آنلاین فیلم و سریال | فیلیمو",
@@ -13,7 +10,7 @@ export const metadata = {
 export default function RootLayout({ children }) {
   return (
     <html lang="en">
-      <body className={inter.className}>
+      <body>
         <Providers>
           <Header />
           {children}

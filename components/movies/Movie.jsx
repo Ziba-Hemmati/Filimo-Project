@@ -1,4 +1,4 @@
-import { getLocalData } from "../../lib/localdata";
+import { getLocalData } from "@/lib/localdata";
 import PosterMovie from "@/components/movies/PosterMovie";
 
 const Movie = async () => {

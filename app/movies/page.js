@@ -1,4 +1,4 @@
-import Movie from "@/components/movies/Movie";
+import { Movie } from "@/components";
 
 export const metadata = {
   title: "بهترین",

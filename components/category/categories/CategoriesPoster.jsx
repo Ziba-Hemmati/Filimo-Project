@@ -1,6 +1,6 @@
-import CategoryItem from "@/components/category/categories/CategoriesItem";
+import CategoriesItem from "@/components/category/categories/CategoriesItem";
 
-const CategoryPoster = ({ data }) => {
+const CategoriesPoster = ({ data }) => {
   return (
     <ul
       className={
@@ -8,7 +8,7 @@ const CategoryPoster = ({ data }) => {
       }
     >
       {data.map(({ id, poster, faName, rate, genre, year, country }) => (
-        <CategoryItem
+        <CategoriesItem
           key={id}
           id={id}
           poster={poster}
@@ -23,4 +23,4 @@ const CategoryPoster = ({ data }) => {
   );
 };
 
-export default CategoryPoster;
+export default CategoriesPoster;

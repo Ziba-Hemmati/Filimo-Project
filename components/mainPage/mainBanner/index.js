@@ -1,5 +1,5 @@
 "use client";
-import React, { useState } from "react";
+import React, { useRef, useState } from "react";
 import { Fade } from "react-slideshow-image";
 import "react-slideshow-image/dist/styles.css";
 import { PosterText } from "./PosterText";

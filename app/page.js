@@ -1,13 +1,15 @@
-import BestOfImdb from "@/components/mainPage/bestOfImdb/BestOfImdb";
-import ChildrenWorld from "@/components/mainPage/children/ChildrenWorld";
-import Comments from "@/components/mainPage/commentMovies/CommentMovies";
-import FreeMovies from "@/components/mainPage/freeMovies/FreeMovies";
-import HowWatch from "@/components/mainPage/howWatch/HowWatch";
-import { MainBanner } from "@/components/mainPage/mainBanner";
-import Question from "@/components/mainPage/question/Question";
-import WatchMovie from "@/components/mainPage/watchMovies/WatchMovie";
-import { getLocalData } from "../lib/localdata";
-import Footer from "@/components/mainPage/footer/Footer";
+import { getLocalData } from "@/lib/localdata";
+import {
+  BestOfImdb,
+  ChildrenWorld,
+  CommentMovies,
+  Footer,
+  FreeMovies,
+  HowWatch,
+  MainBanner,
+  Question,
+  WatchMovie,
+} from "@/components";
 
 const Home = async () => {
   const data = await getLocalData();
@@ -19,7 +21,7 @@ const Home = async () => {
       <WatchMovie />
       <HowWatch />
       <FreeMovies />
-      <Comments />
+      <CommentMovies />
       <ChildrenWorld />
       <Question />
       <Footer />
