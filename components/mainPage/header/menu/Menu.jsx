@@ -64,7 +64,7 @@ const Menu = ({ categories }) => {
               <div
                 onMouseOver={handleOver}
                 onMouseLeave={handleLeave}
-                className={`hidden lg:flex lg:flex-col px-4 lg:absolute lg:top-[56px] bg-black-850 w-32 rounded-[4px] transition-transform transform ${
+                className={`z-[2] hidden lg:flex lg:flex-col px-4 lg:absolute lg:top-[56px] bg-black-850 w-32 rounded-[4px] transition-transform transform ${
                   state === "entered"
                     ? "opacity-100 translate-y-0"
                     : "opacity-0 translate-y-[-8px]"

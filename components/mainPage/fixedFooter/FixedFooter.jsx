@@ -13,7 +13,7 @@ import Link from "next/link";
 const FixedFooter = () => {
   return (
     <div>
-      <div className="text-gray-300 w-full text-[.7rem] fixed bottom-0 p-1 md:px-4 bg-black-700 overflow-x-auto lg:flex lg:justify-between lg:w-full ">
+      <div className="z-10 text-gray-300 w-full text-[.7rem] fixed bottom-0 p-1 md:px-4 bg-black-700 overflow-x-auto lg:flex lg:justify-between lg:w-full ">
         <ul className="flex justify-between items-center lg:w-3/4 ">
           <Link href="" className="hover:text-white transition lg:hidden">
             <FontAwesomeIcon icon={faArrowUp} />
