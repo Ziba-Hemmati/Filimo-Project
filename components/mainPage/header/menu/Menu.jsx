@@ -55,7 +55,7 @@ const Menu = ({ categories }) => {
               </span>
               <FontAwesomeIcon
                 icon={faAngleDown}
-                className="pr-1 hidden md:inline pl-8 pb-0"
+                className="pr-1 hidden md:inline pl-8 md:pl-0 pb-0"
               />
             </li>
           </Link>
@@ -86,7 +86,7 @@ const Menu = ({ categories }) => {
           </Transition>
         </div>
         <div className="flex items-center hover:text-orange-600">
-          <li className="pl-1 transition-colors duration-300 cursor-pointer">
+          <li className="pl-1 transition-colors duration-300 cursor-pointer lg:mr-8 ">
             سریال
           </li>
           <FontAwesomeIcon
