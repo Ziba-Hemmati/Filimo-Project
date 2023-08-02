@@ -3,7 +3,7 @@ import Link from "next/link";
 const CategoryItem = ({ id, poster, faName, rate, genre, year, country }) => {
   return (
     <li key={id} className={"mx-2.5 lg2:m-2"}>
-      <Link href={`/${faName}`}>
+      <Link href={`/movies/${id}`}>
         <div key={id} className="relative">
           <img
             className="w-[130px] h-[175px] rounded-md md:w-[165px] md:h-[220px]"

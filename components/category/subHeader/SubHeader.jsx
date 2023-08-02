@@ -1,13 +1,11 @@
 "use client";
 import React, { useEffect, useState } from "react";
-import { useRef } from "react";
+// import { useRef } from "react";
 
 const SubHeader = ({ children }) => {
   const [isOpen, setIsOpen] = useState(false);
   const [selectedOption, setSelectedOption] = useState("");
   const [isSticky, setIsSticky] = useState(false);
-  const scrolltopRef = useRef(0);
-  const subHeaderRef = useRef(null);
 
   const options = [
     { label: "امتیاز IMDB", value: "امتیاز IMDB" },
@@ -24,31 +22,11 @@ const SubHeader = ({ children }) => {
     setIsOpen(false);
   };
 
-  // useEffect(() => {
-  //   const handleScroll = () => {
-  //     const offset = window.scrollY;
-  //     const subHeaderOffset = subHeaderRef.current.offsetTop;
-
-  //     if (offset > 40 && offset < scrolltopRef.current) {
-  //       setIsSticky(true);
-  //     } else {
-  //       setIsSticky(false);
-  //     }
-
-  //     scrolltopRef.current = offset <= 40 ? 40 : offset;
-  //   };
-
-  //   window.addEventListener("scroll", handleScroll);
-  //   return () => {
-  //     window.removeEventListener("scroll", handleScroll);
-  //   };
-  // }, []);
-
   useEffect(() => {
     let prevScrollY = window.scrollY;
     const handleScroll = () => {
       const currentScrollY = window.scrollY;
-      if (currentScrollY > 40 && currentScrollY < prevScrollY) {
+      if (currentScrollY > 40) {
         setIsSticky(true);
       } else {
         setIsSticky(false);
@@ -65,10 +43,9 @@ const SubHeader = ({ children }) => {
   return (
     <>
       <div
-        //  ref={subHeaderRef}
         id="subHeader"
         className={`sticky z-50 py-3 px-10 bg-black-850 top-[74px] sm:top-[71px] md:top-[72px] lg:top-[56px] xl:top-[55px] ${
-          isSticky ? "bg-black-950 opacity-[0.7] border-t border-white" : ""
+          isSticky ? "bg-black-950 bg-opacity-[0.7] border-t border-white" : ""
         }`}
       >
         <div className="container mx-auto">
