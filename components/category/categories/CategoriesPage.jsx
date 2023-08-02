@@ -1,6 +1,5 @@
 import { getLocalData } from "@/lib/localdata";
 import Title from "@/components/Title";
-import CategoriesPoster from "@/components/category/categories/CategoriesPoster";
 import Link from "next/link";
 import ImdbRate from "@/components/ImdbRate";
 
@@ -60,7 +59,7 @@ const CategoriesPage = async ({ eachCategory }) => {
                 <p className="truncate my-4">{faName}</p>
               </div>
             );
-          }
+          },
         )}
       </div>
     </div>

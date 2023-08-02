@@ -15,11 +15,11 @@ import Header from "@/components/mainPage/header/Header";
 import HowWatch from "@/components/mainPage/howWatch/HowWatch";
 import Question from "@/components/mainPage/question/Question";
 import WatchMovie from "@/components/mainPage/watchMovies/WatchMovie";
+import MainBanner from "@/components/mainPage/mainBanner/MainBanner";
 import Movie from "@/components/movies/Movie";
 import BookMark from "@/components/myLists/BookMark";
-import { MainBanner } from "@/components/mainPage/mainBanner";
-//import Button from "@/components/myLists/Button";
-//import Like from "@/components/myLists/Like";
+import Button from "@/components/myLists/Button";
+import Like from "@/components/myLists/Like";
 
 export {
   CategoriesPage,
@@ -42,6 +42,6 @@ export {
   WatchMovie,
   Movie,
   BookMark,
-  //Button,
-  //Like,
+  Button,
+  Like,
 };

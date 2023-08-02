@@ -21,9 +21,8 @@ const Home = async () => {
       <WatchMovie />
       <HowWatch />
       <FreeMovies />
-      <CommentMovies />
       <ChildrenWorld />
-      <Comments />
+      <CommentMovies />
       <Question />
       <Footer />
     </div>
