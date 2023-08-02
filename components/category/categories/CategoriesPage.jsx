@@ -35,7 +35,7 @@ const CategoriesPage = async ({ eachCategory }) => {
             isSub,
           }) => {
             return (
-              <div>
+              <div key={id}>
                 <div key={id} className="relative">
                   <Link href={`/movies/${id}`}>
                     <img className="w-full h-full rounded-[4px]" src={poster} />
