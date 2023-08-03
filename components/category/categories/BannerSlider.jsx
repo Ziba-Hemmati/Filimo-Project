@@ -2,7 +2,7 @@
 import { Swiper, SwiperSlide } from "swiper/react";
 import "swiper/css";
 import "swiper/css/navigation";
-import { Navigation, Pagination } from 'swiper/modules';
+import { Navigation, Pagination,Autoplay } from 'swiper/modules';
 import "./swiper.css"
 const BannerSlider = ({ banners, enName }) => {
   return (
@@ -13,7 +13,11 @@ const BannerSlider = ({ banners, enName }) => {
           clickable: true,
         }}
         navigation={true}
-        modules={[Pagination, Navigation]}
+        autoplay={{
+            delay: 3000,
+            disableOnInteraction: false,
+        }}
+        modules={[Pagination, Navigation,Autoplay]}
         className="mySwiper"
     >
       {banners.map((banner, index) => (
