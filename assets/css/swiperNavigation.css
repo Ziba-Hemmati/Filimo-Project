@@ -1,0 +1,12 @@
+.swiper-button-prev,
+.swiper-button-next {
+    width: 40px;
+    height: 40px;
+    color: white;
+    background-color: rgb(30, 30, 30);
+    border-radius: 50%;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -ms-border-radius: 50%;
+    -o-border-radius: 50%;
+}
