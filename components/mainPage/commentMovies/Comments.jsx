@@ -17,7 +17,7 @@ const Comments = ({ comment, faName }) => {
                 </div>
                 <Image className="ml-4" src={avatar}/>
             </div>
-            <div className='max-h-14 overflow-scroll'>
+            <div className='h-14 overflow-scroll'>
                 <span className="text-gray-200 text-xs">{text}</span>
             </div>
             </div>
