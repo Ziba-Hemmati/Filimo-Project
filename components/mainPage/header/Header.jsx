@@ -1,26 +1,29 @@
-import DesktopLogo from "./logos/DesktopLogo";
-import MobileLogo from "./logos/MobileLogo";
-import Search from "./search/Search";
-import MyLists from "./myLists/MyLists";
-import Menu from "./menu/Menu";
-import { getLocalData } from "@/lib/localdata";
+import {
+  faCirclePlus,
+} from "@fortawesome/free-solid-svg-icons";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import Link from "next/link";
 
-const Header = async () => {
-  const data = await getLocalData();
-  const categories = data.categories;
-  const movies = data.movies;
+const Header = () => {
   return (
-    <nav className="z-10 lg:py-2 xl:py-1 xl:flex xl:justify-center bg-black-950 bg-opacity-[.7] sticky top-0">
-      <div className="items-center justify-center md:px-5 lg:flex lg:px-0">
-        <DesktopLogo />
-        <div className="flex flex-col lg:flex-row-reverse xl:justify-around xl:flex">
-          <div className="flex justify-between items-center p-2 md:px-0 lg:pl-0 lg:pr-0">
-            <MobileLogo />
-            <Search movies={movies} />
-            <MyLists />
-          </div>
-          <Menu categories={categories} />
+    <nav>
+      <div>
+        <Link href={"/"}>
+          <img
+            src="https://www.filimo.com/assets/web/ui/img-ynsexKiWcOkSOPureyAnA/filimo/fa-filimo-dark-logo.png"
+            alt="logo-filimo"
+          />
+        </Link>
+        <div>جستوجو کنید...</div>
+        <div>
+          <Link href={"/bookmark"}>
+            <FontAwesomeIcon icon={faCirclePlus} />
+            لیستهای من
+          </Link>
         </div>
+      </div>
+      <div>
+        <Menu />
       </div>
     </nav>
   );
