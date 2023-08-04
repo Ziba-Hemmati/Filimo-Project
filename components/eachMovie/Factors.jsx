@@ -27,13 +27,13 @@ const factors = [
 
 return (
   <div className="md:px-7">
-    <Title className="mt-16 p-3 text-sm">بازیگران فیلم {target.faName}</Title>
+    <Title className="mt-16 p-3 text-sm">سایر عوامل فیلم {target.faName}</Title>
     <div className="flex flex-wrap m-3">
       {factors.map((factor) => (
         (factor.value !== null) && (
           <div key={factor.id} className=" px-2.5 mb-5 font-iran-sans-medium">
             <p className="text-gray-800 ml-3 text-xs mb-2 font-bold">{factor.name}</p>
-            <p className="text-[.65rem] hover:text-orange-300 ">{factor.value}</p>
+            <p className="text-[.65rem] hover:text-orange-300 cursor-pointer">{factor.value}</p>
           </div>
         )
       ))}

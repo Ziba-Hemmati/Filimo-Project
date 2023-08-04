@@ -10,7 +10,7 @@ const BestOfImdbDetail = () => {
   const {
     faName,
     enName,
-    factors,
+    factors: { director },
     genre,
     story,
     age,
@@ -18,6 +18,7 @@ const BestOfImdbDetail = () => {
     country,
     year,
     quality,
+    id,
   } = clickedItem[0];
 
   return (
@@ -25,7 +26,7 @@ const BestOfImdbDetail = () => {
       className={"w-full pt-4 pb-[85] absolute top-0 lg2:px-[100px] md:pt-6"}
     >
       <Link
-        href={"/"}
+        href={`/movies/${id}`}
         className={"font-iran-sans-medium text-[16px] font-bold"}
       >
         {faName}
@@ -33,7 +34,7 @@ const BestOfImdbDetail = () => {
       <p className={"text-[10px] text-gray-300 mt-5 mb-6"}>{enName}</p>
       <p className={"text-[10px] text-gray-300 mb-6"}>
         <span>کارگردان:</span>
-        <span>{factors.director}</span>
+        <span>{director}</span>
       </p>
       <p className={"mb-6"}>
         <span className={"text-[10px] rounded-3xl py-1 px-4 bg-black-600"}>

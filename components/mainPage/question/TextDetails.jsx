@@ -12,15 +12,15 @@ const TextDetails = ({ details }) => {
     );
     updatedDetails = updatedDetails.replace(
         /دانلود مستقیم نرم‌افزار iOS/g,
-        '<a href="#">(دانلود مستقیم نرم‌افزار iOS)</a>',
+        '<a href="#" class="link">(دانلود مستقیم نرم‌افزار iOS)</a>',
     );
     updatedDetails = updatedDetails.replace(
         /دانلود مستقیم نرم‌افزار اندروید/g,
         '<a class="link" href="#">(دانلود مستقیم نرم‌افزار اندروید)</a>',
     );
     return (
-        <div className='p-2 mt-1 max-w-5xl leading-relaxed ease-in duration-500'>
-            <p className='text-xs text-gray-200' dangerouslySetInnerHTML={{ __html: updatedDetails }}  />
+        <div className='p-2 mt-1 max-w-5xl leading-relaxed'>
+            <p className='text-xs text-gray-300' dangerouslySetInnerHTML={{ __html: updatedDetails }}  />
         </div>
     );
 };

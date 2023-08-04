@@ -1,0 +1,8 @@
+.swiper {
+    position: static;
+}
+
+.swiper-rtl .swiper-button-next {
+    left: 25px !important;
+    right: auto;
+}

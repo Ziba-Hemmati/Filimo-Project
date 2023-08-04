@@ -24,24 +24,29 @@ module.exports = {
       "black-700": "#191919",
       "black-600": "#282828",
       "black-fade-600": "#282828da",
+      "black-500": "#1e1e1e",
 
       "gray-200": "#d8d8d8",
+      "gray-250": "#b3b3b2",
       "gray-300": "#a1a1a1",
+      "gray-350": "#4d4d4d",
       "gray-400": "#959ba2",
       "gray-500": "#606060",
       "gray-600": "#383838",
       "gray-700": "#3b3b3b",
       "gray-800": "#828282",
 
-
       "orange-300": "#fdc13b",
       "orange-400": "#f6b828",
       "orange-500": "#f89f3e",
       "orange-600": "#ff9800",
       "orange-700": "#f4843f",
+      "orange-800": "#e1a928",
+
+      "red-500": "#ff0000",
 
       "green-500": "#1cb561",
-      "green-700": "#1cb561",
+      "green-700": "#17924e",
       "green-800": "#123d25",
       "green-900": "#0d1912",
 
