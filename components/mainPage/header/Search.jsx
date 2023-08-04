@@ -59,6 +59,7 @@ const Search = ({ movies }) => {
                   ({ id, poster, faName, genre, country, year, about }) => {
                     return (
                       <Link
+                        key={id}
                         href={`/movies/${id}`}
                         className="flex hover:bg-black-600 mb-4 p-2 rounded-sm"
                       >
