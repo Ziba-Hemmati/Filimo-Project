@@ -25,6 +25,7 @@ html {
 
 ::-webkit-scrollbar {
   height: 3px;
+  width: 1px;
 }
 
 ::-webkit-scrollbar-thumb {
