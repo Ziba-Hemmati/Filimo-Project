@@ -20,7 +20,7 @@ const ListOfLiked = ({ like, id }) => {
   return (
     <div className=" bg-black-500 border border-gray-600 h-[100px] p-3 grid grid-rows-2 w-[138px] rounded-[4px]">
       <div
-        className={`${thumbsUp && "border border-green-500 text-green-500"} `}
+        className={`${thumbsUp && "border border-green-500 text-green-500"} ${isDisLike && "border-none text-white"}`}
       >
         <div className="text-center mt-[9px] ">
           <FontAwesomeIcon icon={faThumbsUp} />
@@ -30,11 +30,11 @@ const ListOfLiked = ({ like, id }) => {
       <div>
         <div
           className={`cursor-pointer text-center mt-[9px] ${
-            isDisLike && "border border-red-500 text-red-500"
+            isDisLike && "border border-red-500 text-red-500 p-2"
           }`}
           onClick={handleDisLike}
         >
-          <FontAwesomeIcon icon={faThumbsDown} />
+          <FontAwesomeIcon icon={faThumbsDown} className="ml-1" />
           <span
             onClick={() =>
               setTimeout(() => {
