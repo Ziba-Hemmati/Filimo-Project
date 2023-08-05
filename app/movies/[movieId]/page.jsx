@@ -4,7 +4,7 @@ import {
   EachMovieBanner,
   EachMovieComment,
   EachMovieStoryAndTrailer,
-  SuggestedMovies,
+  // SuggestedMovies,
   Factors,
 } from "@/components";
 
@@ -15,7 +15,6 @@ const EachMovie = async ({ params }) => {
     <div className="text-white">
       <EachMovieBanner mark={params.movieId} />
       <EachMovieStoryAndTrailer mark={params.movieId} movies={movies} />
-      <SuggestedMovies mark={params.movieId} movies={movies} />
       <Actors mark={params.movieId} />
       <Factors mark={params.movieId} />
       <EachMovieComment mark={params.movieId} />
