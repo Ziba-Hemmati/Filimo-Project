@@ -7,7 +7,7 @@ const Category = async ({ params }) => {
   const data = await getLocalData();
   return (
     <div className="text-white">
-      <CategoriesBanner eachCategory={params.tagId} />
+      <CategoriesBanner data={data} eachCategory={params.tagId} />
       <CategoriesPage data={data} eachCategory={params.tagId} />
     </div>
   );

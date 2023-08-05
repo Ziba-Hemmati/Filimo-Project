@@ -26,24 +26,15 @@ const CategoriesPage = ({ eachCategory, data }) => {
   const handleSelectedOption = (option) => {
     setSelectedOption(option);
     const sortedMovies = getSortedMovies(option.type, shownMovies);
-    console.log("sort: ", sortedMovies);
     setShownMovies(sortedMovies);
   };
-  console.log("show: ", shownMovies);
-  // const categories = data.categories;
-  //
-  // const category = movies.map((movie) => movie);
-  // const targetMovies = category.filter((target) => {
-  //   return target.category == eachCategory;
-  // });
-  // console.log();
-  // const categoriesName = categories.map((category) => category);
-  //
-  // const categoryName = categoriesName.find((category) => {
-  //   return category.enName == eachCategory;
-  // });
-  // const { genre } = categoryName;
-  // const { faName } = categoryName;
+
+  const categories = data.categories;
+  const categoryName = categories.find((category) => {
+    return category.enName === eachCategory;
+  });
+  const { faName } = categoryName;
+
   return (
     <>
       <SubHeader
@@ -52,7 +43,7 @@ const CategoriesPage = ({ eachCategory, data }) => {
       />
       <div>
         <div className="m-[14px] lg:mr-[30px] ">
-          {/*<Title> {faName} </Title>*/}
+          <Title> {faName} </Title>
         </div>
         <div className="grid grid-cols-2 gap-3 md:gap-2 lg:gap-3 gap-y- sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-6 xl:grid-cols-8 text-white p-[14px] text-[.7rem] lg:px-[30px]">
           {shownMovies.map(
