@@ -4,6 +4,7 @@ import { Swiper, SwiperSlide } from "swiper/react";
 import { Autoplay, Navigation } from "swiper/modules";
 import "swiper/css";
 import "swiper/css/navigation";
+import "../../../assets/css/swiperNavigation.css";
 
 const FreeMoviesPosterItem = ({ data }) => {
   return (
@@ -34,7 +35,7 @@ const FreeMoviesPosterItem = ({ data }) => {
       {data.map(({ id, poster, faName }) => (
           <SwiperSlide key={id}>
              <li className={"w-fit opacity-80 hover:opacity-100"}>
-              <Link href={`/${faName}`}>
+              <Link href={`/movies/${id}`}>
                  <img
                   className={"w-[130px] h-[175px] rounded-md md:w-[165px] md:h-[220px]"}
                    src={poster}

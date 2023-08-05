@@ -4,6 +4,7 @@ import {
   EachMovieBanner,
   EachMovieComment,
   EachMovieStoryAndTrailer,
+  // SuggestedMovies,
   Factors,
 } from "@/components";
 
