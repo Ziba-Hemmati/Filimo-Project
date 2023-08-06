@@ -12,9 +12,11 @@ export default function RootLayout({ children }) {
     <html lang="en">
       <body>
         <Providers>
-          <Header />
-          {children}
-          <FixedFooter />
+          <div className="relative">
+            <Header />
+            {children}
+            <FixedFooter />
+          </div>
         </Providers>
       </body>
     </html>
