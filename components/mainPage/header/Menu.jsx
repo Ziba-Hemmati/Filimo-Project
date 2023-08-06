@@ -1,4 +1,3 @@
-import { getLocalData } from "@/lib/localdata";
 import {
   faFireFlameCurved,
   faHorse,
@@ -8,8 +7,7 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import Link from "next/link";
 import MoviesList from "./MoviesList";
 
-const Menu = async () => {
-  const data = await getLocalData();
+const Menu = ({ data }) => {
   const categories = data.categories;
 
   return (
