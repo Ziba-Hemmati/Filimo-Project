@@ -59,7 +59,7 @@ const SubHeader = ({ children, selectedOption, onSelect }) => {
   return (
     <div
       id="subHeader"
-      className={`sticky z-[1] py-3 px-10 top-[74px] sm:top-[71px] md:top-[72px] lg:top-[56px] xl:top-[55px] ${
+      className={`sticky z-[1] py-3 px-10 top-[82px] lg:top-[53px] ${
         isSticky ? "bg-black-950 bg-opacity-[0.7] border-t border-gray-700" : ""
       }`}
     >
