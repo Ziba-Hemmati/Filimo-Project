@@ -36,7 +36,7 @@ const Header = async () => {
               className="flex items-center transition-colors duration-300"
             >
               <FontAwesomeIcon icon={faCirclePlus} className="ml-1" />
-              <span className="hidden md:inline text-[.6rem] lg:text-[.7rem] ">لیستهای من</span>
+              <span className="hidden md:inline text-[.6rem] lg:text-[.7rem] ">لیست‌های من</span>
             </Link>
           </div>
         </div>
