@@ -5,7 +5,7 @@ import { Swiper, SwiperSlide } from 'swiper/react';
 import 'swiper/css';
 import "swiper/css/navigation";
 import "./swiperComment.css"
-import {Autoplay, Navigation, Pagination} from 'swiper/modules';
+import {Autoplay, Navigation} from 'swiper/modules';
 import Comments from './Comments.jsx'
 const CommentSlider = ({ movie }) => {
     return (
@@ -28,7 +28,7 @@ const CommentSlider = ({ movie }) => {
                 delay: 3000,
                 disableOnInteraction: false,
             }}
-            modules={[Autoplay, Navigation,Pagination]}
+            modules={[Autoplay, Navigation]}
         >
           {movie.map(({ id, comments, faName }) => {
         const lastComment = comments[comments.length - 1];  

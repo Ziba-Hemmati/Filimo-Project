@@ -9,24 +9,21 @@
     display: flex;
     align-items: center;
     justify-content: center;
-    transition: background-color 0.3s;
     cursor: pointer;
 }
 .swiper-button-next{
     right: 95% !important;
-    bottom: 190px;
+    bottom: 190px!important;
 }
 .swiper-button-prev{
     right: 92% !important;
-    bottom: 187px;
+    bottom: 187px!important;
 }
 .swiper-button-next::after,
 .swiper-button-prev::after{
-    font-size: 1rem !important;
+    font-size: 0.8rem !important;
     font-weight: bold;
-    display: flex;
-    align-items: center;
-    justify-content: center;
+
 }
 @media screen and (max-width: 624px)  {
     .swiper-button-prev {
