@@ -42,7 +42,7 @@ const Search = ({ movies }) => {
 
       {isOpen && (
         <div
-          className="absolute top-0 right-0 bg-black-fade-600 w-full h-screen flex flex-col items-center"
+          className="absolute top-0 right-0 bg-black-950 bg-opacity-[.9] w-full h-screen flex flex-col items-center"
           onClick={handleOpen}
         >
           <input
@@ -50,7 +50,7 @@ const Search = ({ movies }) => {
             placeholder="براساس نام فارسی جستجو کنید..."
             value={searchTerm}
             onChange={handleChange}
-            className="my-10 outline-none rounded-sm placeholder:text-[.7rem] placeholder:lg:text-[.8rem] bg-gray-600 w-[280px] lg:w-[720px] placeholder:pr-2 text-orange-600 text-sm py-1"
+            className="my-10 outline-none rounded-sm placeholder:text-[.7rem] placeholder:lg:text-[.8rem] bg-gray-600 w-[280px] lg:w-[720px] p-2 text-orange-600 text-sm"
             onClick={handleOpen}
           />
           <div className="overflow-y-auto w-[280px] lg:w-[720px]">
