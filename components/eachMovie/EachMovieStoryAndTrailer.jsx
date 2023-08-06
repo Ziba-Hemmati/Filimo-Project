@@ -2,9 +2,6 @@
 import EachMovieStory from "@/components/eachMovie/EachMovieStory";
 import EachMovieModal from "@/components/eachMovie/EachMovieModal";
 import { useCallback, useState } from "react";
-import "@fortawesome/fontawesome-svg-core/styles.css";
-import { config } from "@fortawesome/fontawesome-svg-core";
-config.autoAddCss = false;
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faCameraAlt } from "@fortawesome/free-solid-svg-icons";
 
@@ -18,6 +15,7 @@ const EachMovieStoryAndTrailer = ({ mark, movies }) => {
   const handleOpen = useCallback(() => {
     setIsOpen(true);
   }, []);
+
   const handleClose = useCallback(() => {
     setIsOpen(false);
   }, []);

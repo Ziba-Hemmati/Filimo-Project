@@ -1,6 +1,3 @@
-import "@fortawesome/fontawesome-svg-core/styles.css";
-import { config } from "@fortawesome/fontawesome-svg-core";
-config.autoAddCss = false;
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faCheck } from "@fortawesome/free-solid-svg-icons";
 import clsx from "clsx";
@@ -19,4 +16,3 @@ const Items = ({ children, className }) => {
   );
 };
 export default Items;
-

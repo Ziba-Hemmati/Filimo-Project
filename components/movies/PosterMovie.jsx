@@ -11,11 +11,12 @@ const PosterMovie = ({
   country,
   isDub,
   faName,
+  enName,
   isSub,
 }) => {
   return (
     <div>
-      <div key={id} className="relative">
+      <div className="relative">
         <Link href={`/movies/${id}`}>
           <img className="w-full h-full rounded-[4px]" src={poster} />
           {/* <Image src={poster} width="169" height="225" /> */}

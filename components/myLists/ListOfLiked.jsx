@@ -1,6 +1,3 @@
-import "@fortawesome/fontawesome-svg-core/styles.css";
-import { config } from "@fortawesome/fontawesome-svg-core";
-config.autoAddCss = false;
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faThumbsUp, faThumbsDown } from "@fortawesome/free-solid-svg-icons";
 import { useDispatch, useSelector } from "react-redux";
@@ -8,7 +5,7 @@ import { useDispatch, useSelector } from "react-redux";
 import { setLike } from "@/redux/features/likeSlice";
 import { useState } from "react";
 
-const ListOfLiked = ({ like, id }) => {
+const ListOfLiked = ({ id }) => {
   //   const likedItem = bookmark.find((item) => item.id == id);
   const likeState = useSelector((store) => store.like);
   const thumbsUp = likeState.find((item) => item.id == id);

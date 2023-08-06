@@ -46,7 +46,7 @@ module.exports = {
       "red-500": "#ff0000",
 
       "green-500": "#1cb561",
-      "green-700": "#1cb561",
+      "green-700": "#17924e",
       "green-800": "#123d25",
       "green-900": "#0d1912",
 

@@ -1,6 +1,3 @@
-import "@fortawesome/fontawesome-svg-core/styles.css";
-import { config } from "@fortawesome/fontawesome-svg-core";
-config.autoAddCss = false;
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faEllipsisVertical } from "@fortawesome/free-solid-svg-icons";
 import Link from "next/link";
@@ -27,7 +24,11 @@ const SelectedMovie = ({
     <div className="relative">
       <div className="relative" onClick={() => setList(false)}>
         <Link href={`/movies/${id}`}>
-          <img className="w-full h-full rounded-[4px]" src={poster} />
+          <img
+            className="w-full h-full rounded-[4px]"
+            src={poster}
+            alt={faName}
+          />
           <div className="bg-black-fade-600 opacity-0 absolute bottom-0 right-0 w-full h-full hover:opacity-90 transition-all duration-300 ">
             <div className="absolute bottom-0">
               <ImdbRate rate={rate} className={"bg-gray-500 mb-2"} />

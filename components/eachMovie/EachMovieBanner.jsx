@@ -3,6 +3,7 @@ import WatchLater from "./WatchLater";
 import DesktopInfo from "./DesktopInfo";
 import EachMovieLike from "./EachMovieLike";
 import MobileInfo from "./MobileInfo";
+import BannerPoster from "@/components/eachMovie/BannerPoster";
 
 const EachMovieBanner = async ({ mark }) => {
   const data = await getLocalData();
@@ -12,6 +13,7 @@ const EachMovieBanner = async ({ mark }) => {
     return item.id === Number(mark);
   });
   const {
+    poster,
     faName,
     enName,
     rate,
@@ -20,26 +22,27 @@ const EachMovieBanner = async ({ mark }) => {
     country,
     year,
     isDub,
+    link,
     isSub,
     quality,
     genre,
     banner,
-    link,
     factors: { director },
   } = target;
 
   return (
     <div className="text-white w-full">
       <div
-        className="flex flex-col items-center md:items-start xl:px-[5%] xl:pt-[3%] py-5 bg-no-repeat bg-cover"
+        className="flex flex-col items-center md:items-start xl:px-[5%] xl:pt-[3%] py-5 bg-no-repeat bg-cover bg-blend-multiply bg-[rgba(0,0,0,.6)]"
         style={{ backgroundImage: `url("${banner}")` }}
       >
-        <div className="md:flex md:px-8">
-          <iframe
-            src={link}
-            frameBorder="0"
-            className="opacity-100 w-[148px] h-[198px] rounded-[4px] mx-auto md:w-[240px] md:h-[320px] md:ml-8"
-          ></iframe>
+        <div className="flex flex-col items-center md:flex-row md:items-start md:px-8">
+          <BannerPoster
+            link={link}
+            poster={poster}
+            faName={faName}
+            enName={enName}
+          />
           <div className="hidden md:inline-block">
             <DesktopInfo
               faName={faName}
