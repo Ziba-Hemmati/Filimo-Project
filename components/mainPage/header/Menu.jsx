@@ -64,7 +64,7 @@ const Menu = async () => {
           href={"/"}
           className="hover:text-orange-600 transition-colors duration-300"
         >
-          مجموعه
+          مجموعه‌ها
         </Link>
       </li>
     </ul>
