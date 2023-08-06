@@ -21,13 +21,13 @@ const Search = ({ movies }) => {
   useEffect(() => {
     //Debounce search by faName
     const timer = setTimeout(() => {
-      searchByFaName();
-    }, 500);
+      SEARCH_Movie;
+    }, 1000);
     //clean up
     return () => {
       clearTimeout(timer);
     };
-  }, [searchByFaName]);
+  }, [SEARCH_Movie]);
 
   const [isOpen, setIsOpen] = useState(false);
   const handleOpen = useCallback(() => setIsOpen((prev) => !prev), []);
@@ -70,16 +70,14 @@ const Search = ({ movies }) => {
                         />
                         <div className="text-[.7rem] mr-2 text-white flex flex-col justify-center">
                           <p className="font-bold text-[.8rem] mb-2">
-                            {" "}
-                            {faName}{" "}
+                            {faName}
                           </p>
                           <p className="my-2">
                             {genre} - {country} - {year}
                           </p>
                           <p className="hidden lg:inline leading-6">{about} </p>
                           <p className="hover:text-green-500 mt-4">
-                            {" "}
-                            تماشای فیلم{" "}
+                            تماشای فیلم
                           </p>
                         </div>
                       </Link>
