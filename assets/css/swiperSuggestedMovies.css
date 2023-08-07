@@ -14,12 +14,12 @@
 }
 
 .swiper-suggestedmovies .swiper-button-next {
-    left: -1.3% !important;
+    left: -1.3%;
     top: 40%;
 }
 
 .swiper-suggestedmovies .swiper-button-prev {
-    right: -1.3% !important;
+    right: -1.3%;
     top: 40%;
 }
 
