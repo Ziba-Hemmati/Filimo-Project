@@ -17,7 +17,7 @@ const Menu = async () => {
       <li className="ml-8">
         <Link
           href={"/"}
-          className="flex items-center hover:text-orange-600 transition-colors duration-300"
+          className="flex items-center hover:text-orange-400 transition-colors duration-300"
         >
           <FontAwesomeIcon icon={faFireFlameCurved} className="ml-2 text-sm" />
           <span> فیلیموتور</span>
@@ -29,7 +29,7 @@ const Menu = async () => {
       <li className="ml-8">
         <Link
           href={"/"}
-          className="hover:text-orange-600 transition-colors duration-300"
+          className="hover:text-orange-400 transition-colors duration-300"
         >
           سریال
         </Link>
@@ -37,7 +37,7 @@ const Menu = async () => {
       <li className="ml-8">
         <Link
           href={"/"}
-          className="hover:text-orange-600 transition-colors duration-300"
+          className="hover:text-orange-400 transition-colors duration-300"
         >
           ایرانی
         </Link>
@@ -45,7 +45,7 @@ const Menu = async () => {
       <li className="ml-8">
         <Link
           href={"/"}
-          className="flex items-center hover:text-orange-600 transition-colors duration-300"
+          className="flex items-center hover:text-orange-400 transition-colors duration-300"
         >
           <FontAwesomeIcon icon={faHorse} className="ml-2 text-sm" />
           کودک
@@ -54,7 +54,7 @@ const Menu = async () => {
       <li className="ml-8">
         <Link
           href={"/"}
-          className="flex items-center hover:text-orange-600 transition-colors duration-300"
+          className="flex items-center hover:text-orange-400 transition-colors duration-300"
         >
           <FontAwesomeIcon icon={faPlay} className="ml-2 text-sm" /> فیلیمومدرسه
         </Link>
@@ -62,7 +62,7 @@ const Menu = async () => {
       <li className="">
         <Link
           href={"/"}
-          className="hover:text-orange-600 transition-colors duration-300"
+          className="hover:text-orange-400 transition-colors duration-300"
         >
           مجموعه‌ها
         </Link>

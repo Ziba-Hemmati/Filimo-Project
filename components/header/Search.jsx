@@ -37,7 +37,7 @@ const Search = ({ movies }) => {
       <FontAwesomeIcon
         icon={faMagnifyingGlass}
         onClick={handleOpen}
-        className="text-white transition-colors duration-300 hover:text-orange-600 mr-4 cursor-pointer lg:mr-7"
+        className="text-white transition-colors duration-300 hover:text-orange-400 mr-4 cursor-pointer lg:mr-7"
       />
 
       {isOpen && (
@@ -50,7 +50,7 @@ const Search = ({ movies }) => {
             placeholder="براساس نام فارسی جستجو کنید..."
             value={searchTerm}
             onChange={handleChange}
-            className="my-10 outline-none rounded-sm placeholder:text-[.7rem] placeholder:lg:text-[.8rem] bg-gray-600 w-[280px] lg:w-[720px] p-2 text-orange-600 text-sm"
+            className="my-10 outline-none rounded-sm placeholder:text-[.7rem] placeholder:lg:text-[.8rem] bg-gray-600 w-[280px] lg:w-[720px] p-2 text-orange-400 text-sm"
             onClick={handleOpen}
           />
           <div className="overflow-y-auto w-[280px] lg:w-[720px]">

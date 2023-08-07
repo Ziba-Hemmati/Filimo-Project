@@ -48,7 +48,7 @@ const SelectedMovie = ({
         </Link>
       </div>
       <div className="flex justify-between items-center cursor-pointer">
-        <Link href={`/movies/${id}`}>
+        <Link href={`/movies/${id}`} className="truncate">
           <p className="truncate my-4">{faName}</p>
         </Link>
         <FontAwesomeIcon

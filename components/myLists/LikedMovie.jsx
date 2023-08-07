@@ -50,7 +50,9 @@ const LikedMovie = ({
         onClick={handleList}
         className="flex justify-between items-center cursor-pointer"
       >
-        <p className="truncate my-4">{faName}</p>
+        <Link href={`/movies/${id}`} className="truncate">
+          <p className="truncate my-4">{faName}</p>
+        </Link>
         <FontAwesomeIcon
           icon={faEllipsisVertical}
           className="text-sm text-gray-200 hover:bg-gray-600 rounded-[50%] px-[11px] py-[6px] transition-all duration-200 "
