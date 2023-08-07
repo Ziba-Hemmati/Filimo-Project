@@ -20,6 +20,7 @@ import Movie from "@/components/movies/Movie";
 import BookMark from "@/components/myLists/BookMark";
 import Button from "@/components/myLists/Button";
 import Like from "@/components/myLists/Like";
+import SuggestedMovies from "@/components/eachMovie/SuggestedMovies";
 
 export {
   CategoriesPage,
@@ -44,4 +45,5 @@ export {
   BookMark,
   Button,
   Like,
+  SuggestedMovies,
 };

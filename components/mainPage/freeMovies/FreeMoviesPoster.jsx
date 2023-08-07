@@ -4,7 +4,7 @@ import { getLocalData } from "@/lib/localdata";
 const FreeMoviesPoster = async () => {
   const data = await getLocalData();
   const movies = data.movies;
-  const movie = movies.filter(movie => movie.category === "animation" || movie.category === "adventure");
+  const movie = movies.filter(movie => movie.category === "animation" || [14, 15, 16, 20].includes(movie.id));
   
     return (
       <ul
