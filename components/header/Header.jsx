@@ -29,13 +29,12 @@ const Header = async () => {
         <Search movies={movies} />
         </div>
         <div className="flex items-center">
-          <div className=""></div>
           <div className="text-white hover:text-orange-600">
             <Link
               href={"/bookmark"}
               className="flex items-center transition-colors duration-300"
             >
-              <FontAwesomeIcon icon={faCirclePlus} className="ml-1" />
+              <FontAwesomeIcon icon={faCirclePlus} className="ml-2" />
               <span className="hidden md:inline text-[.6rem] lg:text-[.7rem] ">لیست‌های من</span>
             </Link>
           </div>
