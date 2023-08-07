@@ -1,11 +1,10 @@
 "use client";
 import { useSelector } from "react-redux";
-import EmptyList from "./emptyList";
 import LikedMovie from "./LikedMovie";
+import EmptyList from "./emptyList";
 
 const Like = () => {
   const like = useSelector((store) => store.like);
-  const bookmark = useSelector((store) => store.bookmark);
 
   return (
     <div

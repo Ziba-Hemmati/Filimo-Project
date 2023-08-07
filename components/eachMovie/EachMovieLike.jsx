@@ -13,11 +13,14 @@ const EachMovieLike = ({ target }) => {
   return (
     <div>
       <button
-        className={`md:flex items-center md:bg-gray-200 md:bg-opacity-[.2] md:px-3 md:py-2 rounded-3xl ${isLiked && "text-orange-300 md:outline outline-2 outline-orange-300"}`}
+        className={`md:flex items-center md:bg-gray-250 hover:bg-gray-200 hover:bg-opacity-[.3] transition-colors duration-300 md:bg-opacity-[.2] md:px-3 md:py-2 rounded-3xl ${
+          isLiked &&
+          "text-orange-400 md:outline outline-2 outline-orange-400 hover:bg-orange-400 hover:bg-opacity-100 hover:text-black"
+        }`}
         onClick={() => dispatch(setLike(target))}
       >
         <FontAwesomeIcon icon={faHeart} className="ml-1" />
-        <div>دوست داشتم</div>
+        <div className="text-[11px]">دوست داشتم</div>
       </button>
     </div>
   );
