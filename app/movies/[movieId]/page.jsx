@@ -22,5 +22,4 @@ const EachMovie = async ({ params }) => {
     </div>
   );
 };
-
 export default EachMovie;

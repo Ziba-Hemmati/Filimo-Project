@@ -10,26 +10,26 @@ import { setLike } from "@/redux/features/likeSlice";
 import { useState } from "react";
 
 const ListOfBookMark = ({ bookmark, id }) => {
-  const likedItem = bookmark.find((item) => item.id == id);
+  const likedItem = bookmark.find((item) => item.id === +id);
   const likeState = useSelector((store) => store.like);
-  const thumbsUp = likeState.find((item) => item.id == id);
+  const thumbsUp = likeState.find((item) => item.id === +id);
   const dispatch = useDispatch();
   const [disLike, setDisLike] = useState(false);
   const handleDisLike = () => setDisLike((prev) => !prev);
   return (
-    <div className=" bg-black-500 border border-gray-600 h-[138px] p-3 grid grid-rows-3 w-[138px] rounded-[4px]">
+    <div className=" bg-black-500 border border-gray-600 h-[100px] p-3 grid grid-rows-2 w-[138px] rounded-[4px]">
       <div
         className={`${
-          thumbsUp && "border border-green-500 text-green-500"
+          thumbsUp && "border border-green-500 text-green-500 rounded-[4px]"
         } cursor-pointer`}
         onClick={() => dispatch(setLike(likedItem))}
       >
-        <div className="text-center mt-[9px]">
+        <div className="text-center mt-[9px] hover:text-green-500 transition-colors duration-300">
           <FontAwesomeIcon icon={faThumbsUp} />
           <span> دوست داشتم </span>
         </div>
       </div>
-      <div
+      {/* <div
         onClick={handleDisLike}
         className={`${disLike && "border border-red-500 text-red-500"}`}
       >
@@ -40,9 +40,9 @@ const ListOfBookMark = ({ bookmark, id }) => {
           <FontAwesomeIcon icon={faThumbsDown} />
           <span> دوست نداشتم </span>
         </div>
-      </div>
+      </div> */}
       <div onClick={() => dispatch(setBookmark(likedItem))}>
-        <div className="cursor-pointer text-center pt-2">
+        <div className="cursor-pointer text-center pt-2 mt-1 hover:text-red-500 transition-colors duration-300 ">
           <FontAwesomeIcon icon={faCircleMinus} />
           <span> حذف از لیست </span>
         </div>
