@@ -1,6 +1,6 @@
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faUser } from "@fortawesome/free-solid-svg-icons";
 import Title from "../Title";
+import { faUser } from "@fortawesome/free-solid-svg-icons";
 import { getLocalData } from "@/lib/localdata";
 
 const Actors = async ({ mark }) => {
@@ -14,7 +14,7 @@ const Actors = async ({ mark }) => {
 
   const { actors, faName } = target;
   return (
-    <div className="md:px-7">
+    <div className="md:px-7 xl:px-[8rem]">
       <Title className="mt-16 p-3 text-sm">بازیگران فیلم {target.faName}</Title>
       <div className="flex flex-wrap m-3">
         {actors.map((actor) => (
