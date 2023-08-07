@@ -1,16 +1,15 @@
 import React from "react";
 import Items from "@/components/Items";
 
-
 export const PosterText = () => {
-  const text= [
+  const text = [
     { title: "۸۵ هزار اپیزود فیلم و سریال برای تماشا داری" },
     { title: "می‌تونی دانلود کنی بعد بدون اینترنت تماشا کنی" },
     { title: "می‌تونی یک عضو، مخصوص تماشای کودک بسازی" },
   ];
   return (
     <>
-      <div className="pt-0 md:pt-44 pb-16 text-center">
+      <div className="pt-10 md:pt-16 pb-16 text-center">
         <div className="pb-4">
           <p className="text-[#f89f3e] text-base font-bold">
             با فیلیمو بی‌وقفه فیلم ببین
@@ -24,9 +23,16 @@ export const PosterText = () => {
         </div>
 
         <div className="flex justify-center px-3" style={{ direction: "rtl" }}>
-          <div className="grid grid-cols-1 lg:grid-cols-3 gap-7">
+          <div className="grid grid-cols-1 lg:grid-cols-3 gap-7 text-right">
             {text.map((item, index) => {
-              return <Items className="text-xs sm:text-sm md:text-base lg:text-xs xl:text-sm" key={index}>{item.title}</Items>;
+              return (
+                <Items
+                  className="sm:text-sm lg:text-[13px] xl:text-sm leading-5 text-gray-300"
+                  key={index + 1}
+                >
+                  {item.title}
+                </Items>
+              );
             })}
           </div>
         </div>
