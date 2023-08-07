@@ -8,10 +8,10 @@ import Factors from "@/components/eachMovie/Factors";
 import BestOfImdb from "@/components/mainPage/bestOfImdb/BestOfImdb";
 import ChildrenWorld from "@/components/mainPage/children/ChildrenWorld";
 import CommentMovies from "@/components/mainPage/commentMovies/CommentMovies";
-import FixedFooter from "@/components/mainPage/fixedFooter/FixedFooter";
+import FixedFooter from "@/components/fixedFooter/FixedFooter";
 import Footer from "@/components/mainPage/footer/Footer";
 import FreeMovies from "@/components/mainPage/freeMovies/FreeMovies";
-import Header from "@/components/mainPage/header/Header";
+import Header from "@/components/header/Header";
 import HowWatch from "@/components/mainPage/howWatch/HowWatch";
 import Question from "@/components/mainPage/question/Question";
 import WatchMovie from "@/components/mainPage/watchMovies/WatchMovie";
@@ -20,6 +20,7 @@ import Movie from "@/components/movies/Movie";
 import BookMark from "@/components/myLists/BookMark";
 import Button from "@/components/myLists/Button";
 import Like from "@/components/myLists/Like";
+import SuggestedMovies from "@/components/eachMovie/SuggestedMovies";
 
 export {
   CategoriesPage,
@@ -44,4 +45,5 @@ export {
   BookMark,
   Button,
   Like,
+  SuggestedMovies,
 };
