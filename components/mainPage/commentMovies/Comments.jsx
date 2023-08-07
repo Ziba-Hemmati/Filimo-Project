@@ -18,7 +18,7 @@ const Comments = ({ comment, faName }) => {
                 <Image className="ml-4" src={avatar}/>
             </div>
             <div className='h-14 overflow-scroll'>
-                <span className="text-gray-200 text-sm">{text}</span>
+                <span className="text-gray-200 text-[12px]">{text}</span>
             </div>
             </div>
             <div className='text-gray-500 text-xs text-left  p-2'>

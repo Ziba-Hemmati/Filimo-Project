@@ -10,6 +10,7 @@ import Comments from './Comments.jsx'
 const CommentSlider = ({ movie }) => {
     return (
         <Swiper
+        className='comment-Slider'
             spaceBetween={10}
             breakpoints={{
                 640: {
