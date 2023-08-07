@@ -1,7 +1,7 @@
 "use client";
 import React, { useEffect, useState } from "react";
 
-const SubHeader = ({ children, selectedOption, onSelect }) => {
+const SubHeader = ({faName, selectedOption, onSelect }) => {
   const [isOpen, setIsOpen] = useState(false);
   // const [selectedOption, setSelectedOption] = useState("");
   const [isSticky, setIsSticky] = useState(false);
@@ -59,15 +59,15 @@ const SubHeader = ({ children, selectedOption, onSelect }) => {
   return (
     <div
       id="subHeader"
-      className={`sticky z-[1] py-3 px-10 top-[82px] lg:top-[53px] ${
+      className={`sticky z-[1] py-3 top-[82px] lg:top-[53px] ${
         isSticky ? "bg-black-950 bg-opacity-[0.7] border-t border-gray-700" : ""
       }`}
     >
-      <div className="container mx-auto">
+      <div className="px-[14px] lg:px-[30px]">
         <div className="flex justify-between">
           <div>
             <p className="text-white text-sm md:text-lg">
-              {children ? children : "دسته بندی‌ها"}
+              {faName ? faName : "دسته بندی‌ها"}
             </p>
           </div>
 
