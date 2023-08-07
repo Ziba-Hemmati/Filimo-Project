@@ -37,6 +37,7 @@ const CategoriesPage = ({ eachCategory, data }) => {
   return (
     <>
       <SubHeader
+      faName={faName}
         selectedOption={selectedOption}
         onSelect={handleSelectedOption}
       />
