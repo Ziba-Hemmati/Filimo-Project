@@ -24,7 +24,7 @@ module.exports = {
       "black-750": "#171717",
       "black-700": "#191919",
       "black-600": "#282828",
-      "black-fade-600": "#282828da",
+      "black-fade-600": "#282828b5",
       "black-500": "#1e1e1e",
 
       "gray-200": "#d8d8d8",

@@ -1,11 +1,9 @@
-import {
-  faCirclePlus,
-} from "@fortawesome/free-solid-svg-icons";
+import { getLocalData } from "@/lib/localdata";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faCirclePlus } from "@fortawesome/free-solid-svg-icons";
 import Link from "next/link";
 import Menu from "./Menu";
 import Search from "./Search";
-import { getLocalData } from "@/lib/localdata";
 
 const Header = async () => {
   const data = await getLocalData();
@@ -26,17 +24,18 @@ const Header = async () => {
           <div className="hidden lg:inline">
             <Menu />
           </div>
-        <Search movies={movies} />
+          <Search movies={movies} />
         </div>
         <div className="flex items-center">
-          <div className=""></div>
-          <div className="text-white hover:text-orange-600">
+          <div className="text-white hover:text-orange-400">
             <Link
               href={"/bookmark"}
               className="flex items-center transition-colors duration-300"
             >
-              <FontAwesomeIcon icon={faCirclePlus} className="ml-1" />
-              <span className="hidden md:inline text-[.6rem] lg:text-[.7rem] ">لیستهای من</span>
+              <FontAwesomeIcon icon={faCirclePlus} className="ml-2" />
+              <span className="hidden md:inline text-[.6rem] lg:text-[.7rem] ">
+                لیست‌های من
+              </span>
             </Link>
           </div>
         </div>
