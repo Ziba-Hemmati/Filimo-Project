@@ -40,7 +40,7 @@ const CategoriesPage = ({ eachCategory, data }) => {
         selectedOption={selectedOption}
         onSelect={handleSelectedOption}
       />
-      <div>
+      <div className="mb-20">
         <div className="m-[14px] lg:mr-[30px] ">
           <Title> {faName} </Title>
         </div>
