@@ -18,8 +18,8 @@ const Factors = async ({ mark }) => {
   ];
 
   return (
-    <div className="md:px-7 xl:px-[8rem]">
-      <Title className="mt-16 p-3 text-sm">سایر عوامل فیلم {target.faName}</Title>
+    <div className="px-3 sm:px-0 md:px-8 xl:px-[9rem]">
+      <Title className="mt-14 p-3 text-sm">سایر عوامل فیلم {target.faName}</Title>
       <div className="flex flex-wrap m-3">
         {factorNames.map((factor) => {
           const factorValue = factors[factor.key];
