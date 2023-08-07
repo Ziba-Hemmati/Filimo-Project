@@ -27,7 +27,7 @@ const Header = async () => {
           <Search movies={movies} />
         </div>
         <div className="flex items-center">
-          <div className="text-white hover:text-orange-600">
+          <div className="text-white hover:text-orange-400">
             <Link
               href={"/bookmark"}
               className="flex items-center transition-colors duration-300"

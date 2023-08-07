@@ -1,4 +1,3 @@
-import { getLocalData } from "@/lib/localdata";
 import {
   BestOfImdb,
   ChildrenWorld,
@@ -11,9 +10,7 @@ import {
   WatchMovie,
 } from "@/components";
 
-const Home = async () => {
-  const data = await getLocalData();
-  const movie = data.movies;
+const Home = () => {
   return (
     <div>
       <MainBanner />

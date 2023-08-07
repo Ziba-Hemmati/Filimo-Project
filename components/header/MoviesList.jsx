@@ -28,7 +28,7 @@ const MoviesList = ({ categories }) => {
 
   return (
     <>
-      <div className="flex items-center hover:text-orange-600 transition-colors duration-300">
+      <div className="flex items-center hover:text-orange-400 transition-colors duration-300">
         <Link
           href={"/movies"}
           onMouseOver={handleOver}
@@ -74,7 +74,7 @@ const MoviesList = ({ categories }) => {
               return (
                 <div
                   onClick={handleChangeIcon}
-                  className="my-4 hover:text-orange-600 transition-colors duration-300"
+                  className="my-4 hover:text-orange-400 transition-colors duration-300"
                   key={id}
                 >
                   <Link href={`/tag/${enName}`} onClick={handleLeave}>

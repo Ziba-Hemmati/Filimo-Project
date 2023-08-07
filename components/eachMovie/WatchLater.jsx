@@ -10,17 +10,18 @@ const WatchLater = ({ target }) => {
   const isExist = bookmark.find((item) => {
     return item.id == target.id;
   });
-
+  
   return (
     <div>
       <button
-        className={`md:flex items-center md:bg-gray-200 md:bg-opacity-[.2] md:px-3 md:py-2 rounded-3xl ${
-          isExist && "text-orange-300 md:outline outline-2 outline-orange-300"
+        className={`md:flex items-center md:bg-gray-250 hover:bg-gray-200 hover:bg-opacity-[.3] transition-colors duration-300 md:bg-opacity-[.2] md:px-3 md:py-2 rounded-3xl ${
+          isExist &&
+          "text-orange-400 md:outline outline-2 outline-orange-400 hover:bg-orange-400 hover:bg-opacity-100 hover:text-black"
         }`}
         onClick={() => dispatch(setBookmark(target))}
       >
         <FontAwesomeIcon icon={faBookmark} />
-        <div className="md:mr-1">بعدا میبینم</div>
+        <div className="md:mr-1 text-[11px]">بعدا میبینم</div>
       </button>
     </div>
   );

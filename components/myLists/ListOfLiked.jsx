@@ -8,7 +8,7 @@ import { useState } from "react";
 const ListOfLiked = ({ id }) => {
   //   const likedItem = bookmark.find((item) => item.id == id);
   const likeState = useSelector((store) => store.like);
-  const thumbsUp = likeState.find((item) => item.id == id);
+  const thumbsUp = likeState.find((item) => item.id === +id);
   const dispatch = useDispatch();
   const [isDisLike, setIsDisLike] = useState(false);
   const handleDisLike = () => {
@@ -17,18 +17,22 @@ const ListOfLiked = ({ id }) => {
   return (
     <div className=" bg-black-500 border border-gray-600 h-[100px] p-3 grid grid-rows-2 w-[138px] rounded-[4px]">
       <div
-        className={`${thumbsUp && "border border-green-500 text-green-500"} ${isDisLike && "border-none text-white"}`}
+        className={`${
+          thumbsUp && "border border-green-500 text-green-500 rounded-[4px]"
+        } ${isDisLike && "border-none text-white"}`}
       >
         <div className="text-center mt-[9px] ">
           <FontAwesomeIcon icon={faThumbsUp} />
           <span> دوست داشتم </span>
         </div>
       </div>
-      <div>
+      <div
+        className={`cursor-pointer ${
+          isDisLike && "border border-red-500 text-red-500 rounded-[4px]"
+        }`}
+      >
         <div
-          className={`cursor-pointer text-center mt-[9px] ${
-            isDisLike && "border border-red-500 text-red-500 p-2"
-          }`}
+          className="mt-[10px] flex items-center justify-center hover:text-red-500 transition-colors duration-300"
           onClick={handleDisLike}
         >
           <FontAwesomeIcon icon={faThumbsDown} className="ml-1" />
