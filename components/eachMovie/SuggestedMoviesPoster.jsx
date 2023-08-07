@@ -7,6 +7,7 @@ import 'swiper/css/navigation';
 import '../../assets/css/swiperSuggestedMovies.css'
 
 const SuggestedMoviesPoster = ({ moviesCategory }) => {
+ 
     return (
       <Swiper
       spaceBetween={8}
@@ -28,8 +29,11 @@ const SuggestedMoviesPoster = ({ moviesCategory }) => {
           slidesPerGroup: 5,
         },
       }}
-      navigation
+      navigation={{
+        disabledClass: "swiper-button-disabled"
+      }}
       modules={[Navigation]}
+      className="swiper-suggestedmovies"
   >
       {moviesCategory.map(({ id, poster, faName, rate, genre, year, country }) => {
         return (
@@ -38,11 +42,11 @@ const SuggestedMoviesPoster = ({ moviesCategory }) => {
               <Link  href={`/movies/${id}`}>
                    <div className={"relative "}>
                      <img
-                       className={"w-full h-[108px] rounded-md sm:w-full sm:h-[440px] md:h-[500px] lg:h-[300px]"}
+                       className={"w-full h-[108px] rounded-md sm:w-full sm:h-[300px] sm2:h-[420px] md:h-[500px] lg:h-[300px]"}
                        src={poster}
                        alt={faName}
                      />
-                     <div className={"bg-black-fade-600 top-0 right-0 opacity-0 w-full h-[108px] text-[0.7rem] absolute rounded-md sm:h-[440px] md:h-[500px] lg:h-[300px] hover:opacity-90 transition-all duration-300 "}>
+                     <div className={"bg-black-fade-600 top-0 right-0 opacity-0 w-full h-[108px] text-[0.7rem] absolute rounded-md sm:h-[300px] sm2:h-[420px] md:h-[500px] lg:h-[300px] hover:opacity-90 transition-all duration-300 "}>
                        <div className={"text-white absolute bottom-0"}>
                          <div className={"flex w-fit justify-between items-end mb-3 mr-1"}>
                            <span className={"text-[0.6rem] font-black rounded-tr-xl rounded-br-xl bg-gray-400 bg-opacity-[.8] w-fit p-[3px] pr-2 items-center"}>

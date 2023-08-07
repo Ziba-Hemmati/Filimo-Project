@@ -34,6 +34,7 @@ const FreeMoviesPosterItem = ({ data }) => {
         disableOnInteraction: false,
       }}
       modules={[Autoplay, Navigation]}
+      className="swiper-freemovies"
     >
       {data.map(({ id, poster, faName }) => (
           <SwiperSlide key={id}>
