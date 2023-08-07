@@ -9,7 +9,7 @@ export const PosterText = () => {
   ];
   return (
     <>
-      <div className="pt-10 md:pt-16 lg:pt-24 pb-16 text-center">
+      <div className="pt-10 md:pt-16 lg:pt-28 pb-16 text-center">
         <div className="pb-4">
           <p className="text-[#f89f3e] text-base font-bold">
             با فیلیمو بی‌وقفه فیلم ببین
@@ -27,7 +27,7 @@ export const PosterText = () => {
             {text.map((item, index) => {
               return (
                 <Items
-                  className="sm:text-sm lg:text-[13px] xl:text-sm leading-5 text-gray-300 font-bold"
+                  className="sm:text-sm lg:text-[13px] xl:text-sm leading-5 font-bold"
                   key={index + 1}
                 >
                   {item.title}
