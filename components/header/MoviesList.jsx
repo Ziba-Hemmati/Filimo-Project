@@ -75,8 +75,9 @@ const MoviesList = ({ categories }) => {
                 <div
                   onClick={handleChangeIcon}
                   className="my-4 hover:text-orange-600 transition-colors duration-300"
+                  key={id}
                 >
-                  <Link key={id} href={`/tag/${enName}`} onClick={handleLeave}>
+                  <Link href={`/tag/${enName}`} onClick={handleLeave}>
                     {faName}
                   </Link>
                 </div>
