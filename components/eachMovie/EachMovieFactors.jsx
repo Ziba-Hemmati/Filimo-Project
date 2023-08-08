@@ -1,6 +1,4 @@
 "use client";
-import ErrorBoundary from "@/app/error/ErrorBoundary";
-import Error from "@/app/error/error";
 import Title from "../Title";
 
 const EachMovieFactors = ({ factors, target }) => {
