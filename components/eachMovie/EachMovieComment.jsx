@@ -1,7 +1,5 @@
 import React from "react";
 import { getLocalData } from "@/lib/localdata";
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faPaperPlane } from "@fortawesome/free-solid-svg-icons";
 import EachMovieCommentItems from "./EachMovieCommentItems";
 
 const EachMovieComment = async ({ mark }) => {

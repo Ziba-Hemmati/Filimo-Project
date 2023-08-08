@@ -11,13 +11,13 @@ export default function RootLayout({ children }) {
   return (
     <html lang="en">
       <body>
-        <Providers>
-          <div className="relative">
-            <Header />
-            {children}
-            <FixedFooter />
-          </div>
-        </Providers>
+          <Providers>
+            <div className="relative">
+              <Header />
+              {children}
+              <FixedFooter />
+            </div>
+          </Providers>
       </body>
     </html>
   );
