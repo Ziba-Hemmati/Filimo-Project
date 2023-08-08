@@ -22,7 +22,7 @@ const Actors = async ({ mark }) => {
 
     const { actors, faName } = target;
     return (
-      <div className=" px-3 sm:px-0 md:px-8 xl:px-[9rem]">
+      <div className="md:px-7 xl:px-[8rem]">
         <Title className="mt-16 p-3 text-sm">
           بازیگران فیلم {target.faName}
         </Title>
