@@ -13,7 +13,6 @@ const PosterMovie = ({
   isSub,
 }) => {
   return (
-    <ErrorBoundary fallback={<Error />}>
       <div>
         <div className="relative">
           <Link href={`/movies/${id}`}>
@@ -39,7 +38,6 @@ const PosterMovie = ({
         </div>
         <p className="truncate my-4">{faName}</p>
       </div>
-    </ErrorBoundary>
   );
 };
 

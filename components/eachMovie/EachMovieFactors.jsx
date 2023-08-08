@@ -11,7 +11,6 @@ const EachMovieFactors = ({ factors, target }) => {
     { name: "فیلم بردار", key: "cameraMan" },
   ];
   return (
-    <ErrorBoundary fallback={<Error />}>
       <div className="md:px-7 xl:px-[8rem]">
         <Title className="mt-16 p-3 text-sm">
           سایر عوامل فیلم {target.faName}
@@ -38,7 +37,6 @@ const EachMovieFactors = ({ factors, target }) => {
           })}
         </div>
       </div>
-    </ErrorBoundary>
   );
 };
 
