@@ -2,6 +2,7 @@
 // import Title from "../Title";
 import { getLocalData } from "@/lib/localdata";
 import EachMovieFactors from "./EachMovieFactors";
+import Title from "../Title";
 
 const Factors = async ({ mark }) => {
   const data = await getLocalData();
