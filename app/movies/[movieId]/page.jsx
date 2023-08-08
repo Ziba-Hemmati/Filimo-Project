@@ -7,6 +7,7 @@ import {
   SuggestedMovies,
   Factors,
 } from "@/components";
+import { Suspense } from "react";
 
 const EachMovie = async ({ params }) => {
   const data = await getLocalData();
@@ -16,12 +17,20 @@ const EachMovie = async ({ params }) => {
     const movies = data.movies;
     return (
       <div className="text-white">
-        <EachMovieBanner mark={params.movieId} />
-        <EachMovieStoryAndTrailer mark={params.movieId} movies={movies} />
-        <SuggestedMovies mark={params.movieId} movies={movies} />
-        <Actors mark={params.movieId} />
-        <Factors mark={params.movieId} />
-        <EachMovieComment mark={params.movieId} />
+        <Suspense
+          fallback={
+            <p className="my-6 px-[10px] lg:px-[30px]">
+              در حال بارگذاری داده‌ها...
+            </p>
+          }
+        >
+          <EachMovieBanner mark={params.movieId} />
+          <EachMovieStoryAndTrailer mark={params.movieId} movies={movies} />
+          <SuggestedMovies mark={params.movieId} movies={movies} />
+          <Actors mark={params.movieId} />
+          <Factors mark={params.movieId} />
+          <EachMovieComment mark={params.movieId} />
+        </Suspense>
       </div>
     );
   }
