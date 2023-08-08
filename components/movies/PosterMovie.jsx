@@ -1,6 +1,6 @@
 "use client";
 import ErrorBoundary from "@/app/errorBoundary";
-import Error from "@/app/error";
+import Error from "@/app/error/error";
 import Link from "next/link";
 
 const PosterMovie = ({
