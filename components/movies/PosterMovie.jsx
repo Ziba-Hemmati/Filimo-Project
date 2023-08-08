@@ -1,5 +1,5 @@
 "use client";
-import ErrorBoundary from "@/app/error/errorBoundary";
+import ErrorBoundary from "@/app/error/ErrorBoundary";
 import Error from "@/app/error/error";
 import Link from "next/link";
 
