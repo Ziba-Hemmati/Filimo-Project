@@ -1,5 +1,3 @@
-// import ErrorBoundary from "@/app/ErrorBoundary";
-// import Title from "../Title";
 import { getLocalData } from "@/lib/localdata";
 import EachMovieFactors from "./EachMovieFactors";
 
