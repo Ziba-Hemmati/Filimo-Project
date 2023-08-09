@@ -32,7 +32,7 @@ const Header = async () => {
               href={"/bookmark"}
               className="flex items-center transition-colors duration-300"
             >
-              <FontAwesomeIcon icon={faCirclePlus} className="ml-2" />
+              <FontAwesomeIcon icon={faCirclePlus} className="md:ml-2" />
               <span className="hidden md:inline text-[.6rem] lg:text-[.7rem] ">
                 لیست‌های من
               </span>

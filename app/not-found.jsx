@@ -1,12 +1,14 @@
+import Link from "next/link";
+
 const NotFound = () => {
   return (
-    <div
-      className={
-        "h-screen text-white text-center flex flex-col items-center justify-around"
-      }
-    >
-      <h2>Not Found</h2>
-      <p>Could not find requested resource</p>
+    <div className={"text-white text-center"}>
+      <h2 className="mt-48 mb-14">فکر می‌کنیم راهتون رو گم کرده‌اید!</h2>
+      <Link href={"/"}>
+        <button className="outline outline-orange-300 p-2 rounded-sm bg-gray-200 bg-opacity-[.4] hover:text-black hover:bg-orange-300 transition-colors duration-300 text-sm">
+          بازگشت به خانه
+        </button>
+      </Link>
     </div>
   );
 };

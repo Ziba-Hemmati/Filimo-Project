@@ -2,7 +2,7 @@
 import Title from "@/components/Title";
 import Link from "next/link";
 import SubHeader from "@/components/category/subHeader/SubHeader";
-import { useCallback, useEffect, useState } from "react";
+import { useEffect, useState } from "react";
 import {
   getSortedMovies,
   getTargetData,
@@ -37,6 +37,7 @@ const CategoriesPage = ({ eachCategory, data }) => {
   return (
     <>
       <SubHeader
+        faName={faName}
         selectedOption={selectedOption}
         onSelect={handleSelectedOption}
       />
@@ -84,7 +85,9 @@ const CategoriesPage = ({ eachCategory, data }) => {
                       </div>
                     </Link>
                   </div>
-                  <p className="truncate my-4">{faName}</p>
+                  <p className="truncate my-4">
+                    <Link href={`/movies/${id}`}>{faName}</Link>
+                  </p>
                 </div>
               );
             }

@@ -1,6 +1,6 @@
 import React from "react";
 
-const EachMovieCommentItems = ({ id, name, date, text }) => {
+const EachMovieCommentItems = ({ name, date, text }) => {
   return (
     <div className="py-4 border-t border-[#333]">
       <div className="flex items-start">

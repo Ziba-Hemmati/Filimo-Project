@@ -1,6 +1,6 @@
 import Title from "@/components/Title";
 
-const EachMovieStory = ({ faName, story, about }) => {
+const EachMovieStory = ({ faName, story }) => {
   return (
     <div className="text-white relative overflow-hidden w-1/2 max-w-screen-xl pr-5">
       <div className={"mb-5"}>

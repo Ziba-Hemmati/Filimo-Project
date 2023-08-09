@@ -7,6 +7,7 @@ import BannerPoster from "@/components/eachMovie/BannerPoster";
 
 const EachMovieBanner = async ({ mark }) => {
   const data = await getLocalData();
+
   const movies = data.movies;
 
   const target = movies.find((item) => {

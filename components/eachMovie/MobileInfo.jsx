@@ -2,6 +2,9 @@
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { useState } from "react";
 import { faAngleUp, faAngleDown } from "@fortawesome/free-solid-svg-icons";
+("@fortawesome/free-solid-svg-icons");
+import { animated, useTransition } from "react-spring";
+import Link from "next/link";
 
 const MobileInfo = ({
   faName,
@@ -20,24 +23,22 @@ const MobileInfo = ({
   const [isShow, setIsShow] = useState(false);
   const handleClick = () => setIsShow((prev) => !prev);
 
+  const transitions = useTransition(isShow, {
+    from: { maxHeight: "0" },
+    enter: { maxHeight: "1000px" },
+    leave: { maxHeight: "0" },
+    config: { duration: 1000 },
+  });
+
   return (
     <div>
       <div className="flex justify-center items-center my-4">
         <span className="font-[700] "> فیلم {faName} </span>
-        {!isShow && (
-          <FontAwesomeIcon
-            icon={faAngleDown}
-            className="mr-2 text-black px-1 py-[3px] rounded-xl bg-white"
-            onClick={handleClick}
-          />
-        )}
-        {isShow && (
-          <FontAwesomeIcon
-            icon={faAngleUp}
-            className="mr-2 text-black px-1 py-[3px] rounded-xl bg-white "
-            onClick={handleClick}
-          />
-        )}
+        <FontAwesomeIcon
+          icon={isShow ? faAngleUp : faAngleDown}
+          className="mr-2 text-black px-1 py-[3px] rounded-xl bg-white cursor-pointer transition-transform transform hover:scale-110"
+          onClick={handleClick}
+        />
       </div>
       <p>{enName} </p>
       <div className="w-[70px] text-black flex items-center flex-row-reverse mx-auto mt-3">
@@ -48,20 +49,30 @@ const MobileInfo = ({
           IMDb
         </span>
       </div>
-      <p className="text-orange-300 mt-8 mb-2 text-[12px] "> مناسب برای بالای {age} سال </p>
+      <p className="text-orange-300 mt-8 mb-2 text-[12px] ">
+        مناسب برای بالای {age} سال
+      </p>
 
-      {isShow && (
-        <div className="text-[10px]">
-          <p className="my-5"> کارگردان:{director} </p>
-          <p className="leading-5">
-            {time} - محصول {country} - {year} -
-            {isDub ? " دوبله شده " : " دوبله نشده "} -
-            {isSub ? " با زیرنویس " : " بدون زیرنویس "} - کیفیت {quality}
-          </p>
-          <p className="bg-gray-350 w-fit mx-auto mt-8 mb-4 py-1 px-2 rounded-3xl">
-            {genre}
-          </p>
-        </div>
+      {transitions(
+        (style, item) =>
+          item && (
+            <animated.div
+              className="text-[10px] overflow-hidden"
+              style={{ ...style }}
+            >
+              <Link href={"/"}>
+                <p className="my-5"> کارگردان:{director} </p>
+                <p className="leading-5">
+                  {time} - محصول {country} - {year} -
+                  {isDub ? " دوبله شده " : " دوبله نشده "} -
+                  {isSub ? " با زیرنویس " : " بدون زیرنویس "} - کیفیت {quality}
+                </p>
+                <p className="bg-gray-350 w-fit mx-auto mt-8 mb-4 py-1 px-2 rounded-3xl">
+                  {genre}
+                </p>
+              </Link>
+            </animated.div>
+          )
       )}
     </div>
   );
