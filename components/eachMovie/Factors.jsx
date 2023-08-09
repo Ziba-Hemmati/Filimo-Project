@@ -19,7 +19,7 @@ const Factors = async ({ mark }) => {
   ];
 
   return (
-    <div className="md:px-7 xl:px-[8rem]">
+    <div className="px-3 md:px-8 xl:px-[8.5rem]">
       <Title className="mt-16 p-3 text-sm">
         سایر عوامل فیلم {target.faName}
       </Title>

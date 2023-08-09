@@ -14,7 +14,7 @@ const Actors = async ({ mark }) => {
 
   const { actors, faName } = target;
   return (
-    <div className=" px-3 sm:px-0 md:px-8 xl:px-[9rem]">
+    <div className="px-3 md:px-8 xl:px-[8.5rem]">
       <Title className="mt-16 p-3 text-sm">بازیگران فیلم {target.faName}</Title>
       <div className="flex flex-wrap m-3">
         {actors.map((actor) => (
