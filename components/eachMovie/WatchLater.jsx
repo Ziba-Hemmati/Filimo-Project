@@ -25,7 +25,7 @@ const WatchLater = ({ target }) => {
         <button
           className={`md:flex items-center md:bg-gray-250 md:hover:bg-gray-200 md:hover:bg-opacity-[.3] transition-colors duration-300 md:bg-opacity-[.2] md:px-3 md:py-2 rounded-3xl ${
             isExist &&
-            "text-orange-400 md:outline outline-2 outline-orange-400 md:hover:bg-orange-300 md:hover:bg-opacity-[1] md:hover:text-black"
+            "text-orange-400 md:outline outline-2 outline-orange-400 md:hover:bg-orange-300 md:hover:bg-opacity-[1] hover:text-black"
           }`}
           onClick={() => dispatch(setBookmark(target))}
         >
