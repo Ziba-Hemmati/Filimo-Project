@@ -2,11 +2,13 @@ import React from "react";
 
 const EachMovieCommentItems = ({ name, date, text }) => {
   return (
-    <div className="py-4 border-t border-[#333]">
-      <div className="flex items-start">
-        <div className="bg-[#afb42b] text-white w-8 h-8 rounded-full flex items-center justify-center">
-          <p className="text-center text-lg">U</p>
-        </div>
+      <div className="py-4 border-t border-[#333]">
+        <div className="flex items-start">
+          <div>
+            <div className="bg-[#afb42b] text-white w-8 h-8 rounded-full flex items-center justify-center">
+              <p className="text-center text-lg">U</p>
+            </div>
+          </div>
 
         <div className="px-3">
           <div className="flex pb-3">
