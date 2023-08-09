@@ -4,6 +4,7 @@ import { useState } from "react";
 import { faAngleUp, faAngleDown } from "@fortawesome/free-solid-svg-icons";
 ("@fortawesome/free-solid-svg-icons");
 import { animated, useTransition } from "react-spring";
+import Link from "next/link";
 
 const MobileInfo = ({
   faName,
@@ -59,15 +60,17 @@ const MobileInfo = ({
               className="text-[10px] overflow-hidden"
               style={{ ...style }}
             >
-              <p className="my-5"> کارگردان:{director} </p>
-              <p className="leading-5">
-                {time} - محصول {country} - {year} -
-                {isDub ? " دوبله شده " : " دوبله نشده "} -
-                {isSub ? " با زیرنویس " : " بدون زیرنویس "} - کیفیت {quality}
-              </p>
-              <p className="bg-gray-350 w-fit mx-auto mt-8 mb-4 py-1 px-2 rounded-3xl">
-                {genre}
-              </p>
+              <Link href={"/"}>
+                <p className="my-5"> کارگردان:{director} </p>
+                <p className="leading-5">
+                  {time} - محصول {country} - {year} -
+                  {isDub ? " دوبله شده " : " دوبله نشده "} -
+                  {isSub ? " با زیرنویس " : " بدون زیرنویس "} - کیفیت {quality}
+                </p>
+                <p className="bg-gray-350 w-fit mx-auto mt-8 mb-4 py-1 px-2 rounded-3xl">
+                  {genre}
+                </p>
+              </Link>
             </animated.div>
           )
       )}
