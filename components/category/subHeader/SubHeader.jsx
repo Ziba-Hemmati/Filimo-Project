@@ -85,7 +85,7 @@ const SubHeader = ({faName, selectedOption, onSelect }) => {
               />
             </button>
             {isOpen && (
-              <ul className="absolute z-10 w-28 xl:w-36 mt-2 py-1 bg-black-950 text-white rounded shadow-lg">
+              <ul className="absolute z-10 w-[132px] mt-2 py-1 bg-black-950 text-white rounded shadow-lg">
                 {options.map((option) => (
                   <li
                     key={option.value}

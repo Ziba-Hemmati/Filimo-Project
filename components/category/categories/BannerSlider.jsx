@@ -7,22 +7,23 @@ import "./swiperCustom.css"
 const BannerSlider = ({ banners, enName }) => {
   return (
     <Swiper
+        className="banner-swiper"
       slidesPerView={1}
         loop={true}
         pagination={{
           clickable: true,
         }}
         navigation={true}
-        autoplay={{
-            delay: 3500,
-            disableOnInteraction: false,
-        }}
+        // autoplay={{
+        //     delay: 3500,
+        //     disableOnInteraction: false,
+        // }}
         modules={[Pagination, Navigation,Autoplay]}
     >
       {banners.map((banner, index) => (
         <SwiperSlide key={index}>
-          <div className="max-h-[70vh] w-full">
-            <img src={banner} alt={enName} className="h-[100vh] w-full"/>
+          <div className="lg:max-h-[66vh] w-full">
+            <img src={banner} alt={enName} className="h-[55vh] md:h-[100vh] w-full "/>
           </div>
         </SwiperSlide>
       ))}
