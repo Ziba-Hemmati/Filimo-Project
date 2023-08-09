@@ -25,10 +25,10 @@
 }
 @media screen and (max-width: 768px){
     .comment-Slider .swiper-button-prev {
-        right: 90% ;
+        right: 84% ;
     }
     .comment-Slider .swiper-button-next {
-        right: 95% ;
+        right: 93% ;
     }
 }
 @media screen and (min-width: 1024px)  {
