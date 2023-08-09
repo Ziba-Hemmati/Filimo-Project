@@ -13,6 +13,7 @@ module.exports = {
       lg: "1024px",
       lg2: "1100px",
       xl: "1200px",
+      xl2: "1440px",
     },
     colors: {
       white: "#fff",

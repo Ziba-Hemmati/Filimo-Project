@@ -2,7 +2,7 @@
 import Title from "@/components/Title";
 import Link from "next/link";
 import SubHeader from "@/components/category/subHeader/SubHeader";
-import { useCallback, useEffect, useState } from "react";
+import { Suspense, useEffect, useState } from "react";
 import {
   getSortedMovies,
   getTargetData,
@@ -37,7 +37,7 @@ const CategoriesPage = ({ eachCategory, data }) => {
   return (
     <>
       <SubHeader
-      faName={faName}
+        faName={faName}
         selectedOption={selectedOption}
         onSelect={handleSelectedOption}
       />
