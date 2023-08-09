@@ -2,7 +2,7 @@
 import Title from "@/components/Title";
 import Link from "next/link";
 import SubHeader from "@/components/category/subHeader/SubHeader";
-import { Suspense, useEffect, useState } from "react";
+import { useEffect, useState } from "react";
 import {
   getSortedMovies,
   getTargetData,
