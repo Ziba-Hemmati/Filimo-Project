@@ -24,9 +24,13 @@ export const PosterText = () => {
         </div>
 
         <div className="flex justify-center" style={{ direction: "rtl" }}>
-          <div className="grid grid-cols-1 lg:grid-cols-3 gap-7">
+          <div className="grid grid-cols-1 xl:grid-cols-3 gap-7">
             {text.map((item, index) => {
-              return <Items key={index}>{item.title}</Items>;
+              return (
+              <div className="">
+                <Items key={index}>{item.title}</Items>
+                </div>
+              )
             })}
           </div>
         </div>
