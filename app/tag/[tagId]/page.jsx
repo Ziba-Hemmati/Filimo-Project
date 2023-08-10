@@ -1,3 +1,4 @@
+import Loading from "@/app/loading";
 import { CategoriesPage } from "@/components";
 import CategoriesBanner from "@/components/category/categories/CategoriesBanner";
 import { getLocalData } from "@/lib/localdata";
@@ -10,13 +11,7 @@ const Category = async ({ params }) => {
   } else {
     return (
       <div className="text-white">
-        <Suspense
-          fallback={
-            <p className="my-6 px-[10px] lg:px-[30px]">
-              در حال بارگذاری داده‌ها...
-            </p>
-          }
-        >
+        <Suspense fallback={<Loading />}>
           <CategoriesBanner data={data} eachCategory={params.tagId} />
           <CategoriesPage data={data} eachCategory={params.tagId} />
         </Suspense>

@@ -1,6 +1,7 @@
 import { Movie } from "@/components";
 import { getLocalData } from "@/lib/localdata";
 import { Suspense } from "react";
+import Loading from "../loading";
 
 export const metadata = {
   title: "بهترین فیلم‌های سینمایی",
@@ -10,13 +11,7 @@ const Movies = async () => {
   const data = await getLocalData();
   if (!data) throw new Error("مشکلی در دریافت داده‌ها وجود دارد.");
   return (
-    <Suspense
-      fallback={
-        <p className=" text-white my-6 px-[10px] lg:px-[30px]">
-          در حال بارگذاری داده‌ها...
-        </p>
-      }
-    >
+    <Suspense fallback={<Loading />}>
       <Movie data={data} />
     </Suspense>
   );
