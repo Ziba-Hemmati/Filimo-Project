@@ -3,6 +3,7 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faHeart } from "@fortawesome/free-solid-svg-icons";
 import { useDispatch, useSelector } from "react-redux";
 import { setLike } from "@/redux/features/likeSlice";
+import { useCallback } from "react";
 
 const EachMovieLike = ({ target }) => {
   const like = useSelector((store) => store.like);
@@ -10,6 +11,9 @@ const EachMovieLike = ({ target }) => {
   const isLiked = like.find((item) => {
     return item.id === target.id;
   });
+
+  const handleLike = useCallback(() => dispatch(setLike(target)), []);
+
   return (
     <div>
       <button
@@ -17,7 +21,7 @@ const EachMovieLike = ({ target }) => {
           isLiked &&
           "text-orange-400 md:outline md:outline-2 md:outline-orange-400 md:hover:bg-orange-400 md:hover:bg-opacity-[1] hover:text-black"
         }`}
-        onClick={() => dispatch(setLike(target))}
+        onClick={handleLike}
       >
         <FontAwesomeIcon icon={faHeart} className="ml-1" />
         <div className="text-[11px]">دوست داشتم</div>
