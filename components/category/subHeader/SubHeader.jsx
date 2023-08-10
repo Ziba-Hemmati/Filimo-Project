@@ -3,7 +3,6 @@ import React, { useEffect, useState } from "react";
 
 const SubHeader = ({faName, selectedOption, onSelect }) => {
   const [isOpen, setIsOpen] = useState(false);
-  // const [selectedOption, setSelectedOption] = useState("");
   const [isSticky, setIsSticky] = useState(false);
 
   const options = [

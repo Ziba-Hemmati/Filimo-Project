@@ -1,17 +1,40 @@
-import { getLocalData } from "@/lib/localdata";
+"use client";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faCirclePlus } from "@fortawesome/free-solid-svg-icons";
 import Link from "next/link";
 import Menu from "./Menu";
 import Search from "./Search";
+import { useEffect, useRef, useState } from "react";
 
-const Header = async () => {
-  const data = null;
-  if (!data) throw new Error("مشکلی در دریافت داده‌ها وجود دارد.");
+const Header = ({ data }) => {
+  const navRef = useRef(null);
+
   const movies = data.movies;
 
+  useEffect(() => {
+    let prevScrollY = window.scrollY;
+    const handleScroll = () => {
+      const currentScrollY = window.scrollY;
+      const currentWidth = window.innerWidth;
+      if (currentScrollY > 200 && currentWidth <= 768) {
+        navRef.current.style.transform = "translateY(-150px)";
+      } else if (currentScrollY < 100 && currentWidth <= 768) {
+        navRef.current.style.transform = "translateY(0)";
+      }
+      prevScrollY = currentScrollY;
+    };
+
+    window.addEventListener("scroll", handleScroll);
+    return () => {
+      window.removeEventListener("scroll", handleScroll);
+    };
+  }, []);
+
   return (
-    <nav className="py-[3px] bg-black bg-opacity-[.9] sticky top-0 z-[2] w-full">
+    <nav
+      ref={navRef}
+      className="py-[3px] transition-transform duration-500 bg-black bg-opacity-[.9] sticky top-0 z-[2] w-full"
+    >
       <div className="px-[10px] flex justify-between items-center my-3 md:px-[20px] xl:px-[100px]">
         <div className="flex items-center justify-center">
           <Link href={"/"} className="flex">
@@ -23,7 +46,7 @@ const Header = async () => {
             <div className="border border-gray-200 mx-4 lg:mx-8 hidden lg:inline"></div>
           </Link>
           <div className="hidden lg:inline">
-            <Menu />
+            <Menu data={data} />
           </div>
           <Search movies={movies} />
         </div>
@@ -42,7 +65,7 @@ const Header = async () => {
         </div>
       </div>
       <div className="lg:hidden">
-        <Menu />
+        <Menu data={data} />
       </div>
     </nav>
   );
