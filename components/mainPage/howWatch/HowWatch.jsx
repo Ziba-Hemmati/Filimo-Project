@@ -1,9 +1,10 @@
 import Button from "./Button";
 import Title from "@/components/Title";
+import clsx from "clsx";
 
 const HowWatch = () => {
   return (
-    <div className="py-16 bg-black-900 ">
+    <div className="py-16 bg-black-900 px-[10px]">
       <div className=" relative left-0  w-100 ml-10">
         <img
           className="absolute left-0  md:w-[600px] lg:w-[700px] xl:w[850px] hidden md:block"
@@ -11,8 +12,8 @@ const HowWatch = () => {
           alt=""
         />
       </div>
-      <div className="relative px-3 sm:px-20">
-        <div className="text-white text-lg font-iran-sans-medium fond-bold mb-6">
+      <div className="relative sm:px-20">
+        <div className="text-white mb-6">
           <Title>چطور با تلویزیون، فیلیمو تماشا کنم؟</Title>
         </div>
         <div className="text-gray-200 mb-3 pb-4 text-[.7rem] leading-6 sm:max-w-sm">
