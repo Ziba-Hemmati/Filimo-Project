@@ -21,6 +21,7 @@ const MoviesList = ({ categories }) => {
   }, []);
 
   // *********************************************************************
+  
   const [changeIcon, setChangeIcon] = useState(false);
   const handleChangeIcon = useCallback(() => {
     setChangeIcon((prev) => !prev);

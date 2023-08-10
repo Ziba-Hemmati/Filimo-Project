@@ -12,17 +12,17 @@ import {
 
 const Home = () => {
   return (
-    <div>
-      <MainBanner />
-      <BestOfImdb />
-      <WatchMovie />
-      <HowWatch />
-      <FreeMovies />
-      <ChildrenWorld />
-      <CommentMovies />
-      <Question />
-      <Footer />
-    </div>
+      <div>
+        <MainBanner />
+        <BestOfImdb />
+        <WatchMovie />
+        <HowWatch />
+        <FreeMovies />
+        <ChildrenWorld />
+        <CommentMovies />
+        <Question />
+        <Footer />
+      </div>
   );
 };
 

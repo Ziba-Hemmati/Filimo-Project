@@ -10,6 +10,7 @@ import MoviesList from "./MoviesList";
 
 const Menu = async () => {
   const data = await getLocalData();
+  if(!data) throw new Error("مشکلی در دریافت داده‌ها وجود دارد.")
   const categories = data.categories;
 
   return (

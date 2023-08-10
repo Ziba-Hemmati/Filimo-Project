@@ -6,7 +6,8 @@ import Menu from "./Menu";
 import Search from "./Search";
 
 const Header = async () => {
-  const data = await getLocalData();
+  const data = null;
+  if (!data) throw new Error("مشکلی در دریافت داده‌ها وجود دارد.");
   const movies = data.movies;
 
   return (

@@ -7,6 +7,7 @@ export const PosterText = () => {
     { title: "می‌تونی دانلود کنی بعد بدون اینترنت تماشا کنی" },
     { title: "می‌تونی یک عضو، مخصوص تماشای کودک بسازی" },
   ];
+  
   return (
     <>
       <div className="pt-10 md:pt-16 lg:pt-28 pb-16 text-center">

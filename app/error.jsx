@@ -1,5 +1,6 @@
 "use client";
 
+import Link from "next/link";
 import { useEffect } from "react";
 
 export default function Error({ error, reset }) {
@@ -17,6 +18,11 @@ export default function Error({ error, reset }) {
       >
         دوباره سعی کنید
       </button>
+      {/* <Link href={"/"}>
+        <button className="outline outline-orange-300 p-2 rounded-sm bg-gray-200 bg-opacity-[.4] hover:text-black hover:bg-orange-300 transition-colors duration-300 text-sm mr-8">
+          بازگشت به خانه
+        </button>
+      </Link> */}
     </div>
   );
 }

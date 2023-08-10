@@ -1,8 +1,9 @@
 "use client";
+import { searchByFaName } from "@/utils/searchByFaName";
 import { faMagnifyingGlass } from "@fortawesome/free-solid-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import Link from "next/link";
-import { useCallback, useEffect, useMemo, useState } from "react";
+import { useCallback, useMemo, useState } from "react";
 
 const Search = ({ movies }) => {
   const [searchTerm, setSearchTerm] = useState("");
@@ -10,24 +11,9 @@ const Search = ({ movies }) => {
     setSearchTerm(event.target.value);
   }, []);
 
-  const searchByFaName = useCallback((search) => {
-    return movies.filter((item) => item.faName.includes(search));
-  }, []);
-
   const SEARCH_Movie = useMemo(() => {
-    return searchByFaName(searchTerm);
+    return searchByFaName(movies, searchTerm);
   }, [searchTerm]);
-
-  useEffect(() => {
-    //Debounce search by faName
-    const timer = setTimeout(() => {
-      SEARCH_Movie;
-    }, 1000);
-    //clean up
-    return () => {
-      clearTimeout(timer);
-    };
-  }, [SEARCH_Movie]);
 
   const [isOpen, setIsOpen] = useState(false);
   const handleOpen = useCallback(() => setIsOpen((prev) => !prev), []);
@@ -54,37 +40,32 @@ const Search = ({ movies }) => {
             onClick={handleOpen}
           />
           <div className="overflow-y-auto w-[280px] lg:w-[720px] pb-10">
-            {searchTerm.length
-              ? SEARCH_Movie.map(
-                  ({ id, poster, faName, genre, country, year, about }) => {
-                    return (
-                      <Link
-                        key={id}
-                        href={`/movies/${id}`}
-                        className="flex hover:bg-black-600 mb-4 p-2 rounded-sm"
-                      >
-                        <img
-                          src={poster}
-                          alt={faName}
-                          className="w-20 h-[106px] lg:w-[150px] lg:h-[200px] "
-                        />
-                        <div className="text-[.7rem] mr-2 text-white flex flex-col justify-center">
-                          <p className="font-bold text-[.8rem] mb-2">
-                            {faName}
-                          </p>
-                          <p className="my-2">
-                            {genre} - {country} - {year}
-                          </p>
-                          <p className="hidden lg:inline leading-6">{about} </p>
-                          <p className="hover:text-green-500 mt-4">
-                            تماشای فیلم
-                          </p>
-                        </div>
-                      </Link>
-                    );
-                  }
-                )
-              : ""}
+            {searchTerm.length &&
+              SEARCH_Movie.map(
+                ({ id, poster, faName, genre, country, year, about }) => {
+                  return (
+                    <Link
+                      key={id}
+                      href={`/movies/${id}`}
+                      className="flex hover:bg-black-600 mb-4 p-2 rounded-sm"
+                    >
+                      <img
+                        src={poster}
+                        alt={faName}
+                        className="w-20 h-[106px] lg:w-[150px] lg:h-[200px] "
+                      />
+                      <div className="text-[.7rem] mr-2 text-white flex flex-col justify-center">
+                        <p className="font-bold text-[.8rem] mb-2">{faName}</p>
+                        <p className="my-2">
+                          {genre} - {country} - {year}
+                        </p>
+                        <p className="hidden lg:inline leading-6">{about} </p>
+                        <p className="hover:text-green-500 mt-4">تماشای فیلم</p>
+                      </div>
+                    </Link>
+                  );
+                }
+              )}
           </div>
         </div>
       )}
