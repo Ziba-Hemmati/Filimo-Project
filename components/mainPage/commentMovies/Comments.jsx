@@ -1,7 +1,7 @@
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import {faUserCircle } from '@fortawesome/free-solid-svg-icons';
 import Image from 'next/image';
-import avatar from'@/assets/virgol.png'
+import avatar from '@/assets/images/virgol.png'
 const Comments = ({ comment, faName }) => {
     const { id, name, text, date } = comment;
     return (

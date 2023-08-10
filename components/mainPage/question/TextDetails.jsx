@@ -1,4 +1,3 @@
-import './link.css'
 import React from 'react';
 
 const TextDetails = ({ details }) => {
@@ -8,15 +7,15 @@ const TextDetails = ({ details }) => {
 
     let updatedDetails = details.replace(
         /دانلود از طریق سایت و دانلود از طریق اپلیکیشن/g,
-        '<a class="link" href="#">دانلود از طریق سایت و دانلود از طریق اپلیکیشن</a>',
+        '<a class="text-orange-300" href="#">دانلود از طریق سایت و دانلود از طریق اپلیکیشن</a>',
     );
     updatedDetails = updatedDetails.replace(
         /دانلود مستقیم نرم‌افزار iOS/g,
-        '<a href="#" class="link">(دانلود مستقیم نرم‌افزار iOS)</a>',
+        '<a href="#" class="text-orange-300">(دانلود مستقیم نرم‌افزار iOS)</a>',
     );
     updatedDetails = updatedDetails.replace(
         /دانلود مستقیم نرم‌افزار اندروید/g,
-        '<a class="link" href="#">(دانلود مستقیم نرم‌افزار اندروید)</a>',
+        '<a class="text-orange-300" href="#">(دانلود مستقیم نرم‌افزار اندروید)</a>',
     );
     return (
         <div className='p-2 mt-1 max-w-5xl leading-relaxed'>
