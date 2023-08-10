@@ -10,6 +10,10 @@ import {
 import { Suspense } from "react";
 import Loading from "@/app/loading";
 
+export const metadata = {
+  title: "تماشای هر فیلم",
+};
+
 const EachMovie = async ({ params }) => {
   const data = await getLocalData();
   if (!data) {
@@ -23,7 +27,7 @@ const EachMovie = async ({ params }) => {
         <EachMovieStoryAndTrailer mark={params.movieId} movies={movies} />
         <SuggestedMovies mark={params.movieId} movies={movies} />
         <Actors mark={params.movieId} movies={movies} />
-        <Factors mark={params.movieId} />
+        <Factors mark={params.movieId} movies={movies} />
         <EachMovieComment mark={params.movieId} movies={movies} />
       </Suspense>
     </div>

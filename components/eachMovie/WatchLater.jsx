@@ -3,13 +3,13 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faBookmark } from "@fortawesome/free-solid-svg-icons";
 import { setBookmark } from "@/redux/features/bookMarkSlice";
 import { useDispatch, useSelector } from "react-redux";
+import { markedMovie } from "@/utils/markedMovie";
 
 const WatchLater = ({ target }) => {
   const bookmark = useSelector((store) => store.bookmark);
   const dispatch = useDispatch();
-  const isExist = bookmark.find((item) => {
-    return item.id == target.id;
-  });
+  const isExist = markedMovie(bookmark, target);
+
   return (
     <>
       <button

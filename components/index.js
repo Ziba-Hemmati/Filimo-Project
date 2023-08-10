@@ -21,6 +21,11 @@ import BookMark from "@/components/myLists/BookMark";
 import Button from "@/components/myLists/Button";
 import Like from "@/components/myLists/Like";
 import SuggestedMovies from "@/components/eachMovie/SuggestedMovies";
+import WatchLater from "@/components/eachMovie/WatchLater";
+import DesktopInfo from "@/components/eachMovie/DesktopInfo";
+import EachMovieLike from "@/components/eachMovie/EachMovieLike";
+import MobileInfo from "@/components/eachMovie/MobileInfo";
+import BannerPoster from "@/components/eachMovie/BannerPoster";
 
 export {
   CategoriesPage,
@@ -46,4 +51,9 @@ export {
   Button,
   Like,
   SuggestedMovies,
+  WatchLater,
+  DesktopInfo,
+  EachMovieLike,
+  MobileInfo,
+  BannerPoster,
 };
