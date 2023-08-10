@@ -1,13 +1,14 @@
+import { getLocalData } from "@/lib/localdata";
 import WatchLater from "./WatchLater";
 import DesktopInfo from "./DesktopInfo";
 import EachMovieLike from "./EachMovieLike";
 import MobileInfo from "./MobileInfo";
 import BannerPoster from "@/components/eachMovie/BannerPoster";
+import { findMovieByCategory } from "@/utils/findMovieByCategory";
 
-const EachMovieBanner = ({ mark, movies}) => {
-  const target = movies.find((item) => {
-    return item.id === Number(mark);
-  });
+const EachMovieBanner = ({ mark, movies }) => {
+  const target = findMovieByCategory(movies, mark);
+
   const {
     poster,
     faName,
