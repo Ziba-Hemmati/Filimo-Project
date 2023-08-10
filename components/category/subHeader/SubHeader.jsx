@@ -1,7 +1,7 @@
 "use client";
 import React, { useEffect, useState } from "react";
 
-const SubHeader = ({faName, selectedOption, onSelect }) => {
+const SubHeader = ({ faName, selectedOption, onSelect }) => {
   const [isOpen, setIsOpen] = useState(false);
   const [isSticky, setIsSticky] = useState(false);
 

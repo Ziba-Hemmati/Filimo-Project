@@ -4,7 +4,7 @@ import clsx from "clsx";
 
 const Items = ({ children, className }) => {
   return (
-    <ul className={clsx("text-gray-300 text-xs lg:text-sm", className)}>
+    <ul className={clsx("text-gray-300 text-[13px]", className)}>
       <div className="flex items-start justify-start">
         <FontAwesomeIcon
           icon={faCheck}
