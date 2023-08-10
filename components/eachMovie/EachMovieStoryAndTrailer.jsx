@@ -4,13 +4,12 @@ import EachMovieModal from "@/components/eachMovie/EachMovieModal";
 import { useCallback, useState } from "react";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faCameraAlt } from "@fortawesome/free-solid-svg-icons";
+import { findMovieById } from "@/utils/findMovieById";
 
 const EachMovieStoryAndTrailer = ({ mark, movies }) => {
   const [isOpen, setIsOpen] = useState(false);
 
-  const target = movies.find((item) => {
-    return item.id === Number(mark);
-  });
+  const target = findMovieById(mark, movies);
 
   const handleOpen = useCallback(() => {
     setIsOpen(true);
