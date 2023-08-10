@@ -14,20 +14,19 @@ const EachMovie = async ({ params }) => {
   const data = await getLocalData();
   if (!data) {
     throw new Error("مشکلی در دریافت داده‌ها وجود دارد.");
-  } else {
-    const movies = data.movies;
-    return (
-      <div className="text-white">
-        <Suspense fallback={<Loading />}>
-          <EachMovieBanner mark={params.movieId} />
-          <EachMovieStoryAndTrailer mark={params.movieId} movies={movies} />
-          <SuggestedMovies mark={params.movieId} movies={movies} />
-          <Actors mark={params.movieId} />
-          <Factors mark={params.movieId} />
-          <EachMovieComment mark={params.movieId} />
-        </Suspense>
-      </div>
-    );
   }
+  const movies = data.movies;
+  return (
+    <div className="text-white">
+      <Suspense fallback={<Loading />}>
+        <EachMovieBanner mark={params.movieId} movies={movies} />
+        <EachMovieStoryAndTrailer mark={params.movieId} movies={movies} />
+        <SuggestedMovies mark={params.movieId} movies={movies} />
+        <Actors mark={params.movieId} movies={movies} />
+        <Factors mark={params.movieId} />
+        <EachMovieComment mark={params.movieId} movies={movies} />
+      </Suspense>
+    </div>
+  );
 };
 export default EachMovie;

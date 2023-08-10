@@ -1,12 +1,7 @@
-import React from "react";
-import { getLocalData } from "@/lib/localdata";
 import EachMovieCommentItems from "./EachMovieCommentItems";
 
-const EachMovieComment = async ({ mark }) => {
-  const data = await getLocalData();
-  const movie = data.movies;
-
-  const target = movie.find((item) => {
+const EachMovieComment = async ({ mark, movies }) => {
+  const target = movies.find((item) => {
     return item.id === Number(mark);
   });
   const { faName, comments } = target;
@@ -28,7 +23,7 @@ const EachMovieComment = async ({ mark }) => {
             <img src="/icons/message.png" />
           </button>
         </div>
-  
+
         {comments.map(({ id, name, date, text }) => {
           return (
             <EachMovieCommentItems

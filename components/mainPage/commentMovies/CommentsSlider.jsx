@@ -1,12 +1,12 @@
 'use client'
 
-import React from 'react';
 import { Swiper, SwiperSlide } from 'swiper/react';
 import 'swiper/css';
 import "swiper/css/navigation";
 import "./swiperComment.css"
 import {Autoplay, Navigation} from 'swiper/modules';
 import Comments from './Comments.jsx'
+
 const CommentSlider = ({ movie }) => {
     return (
         <Swiper
