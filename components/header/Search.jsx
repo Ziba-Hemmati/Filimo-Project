@@ -1,9 +1,11 @@
 "use client";
-import { searchByFaName } from "@/utils/searchByFaName";
-import { faMagnifyingGlass } from "@fortawesome/free-solid-svg-icons";
+
+import { useCallback, useMemo, useState } from "react";
+
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import Link from "next/link";
-import { useCallback, useMemo, useState } from "react";
+import { faMagnifyingGlass } from "@fortawesome/free-solid-svg-icons";
+import { searchByFaName } from "@/utils/searchByFaName";
 
 const Search = ({ movies }) => {
   const [searchTerm, setSearchTerm] = useState("");
@@ -33,7 +35,7 @@ const Search = ({ movies }) => {
         >
           <input
             type="text"
-            placeholder="براساس نام فارسی جستجو کنید..."
+            placeholder="براساس نام فارسی وانگلیسی جستجو کنید..."
             value={searchTerm}
             onChange={handleChange}
             className="my-10 outline-none rounded-sm placeholder:text-[.7rem] placeholder:lg:text-[.8rem] bg-gray-600 w-[280px] lg:w-[720px] p-2 text-orange-400 text-sm"
@@ -42,7 +44,7 @@ const Search = ({ movies }) => {
           <div className="overflow-y-auto w-[280px] lg:w-[720px] pb-10">
             {searchTerm.length &&
               SEARCH_Movie.map(
-                ({ id, poster, faName, genre, country, year, about }) => {
+                ({ id, poster, faName,enName, genre, country, year, about }) => {
                   return (
                     <Link
                       key={id}
@@ -56,6 +58,7 @@ const Search = ({ movies }) => {
                       />
                       <div className="text-[.7rem] mr-2 text-white flex flex-col justify-center">
                         <p className="font-bold text-[.8rem] mb-2">{faName}</p>
+                        <p className="font-bold text-[.8rem] mb-2">{enName}</p>
                         <p className="my-2">
                           {genre} - {country} - {year}
                         </p>
