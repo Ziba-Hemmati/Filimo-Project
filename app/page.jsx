@@ -9,9 +9,12 @@ import {
   Question,
   WatchMovie,
 } from "@/components";
+import { Suspense } from "react";
+import Loading from "./loading";
 
 const Home = () => {
   return (
+    <Suspense fallback={<Loading/>} >
       <div>
         <MainBanner />
         <BestOfImdb />
@@ -23,6 +26,7 @@ const Home = () => {
         <Question />
         <Footer />
       </div>
+    </Suspense>
   );
 };
 

@@ -1,7 +1,7 @@
 'use client'
 
-import React, { useState } from 'react';
 import TextItem from "@/components/mainPage/question/TextItems";
+import { useState } from "react";
 
 const texts = [
     { text: 'آیا می‌توانم فیلم‌های موجود در فیلیمو را دانلود کنم؟',
@@ -18,10 +18,8 @@ const texts = [
     },
 ];
 
-
 const Question = () => {
     const [selectedText, setSelectedText] = useState(null);
-
     const handleTextClick = (text) => {
         setSelectedText(prevSelectedText => (prevSelectedText === text ? null : text));
     };

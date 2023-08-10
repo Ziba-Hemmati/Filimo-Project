@@ -16,6 +16,7 @@ function MainBannerSlider({ movies }) {
   const mappedObjects = shuffledIds.map((id) => {
     return movies.find((obj) => obj.id === id);
   });
+  
   const settings = {
     arrows: false,
     autoplay: true,
