@@ -7,7 +7,6 @@ import Search from "./Search";
 import { useEffect, useRef, useState } from "react";
 
 const Header = ({ data }) => {
-  // const [isSticky, setIsSticky] = useState(false);
   const navRef = useRef(null);
 
   const movies = data.movies;
@@ -52,15 +51,14 @@ const Header = ({ data }) => {
           <Search movies={movies} />
         </div>
         <div className="flex items-center">
-          <div className=""></div>
-          <div className="text-white hover:text-orange-600">
+          <div className="text-white hover:text-orange-400">
             <Link
               href={"/bookmark"}
               className="flex items-center transition-colors duration-300"
             >
-              <FontAwesomeIcon icon={faCirclePlus} className="ml-1" />
+              <FontAwesomeIcon icon={faCirclePlus} className="md:ml-2" />
               <span className="hidden md:inline text-[.6rem] lg:text-[.7rem] ">
-                لیستهای من
+                لیست‌های من
               </span>
             </Link>
           </div>

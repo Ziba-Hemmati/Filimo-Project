@@ -8,10 +8,12 @@ module.exports = {
   theme: {
     screens: {
       sm: "480px",
+      sm2: "600px",
       md: "768px",
       lg: "1024px",
       lg2: "1100px",
       xl: "1200px",
+      xl2: "1440px",
     },
     colors: {
       white: "#fff",
@@ -23,7 +25,7 @@ module.exports = {
       "black-750": "#171717",
       "black-700": "#191919",
       "black-600": "#282828",
-      "black-fade-600": "#282828da",
+      "black-fade-600": "#282828b5",
       "black-500": "#1e1e1e",
 
       "gray-200": "#d8d8d8",

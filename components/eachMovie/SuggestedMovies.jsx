@@ -7,11 +7,11 @@ const SuggestedMovies = ({ mark, movies }) => {
   const moviesCategory = movies.filter((item) => item.category === categories);
 
   return (
-    <div className={"flex flex-col overflow-hidden my-12 px-4 xl:px-48"}>
+    <div className={"flex flex-col my-12 px-6 pl-6 xl:px-48"}>
       <Title className={"text-sm"}>فیلم‌های پیشنهادی</Title>
       <div className={"flex justify-around"}>
         <div
-          className={"flex justify-around w-full relative py-6 lg2:px-2 overflow-x-scroll lg:flex lg:justify-center lg2:overflow-hidden "}
+          className={"flex justify-around w-full relative py-6 lg2:px-2 lg:flex lg:justify-center"}
         >
             <SuggestedMoviesPoster moviesCategory={moviesCategory} />
         </div>

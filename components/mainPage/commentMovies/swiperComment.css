@@ -1,0 +1,49 @@
+.comment-Slider .swiper-button-next,
+.comment-Slider .swiper-button-prev {
+    position: relative;
+    width: 25px;
+    height: 25px;
+    border-radius: 50%;
+    background: rgba(0,0,0,.4);
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+}
+.comment-Slider .swiper-button-next{
+    right: 90%;
+    bottom: 180px;
+}
+.comment-Slider .swiper-button-prev{
+    right: 83%;
+    bottom: 177px;
+}
+.comment-Slider .swiper-button-next::after,
+.comment-Slider .swiper-button-prev::after{
+    font-size: 0.8rem;
+}
+@media screen and (max-width: 768px){
+    .comment-Slider .swiper-button-prev {
+        right: 84% ;
+    }
+    .comment-Slider .swiper-button-next {
+        right: 93% ;
+    }
+}
+@media screen and (min-width: 1024px)  {
+    .comment-Slider .swiper-button-prev {
+        right: 93% ;
+    }
+    .comment-Slider .swiper-button-next {
+        right: 97% ;
+    }
+}
+@media screen and (min-width: 1124px)  {
+    .comment-Slider .swiper-button-prev {
+        bottom: 210px!important;
+    }
+    .comment-Slider .swiper-button-next{
+        bottom: 212px!important;
+    }
+}

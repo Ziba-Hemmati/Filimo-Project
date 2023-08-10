@@ -15,9 +15,9 @@ const Menu = ({ data }) => {
       <li className="ml-8">
         <Link
           href={"/"}
-          className="flex items-center hover:text-orange-600 transition-colors duration-300"
+          className="flex items-center hover:text-orange-400 transition-colors duration-300"
         >
-          <FontAwesomeIcon icon={faFireFlameCurved} className="ml-1 text-sm" />
+          <FontAwesomeIcon icon={faFireFlameCurved} className="ml-2 text-sm" />
           <span> فیلیموتور</span>
         </Link>
       </li>
@@ -27,7 +27,7 @@ const Menu = ({ data }) => {
       <li className="ml-8">
         <Link
           href={"/"}
-          className="hover:text-orange-600 transition-colors duration-300"
+          className="hover:text-orange-400 transition-colors duration-300"
         >
           سریال
         </Link>
@@ -35,7 +35,7 @@ const Menu = ({ data }) => {
       <li className="ml-8">
         <Link
           href={"/"}
-          className="hover:text-orange-600 transition-colors duration-300"
+          className="hover:text-orange-400 transition-colors duration-300"
         >
           ایرانی
         </Link>
@@ -43,26 +43,26 @@ const Menu = ({ data }) => {
       <li className="ml-8">
         <Link
           href={"/"}
-          className="flex items-center hover:text-orange-600 transition-colors duration-300"
+          className="flex items-center hover:text-orange-400 transition-colors duration-300"
         >
-          <FontAwesomeIcon icon={faHorse} className="ml-1 text-sm" />
+          <FontAwesomeIcon icon={faHorse} className="ml-2 text-sm" />
           کودک
         </Link>
       </li>
       <li className="ml-8">
         <Link
           href={"/"}
-          className="flex items-center hover:text-orange-600 transition-colors duration-300"
+          className="flex items-center hover:text-orange-400 transition-colors duration-300"
         >
-          <FontAwesomeIcon icon={faPlay} className="ml-1 text-sm" /> فیلیمومدرسه
+          <FontAwesomeIcon icon={faPlay} className="ml-2 text-sm" /> فیلیمومدرسه
         </Link>
       </li>
       <li className="">
         <Link
           href={"/"}
-          className="hover:text-orange-600 transition-colors duration-300"
+          className="hover:text-orange-400 transition-colors duration-300"
         >
-          مجموعه
+          مجموعه‌ها
         </Link>
       </li>
     </ul>

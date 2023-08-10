@@ -1,6 +1,6 @@
 import BannerSlider from "./BannerSlider";
 
-const CategoriesBanner = async ({ eachCategory, data }) => {
+const CategoriesBanner = ({ eachCategory, data }) => {
   const categories = data.categories;
 
   const categoryBanner = categories.find((category) => {

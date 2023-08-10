@@ -1,7 +1,5 @@
 import React from "react";
 import { getLocalData } from "@/lib/localdata";
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faPaperPlane } from "@fortawesome/free-solid-svg-icons";
 import EachMovieCommentItems from "./EachMovieCommentItems";
 
 const EachMovieComment = async ({ mark }) => {
@@ -15,7 +13,7 @@ const EachMovieComment = async ({ mark }) => {
 
   return (
     <>
-      <div className="container mx-auto my-10 px-3 sm:px-0 md:px-8">
+      <div className="px-7 xl:px-[8.75rem] mt-8 mb-16">
         <div className="mb-3">
           <h2 className="text-sm font-bold">دیدگاه‌های فیلم {faName}</h2>
         </div>

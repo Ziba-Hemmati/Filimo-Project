@@ -1,0 +1,55 @@
+
+.banner-swiper .swiper-button-next,
+.banner-swiper .swiper-button-prev {
+  display: none;
+}
+@media screen and (max-width: 624px)  {
+
+}
+@media only screen and (min-width:768px){
+  .banner-swiper .swiper-button-next,
+  .banner-swiper .swiper-button-prev {
+    position: relative;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    background: rgba(0,0,0,.4);
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+  }
+  .banner-swiper .swiper-button-next{
+    right: 90.2%;
+    bottom: 80px;
+  }
+  .banner-swiper .swiper-button-prev{
+    right: 85%;
+    bottom: 62px;
+  }
+  .banner-swiper .swiper-button-next::after,
+  .banner-swiper .swiper-button-prev::after{
+    font-size: 1.2rem;
+    font-weight: bold;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+}
+@media  screen and (min-width:1024px){
+  .banner-swiper .swiper-button-prev{
+    right: 86%;
+    bottom: 62px;
+  }
+}
+@media screen and (min-width:1144px) {
+  .banner-swiper .swiper-button-next{
+    right: 92.6%;
+    bottom: 52px;
+  }
+  .banner-swiper .swiper-button-prev{
+    right: 90%;
+    bottom: 35px;
+  }
+}

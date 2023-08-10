@@ -1,7 +1,7 @@
 "use client";
 import React, { useEffect, useState } from "react";
 
-const SubHeader = ({ children, selectedOption, onSelect }) => {
+const SubHeader = ({faName, selectedOption, onSelect }) => {
   const [isOpen, setIsOpen] = useState(false);
   const [isSticky, setIsSticky] = useState(false);
 
@@ -58,15 +58,15 @@ const SubHeader = ({ children, selectedOption, onSelect }) => {
   return (
     <div
       id="subHeader"
-      className={`sticky z-[1] py-3 px-10 top-[74px] sm:top-[71px] md:top-[72px] lg:top-[56px] xl:top-[55px] ${
+      className={`sticky z-[1] py-3 top-[82px] lg:top-[53px] ${
         isSticky ? "bg-black-950 bg-opacity-[0.7] border-t border-gray-700" : ""
       }`}
     >
-      <div className="container mx-auto">
+      <div className="px-[14px] lg:px-[30px]">
         <div className="flex justify-between">
           <div>
             <p className="text-white text-sm md:text-lg">
-              {children ? children : "دسته بندی‌ها"}
+              {faName ? faName : "دسته بندی‌ها"}
             </p>
           </div>
 
@@ -84,7 +84,7 @@ const SubHeader = ({ children, selectedOption, onSelect }) => {
               />
             </button>
             {isOpen && (
-              <ul className="absolute z-10 w-28 xl:w-36 mt-2 py-1 bg-black-950 text-white rounded shadow-lg">
+              <ul className="absolute z-10 w-[132px] mt-2 py-1 bg-black-950 text-white rounded shadow-lg">
                 {options.map((option) => (
                   <li
                     key={option.value}

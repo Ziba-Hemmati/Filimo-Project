@@ -1,0 +1,30 @@
+.swiper-freemovies .swiper-button-prev,
+.swiper-freemovies .swiper-button-next {
+    --swiper-navigation-size: 12px;
+    width: 40px;
+    height: 40px;
+    color: white;
+    background-color: rgba(35, 25, 25, 0.97);
+    border-radius: 50%;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -ms-border-radius: 50%;
+    -o-border-radius: 50%;
+    z-index: 1;
+    cursor: pointer;
+}
+
+.swiper-freemovies .swiper-button-next {
+    left: -0.5%;
+    top: 40%;
+}
+
+.swiper-freemovies .swiper-button-prev {
+    right: -0.5%;
+    top: 40%;
+}
+
+.swiper-freemovies .swiper-button-prev:hover,
+.swiper-freemovies .swiper-button-next:hover {
+    background-color: rgba(35, 25, 25, 0.97);
+}

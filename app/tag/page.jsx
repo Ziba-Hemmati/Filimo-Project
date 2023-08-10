@@ -1,5 +1,7 @@
+import NotFound from "../not-found";
+
 const Tag = () => {
-  return <div className="text-white">not found</div>;
+  return <NotFound />;
 };
 
 export default Tag;

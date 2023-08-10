@@ -7,7 +7,7 @@ const Comments = ({ comment, faName }) => {
     return (
         <div
             key={id}
-            className="h-[25vh] flex flex-col justify-evenly p-4 bg-black-850 rounded-xl border border-gray-500 cursor-pointer"
+            className="h-[25vh] flex flex-col justify-evenly p-4 sm:p-6 bg-black-850 rounded-xl border border-gray-600 cursor-pointer"
         >
             <div>
             <div className='flex justify-between items-center'>
@@ -18,10 +18,10 @@ const Comments = ({ comment, faName }) => {
                 <Image className="ml-4" src={avatar}/>
             </div>
             <div className='h-14 overflow-scroll'>
-                <span className="text-gray-200 text-xs">{text}</span>
+                <span className="text-gray-200 text-[12px]">{text}</span>
             </div>
             </div>
-            <div className='text-gray-500 text-xs text-left  mt-8'>
+            <div className='text-gray-500 text-xs text-left  p-2'>
             <p> {faName} :فیلم</p>
             <p className='mt-2'> {date} :تاریخ</p>
             </div>

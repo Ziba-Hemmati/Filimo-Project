@@ -21,13 +21,13 @@ const Search = ({ movies }) => {
   useEffect(() => {
     //Debounce search by faName
     const timer = setTimeout(() => {
-      searchByFaName();
-    }, 500);
+      SEARCH_Movie;
+    }, 1000);
     //clean up
     return () => {
       clearTimeout(timer);
     };
-  }, [searchByFaName]);
+  }, [SEARCH_Movie]);
 
   const [isOpen, setIsOpen] = useState(false);
   const handleOpen = useCallback(() => setIsOpen((prev) => !prev), []);
@@ -37,12 +37,12 @@ const Search = ({ movies }) => {
       <FontAwesomeIcon
         icon={faMagnifyingGlass}
         onClick={handleOpen}
-        className="text-white transition-colors duration-300 hover:text-orange-600 mr-4 cursor-pointer lg:mr-7"
+        className="text-white transition-colors duration-300 hover:text-orange-400 mr-4 cursor-pointer lg:mr-7"
       />
 
       {isOpen && (
         <div
-          className="absolute top-0 right-0 bg-black-fade-600 w-full h-screen flex flex-col items-center"
+          className="absolute top-0 right-0 bg-black-950 bg-opacity-[.9] w-full h-screen flex flex-col items-center"
           onClick={handleOpen}
         >
           <input
@@ -50,10 +50,10 @@ const Search = ({ movies }) => {
             placeholder="براساس نام فارسی جستجو کنید..."
             value={searchTerm}
             onChange={handleChange}
-            className="my-10 outline-none rounded-sm placeholder:text-[.7rem] placeholder:lg:text-[.8rem] bg-gray-600 w-[280px] lg:w-[720px] placeholder:pr-2 text-orange-600 text-sm py-1"
+            className="my-10 outline-none rounded-sm placeholder:text-[.7rem] placeholder:lg:text-[.8rem] bg-gray-600 w-[280px] lg:w-[720px] p-2 text-orange-400 text-sm"
             onClick={handleOpen}
           />
-          <div className="overflow-y-auto w-[280px] lg:w-[720px]">
+          <div className="overflow-y-auto w-[280px] lg:w-[720px] pb-10">
             {searchTerm.length
               ? SEARCH_Movie.map(
                   ({ id, poster, faName, genre, country, year, about }) => {
@@ -70,16 +70,14 @@ const Search = ({ movies }) => {
                         />
                         <div className="text-[.7rem] mr-2 text-white flex flex-col justify-center">
                           <p className="font-bold text-[.8rem] mb-2">
-                            {" "}
-                            {faName}{" "}
+                            {faName}
                           </p>
                           <p className="my-2">
                             {genre} - {country} - {year}
                           </p>
                           <p className="hidden lg:inline leading-6">{about} </p>
                           <p className="hover:text-green-500 mt-4">
-                            {" "}
-                            تماشای فیلم{" "}
+                            تماشای فیلم
                           </p>
                         </div>
                       </Link>
