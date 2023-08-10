@@ -4,10 +4,10 @@ import DesktopInfo from "./DesktopInfo";
 import EachMovieLike from "./EachMovieLike";
 import MobileInfo from "./MobileInfo";
 import BannerPoster from "@/components/eachMovie/BannerPoster";
-import { findMovieByCategory } from "@/utils/findMovieByCategory";
+import { findMovieById } from "@/utils/findMovieById";
 
 const EachMovieBanner = ({ mark, movies }) => {
-  const target = findMovieByCategory(movies, mark);
+  const target = findMovieById(mark, movies);
 
   const {
     poster,

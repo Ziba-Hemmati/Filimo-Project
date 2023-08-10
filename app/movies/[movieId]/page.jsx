@@ -23,7 +23,7 @@ const EachMovie = async ({ params }) => {
         <EachMovieStoryAndTrailer mark={params.movieId} movies={movies} />
         <SuggestedMovies mark={params.movieId} movies={movies} />
         <Actors mark={params.movieId} movies={movies} />
-        <Factors mark={params.movieId} />
+        <Factors mark={params.movieId} movies={movies} />
         <EachMovieComment mark={params.movieId} movies={movies} />
       </Suspense>
     </div>

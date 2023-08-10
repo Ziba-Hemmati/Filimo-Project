@@ -1,5 +1,5 @@
-export function findMovieByCategory(movies, mark) {
-  return movies.find((item) => {
-    return item.id === Number(mark);
+export function findMovieByCategory(target, movies) {
+  movies.find((item) => {
+    return item.id === target.id;
   });
 }
