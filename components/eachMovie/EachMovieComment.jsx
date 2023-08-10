@@ -1,9 +1,8 @@
+import { findMovieById } from "@/utils/findMovieById";
 import EachMovieCommentItems from "./EachMovieCommentItems";
 
 const EachMovieComment = async ({ mark, movies }) => {
-  const target = movies.find((item) => {
-    return item.id === Number(mark);
-  });
+  const target = findMovieById(mark, movies);
   const { faName, comments } = target;
 
   return (

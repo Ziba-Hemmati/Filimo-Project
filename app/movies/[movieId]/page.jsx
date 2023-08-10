@@ -10,6 +10,10 @@ import {
 import { Suspense } from "react";
 import Loading from "@/app/loading";
 
+export const metadata = {
+  title: "تماشای هر فیلم",
+};
+
 const EachMovie = async ({ params }) => {
   const data = await getLocalData();
   if (!data) {

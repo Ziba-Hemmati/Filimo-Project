@@ -1,9 +1,10 @@
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faUser } from "@fortawesome/free-solid-svg-icons";
 import Title from "../Title";
+import { findMovieById } from "@/utils/findMovieById";
 
 const Actors = ({ mark, movies }) => {
-  const target = movies.find((item) => item.id === Number(mark));
+  const target = findMovieById(mark, movies);
 
   if (!target || !Array.isArray(target.actors) || target.actors.length === 0) {
     return null;
