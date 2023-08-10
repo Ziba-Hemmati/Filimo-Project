@@ -4,14 +4,14 @@ import { faHeart } from "@fortawesome/free-solid-svg-icons";
 import { useDispatch, useSelector } from "react-redux";
 import { setLike } from "@/redux/features/likeSlice";
 import { useCallback } from "react";
-import { findMovieByCategory } from "@/utils/findMovieByCategory";
+import { markedMovie } from "@/utils/markedMovie";
 
 const EachMovieLike = ({ target }) => {
   const like = useSelector((store) => store.like);
   const dispatch = useDispatch();
-  const isLiked = findMovieByCategory(target, like);
+  const isLiked = markedMovie(like, target)
 
-  const handleLike = useCallback(() => dispatch(setLike(target)), []);
+const handleLike = useCallback(() => dispatch(setLike(target)),[])
 
   return (
     <div>

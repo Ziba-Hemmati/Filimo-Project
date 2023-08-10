@@ -1,14 +1,14 @@
 "use client";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faBookmark} from "@fortawesome/free-solid-svg-icons";
+import { faBookmark } from "@fortawesome/free-solid-svg-icons";
 import { setBookmark } from "@/redux/features/bookMarkSlice";
 import { useDispatch, useSelector } from "react-redux";
-import { findMovieByCategory } from "@/utils/findMovieByCategory";
+import { markedMovie } from "@/utils/markedMovie";
 
 const WatchLater = ({ target }) => {
   const bookmark = useSelector((store) => store.bookmark);
   const dispatch = useDispatch();
-  const isExist = findMovieByCategory(target, bookmark);
+  const isExist = markedMovie(bookmark, target);
 
   return (
     <>
