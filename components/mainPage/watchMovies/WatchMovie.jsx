@@ -1,7 +1,7 @@
 import Title from "@/components/Title"
 const WatchMovie = () =>{
     return(
-        <div className="py-16 px-[10px] sm:px-[20px] md:flex ">
+        <div className="py-16 px-[10px] sm:px-[20px] xl:px-[100px] md:flex ">
             <div className="mt-8 mb-6 hidden  md:inline">
                 <img src="https://www.filimo.com/assets/web/ui/img-ynsexKiWcOkSOPureyAnA/campaigns/nosub-v_new/deviceYaghi.png" alt="device2" className="w-full h-100"/>
             </div>
