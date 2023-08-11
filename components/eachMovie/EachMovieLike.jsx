@@ -16,7 +16,7 @@ const handleLike = useCallback(() => dispatch(setLike(target)),[])
   return (
     <div>
       <button
-        className={`md:flex items-center md:bg-gray-250 md:hover:bg-gray-200 hover:bg-opacity-[.3] transition-colors duration-300 md:bg-opacity-[.2] md:px-3 md:py-2 rounded-3xl ${
+        className={`md:flex items-center md:bg-gray-250 md:hover:bg-gray-200 md:hover:bg-opacity-[.3] transition-colors duration-300 md:bg-opacity-[.2] md:px-3 md:py-2 rounded-3xl ${
           isLiked &&
           "text-orange-400 md:outline md:outline-2 md:outline-orange-400 md:hover:bg-orange-400 md:hover:bg-opacity-[1] hover:text-black"
         }`}
