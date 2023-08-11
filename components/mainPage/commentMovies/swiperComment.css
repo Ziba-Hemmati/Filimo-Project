@@ -4,7 +4,7 @@
     width: 25px;
     height: 25px;
     border-radius: 50%;
-    background: rgba(255,0,0,.4);
+    background: rgba(12,12,12,.8);
     color: white;
     display: flex;
     align-items: center;
@@ -14,11 +14,11 @@
 
 }
 .comment-Slider .swiper-button-next{
-    right: 90%;
+    right: 90% !important;
     bottom: 209px;
 }
 .comment-Slider .swiper-button-prev{
-    right: 80%;
+    right: 80% !important;
     bottom: 207px;
 }
 .comment-Slider .swiper-button-next::after,
@@ -36,21 +36,21 @@
 @media screen and (min-width: 574px){
     .comment-Slider .swiper-button-prev {
         bottom: 213px;
-        right: 90%;
+        right: 90% !important;
     }
     .comment-Slider .swiper-button-next {
         bottom: 216px;
-        right: 95% ;
+        right: 95% !important;
     }
 }
 
 @media screen and (min-width: 1024px)  {
     .comment-Slider .swiper-button-prev {
-        right: 93% ;
+        right: 93% !important;
         bottom: 211px;
     }
     .comment-Slider .swiper-button-next {
-        right: 97% ;
+        right: 97% !important;
         bottom: 214px;
     }
 }
