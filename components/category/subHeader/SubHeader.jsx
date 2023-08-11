@@ -18,13 +18,13 @@ const SubHeader = ({ faName, selectedOption, onSelect }) => {
     },
     {
       type: "newest",
-      label: "جدیدترین (سال ساخت)",
-      value: "جدیدترین (سال ساخت)",
+      label: "جدیدترین",
+      value: "جدیدترین",
     },
     {
       type: "oldest",
-      label: "قدیمی‌ترین (سال ساخت)",
-      value: "قدیمی‌ترین (سال ساخت)",
+      label: "قدیمی‌ترین",
+      value: "قدیمی‌ترین",
     },
   ];
 
@@ -39,7 +39,6 @@ const SubHeader = ({ faName, selectedOption, onSelect }) => {
 
   useEffect(() => {
     const handleScroll = () => {
-
       const screenWidth = window.innerWidth;
 
       if (screenWidth > 768) {
@@ -59,9 +58,14 @@ const SubHeader = ({ faName, selectedOption, onSelect }) => {
   }, []);
 
   return (
-      <div id="subHeader" className={`z-[1] py-3 top-[82px] lg:top-[53px] ${
-          isSticky ? "bg-black-950 bg-opacity-[0.7] border-t border-gray-700 sticky " : ""
-      }`}>
+    <div
+      id="subHeader"
+      className={`z-[1] py-3 top-[82px] lg:top-[53px] ${
+        isSticky
+          ? "bg-black-950 bg-opacity-[0.7] border-t border-gray-700 sticky "
+          : ""
+      }`}
+    >
       <div className="px-[14px] lg:px-[30px]">
         <div className="flex justify-between">
           <div>
@@ -84,11 +88,11 @@ const SubHeader = ({ faName, selectedOption, onSelect }) => {
               />
             </button>
             {isOpen && (
-              <ul className="absolute z-10 w-[118px] mt-2 py-1 bg-black-950 text-white rounded shadow-lg">
+              <ul className="absolute z-10 w-[104px] mt-2 py-1 bg-black-950 text-white rounded shadow-lg">
                 {options.map((option) => (
                   <li
                     key={option.value}
-                    className="px-2 py-2 cursor-pointer text-[8px] hover:text-orange-400"
+                    className="px-2 py-2 cursor-pointer text-[10px] hover:text-orange-400"
                     onClick={() => selectOption(option)}
                   >
                     {option.label}
