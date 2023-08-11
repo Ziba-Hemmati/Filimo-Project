@@ -15,7 +15,7 @@ const EachMovieModal = ({ album, onClose, faName }) => {
   const [thumbsSwiper, setThumbsSwiper] = useState(null);
 
   return (
-    <div className="text-white fixed flex flex-col items-center w-screen h-screen top-0 right-0 z-10">
+    <div className="text-white fixed flex flex-col items-center w-screen h-screen top-0 right-0 z-[25]">
       <div
         className={"w-full h-full bg-black opacity-95 absolute top-0 right-0"}
       ></div>
