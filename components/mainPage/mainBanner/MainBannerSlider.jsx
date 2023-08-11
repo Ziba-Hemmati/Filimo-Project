@@ -5,7 +5,7 @@ import "react-slideshow-image/dist/styles.css";
 import { PosterText } from "./PosterText";
 
 function MainBannerSlider({ movies }) {
-  const selectedIds = [27, 26, 30, 24, 23, 28, 11, 18, 15, 14];
+  const selectedIds = [47, 38, 33, 31, 28, 27, 25, 22, 12, 13];
   const shuffledIds = [...selectedIds];
 
   for (let i = shuffledIds.length - 1; i > 0; i--) {
