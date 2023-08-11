@@ -1,6 +1,6 @@
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faUser } from "@fortawesome/free-solid-svg-icons";
 import Title from "../Title";
+import { faUser } from "@fortawesome/free-solid-svg-icons";
 import { findMovieById } from "@/utils/findMovieById";
 
 const Actors = ({ mark, movies }) => {
@@ -12,9 +12,9 @@ const Actors = ({ mark, movies }) => {
 
   const { actors, faName } = target;
   return (
-    <div className="px-3 md:px-8 xl:px-[8.5rem]">
-      <Title className="mt-16 p-3 text-sm">بازیگران فیلم {target.faName}</Title>
-      <div className="flex flex-wrap m-3">
+    <div className="px-2.5 md:px-8 xl:px-[8.5rem]">
+      <Title className="mt-16 text-sm mb-4">بازیگران فیلم {target.faName}</Title>
+      <div className="flex flex-wrap">
         {actors.map((actor) => (
           <div
             key={actor.id}
