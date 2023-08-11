@@ -12,17 +12,17 @@ const FixedFooter = () => {
     <div>
       <div className="z-[2] text-gray-300 w-full text-[.7rem] fixed bottom-0 p-1 md:px-4 bg-black-700 overflow-x-auto lg:flex lg:justify-between lg:w-full ">
         <ul className="flex justify-between items-center lg:w-3/4 ">
-          <Link href="" className="hover:text-white transition lg:hidden">
+          <Link href="" className="hover:text-white transition lg:hidden ml-3">
             <FontAwesomeIcon icon={faArrowUp} />
           </Link>
           <Link href="">
-            <div className="flex items-center hover:text-white transition">
+            <div className="flex items-center hover:text-white transition ml-3">
               <FontAwesomeIcon icon={faTv} className="pl-1" />
               <li>تماشا با تلویزیون</li>
             </div>
           </Link>
           <Link href="">
-            <li className="hover:text-white transition">اپلیکشن‌ها</li>
+            <li className="hover:text-white transition ml-3">اپلیکشن‌ها</li>
           </Link>
           <Link href="" className=" lg:hidden">
             <div className="flex items-center hover:text-white transition">

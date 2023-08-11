@@ -4,7 +4,7 @@ import { faCirclePlus } from "@fortawesome/free-solid-svg-icons";
 import Link from "next/link";
 import Menu from "./Menu";
 import Search from "./Search";
-import { useEffect, useRef, useState } from "react";
+import { useEffect, useRef } from "react";
 
 const Header = ({ data }) => {
   const navRef = useRef(null);

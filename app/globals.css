@@ -10,12 +10,9 @@
   font-family: IranSansMedium;
   src: url(../assets/fonts/IRANSans-Medium-web.woff2);
 }
-:root {
-  --font-iran-sans: "IranSans";
-  --font-iran-sans-medium: "IranSansMedium";
-}
+
 * {
-  font-family: var(--font-iran-sans);
+  font-family: IranSans;
 }
 html {
   direction: rtl;
@@ -24,8 +21,8 @@ html {
 }
 
 ::-webkit-scrollbar {
-  height: 3px;
-  width: 1px;
+  height: 2px;
+  width: 4px;
 }
 
 ::-webkit-scrollbar-thumb {

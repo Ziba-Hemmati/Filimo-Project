@@ -1,10 +1,10 @@
 "use client";
+import { useCallback, useState } from "react";
+import Link from "next/link";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { useState } from "react";
 import { faAngleUp, faAngleDown } from "@fortawesome/free-solid-svg-icons";
 ("@fortawesome/free-solid-svg-icons");
 import { animated, useTransition } from "react-spring";
-import Link from "next/link";
 
 const MobileInfo = ({
   faName,
@@ -21,7 +21,7 @@ const MobileInfo = ({
   genre,
 }) => {
   const [isShow, setIsShow] = useState(false);
-  const handleClick = () => setIsShow((prev) => !prev);
+  const handleClick = useCallback(() => setIsShow((prev) => !prev), []);
 
   const transitions = useTransition(isShow, {
     from: { maxHeight: "0" },

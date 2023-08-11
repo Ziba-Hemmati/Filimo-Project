@@ -1,12 +1,8 @@
+import { findMovieById } from "@/utils/findMovieById";
 import Title from "../Title";
-import { getLocalData } from "@/lib/localdata";
 
-const Factors = async ({ mark }) => {
-  const data = await getLocalData();
-
-  const movie = data.movies;
-
-  const target = movie.find((item) => item.id === Number(mark));
+const Factors = ({ mark, movies }) => {
+  const target = findMovieById(mark, movies);
   const { factors } = target;
 
   const factorNames = [
