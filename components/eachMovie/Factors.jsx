@@ -1,5 +1,5 @@
-import { findMovieById } from "@/utils/findMovieById";
 import Title from "../Title";
+import { findMovieById } from "@/utils/findMovieById";
 
 const Factors = ({ mark, movies }) => {
   const target = findMovieById(mark, movies);
@@ -15,11 +15,11 @@ const Factors = ({ mark, movies }) => {
   ];
 
   return (
-    <div className="px-3 md:px-8 xl:px-[8.5rem]">
-      <Title className="mt-16 p-3 text-sm">
+    <div className="px-2.5 md:px-[30px] xl:px-[150px] ">
+      <Title className="mt-16 mb-4 text-sm">
         سایر عوامل فیلم {target.faName}
       </Title>
-      <div className="flex flex-wrap m-3">
+      <div className="flex flex-wrap">
         {factorNames.map((factor) => {
           const factorValue = factors[factor.key];
           if (factorValue !== null && factorValue !== undefined) {

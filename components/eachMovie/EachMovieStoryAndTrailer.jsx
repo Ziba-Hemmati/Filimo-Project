@@ -24,7 +24,7 @@ const EachMovieStoryAndTrailer = ({ mark, movies }) => {
 
   return (
     <div className={"flex justify-center"}>
-      <div className="flex flex-col md:flex-row text-white relative overflow-hidden max-w-screen-xl px-[30px]  pt-10">
+      <div className="flex flex-col md:flex-row  text-white relative overflow-hidden  px-2.5 md:px-8 xl:px-[178px] pt-10">
         <div
           className="text-white mb-5 md:mb-0 relative overflow-hidden w-full md:w-1/2 cursor-pointer h-[324px]"
           onClick={handleOpen}
