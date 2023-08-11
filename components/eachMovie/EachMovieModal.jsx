@@ -22,13 +22,13 @@ const EachMovieModal = ({ album, onClose, faName }) => {
 
       <button
         className={
-          "top-8 right-8 absolute w-7 h-7 flex justify-center items-center"
+          "top-2 right-[50%] translate-x-1/2 sm:top-8 sm:right-8 absolute w-7 h-7 flex justify-center items-center"
         }
         onClick={onClose}
       >
         <FontAwesomeIcon icon={faClose} className={"w-full text-xl h-full"} />
       </button>
-      <Title className={"z-10 mt-8"}>{faName}</Title>
+      <Title className={"z-10 mt-12 sm:mt-8"}>{faName}</Title>
       <div
         className={
           "w-full h-full flex flex-col items-center justify-around relative"
