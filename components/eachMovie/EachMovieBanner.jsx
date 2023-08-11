@@ -1,18 +1,15 @@
-import { getLocalData } from "@/lib/localdata";
-import WatchLater from "./WatchLater";
-import DesktopInfo from "./DesktopInfo";
-import EachMovieLike from "./EachMovieLike";
-import MobileInfo from "./MobileInfo";
-import BannerPoster from "@/components/eachMovie/BannerPoster";
+import {
+  WatchLater,
+  DesktopInfo,
+  EachMovieLike,
+  MobileInfo,
+  BannerPoster,
+} from "@/components/index";
+import { findMovieById } from "@/utils/findMovieById";
 
-const EachMovieBanner = async ({ mark }) => {
-  const data = await getLocalData();
+const EachMovieBanner = ({ mark, movies }) => {
+  const target = findMovieById(mark, movies);
 
-  const movies = data.movies;
-
-  const target = movies.find((item) => {
-    return item.id === Number(mark);
-  });
   const {
     poster,
     faName,

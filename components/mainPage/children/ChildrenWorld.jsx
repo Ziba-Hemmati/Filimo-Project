@@ -2,7 +2,7 @@ import Buttons from "./Button";
 import Description from "./Description";
 const ChildrenWorld = () =>{
     return(
-        <div className="px-2.5 bg-gradient-to-tr from-black-950 via-black-900 to-blue-800 md:flex flex-row-reverse xl:px-24 lg:pt-8"> 
+        <div className="px-[10px] bg-gradient-to-tr from-black-950 via-black-900 to-blue-800 md:flex flex-row-reverse xl:px-24 lg:pt-8"> 
             <div className="md:max-w-[42%] md:m-14  xl:max-w-[50%] xl:mt-[7rem] ">
                 <Description/>
                 <Buttons/>

@@ -1,12 +1,10 @@
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import Title from "../Title";
 import { faUser } from "@fortawesome/free-solid-svg-icons";
-import { getLocalData } from "@/lib/localdata";
+import Title from "../Title";
+import { findMovieById } from "@/utils/findMovieById";
 
-const Actors = async ({ mark }) => {
-  const data = await getLocalData();
-  const movie = data.movies;
-  const target = movie.find((item) => item.id === Number(mark));
+const Actors = ({ mark, movies }) => {
+  const target = findMovieById(mark, movies);
 
   if (!target || !Array.isArray(target.actors) || target.actors.length === 0) {
     return null;
