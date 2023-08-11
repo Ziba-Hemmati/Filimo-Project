@@ -14,10 +14,10 @@ const BannerSlider = ({ banners, enName }) => {
           clickable: true,
         }}
         navigation={true}
-        autoplay={{
-            delay: 3500,
-            disableOnInteraction: false,
-        }}
+        // autoplay={{
+        //     delay: 3500,
+        //     disableOnInteraction: false,
+        // }}
         modules={[Pagination, Navigation,Autoplay]}
     >
       {banners.map((banner, index) => (

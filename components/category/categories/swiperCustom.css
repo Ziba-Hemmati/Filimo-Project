@@ -43,13 +43,13 @@
     bottom: 62px;
   }
 }
-@media screen and (min-width:1144px) {
+@media screen and (min-width:1200px) {
   .banner-swiper .swiper-button-next{
     right: 92.6%;
     bottom: 52px;
   }
   .banner-swiper .swiper-button-prev{
-    right: 90%;
-    bottom: 35px;
+    right: 89.8%;
+    bottom: 34px;
   }
 }
