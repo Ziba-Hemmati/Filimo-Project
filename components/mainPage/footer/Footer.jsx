@@ -2,7 +2,7 @@ import Items from "../../Items";
 
 const Footer = () => {
   return (
-    <div className="h-[340px] md:h-[320px] lg:h-[300px] bg-green-900 w-full flex items-center justify-center">
+    <div className="h-[340px] bg-green-900 w-full flex items-center justify-center">
       <div className="flex flex-col items-center">
         <img
           src="https://www.filimo.com/assets/web/ui/img-ynsexKiWcOkSOPureyAnA/campaigns/nosub-v_new/logo_text.png"
