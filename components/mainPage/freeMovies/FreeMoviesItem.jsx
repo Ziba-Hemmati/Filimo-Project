@@ -9,7 +9,7 @@ import '../../../assets/css/swiperFreeMovies.css'
 const FreeMoviesPosterItem = ({ data }) => {
   return (
     <Swiper
-      spaceBetween={25}
+      spaceBetween={50}
       breakpoints={{
         300: {
           slidesPerView: 2,
@@ -28,11 +28,6 @@ const FreeMoviesPosterItem = ({ data }) => {
         },
       }}
       navigation
-      loop
-      autoplay={{
-        delay: 2500,
-        disableOnInteraction: false,
-      }}
       modules={[Autoplay, Navigation]}
       className="swiper-freemovies"
     >
@@ -41,7 +36,7 @@ const FreeMoviesPosterItem = ({ data }) => {
              <li className={"w-full opacity-80 hover:opacity-100"}>
               <Link href={`/movies/${id}`}>
                  <img
-                  className={"w-full h-[220px] rounded-md sm:h-[240px] md:w-[170px] md:h-[220px]"}
+                  className={"w-full h-[220px] rounded-lg sm:h-[240px] md:w-[165px] md:h-[220px]"}
                    src={poster}
                    alt={faName}
                  />
