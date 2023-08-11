@@ -33,7 +33,7 @@ const Header = ({ data }) => {
   return (
     <nav
       ref={navRef}
-      className="py-[3px] transition-transform duration-500 bg-black bg-opacity-[.9] sticky top-0 z-[2] w-full"
+      className="py-[3px] transition-transform duration-500 bg-black bg-opacity-[.9] sticky top-0 z-[20] w-full"
     >
       <div className="px-[10px] flex justify-between items-center my-3 md:px-[20px] xl:px-[100px]">
         <div className="flex items-center justify-center">
