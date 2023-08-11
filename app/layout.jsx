@@ -2,6 +2,7 @@ import "./globals.css";
 import { Providers } from "@/redux/provider";
 import { FixedFooter, Header } from "@/components";
 import { getLocalData } from "@/lib/localdata";
+import { error } from "next/dist/build/output/log";
 
 export const metadata = {
   title: "تماشای آنلاین فیلم و سریال | فیلیمو",
@@ -10,6 +11,7 @@ export const metadata = {
 
 export default async function RootLayout({ children }) {
   const data = await getLocalData();
+
   return (
     <html lang="en">
       <body>
