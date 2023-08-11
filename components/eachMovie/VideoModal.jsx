@@ -11,7 +11,7 @@ const VideoModal = ({ onClose, link }) => {
   return (
     <div
       className={
-        "text-white fixed flex flex-col items-center w-screen h-screen top-0 right-0 z-[20]"
+        "text-white fixed flex flex-col items-center w-screen h-screen top-0 right-0 z-[25]"
       }
     >
       <button
