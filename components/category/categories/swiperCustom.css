@@ -45,11 +45,19 @@
 }
 @media screen and (min-width:1200px) {
   .banner-swiper .swiper-button-next{
-    right: 92.6%;
+    right: 93%;
     bottom: 52px;
   }
   .banner-swiper .swiper-button-prev{
-    right: 89.8%;
+    right: 89.6%;
     bottom: 34px;
+  }
+}
+@media screen and (min-width:1340px) {
+  .banner-swiper .swiper-button-next{
+    right: 93%;
+  }
+  .banner-swiper .swiper-button-prev{
+    right: 90.3%;
   }
 }
