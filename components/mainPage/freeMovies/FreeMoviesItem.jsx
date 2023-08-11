@@ -34,7 +34,7 @@ const FreeMoviesPosterItem = ({ data }) => {
           slidesPerView: 4,
          spaceBetween: 10,
         },
-        800: {
+        768: {
           slidesPerView: 5,
           spaceBetween: 15,
         },
