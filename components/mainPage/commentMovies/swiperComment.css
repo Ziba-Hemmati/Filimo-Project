@@ -15,11 +15,11 @@
 }
 .comment-Slider .swiper-button-next{
     right: 90%;
-    bottom: 197px;
+    bottom: 209px;
 }
 .comment-Slider .swiper-button-prev{
     right: 80%;
-    bottom: 195px;
+    bottom: 207px;
 }
 .comment-Slider .swiper-button-next::after,
 .comment-Slider .swiper-button-prev::after{
@@ -27,11 +27,21 @@
 }
 @media screen and (min-width: 500px){
     .comment-Slider .swiper-button-prev {
-        bottom: 200px;
+        bottom: 228px;
         right: 84%;
     }
     .comment-Slider .swiper-button-next {
-        bottom: 203px;
+        bottom: 231px;
+        right: 93% ;
+    }
+}
+@media screen and (min-width: 574px){
+    .comment-Slider .swiper-button-prev {
+        bottom: 213px;
+        right: 84%;
+    }
+    .comment-Slider .swiper-button-next {
+        bottom: 216px;
         right: 93% ;
     }
 }
@@ -39,10 +49,10 @@
 @media screen and (min-width: 1024px)  {
     .comment-Slider .swiper-button-prev {
         right: 93% ;
-        bottom: 201px;
+        bottom: 211px;
     }
     .comment-Slider .swiper-button-next {
         right: 97% ;
-        bottom: 204px;
+        bottom: 214px;
     }
 }

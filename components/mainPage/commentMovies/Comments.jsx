@@ -14,7 +14,7 @@ const Comments = ({ comment, faName }) => {
                     <FontAwesomeIcon icon={faUserCircle} className='text-gray-500 text-2xl'/>
                     <p className="text-gray-400 pr-2">{name}</p>
                 </div>
-                <Image src={avatar} alt={"avatar"}/>
+                <Image src={avatar} alt={"avatar"} className="mb-2"/>
             </div>
             <div className='h-14 overflow-scroll'>
                 <span className="text-gray-200 text-[12px]">{text}</span>
