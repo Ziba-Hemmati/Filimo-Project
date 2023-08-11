@@ -3,6 +3,7 @@ import { CategoriesPage } from "@/components";
 import CategoriesBanner from "@/components/category/categories/CategoriesBanner";
 import { getLocalData } from "@/lib/localdata";
 import { Suspense } from "react";
+import Error from "@/app/error";
 
 export const metadata = {
   title: "تماشای دسته بندی ها",
