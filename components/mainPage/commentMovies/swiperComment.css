@@ -13,22 +13,24 @@
 }
 .comment-Slider .swiper-button-next{
     right: 90%;
-    bottom: 180px;
+    bottom: 197px;
 }
 .comment-Slider .swiper-button-prev{
     right: 83%;
-    bottom: 177px;
+    bottom: 195px;
 }
 .comment-Slider .swiper-button-next::after,
 .comment-Slider .swiper-button-prev::after{
     font-size: 0.8rem;
 }
-@media screen and (max-width: 768px){
+@media screen and (min-width: 768px){
     .comment-Slider .swiper-button-prev {
-        right: 84% ;
+        right: 84%;
+        bottom: 218px;
     }
     .comment-Slider .swiper-button-next {
         right: 93% ;
+        bottom: 220px;
     }
 }
 @media screen and (min-width: 1024px)  {
@@ -41,9 +43,9 @@
 }
 @media screen and (min-width: 1124px)  {
     .comment-Slider .swiper-button-prev {
-        bottom: 210px!important;
+        bottom: 225px;
     }
     .comment-Slider .swiper-button-next{
-        bottom: 212px!important;
+        bottom: 227px;
     }
 }
