@@ -1,8 +1,6 @@
-import Loading from "@/app/loading";
 import { CategoriesPage } from "@/components";
 import CategoriesBanner from "@/components/category/categories/CategoriesBanner";
 import { getLocalData } from "@/lib/localdata";
-import { Suspense } from "react";
 
 export const metadata = {
   title: "تماشای دسته بندی ها",
@@ -15,10 +13,8 @@ const Category = async ({ params }) => {
   }
   return (
     <div className="text-white">
-      <Suspense fallback={<Loading />}>
-        <CategoriesBanner data={data} eachCategory={params.tagId} />
-        <CategoriesPage data={data} eachCategory={params.tagId} />
-      </Suspense>
+      <CategoriesBanner data={data} eachCategory={params.tagId} />
+      <CategoriesPage data={data} eachCategory={params.tagId} />
     </div>
   );
 };
