@@ -10,7 +10,7 @@ const SuggestedMovies = ({ mark, movies }) => {
   const moviesCategory = findMovieByCategory(filteredMovies, categories);
 
   return (
-    <div className={"flex flex-col my-12 px-6 pl-6 xl:px-48"}>
+    <div className={"flex flex-col my-12 px-4 md:px-8 xl:px-44"}>
       <Title className={"text-sm"}>فیلم‌های پیشنهادی</Title>
       <div className={"flex justify-around"}>
         <div

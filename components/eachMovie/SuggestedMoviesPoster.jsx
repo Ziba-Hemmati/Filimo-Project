@@ -13,18 +13,18 @@ const SuggestedMoviesPoster = ({ moviesCategory }) => {
       spaceBetween={8}
       breakpoints = {{
         200: {
-          slidesPerView: 5,
-          slidesPerGroup: 5,
-        },
-        480: {
           slidesPerView: 2,
           slidesPerGroup: 2,
         },
-        1020: {
+        300: {
+          slidesPerView: 3,
+          slidesPerGroup: 3,
+        },
+        400: {
           slidesPerView: 4,
           slidesPerGroup: 4,
         },
-        1300: {
+        1100: {
           slidesPerView: 5,
           slidesPerGroup: 5,
         },
@@ -42,11 +42,11 @@ const SuggestedMoviesPoster = ({ moviesCategory }) => {
               <Link  href={`/movies/${id}`}>
                    <div className={"relative "}>
                      <img
-                       className={"w-full h-[108px] rounded-md sm:w-full sm:h-[300px] sm2:h-[420px] md:h-[500px] lg:h-[300px]"}
+                       className={"w-full h-[130px] rounded-md sm:w-full sm:h-[200px] sm2:h-[240px] md:h-[260px] lg:h-[300px]"}
                        src={poster}
                        alt={faName}
                      />
-                     <div className={"bg-black-fade-600 top-0 right-0 opacity-0 w-full h-[108px] text-[0.7rem] absolute rounded-md sm:h-[300px] sm2:h-[420px] md:h-[500px] lg:h-[300px] hover:opacity-90 transition-all duration-300 "}>
+                     <div className={"bg-black-fade-600 top-0 right-0 opacity-0 w-full h-[130px] text-[0.7rem] absolute rounded-md sm:h-[200px] sm2:h-[240px] md:h-[260px] lg:h-[300px] hover:opacity-90 transition-all duration-300 "}>
                        <div className={"text-white absolute bottom-0"}>
                          <div className={"flex w-fit justify-between items-end mb-3 mr-1"}>
                            <span className={"text-[0.6rem] font-black rounded-tr-xl rounded-br-xl bg-gray-400 bg-opacity-[.8] w-fit p-[3px] pr-2 items-center"}>
