@@ -41,7 +41,7 @@ const Search = ({ movies }) => {
             className="my-10 outline-none rounded-sm placeholder:text-[.7rem] placeholder:lg:text-[.8rem] bg-gray-600 w-[280px] lg:w-[720px] p-2 text-orange-400 text-sm"
             onClick={handleOpen}
           />
-          <div className="overflow-y-auto w-[280px] lg:w-[720px] pb-10">
+          <div className="overflow-y-auto w-[280px] lg:w-[720px] pb-10 z-[30] ">
             {searchTerm.length &&
               SEARCH_Movie.map(
                 ({ id, poster, faName,enName, genre, country, year, about }) => {
