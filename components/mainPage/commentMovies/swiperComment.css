@@ -10,42 +10,39 @@
     align-items: center;
     justify-content: center;
     cursor: pointer;
+    font-size: 1rem;
+
 }
 .comment-Slider .swiper-button-next{
     right: 90%;
     bottom: 197px;
 }
 .comment-Slider .swiper-button-prev{
-    right: 83%;
+    right: 80%;
     bottom: 195px;
 }
 .comment-Slider .swiper-button-next::after,
 .comment-Slider .swiper-button-prev::after{
     font-size: 0.8rem;
 }
-@media screen and (min-width: 768px){
+@media screen and (min-width: 500px){
     .comment-Slider .swiper-button-prev {
+        bottom: 200px;
         right: 84%;
-        bottom: 218px;
     }
     .comment-Slider .swiper-button-next {
+        bottom: 203px;
         right: 93% ;
-        bottom: 220px;
     }
 }
+
 @media screen and (min-width: 1024px)  {
     .comment-Slider .swiper-button-prev {
         right: 93% ;
+        bottom: 201px;
     }
     .comment-Slider .swiper-button-next {
         right: 97% ;
-    }
-}
-@media screen and (min-width: 1124px)  {
-    .comment-Slider .swiper-button-prev {
-        bottom: 225px;
-    }
-    .comment-Slider .swiper-button-next{
-        bottom: 227px;
+        bottom: 204px;
     }
 }

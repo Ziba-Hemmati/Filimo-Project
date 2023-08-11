@@ -7,21 +7,19 @@ const Comments = ({ comment, faName }) => {
     return (
         <div
             key={id}
-            className="flex flex-col justify-evenly px-2 py-3 sm:p-6 bg-black-850 rounded-xl border border-gray-600 cursor-pointer"
+            className=" px-5 py-6 bg-black-850 rounded-xl border border-gray-600 cursor-pointer"
         >
-            <div>
             <div className='flex justify-between items-center'>
-                <div className='flex items-center py-2'>
-                    <FontAwesomeIcon icon={faUserCircle} className='text-gray-500 text-xl'/>
+                <div className='flex items-center pb-1'>
+                    <FontAwesomeIcon icon={faUserCircle} className='text-gray-500 text-2xl'/>
                     <p className="text-gray-400 pr-2">{name}</p>
                 </div>
-                <Image className="ml-4" src={avatar}/>
+                <Image src={avatar} alt={"avatar"}/>
             </div>
             <div className='h-14 overflow-scroll'>
                 <span className="text-gray-200 text-[12px]">{text}</span>
             </div>
-            </div>
-            <div className='text-gray-500 text-xs text-left  p-2'>
+            <div className='text-gray-500 text-xs text-left pt-2'>
             <p> {faName} :فیلم</p>
             <p className='mt-2'> {date} :تاریخ</p>
             </div>

@@ -13,10 +13,10 @@ const CommentSlider = ({ movie }) => {
         className='comment-Slider'
             spaceBetween={10}
             breakpoints={{
-                640: {
+                300: {
                     slidesPerView: 1,
                 },
-                768: {
+                500: {
                     slidesPerView: 2,
                 },
                 1024: {
@@ -25,10 +25,10 @@ const CommentSlider = ({ movie }) => {
             }}
             loop
             navigation={true}
-            autoplay={{
-                delay: 3000,
-                disableOnInteraction: false,
-            }}
+            // autoplay={{
+            //     delay: 3000,
+            //     disableOnInteraction: false,
+            // }}
             modules={[Autoplay, Navigation]}
         >
           {movie.map(({ id, comments, faName }) => {
