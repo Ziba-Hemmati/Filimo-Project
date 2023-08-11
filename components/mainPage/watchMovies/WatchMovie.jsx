@@ -22,7 +22,7 @@ const WatchMovie = () =>{
             
             <div className="flex mb-8 md:mt-6">
                 <div>
-                    <img src="https://www.filimo.com/assets/web/ui/img-ynsexKiWcOkSOPureyAnA/campaigns/nosub-v_new/laptop.png" width={25}/>
+                    <img src="https://www.filimo.com/assets/web/ui/img-ynsexKiWcOkSOPureyAnA/campaigns/nosub-v_new/laptop.png" alt="laptop" width={25}/>
                 </div>
                 <div className="mr-3 leading-3">
                     <div>
@@ -35,7 +35,7 @@ const WatchMovie = () =>{
             </div>
             <div className="flex mb-8 ">
                 <div className="w-10">
-                    <img src="https://www.filimo.com/assets/web/ui/img-ynsexKiWcOkSOPureyAnA/campaigns/nosub-v_new/mobile.png"  width={20}/>
+                    <img src="https://www.filimo.com/assets/web/ui/img-ynsexKiWcOkSOPureyAnA/campaigns/nosub-v_new/mobile.png" alt="mobile" width={20}/>
                 </div>
                 <div className=" leading-3 ">
                     <div>
@@ -48,7 +48,7 @@ const WatchMovie = () =>{
             </div>
             <div className="flex mb-8">
                 <div>
-                    <img src="https://www.filimo.com/assets/web/ui/img-ynsexKiWcOkSOPureyAnA/campaigns/nosub-v_new/game.png" width={25} />
+                    <img src="https://www.filimo.com/assets/web/ui/img-ynsexKiWcOkSOPureyAnA/campaigns/nosub-v_new/game.png" alt="game" width={25} />
                 </div>
                 <div className="mr-3 leading-3">
                     <div>
