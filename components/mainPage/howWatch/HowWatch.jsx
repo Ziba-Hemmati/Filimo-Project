@@ -1,6 +1,5 @@
 import Button from "./Button";
 import Title from "@/components/Title";
-import clsx from "clsx";
 
 const HowWatch = () => {
   return (

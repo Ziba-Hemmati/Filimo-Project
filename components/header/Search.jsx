@@ -5,7 +5,7 @@ import { useCallback, useMemo, useState } from "react";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import Link from "next/link";
 import { faMagnifyingGlass } from "@fortawesome/free-solid-svg-icons";
-import { searchByFaName } from "@/utils/searchByFaName";
+import { searchByMovieName } from "@/utils/searchByMovieName";
 
 const Search = ({ movies }) => {
   const [searchTerm, setSearchTerm] = useState("");
@@ -14,7 +14,7 @@ const Search = ({ movies }) => {
   }, []);
 
   const SEARCH_Movie = useMemo(() => {
-    return searchByFaName(movies, searchTerm);
+    return searchByMovieName(movies, searchTerm);
   }, [searchTerm]);
 
   const [isOpen, setIsOpen] = useState(false);
@@ -35,7 +35,7 @@ const Search = ({ movies }) => {
         >
           <input
             type="text"
-            placeholder="براساس نام فارسی وانگلیسی جستجو کنید..."
+            placeholder="براساس نام فارسی یا انگلیسی جستجو کنید..."
             value={searchTerm}
             onChange={handleChange}
             className="my-10 outline-none rounded-sm placeholder:text-[.7rem] placeholder:lg:text-[.8rem] bg-gray-600 w-[280px] lg:w-[720px] p-2 text-orange-400 text-sm"
