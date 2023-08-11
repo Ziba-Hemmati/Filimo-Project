@@ -1,3 +1,4 @@
+import Loading from "@/app/loading";
 import { CategoriesPage } from "@/components";
 import CategoriesBanner from "@/components/category/categories/CategoriesBanner";
 import { getLocalData } from "@/lib/localdata";

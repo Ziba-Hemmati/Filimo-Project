@@ -49,7 +49,7 @@ const BestOfImdbDetail = () => {
         {story}
       </p>
 
-      <p className={"text-[10px] bg-black-600 inline rounded-3xl py-1 px-4"}>
+      <p className={"text-[10px] sm:bg-black-600 inline rounded-3xl py-1 px-4"}>
         <span>بالای {age} سال</span> - <span>{time}</span> -{" "}
         <span>محصول {country}</span> - <span>{year}</span> -{" "}
         <span>کیفیت {quality}</span>
