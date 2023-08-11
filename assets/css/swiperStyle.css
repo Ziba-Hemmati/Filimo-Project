@@ -3,6 +3,16 @@
 }
 
 .swiper-rtl .swiper-button-next {
-    left: 25px !important;
+    left: 9px !important;
     right: auto;
+}
+
+.swiper-button-next:after , .swiper-button-prev:after{
+    font-size: 28px;
+}
+
+@media (min-width: 768px) {
+    .swiper-button-next:after , .swiper-button-prev:after{
+        font-size: 48px;
+    }
 }

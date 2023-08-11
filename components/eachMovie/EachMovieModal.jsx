@@ -44,7 +44,9 @@ const EachMovieModal = ({ album, onClose, faName }) => {
           navigation={true}
           thumbs={{ swiper: thumbsSwiper }}
           modules={[FreeMode, Navigation, Thumbs]}
-          className={"mySwiper2 mb-5 w-[40%] h-[50%]"}
+          className={
+            "mySwiper2 mb-5 w-[90%] h-[50%] sm:w-[75%] sm:h-[50%] md:w-[60%] md:h-[50%] lg:w-[50%] lg:h-[50%]"
+          }
         >
           {album.map((image) => (
             <SwiperSlide key={image} className={"w-full h-full"}>
@@ -64,7 +66,7 @@ const EachMovieModal = ({ album, onClose, faName }) => {
           freeMode={true}
           watchSlidesProgress={true}
           modules={[FreeMode, Navigation, Thumbs]}
-          className="mySwiper w-[40%]"
+          className="mySwiper w-[90%] sm:w-[75%] md:w-[60%] lg:w-[50%] "
         >
           {album.map((image) => (
             <SwiperSlide key={image} className={""}>
