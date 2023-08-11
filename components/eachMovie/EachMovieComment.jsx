@@ -1,5 +1,5 @@
-import { findMovieById } from "@/utils/findMovieById";
 import EachMovieCommentItems from "./EachMovieCommentItems";
+import { findMovieById } from "@/utils/findMovieById";
 
 const EachMovieComment = async ({ mark, movies }) => {
   const target = findMovieById(mark, movies);
@@ -7,7 +7,7 @@ const EachMovieComment = async ({ mark, movies }) => {
 
   return (
     <>
-      <div className="px-7 xl:px-[8.75rem] mt-8 mb-16">
+      <div className="px-2.5 md:px-[30px] xl:px-[150px] mt-8 mb-16">
         <div className="mb-3">
           <h2 className="text-sm font-bold">دیدگاه‌های فیلم {faName}</h2>
         </div>

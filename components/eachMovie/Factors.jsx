@@ -15,7 +15,7 @@ const Factors = ({ mark, movies }) => {
   ];
 
   return (
-    <div className="px-2.5 md:px-8 xl:px-[8.5rem]">
+    <div className="px-2.5 md:px-[30px] xl:px-[150px] ">
       <Title className="mt-16 mb-4 text-sm">
         سایر عوامل فیلم {target.faName}
       </Title>
