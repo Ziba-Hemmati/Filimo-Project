@@ -1,6 +1,6 @@
 .swiper-suggestedmovies .swiper-button-prev,
 .swiper-suggestedmovies .swiper-button-next {
-    --swiper-navigation-size: 16px;
+    --swiper-navigation-size: 16px !important;
     width: 40px;
     height: 40px;
     color: white;
@@ -36,4 +36,8 @@
 .swiper-suggestedmovies .swiper-button-disabled,
 .swiper-suggestedmovies .swiper-button-disabled {
     display: none;
+}
+
+.swiper-button-next:after , .swiper-button-prev:after{
+    font-size: 16px;
 }
