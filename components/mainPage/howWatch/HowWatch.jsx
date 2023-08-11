@@ -11,7 +11,7 @@ const HowWatch = () => {
           alt=""
         />
       </div>
-      <div className="relative sm:px-20">
+      <div className="relative sm:px-5 xl:px-[100px]">
         <div className="text-white mb-6">
           <Title>چطور با تلویزیون، فیلیمو تماشا کنم؟</Title>
         </div>
@@ -26,7 +26,7 @@ const HowWatch = () => {
         <div className="w-100  md:hidden">
           <img
             src="	https://www.filimo.com/assets/web/ui/img-ynsexKiWcOkSOPureyAnA/campaigns/nosub-v_new/TVBG-yaghi.png"
-            alt=""
+            alt="TVBG-yaghi"
           />
         </div>
         <div className="">
@@ -34,7 +34,8 @@ const HowWatch = () => {
             <div className="w-100 ml-3">
               <img
                 src="https://www.filimo.com/assets/web/ui/img-ynsexKiWcOkSOPureyAnA/campaigns/nosub-v_new/TV.png"
-                width={36}
+                alt="TV"
+                width={30}
               />
             </div>
             <div className="">
@@ -53,7 +54,8 @@ const HowWatch = () => {
             <div className="w-100 ml-3 ">
               <img
                 src="https://www.filimo.com/assets/web/ui/img-ynsexKiWcOkSOPureyAnA/campaigns/nosub-v_new/androidTV.png"
-                width={36}
+                alt="androidTV"
+                width={30}
               />
             </div>
             <div>

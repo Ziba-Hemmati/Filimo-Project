@@ -12,7 +12,7 @@ const Actors = ({ mark, movies }) => {
 
   const { actors, faName } = target;
   return (
-    <div className="px-2.5 md:px-[30px] xl:px-[150px]">
+    <div className="px-2.5 md:px-[30px] xl:px-[175px]">
       <Title className="mt-16 text-sm mb-4">بازیگران فیلم {target.faName}</Title>
       <div className="flex flex-wrap">
         {actors.map((actor) => (
