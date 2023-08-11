@@ -7,7 +7,7 @@ const Comments = ({ comment, faName }) => {
     return (
         <div
             key={id}
-            className="h-[25vh] flex flex-col justify-evenly p-4 sm:p-6 bg-black-850 rounded-xl border border-gray-600 cursor-pointer"
+            className="flex flex-col justify-evenly px-2 py-3 sm:p-6 bg-black-850 rounded-xl border border-gray-600 cursor-pointer"
         >
             <div>
             <div className='flex justify-between items-center'>

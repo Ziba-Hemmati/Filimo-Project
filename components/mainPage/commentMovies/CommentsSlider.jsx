@@ -25,10 +25,10 @@ const CommentSlider = ({ movie }) => {
             }}
             loop
             navigation={true}
-            autoplay={{
-                delay: 3000,
-                disableOnInteraction: false,
-            }}
+            // autoplay={{
+            //     delay: 3000,
+            //     disableOnInteraction: false,
+            // }}
             modules={[Autoplay, Navigation]}
         >
           {movie.map(({ id, comments, faName }) => {
