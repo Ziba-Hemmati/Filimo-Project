@@ -8,7 +8,8 @@ import GlobalError from "./global-error";
 
 export const metadata = {
   title: "تماشای آنلاین فیلم و سریال | فیلیمو",
-  description: "تماشای آنلاین فیلم با فیلیمو | خارجی  به همراه دوبله فارسی و زیرنویس چسبیده",
+  description:
+    "تماشای آنلاین فیلم با فیلیمو | خارجی  به همراه دوبله فارسی و زیرنویس چسبیده",
 };
 
 export default async function RootLayout({ children }) {
@@ -19,13 +20,13 @@ export default async function RootLayout({ children }) {
     <html lang="en">
       <body>
         <Providers>
-          <div className="relative">
-            <Suspense fallback={<Loading />}>
+          <Suspense fallback={<Loading />}>
+            <div className="relative">
               <Header data={data} />
-            </Suspense>
-            {children}
-            <FixedFooter />
-          </div>
+              {children}
+              <FixedFooter />
+            </div>
+          </Suspense>
         </Providers>
       </body>
     </html>

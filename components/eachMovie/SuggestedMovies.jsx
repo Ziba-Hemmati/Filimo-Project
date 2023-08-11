@@ -6,7 +6,8 @@ import { findMovieById } from "@/utils/findMovieById";
 const SuggestedMovies = ({ mark, movies }) => {
   const target = findMovieById(mark, movies);
   const categories = target.category;
-  const moviesCategory = findMovieByCategory(movies, categories);
+  const filteredMovies = movies.filter(movie => movie.id != mark);
+  const moviesCategory = findMovieByCategory(filteredMovies, categories);
 
   return (
     <div className={"flex flex-col my-12 px-6 pl-6 xl:px-48"}>

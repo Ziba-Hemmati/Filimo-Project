@@ -1,13 +1,13 @@
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import {faUserCircle } from '@fortawesome/free-solid-svg-icons';
 import Image from 'next/image';
-import avatar from'@/assets/virgol.png'
+import avatar from '@/assets/images/virgol.png'
 const Comments = ({ comment, faName }) => {
     const { id, name, text, date } = comment;
     return (
         <div
             key={id}
-            className="h-[25vh] flex flex-col justify-evenly p-4 sm:p-6 bg-black-850 rounded-xl border border-gray-600 cursor-pointer"
+            className="flex flex-col justify-evenly px-2 py-3 sm:p-6 bg-black-850 rounded-xl border border-gray-600 cursor-pointer"
         >
             <div>
             <div className='flex justify-between items-center'>

@@ -7,7 +7,7 @@ const FreeMoviesPoster = async () => {
   const movies = data.movies;
   const movie = movies.filter(
     (movie) =>
-      movie.category === "animation" || [14, 15, 16, 20].includes(movie.id)
+      movie.category === "animation"
   );
 
   return (

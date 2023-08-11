@@ -15,12 +15,12 @@
 }
 
 .swiper-freemovies .swiper-button-next {
-    left: -0.5%;
+    left: -0.5% !important;
     top: 40%;
 }
 
 .swiper-freemovies .swiper-button-prev {
-    right: -0.5%;
+    right: -0.5% !important;
     top: 40%;
 }
 

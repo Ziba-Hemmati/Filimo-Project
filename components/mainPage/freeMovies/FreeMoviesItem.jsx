@@ -9,30 +9,49 @@ import '../../../assets/css/swiperFreeMovies.css'
 const FreeMoviesPosterItem = ({ data }) => {
   return (
     <Swiper
-      spaceBetween={25}
       breakpoints={{
         300: {
           slidesPerView: 2,
+          spaceBetween: 20,
+        },
+        440: {
+          slidesPerView: 2,
+          spaceBetween: 60,
         },
         500: {
           slidesPerView: 3,
+          spaceBetween: 10,
+        },
+        550: {
+          slidesPerView: 3,
+          spaceBetween: 18,
+        },
+        600: {
+          slidesPerView: 3,
+          spaceBetween: 30,
         },
         650: {
           slidesPerView: 4,
+         spaceBetween: 10,
         },
         800: {
           slidesPerView: 5,
+          spaceBetween: 15,
         },
-        1200: {
+        900: {
+          slidesPerView: 5,
+          spaceBetween: 25,
+        },
+        1000: {
           slidesPerView: 6,
+          spaceBetween: 30,
+        },
+        1350: {
+          slidesPerView: 6,
+          spaceBetween: 50,
         },
       }}
       navigation
-      loop
-      autoplay={{
-        delay: 2500,
-        disableOnInteraction: false,
-      }}
       modules={[Autoplay, Navigation]}
       className="swiper-freemovies"
     >
@@ -41,7 +60,7 @@ const FreeMoviesPosterItem = ({ data }) => {
              <li className={"w-full opacity-80 hover:opacity-100"}>
               <Link href={`/movies/${id}`}>
                  <img
-                  className={"w-full h-[220px] rounded-md sm:h-[240px] md:w-[170px] md:h-[220px]"}
+                  className={"w-full h-[210px] rounded-lg sm:h-[205px] sm2:h-[220px] md:h-[190px] lg2:w-[165px] lg2:h-[225px]"}
                    src={poster}
                    alt={faName}
                  />

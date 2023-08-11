@@ -10,14 +10,14 @@ export const PosterText = () => {
   
   return (
     <>
-      <div className="pt-10 md:pt-16 lg:pt-28 pb-16 text-center">
+      <div className="pt-10 md:pt-16 lg:pt-36 pb-16 text-center">
         <div className="pb-4">
-          <p className="text-[#f89f3e] text-base font-bold">
+          <p className="text-orange-400 text-base font-bold">
             با فیلیمو بی‌وقفه فیلم ببین
           </p>
         </div>
 
-        <div className="pb-8">
+        <div className="pb-10">
           <p className="text-xl md:text-2xl lg:text-4xl font-extrabold text-white font-iran-sans-medium">
             !کنترل همیشه دست توست
           </p>

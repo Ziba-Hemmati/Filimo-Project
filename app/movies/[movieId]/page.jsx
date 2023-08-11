@@ -7,8 +7,6 @@ import {
   SuggestedMovies,
   Factors,
 } from "@/components";
-import { Suspense } from "react";
-import Loading from "@/app/loading";
 
 export const metadata = {
   title: "تماشای هر فیلم",
@@ -22,14 +20,12 @@ const EachMovie = async ({ params }) => {
   const movies = data.movies;
   return (
     <div className="text-white">
-      <Suspense fallback={<Loading />}>
-        <EachMovieBanner mark={params.movieId} movies={movies} />
-        <EachMovieStoryAndTrailer mark={params.movieId} movies={movies} />
-        <SuggestedMovies mark={params.movieId} movies={movies} />
-        <Actors mark={params.movieId} movies={movies} />
-        <Factors mark={params.movieId} movies={movies} />
-        <EachMovieComment mark={params.movieId} movies={movies} />
-      </Suspense>
+      <EachMovieBanner mark={params.movieId} movies={movies} />
+      <EachMovieStoryAndTrailer mark={params.movieId} movies={movies} />
+      <SuggestedMovies mark={params.movieId} movies={movies} />
+      <Actors mark={params.movieId} movies={movies} />
+      <Factors mark={params.movieId} movies={movies} />
+      <EachMovieComment mark={params.movieId} movies={movies} />
     </div>
   );
 };
