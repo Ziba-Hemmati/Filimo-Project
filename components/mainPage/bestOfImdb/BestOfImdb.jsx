@@ -1,4 +1,4 @@
-import getBestOfImdb from "@/components/mainPage/bestOfImdb/getBestOfImdb";
+import getBestOfImdb from "@/utils/getBestOfImdb";
 import Title from "@/components/Title";
 import BestOfImdbPosters from "@/components/mainPage/bestOfImdb/BestOfImdbPosters";
 import BestOfImdbBottom from "@/components/mainPage/bestOfImdb/BestOfImdbBottom";

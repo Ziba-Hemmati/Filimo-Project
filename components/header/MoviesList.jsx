@@ -21,6 +21,7 @@ const MoviesList = ({ categories }) => {
   }, []);
 
   // *********************************************************************
+  
   const [changeIcon, setChangeIcon] = useState(false);
   const handleChangeIcon = useCallback(() => {
     setChangeIcon((prev) => !prev);
@@ -64,7 +65,7 @@ const MoviesList = ({ categories }) => {
           <div
             onMouseOver={handleOver}
             onMouseLeave={handleLeave}
-            className={`z-[2] flex flex-col px-4 absolute top-[82px] lg:top-[53px] bg-black-700 w-32 rounded-[4px] transition-transform transform shadow-lg ${
+            className={`z-[2] flex flex-col px-4 absolute top-[81px] lg:top-[53px] bg-black-700 w-32 rounded-[4px] transition-transform transform shadow-lg ${
               state === "entered"
                 ? "opacity-100 translate-y-0"
                 : "opacity-0 translate-y-[-8px]"

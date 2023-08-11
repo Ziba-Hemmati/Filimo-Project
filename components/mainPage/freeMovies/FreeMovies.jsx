@@ -4,7 +4,7 @@ import FreeMoviesPoster from "@/components/mainPage/freeMovies/FreeMoviesPoster"
 const FreeMovies = () => {
 
   return (
-    <div className={"flex flex-col text-white my-12 px-6 lg2:px-36"}>
+    <div className={"flex flex-col text-white my-12 px-6 xl:px-36"}>
       <Title>انیمیشن</Title>
       <div className={"flex justify-center"}>
         <div

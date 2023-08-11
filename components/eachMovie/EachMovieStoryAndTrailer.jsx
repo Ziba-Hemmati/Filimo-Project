@@ -4,13 +4,12 @@ import EachMovieModal from "@/components/eachMovie/EachMovieModal";
 import { useCallback, useState } from "react";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faCameraAlt } from "@fortawesome/free-solid-svg-icons";
+import { findMovieById } from "@/utils/findMovieById";
 
 const EachMovieStoryAndTrailer = ({ mark, movies }) => {
   const [isOpen, setIsOpen] = useState(false);
 
-  const target = movies.find((item) => {
-    return item.id === Number(mark);
-  });
+  const target = findMovieById(mark, movies);
 
   const handleOpen = useCallback(() => {
     setIsOpen(true);
@@ -25,9 +24,9 @@ const EachMovieStoryAndTrailer = ({ mark, movies }) => {
 
   return (
     <div className={"flex justify-center"}>
-      <div className="flex text-white relative overflow-hidden max-w-screen-xl px-[30px]  pt-10 mb-16">
+      <div className="flex flex-col md:flex-row text-white relative overflow-hidden max-w-screen-xl px-[30px]  pt-10">
         <div
-          className="text-white relative overflow-hidden w-1/2 cursor-pointer h-[324px]"
+          className="text-white mb-5 md:mb-0 relative overflow-hidden w-full md:w-1/2 cursor-pointer h-[324px]"
           onClick={handleOpen}
         >
           <img

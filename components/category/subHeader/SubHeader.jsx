@@ -1,9 +1,8 @@
 "use client";
 import React, { useEffect, useState } from "react";
 
-const SubHeader = ({faName, selectedOption, onSelect }) => {
+const SubHeader = ({ faName, selectedOption, onSelect }) => {
   const [isOpen, setIsOpen] = useState(false);
-  // const [selectedOption, setSelectedOption] = useState("");
   const [isSticky, setIsSticky] = useState(false);
 
   const options = [
@@ -19,13 +18,13 @@ const SubHeader = ({faName, selectedOption, onSelect }) => {
     },
     {
       type: "newest",
-      label: "جدیدترین (سال ساخت)",
-      value: "جدیدترین (سال ساخت)",
+      label: "جدیدترین",
+      value: "جدیدترین",
     },
     {
       type: "oldest",
-      label: "قدیمی‌ترین (سال ساخت)",
-      value: "قدیمی‌ترین (سال ساخت)",
+      label: "قدیمی‌ترین",
+      value: "قدیمی‌ترین",
     },
   ];
 
@@ -39,15 +38,17 @@ const SubHeader = ({faName, selectedOption, onSelect }) => {
   };
 
   useEffect(() => {
-    let prevScrollY = window.scrollY;
     const handleScroll = () => {
-      const currentScrollY = window.scrollY;
-      if (currentScrollY > 40) {
-        setIsSticky(true);
-      } else {
-        setIsSticky(false);
+      const screenWidth = window.innerWidth;
+
+      if (screenWidth > 768) {
+        const currentScrollY = window.scrollY;
+        if (currentScrollY > 40) {
+          setIsSticky(true);
+        } else {
+          setIsSticky(false);
+        }
       }
-      prevScrollY = currentScrollY;
     };
 
     window.addEventListener("scroll", handleScroll);
@@ -59,8 +60,10 @@ const SubHeader = ({faName, selectedOption, onSelect }) => {
   return (
     <div
       id="subHeader"
-      className={`sticky z-[1] py-3 top-[82px] lg:top-[53px] ${
-        isSticky ? "bg-black-950 bg-opacity-[0.7] border-t border-gray-700" : ""
+      className={`z-[1] py-3 top-[82px] lg:top-[53px] ${
+        isSticky
+          ? "bg-black-950 bg-opacity-[0.7] border-t border-gray-700 sticky "
+          : ""
       }`}
     >
       <div className="px-[14px] lg:px-[30px]">
@@ -85,7 +88,7 @@ const SubHeader = ({faName, selectedOption, onSelect }) => {
               />
             </button>
             {isOpen && (
-              <ul className="absolute z-10 w-[132px] mt-2 py-1 bg-black-950 text-white rounded shadow-lg">
+              <ul className="absolute z-10 w-[104px] mt-2 py-1 bg-black-950 text-white rounded shadow-lg">
                 {options.map((option) => (
                   <li
                     key={option.value}

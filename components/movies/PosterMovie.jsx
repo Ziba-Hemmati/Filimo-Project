@@ -35,7 +35,9 @@ const PosterMovie = ({
           </div>
         </Link>
       </div>
-      <p className="truncate my-4">{faName}</p>
+      <p className="truncate my-4">
+        <Link href={`/movies/${id}`}>{faName}</Link>
+      </p>
     </div>
   );
 };
