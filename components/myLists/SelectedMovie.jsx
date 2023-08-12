@@ -2,7 +2,7 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faEllipsisVertical } from "@fortawesome/free-solid-svg-icons";
 import Link from "next/link";
 import ListOfBookMark from "./ListOfBookMark";
-import { useState } from "react";
+import { useCallback, useState } from "react";
 
 const SelectedMovie = ({
   id,
@@ -17,11 +17,12 @@ const SelectedMovie = ({
   bookmark,
 }) => {
   const [list, setList] = useState(false);
-  const handleList = () => setList((prev) => !prev);
+  const handleList = useCallback(() => setList((prev) => !prev), []);
+  const handleClick = useCallback(() => setList(false), []);
 
   return (
     <div className="relative">
-      <div className="relative" onClick={() => setList(false)}>
+      <div className="relative" onClick={handleClick}>
         <Link href={`/movies/${id}`}>
           <img
             className="w-full h-full rounded-[4px]"
