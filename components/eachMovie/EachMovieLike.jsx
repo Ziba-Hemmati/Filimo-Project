@@ -40,7 +40,7 @@ const EachMovieLike = ({ target }) => {
       </div>
       {isLiked
         ? toggle && (
-            <div className="absolute left-3 top-[102px] md:top-[458px] lg:top-[430px] xl:top-[462px] xl2:top-[472px] md:left-8 xl:left-[178px] bg-green-500 p-4 rounded-md flex items-center">
+            <div className="absolute left-3 top-[101px] md:top-[458px] lg:top-[430px] xl:top-[462px] xl2:top-[472px] md:left-8 xl:left-[178px] bg-green-500 p-4 rounded-md flex items-center">
               <FontAwesomeIcon
                 icon={faClose}
                 className="ml-2 hover:text-black text-lg transition-colors duration-300"
@@ -50,7 +50,7 @@ const EachMovieLike = ({ target }) => {
             </div>
           )
         : toggle && (
-            <div className="absolute  left-3 top-[102px] md:top-[458px] lg:top-[430px] xl:top-[462px] xl2:top-[472px] md:left-8 xl:left-[178px] bg-red-500 p-4 rounded-md flex items-center">
+            <div className="absolute  left-3 top-[101px] md:top-[458px] lg:top-[430px] xl:top-[462px] xl2:top-[472px] md:left-8 xl:left-[178px] bg-red-500 p-4 rounded-md flex items-center">
               <FontAwesomeIcon
                 icon={faClose}
                 className="ml-2 hover:text-black text-lg transition-colors duration-300"
