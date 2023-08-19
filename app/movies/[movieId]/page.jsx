@@ -11,6 +11,22 @@ import {
 export const metadata = {
   title: "تماشای هر فیلم",
 };
+export async function getStaticPaths() {
+  const data = await getLocalData();
+  const movie = data.movies;
+  const paths = movie.map((post) => {
+    return {
+      params: {
+        movieId: `${post.id}`,
+      },
+    };
+  });
+
+  return {
+    paths,
+    fallback: false,
+  };
+}
 
 const EachMovie = async ({ params }) => {
   const data = await getLocalData();
