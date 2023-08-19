@@ -12,7 +12,7 @@ export async function getStaticPaths() {
   const paths = category.map((category) => {
     return {
       params: {
-        tagId: `${category}`,
+        tagId: `${category.enName}`,
       },
     };
   });
