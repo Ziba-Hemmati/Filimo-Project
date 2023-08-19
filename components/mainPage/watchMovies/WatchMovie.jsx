@@ -3,7 +3,7 @@ const WatchMovie = () =>{
     return(
         <div className="py-16 px-[10px] sm:px-[20px] xl:px-[100px] md:flex ">
             <div className="mt-8 mb-6 hidden  md:inline">
-                <img src="https://www.filimo.com/assets/web/ui/img-ynsexKiWcOkSOPureyAnA/campaigns/nosub-v_new/deviceYaghi.png" alt="device2" className="w-full h-100"/>
+                <img src="	https://www.filimo.com/assets/web/ui/img-L9r8reMpjELY3rdNzVYQ/campaigns/nosub-v_new/deviceYaghi.png" alt="device2" className="w-full h-100"/>
             </div>
             <div className="md:pr-4 xl:mt-12">
             <div className="md:flex flex-col">
@@ -17,12 +17,12 @@ const WatchMovie = () =>{
                 </p>
             </div>
             <div className="mt-8 mb-6 md:hidden">
-                <img src="https://www.filimo.com/assets/web/ui/img-ynsexKiWcOkSOPureyAnA/campaigns/nosub-v_new/device2.png" alt="device2" className="w-full h-100"/>
+                <img src="https://www.filimo.com/assets/web/ui/img-L9r8reMpjELY3rdNzVYQ/campaigns/nosub-v_new/device2.png" alt="device2" className="w-full h-100"/>
             </div>
             
             <div className="flex mb-8 md:mt-6">
                 <div>
-                    <img src="https://www.filimo.com/assets/web/ui/img-ynsexKiWcOkSOPureyAnA/campaigns/nosub-v_new/laptop.png" alt="laptop" width={25}/>
+                    <img src="https://www.filimo.com/assets/web/ui/img-L9r8reMpjELY3rdNzVYQ/campaigns/nosub-v_new/laptop.png" alt="laptop" width={25}/>
                 </div>
                 <div className="mr-3 leading-3">
                     <div>
@@ -35,7 +35,7 @@ const WatchMovie = () =>{
             </div>
             <div className="flex mb-8 ">
                 <div className="w-10">
-                    <img src="https://www.filimo.com/assets/web/ui/img-ynsexKiWcOkSOPureyAnA/campaigns/nosub-v_new/mobile.png" alt="mobile" width={20}/>
+                    <img src="https://www.filimo.com/assets/web/ui/img-L9r8reMpjELY3rdNzVYQ/campaigns/nosub-v_new/mobile.png" alt="mobile" width={20}/>
                 </div>
                 <div className=" leading-3 ">
                     <div>
@@ -48,7 +48,7 @@ const WatchMovie = () =>{
             </div>
             <div className="flex mb-8">
                 <div>
-                    <img src="https://www.filimo.com/assets/web/ui/img-ynsexKiWcOkSOPureyAnA/campaigns/nosub-v_new/game.png" alt="game" width={25} />
+                    <img src="https://www.filimo.com/assets/web/ui/img-L9r8reMpjELY3rdNzVYQ/campaigns/nosub-v_new/game.png" alt="game" width={25} />
                 </div>
                 <div className="mr-3 leading-3">
                     <div>
