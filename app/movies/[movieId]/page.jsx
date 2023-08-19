@@ -11,13 +11,14 @@ import {
 export const metadata = {
   title: "تماشای هر فیلم",
 };
+
 export async function getStaticPaths() {
   const data = await getLocalData();
   const movie = data.movies;
-  const paths = movie.map((post) => {
+  const paths = movie.map((movie) => {
     return {
       params: {
-        movieId: `${post.id}`,
+        movieId: `${movie.id}`,
       },
     };
   });

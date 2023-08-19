@@ -6,13 +6,13 @@ export const metadata = {
   title: "تماشای دسته بندی ها",
 };
 
-const path = ["action", "drama", "adventure", "comedy", "animation"];
-
 export async function getStaticPaths() {
-  const paths = path.map((post) => {
+  const data = await getLocalData();
+  const category = data.categories;
+  const paths = category.map((category) => {
     return {
       params: {
-        tagId: `${post}`,
+        tagId: `${category}`,
       },
     };
   });
