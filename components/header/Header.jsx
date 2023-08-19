@@ -1,10 +1,12 @@
 "use client";
+
+import { useEffect, useRef } from "react";
+
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faCirclePlus } from "@fortawesome/free-solid-svg-icons";
 import Link from "next/link";
 import Menu from "./Menu";
 import Search from "./Search";
-import { useEffect, useRef } from "react";
+import { faCirclePlus } from "@fortawesome/free-solid-svg-icons";
 
 const Header = ({ data }) => {
   const navRef = useRef(null);
@@ -39,7 +41,7 @@ const Header = ({ data }) => {
         <div className="flex items-center justify-center">
           <Link href={"/"} className="flex">
             <img
-              src="https://www.filimo.com/assets/web/ui/img-ynsexKiWcOkSOPureyAnA/filimo/fa-filimo-dark-logo.png"
+              src="	https://www.filimo.com/assets/web/ui/img-L9r8reMpjELY3rdNzVYQ/filimo/fa-filimo-dark-logo.png"
               alt="logo-filimo"
               className="w-[67px] sm:w-[75px] md:[80px] "
             />

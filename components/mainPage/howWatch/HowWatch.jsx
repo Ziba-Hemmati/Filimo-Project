@@ -7,7 +7,7 @@ const HowWatch = () => {
       <div className=" relative left-0  w-100 ml-10">
         <img
           className="absolute left-0  md:w-[600px] lg:w-[700px] xl:w[850px] hidden md:block"
-          src="https://www.filimo.com/assets/web/ui/img-ynsexKiWcOkSOPureyAnA/campaigns/nosub-v_new/TVBG.png"
+          src="https://www.filimo.com/assets/web/ui/img-L9r8reMpjELY3rdNzVYQ/campaigns/nosub-v_new/TVBG.png"
           alt=""
         />
       </div>
@@ -25,7 +25,7 @@ const HowWatch = () => {
         </div>
         <div className="w-100  md:hidden">
           <img
-            src="	https://www.filimo.com/assets/web/ui/img-ynsexKiWcOkSOPureyAnA/campaigns/nosub-v_new/TVBG-yaghi.png"
+            src="https://www.filimo.com/assets/web/ui/img-L9r8reMpjELY3rdNzVYQ/campaigns/nosub-v_new/TVBG-yaghi.png"
             alt="TVBG-yaghi"
           />
         </div>
@@ -33,7 +33,7 @@ const HowWatch = () => {
           <div className="flex mt-4">
             <div className="w-100 ml-3">
               <img
-                src="https://www.filimo.com/assets/web/ui/img-ynsexKiWcOkSOPureyAnA/campaigns/nosub-v_new/TV.png"
+                src="https://www.filimo.com/assets/web/ui/img-L9r8reMpjELY3rdNzVYQ/campaigns/nosub-v_new/TV.png"
                 alt="TV"
                 width={30}
               />
@@ -53,7 +53,7 @@ const HowWatch = () => {
           <div className="flex">
             <div className="w-100 ml-3 ">
               <img
-                src="https://www.filimo.com/assets/web/ui/img-ynsexKiWcOkSOPureyAnA/campaigns/nosub-v_new/androidTV.png"
+                src="	https://www.filimo.com/assets/web/ui/img-L9r8reMpjELY3rdNzVYQ/campaigns/nosub-v_new/androidTV.png"
                 alt="androidTV"
                 width={30}
               />

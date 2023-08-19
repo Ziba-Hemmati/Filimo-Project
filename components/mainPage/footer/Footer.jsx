@@ -5,7 +5,7 @@ const Footer = () => {
     <div className="h-[340px] bg-green-900 w-full flex items-center justify-center">
       <div className="flex flex-col items-center">
         <img
-          src="https://www.filimo.com/assets/web/ui/img-ynsexKiWcOkSOPureyAnA/campaigns/nosub-v_new/logo_text.png"
+          src="	https://www.filimo.com/assets/web/ui/img-L9r8reMpjELY3rdNzVYQ/campaigns/nosub-v_new/logo_text.png"
           alt="logo-filimo"
           className="my-12"
         />
