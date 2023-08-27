@@ -1,12 +1,12 @@
 import Image from "next/image";
 import React from "react";
-
+import emptyList from "@/assets/images/empty-list.svg"
 const EmptyList = () => {
   return (
     <div div className="flex flex-col items-center mt-20">
       <Image
-        src="	https://www.filimo.com/assets/web/ui/img-L9r8reMpjELY3rdNzVYQ/empty-list.svg"
-        alt="emty-list"
+        src={emptyList}
+        alt={"empty-list"}
         width="250"
         height="250"
       />
