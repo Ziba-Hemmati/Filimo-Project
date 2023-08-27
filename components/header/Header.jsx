@@ -3,10 +3,12 @@
 import { useEffect, useRef } from "react";
 
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import Image from "next/image";
 import Link from "next/link";
 import Menu from "./Menu";
 import Search from "./Search";
 import { faCirclePlus } from "@fortawesome/free-solid-svg-icons";
+import logo from "@/assets/images/logo.webp";
 
 const Header = ({ data }) => {
   const navRef = useRef(null);
@@ -40,11 +42,12 @@ const Header = ({ data }) => {
       <div className="px-[10px] flex justify-between items-center my-3 md:px-[20px] xl:px-[100px]">
         <div className="flex items-center justify-center">
           <Link href={"/"} className="flex">
-            <img
+            <Image src={logo} alt="logo" className="w-[67px] sm:w-[75px] md:[80px] "/>
+            {/* <img
               src="	https://www.filimo.com/assets/web/ui/img-L9r8reMpjELY3rdNzVYQ/filimo/fa-filimo-dark-logo.png"
               alt="logo-filimo"
               className="w-[67px] sm:w-[75px] md:[80px] "
-            />
+            /> */}
             <div className="border border-gray-200 mx-4 lg:mx-8 hidden lg:inline"></div>
           </Link>
           <div className="hidden lg:inline">
